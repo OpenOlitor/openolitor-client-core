@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openolitor').directive('ooStopEvent', [function() {
+angular.module('openolitor-core').directive('ooStopEvent', [function() {
   return {
     restrict: 'A',
     link: function(scope, element) {

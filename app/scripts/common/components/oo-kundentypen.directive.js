@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openolitor').directive('ooKundentypen', ['KundentypenService',
+angular.module('openolitor-core').directive('ooKundentypen', ['KundentypenService',
   function(KundentypenService) {
     return {
       restrict: 'E',

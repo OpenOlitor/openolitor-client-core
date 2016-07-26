@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openolitor').directive('ooLiefertage', ['EnumUtil',
+angular.module('openolitor-core').directive('ooLiefertage', ['EnumUtil',
   'LIEFERZEITPUNKTE',
   function(EnumUtil, LIEFERZEITPUNKTE) {
     return {

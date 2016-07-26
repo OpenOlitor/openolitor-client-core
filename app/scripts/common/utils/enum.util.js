@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openolitor')
+angular.module('openolitor-core')
   .factory('EnumUtil', function(gettext) {
     return {
       asArray: function(e) {

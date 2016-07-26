@@ -14,7 +14,7 @@
   <!-- bower:css -->
   <link rel="stylesheet" href="bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css" />
   <link rel="stylesheet" href="bower_components/bootstrap3-dialog/dist/css/bootstrap-dialog.min.css" />
-  <link rel="stylesheet" href="bower_components/ng-table/dist/ng-table.min.css" />
+  <link rel="stylesheet" href="bower_components/ng-table/dist/ng-table.css" />
   <link rel="stylesheet" href="bower_components/angular-color-picker/angularjs-color-picker.css" />
   <link rel="stylesheet" href="bower_components/angular-hamburger-toggle/dist/angular-hamburger-toggle.css" />
   <!-- endbower -->
@@ -125,7 +125,7 @@
   <script src="bower_components/angular-touch/angular-touch.js"></script>
   <script src="bower_components/bootstrap3-dialog/dist/js/bootstrap-dialog.min.js"></script>
   <script src="bower_components/json3/lib/json3.js"></script>
-  <script src="bower_components/ng-table/dist/ng-table.min.js"></script>
+  <script src="bower_components/ng-table/dist/ng-table.js"></script>
   <script src="bower_components/ng-table-export/ng-table-export.js"></script>
   <script src="bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.js"></script>
   <script src="bower_components/bootstrap-ui-datetime-picker/dist/datetime-picker.min.js"></script>
@@ -139,7 +139,7 @@
   <script src="bower_components/angular-file-saver/dist/angular-file-saver.bundle.js"></script>
   <script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
   <script src="bower_components/ng-lodash/build/ng-lodash.js"></script>
-  <script src="bower_components/angular-filter/dist/angular-filter.min.js"></script>
+  <script src="bower_components/angular-filter/dist/angular-filter.js"></script>
   <script src="bower_components/lodash/lodash.js"></script>
   <script src="bower_components/ng-password-strength/dist/scripts/ng-password-strength.js"></script>
   <script src="bower_components/angular-messages/angular-messages.js"></script>
@@ -150,7 +150,7 @@
   <!-- language specific angular file -->
   <script src="https://code.angularjs.org/1.4.9/i18n/angular-locale_de-ch.js"></script>
 
-  <!-- build:js({.tmp,app}) scripts/scripts.js -->
+  <!-- build:js({.tmp,app}) scripts/openolitor-core.js -->
   <script src="scripts/app.js"></script>
   <script src="scripts/root.js"></script>
   <script src="scripts/common/filters/oo-preisproeinheit.filter.js"></script>
@@ -183,98 +183,12 @@
 
   <script src="scripts/login/login.controller.js"></script>
 
-  <script src="scripts/abotypen/overview/abotypenoverview.model.js"></script>
-  <script src="scripts/abotypen/overview/abotypenoverview.controller.js"></script>
-  <script src="scripts/abotypen/detail/vertriebsarten/vertriebsarten.controller.js"></script>
-  <script src="scripts/abotypen/detail/vertriebsarten/vertriebe.model.js"></script>
-  <script src="scripts/abotypen/detail/vertriebsarten/vertriebsarten.model.js"></script>
-  <script src="scripts/abotypen/detail/abotypendetail.model.js"></script>
-  <script src="scripts/abotypen/detail/abotypendetail.controller.js"></script>
-  <script src="scripts/abotypen/detail/lieferungen/lieferungen.controller.js"></script>
-  <script src="scripts/abotypen/detail/lieferungen/lieferungen.model.js"></script>
-  <script src="scripts/abotypen/detail/lieferungen/generate-lieferungen.controller.js"></script>
-
-  <script src="scripts/kundentypen/kundentypenlist.model.js"></script>
-  <script src="scripts/kundentypen/kundentypenlist.service.js"></script>
-
-  <script src="scripts/produktekategorie/produktekategorienlist.model.js"></script>
-  <script src="scripts/produktekategorie/produktekategorienlist.service.js"></script>
-
-  <script src="scripts/kunden/overview/kundenoverview.model.js"></script>
-  <script src="scripts/kunden/overview/kundenoverview.controller.js"></script>
-  <script src="scripts/kunden/detail/kundendetail.model.js"></script>
-  <script src="scripts/kunden/detail/pendenzdetail.model.js"></script>
-  <script src="scripts/kunden/detail/kundendetail.controller.js"></script>
-  <script src="scripts/kunden/detail/rechnungen/kundenrechnungen.model.js"></script>
-
-  <script src="scripts/produzenten/produzenten.model.js"></script>
-  <script src="scripts/produzenten/produzentenlist.service.js"></script>
-  <script src="scripts/produzenten/overview/produzentenoverview.controller.js"></script>
-  <script src="scripts/produzenten/detail/produzentendetail.model.js"></script>
-  <script src="scripts/produzenten/detail/produzentendetail.controller.js"></script>
-
-  <script src="scripts/produkte/produkte.model.js"></script>
-  <script src="scripts/produkte/produktelist.service.js"></script>
-  <script src="scripts/produkte/overview/produkteoverview.controller.js"></script>
-
-  <script src="scripts/depots/overview/depotsoverview.model.js"></script>
-  <script src="scripts/depots/overview/depotsoverview.controller.js"></script>
-  <script src="scripts/depots/detail/depotsdetail.model.js"></script>
-  <script src="scripts/depots/detail/depotsdetail.controller.js"></script>
-
-  <script src="scripts/touren/touren.model.js"></script>
-  <script src="scripts/touren/tourenlist.service.js"></script>
-  <script src="scripts/touren/overview/tourenoverview.controller.js"></script>
-  <script src="scripts/touren/detail/tourendetail.model.js"></script>
-  <script src="scripts/touren/detail/tourlieferungen.directive.js"></script>
-  <script src="scripts/touren/detail/tourendetail.controller.js"></script>
-
-  <script src="scripts/abos/overview/abosoverview.model.js"></script>
-  <script src="scripts/abos/overview/abosoverview.service.js"></script>
-  <script src="scripts/abos/overview/abosoverview.controller.js"></script>
-  <script src="scripts/abos/overview/abosoverviewcreaterechnungen.controller.js"></script>
-  <script src="scripts/abos/overview/abosoverviewcreaterechnungen.directive.js"></script>
-  <script src="scripts/abos/detail/abosdetail.model.js"></script>
-  <script src="scripts/abos/detail/abosdetail.controller.js"></script>
-  <script src="scripts/abos/detail/abosdetail.directive.js"></script>
-  <script src="scripts/abos/detail/abosdetail-guthaben-anpassen.controller.js"></script>
-  <script src="scripts/abos/detail/abosdetail-vertriebsart-anpassen.controller.js"></script>
-  <script src="scripts/abos/detail/abosnew.directive.js"></script>
-
-  <script src="scripts/abos/detail/abwesenheiten/abwesenheiten.directive.js"></script>
-  <script src="scripts/abos/detail/abwesenheiten/abwesenheiten.model.js"></script>
-
-  <script src="scripts/pendenzen/overview/pendenzenoverview.model.js"></script>
-  <script src="scripts/pendenzen/overview/pendenzenoverview.controller.js"></script>
-
-  <script src="scripts/lieferplanungen/overview/lieferplanungoverview.controller.js"></script>
-  <script src="scripts/lieferplanungen/detail/lieferplanung.controller.js"></script>
-  <script src="scripts/lieferplanungen/lieferplanung.model.js"></script>
-
-  <script src="scripts/auslieferungen/overview/auslieferungenoverview.controller.js"></script>
-  <script src="scripts/auslieferungen/depotauslieferungen.model.js"></script>
-  <script src="scripts/auslieferungen/tourauslieferungen.model.js"></script>
-  <script src="scripts/auslieferungen/postauslieferungen.model.js"></script>
-
-  <script src="scripts/rechnungen/overview/rechnungenoverview.model.js"></script>
-  <script src="scripts/rechnungen/overview/rechnungenoverview.controller.js"></script>
-  <script src="scripts/rechnungen/detail/rechnungendetail.model.js"></script>
-  <script src="scripts/rechnungen/detail/rechnungendetail.controller.js"></script>
-
-  <script src="scripts/zahlungsimports/overview/zahlungsimportsoverview.model.js"></script>
-  <script src="scripts/zahlungsimports/overview/zahlungsimportsoverview.controller.js"></script>
-  <script src="scripts/zahlungsimports/import/zahlungsimports.model.js"></script>
-  <script src="scripts/zahlungsimports/import/zahlungsimports.controller.js"></script>
-  <script src="scripts/zahlungsimports/import/zahlungseingaenge.model.js"></script>
-
-  <script src="scripts/projekt/projekt.model.js"></script>
-  <script src="scripts/projekt/projekt.service.js"></script>
-  <script src="scripts/projekt/settings/projektsettings.controller.js"></script>
-
   <script src="scripts/server/server.model.js"></script>
   <script src="scripts/server/server.service.js"></script>
 
   <script src="scripts/i18n/translations.js"></script>
+  
+  <script src="../.tmp/concat/scripts/views.js"></script>
   <!-- endbuild -->
 </body>
 

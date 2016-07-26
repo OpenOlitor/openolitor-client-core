@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openolitor').filter('ooPreisProEinheit', function(gettext) {
+angular.module('openolitor-core').filter('ooPreisProEinheit', function(gettext) {
   return function(value) {
     var result = '' +
       gettext(value.waehrung) + ' ' +

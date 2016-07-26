@@ -1,7 +1,10 @@
 {
-  "name": "openolitor",
+  "name": "openolitor-core",
   "version": "1.0.0",
   "private": false,
+  "main": [
+    "dist/scripts/openolitor-core.js"
+  ],
   "dependencies": {
     "angular": "~1.4.9",
     "angular-animate": "~1.4.9",

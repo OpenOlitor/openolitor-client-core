@@ -1,7 +1,7 @@
 'use strict';
 
 // based on the works of https://github.com/zhaber/angular-js-bootstrap-datetimepicker
-angular.module('openolitor')
+angular.module('openolitor-core')
   .directive('ooDatepickerPopup', function() {
     return {
       restrict: 'EAC',

@@ -23,7 +23,7 @@
   };
   checkAuth.$inject = ['$q', 'ooAuthService', '$rootScope', '$location', '$log'];
 
-  angular.module('openolitor').factory('ooAuthService', ['$http', '$location',
+  angular.module('openolitor-core').factory('ooAuthService', ['$http', '$location',
       '$q', '$cookies', '$log', 'API_URL',
       function($http, $location, $q, $cookies, $log, API_URL) {
         var user, token = $cookies.get('XSRF-TOKEN');

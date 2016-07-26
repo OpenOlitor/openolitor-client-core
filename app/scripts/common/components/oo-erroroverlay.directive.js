@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openolitor').directive('ooErrorOverlay', function() {
+angular.module('openolitor-core').directive('ooErrorOverlay', function() {
   return {
     restrict: 'AE',
     transclude: true,

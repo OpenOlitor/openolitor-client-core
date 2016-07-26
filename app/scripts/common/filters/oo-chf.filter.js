@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openolitor').filter('ooCHF', ['$filter', function($filter) {
+angular.module('openolitor-core').filter('ooCHF', ['$filter', function($filter) {
   return function(value, showTag) {
     var result = '';
     if(showTag) {

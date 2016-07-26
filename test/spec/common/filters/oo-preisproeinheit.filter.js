@@ -4,7 +4,7 @@ describe('Filter: ooPreisProEinheit', function() {
   var $filter;
 
   beforeEach(function() {
-    module('openolitor');
+    module('openolitor-core');
 
     inject(function(_$filter_) {
       $filter = _$filter_;

@@ -2,7 +2,7 @@
 
 /**
  */
-angular.module('openolitor')
+angular.module('openolitor-core')
   .controller('NgTableExportController', ['$scope', '$element', 'exportTable',
     function($scope, $element, exportTable) {
       $scope.showExport = false;

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openolitor').controller('ooDialogOkAbortModalInstanceCtrl', function ($scope, $uibModalInstance, message) {
+angular.module('openolitor-core').controller('ooDialogOkAbortModalInstanceCtrl', function ($scope, $uibModalInstance, message) {
 
   $scope.message = message;
 

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openolitor').directive('ooDropdown', function() {
+angular.module('openolitor-core').directive('ooDropdown', function() {
   return {
     restrict: 'E',
     replace: true,

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openolitor').directive('httpSrc', function($http) {
+angular.module('openolitor-core').directive('httpSrc', function($http) {
   return {
     restrict: 'A',
     link: function(_scope, _element, attrs) {

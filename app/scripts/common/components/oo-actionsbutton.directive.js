@@ -24,7 +24,7 @@
  *                           isHidden: function(model) // hide this action
  *                         }
  */
-angular.module('openolitor').directive('ooActionsButton', ['msgBus', 'gettext',
+angular.module('openolitor-core').directive('ooActionsButton', ['msgBus', 'gettext',
   'alertService', 'DataUtil',
   function(msgBus, gettext, alertService, DataUtil) {
     return {

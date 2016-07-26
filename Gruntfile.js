@@ -87,7 +87,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           flatten: true,
-          src: ['.tmp/concat/scripts/scripts.js'],
+          src: ['.tmp/concat/scripts/openolitor-core.js'],
           dest: '.tmp/concat/scripts'
         }]
       },
@@ -101,7 +101,7 @@ module.exports = function(grunt) {
           expand: true,
           flatten: true,
           src: [
-            '<%= openolitor.mandanten %>/mandant1/scripts/*.scripts.js'
+            '<%= openolitor.mandanten %>/mandant1/scripts/*.openolitor-core.js'
           ],
           dest: '<%= openolitor.mandanten %>/mandant1/scripts/'
         }]
@@ -116,7 +116,7 @@ module.exports = function(grunt) {
           expand: true,
           flatten: true,
           src: [
-            '<%= openolitor.mandanten %>/mandant2/scripts/*.scripts.js'
+            '<%= openolitor.mandanten %>/mandant2/scripts/*.openolitor-core.js'
           ],
           dest: '<%= openolitor.mandanten %>/mandant2/scripts/'
         }]
@@ -295,7 +295,6 @@ module.exports = function(grunt) {
       dist: {
         files: {
           src: [
-            '<%= openolitor.dist %>/scripts/**/*.js',
             '<%= openolitor.dist %>/styles/**/*.css',
             '<%= openolitor.dist %>/images/**/*.{png,jpg,jpeg,gif,webp,svg}',
             '<%= openolitor.dist %>/styles/fonts/*'
@@ -479,6 +478,18 @@ module.exports = function(grunt) {
       ]
     },
 
+    ngTemplateCache: {
+      views: {
+        files: {
+          './.tmp/concat/scripts/views.js': '<%= openolitor.app %>/scripts/**/*.html'
+        },
+        options: {
+          trim: '<%= openolitor.app %>/',
+          module: 'openolitor-core'
+        }
+      }
+    },
+
     // Test settings
     karma: {
       unit: {
@@ -635,6 +646,7 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'wiredep',
+    'ngTemplateCache',
     'useminPrepare',
     'concurrent:dist',
     'autoprefixer',
