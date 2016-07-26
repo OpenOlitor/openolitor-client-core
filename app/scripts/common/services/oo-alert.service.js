@@ -1,6 +1,6 @@
   'use strict';
 
-  angular.module('openolitor').factory('alertService', ['$injector', function($injector) {
+  angular.module('openolitor-core').factory('alertService', ['$injector', function($injector) {
 
     var $rootScope = $injector.get('$rootScope');
     var $timeout = $injector.get('$timeout');

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openolitor')
+angular.module('openolitor-core')
   .factory('FileUtil', function($document, $timeout, $http, API_URL) {
 
     var openFile = function(filename, arraybuffer, contentType, charset) {

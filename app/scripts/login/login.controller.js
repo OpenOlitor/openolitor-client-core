@@ -2,7 +2,7 @@
 
 /**
  */
-angular.module('openolitor')
+angular.module('openolitor-core')
   .controller('LoginController', ['$scope', '$rootScope', '$http',
     'API_URL', 'ENV', 'gettext',
     'alertService', '$timeout', '$location', '$route', '$routeParams', 'ooAuthService',

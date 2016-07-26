@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openolitor')
+angular.module('openolitor-core')
   .directive('ooCompareTo', function() {
     return {
       require: 'ngModel',

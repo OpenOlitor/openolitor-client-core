@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openolitor').directive('ooDeleteButton', ['msgBus', 'gettext',
+angular.module('openolitor-core').directive('ooDeleteButton', ['msgBus', 'gettext',
   'alertService', '$uibModal',
   function(msgBus, gettext, alertService, $uibModal) {
     return {
@@ -109,7 +109,7 @@ angular.module('openolitor').directive('ooDeleteButton', ['msgBus', 'gettext',
   }
 ]);
 
-angular.module('openolitor').controller('ooDeleteButtonModalInstanceCtrl', function ($scope, $uibModalInstance) {
+angular.module('openolitor-core').controller('ooDeleteButtonModalInstanceCtrl', function ($scope, $uibModalInstance) {
 
   $scope.ok = function () {
     $uibModalInstance.close();

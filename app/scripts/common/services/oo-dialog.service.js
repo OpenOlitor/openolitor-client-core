@@ -1,6 +1,6 @@
   'use strict';
 
-  angular.module('openolitor').factory('dialogService', ['$uibModal', function($uibModal) {
+  angular.module('openolitor-core').factory('dialogService', ['$uibModal', function($uibModal) {
 
     return {
       displayDialogOkAbort: function(msg, okFct) {

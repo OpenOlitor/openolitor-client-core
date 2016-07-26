@@ -2,7 +2,7 @@
 
 //Based on https://github.com/logicbomb/lvlDragDrop
 
-angular.module('openolitor').factory('uuid', function() {
+angular.module('openolitor-core').factory('uuid', function() {
     var svc = {
         new: function() {
             function _p8(s) {

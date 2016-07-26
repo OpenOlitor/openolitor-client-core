@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openolitor')
+angular.module('openolitor-core')
   .factory('DataUtil', function() {
     return {
       update: function(src, dest) {

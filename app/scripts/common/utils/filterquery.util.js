@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openolitor')
+angular.module('openolitor-core')
   .factory('FilterQueryUtil', function() {
     var regex = /(\w+?)\s*(<=|>=|!=|=|<|>)\s*(.+?)\s*(;| |$)/g;
     var dateRegex = /(\d{2})\.(\d{2})\.(\d{4})/g;

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openolitor').directive('ooGenerateReport', function() {
+angular.module('openolitor-core').directive('ooGenerateReport', function() {
   return {
     restrict: 'E',
     replace: true,

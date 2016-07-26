@@ -2,7 +2,7 @@
 
 //Based on https://github.com/logicbomb/lvlDragDrop
 
-angular.module('openolitor').directive('ooDraggable', ['$rootScope', 'uuid', function ($rootScope, uuid) {
+angular.module('openolitor-core').directive('ooDraggable', ['$rootScope', 'uuid', function ($rootScope, uuid) {
     return {
         restrict: 'A',
         scope: {
@@ -29,7 +29,7 @@ angular.module('openolitor').directive('ooDraggable', ['$rootScope', 'uuid', fun
     };
 }]);
 
-angular.module('openolitor').directive('ooDropTarget', ['$rootScope', 'uuid', function ($rootScope, uuid) {
+angular.module('openolitor-core').directive('ooDropTarget', ['$rootScope', 'uuid', function ($rootScope, uuid) {
     return {
         restrict: 'A',
         scope: {

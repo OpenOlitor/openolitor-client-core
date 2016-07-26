@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openolitor').directive('ooSaveButton', ['msgBus', 'gettext',
+angular.module('openolitor-core').directive('ooSaveButton', ['msgBus', 'gettext',
   'alertService', 'DataUtil',
   function(msgBus, gettext, alertService, DataUtil) {
     return {

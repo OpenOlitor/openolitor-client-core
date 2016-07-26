@@ -2,7 +2,7 @@
 
 /**
  */
-angular.module('openolitor')
+angular.module('openolitor-core')
   .factory('ServerService', ['$rootScope', 'ServerModel',
     function($rootScope, ServerModel) {
 

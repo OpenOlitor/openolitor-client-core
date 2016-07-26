@@ -2,7 +2,7 @@
 
 /**
  */
-angular.module('openolitor')
+angular.module('openolitor-core')
   .factory('KundentypenService', ['$rootScope', 'KundentypenModel', 'msgBus',
     function($rootScope, KundentypenModel, msgBus) {
 

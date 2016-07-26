@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openolitor')
+angular.module('openolitor-core')
   .factory('ooClientMessageService', ['$http', '$location', '$q', '$interval',
     '$rootScope', '$log',
     'msgBus', 'API_WS_URL', 'BUILD_NR', 'ooAuthService',
