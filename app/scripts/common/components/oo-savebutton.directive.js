@@ -1,6 +1,7 @@
 'use strict';
 
-angular.module('openolitor-core').directive('ooSaveButton', ['msgBus', 'gettext',
+angular.module('openolitor-core').directive('ooSaveButton', ['msgBus',
+  'gettext',
   'alertService', 'DataUtil',
   function(msgBus, gettext, alertService, DataUtil) {
     return {
@@ -40,17 +41,12 @@ angular.module('openolitor-core').directive('ooSaveButton', ['msgBus', 'gettext'
         };
 
         msgBus.onMsg('EntityModified', $scope, function(event, msg) {
-          if (entityMatches(msg.entity) && !angular.isUndefined($scope.model) && msg.data.id === $scope.model
+          if (entityMatches(msg.entity) && !angular.isUndefined(
+              $scope.model) && msg.data.id === $scope.model
             .id) {
-            if ($scope.model.actionInProgress !== 'updating') {
-              alertService.addAlert('info', $scope.entity + gettext(
-                ' wurde durch eine andere Person geändert. Bitte laden Sie die Ansicht neu.'
-              ));
-            } else {
-              DataUtil.update(msg.data, $scope.model);
-              $scope.model.actionInProgress = undefined;
-              $scope.$apply();
-            }
+            DataUtil.update(msg.data, $scope.model);
+            $scope.model.actionInProgress = undefined;
+            $scope.$apply();
           }
         });
 
@@ -69,7 +65,7 @@ angular.module('openolitor-core').directive('ooSaveButton', ['msgBus', 'gettext'
         $scope.save = function() {
           $scope.model.actionInProgress = 'updating';
           var ret = $scope.onSave($scope.model);
-          if(!angular.isUndefined(ret.catch)) {
+          if (!angular.isUndefined(ret.catch)) {
             ret.catch(function(req) {
               $scope.model.actionInProgress = undefined;
               alertService.addAlert('error', gettext($scope.entity +
