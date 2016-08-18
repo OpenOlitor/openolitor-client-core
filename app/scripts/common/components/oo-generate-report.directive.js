@@ -9,12 +9,14 @@ angular.module('openolitor-core').directive('ooGenerateReport', function() {
       onGenerated: '&',
       onClose: '&',
       defaultFileName: '=',
-      ids: '=?'
+      ids: '=?',
+      projektVorlagen: '=?'
     },
     templateUrl: 'scripts/common/components/oo-generate-report.directive.html',
     controller: function($scope, $http, API_URL, FileUtil, gettext) {
       $scope.form = {
         vorlage: undefined,
+        projektVorlageId: undefined,
         pdfGenerieren: true,
         pdfAblegen: false,
         pdfDownloaden: true
@@ -69,6 +71,12 @@ angular.module('openolitor-core').directive('ooGenerateReport', function() {
 
       $scope.selectStandardVorlage = function() {
         $scope.form.vorlage = undefined;
+      };
+
+      $scope.selectProjektVorlage = function(vorlage) {
+        $scope.form.projektVorlageId = vorlage.id;
+        $scope.form.vorlage = undefined;
+        $scope.projektVorlage = vorlage;
       };
 
       $scope.selectFile = function(file) {
