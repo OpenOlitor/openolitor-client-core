@@ -365,6 +365,12 @@ angular
         name: 'Forbidden',
         access: userRoles.Guest
       })
+      .when('/zugangaktivieren', {
+        templateUrl: 'scripts/login/zugangaktivieren.html',
+        controller: 'LoginController',
+        name: 'Einladung',
+        access: userRoles.Guest
+      })
       .otherwise({
         templateUrl: 'scripts/not-found.html',
         access: userRoles.Guest

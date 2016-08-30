@@ -15,6 +15,11 @@ angular.module('openolitor-core')
         alt: undefined,
         neuConfirmed: undefined
       };
+      $scope.initPassword = {
+        neu: undefined,
+        neuConfirmed: undefined,
+        token: undefined
+      };
       $scope.status = 'login';
       $scope.env = ENV;
 
@@ -55,8 +60,7 @@ angular.module('openolitor-core')
             $scope.status = 'login';
             if (msg && msg !== '') {
               $location.path('/login').search('msg', msg);
-            }
-            else {
+            } else {
               $location.path('/login');
             }
           }, 1000);
@@ -72,6 +76,17 @@ angular.module('openolitor-core')
         doLogout(false, gettext(
           'Passwort wurde erfolgreich geändert, Sie wurden automatisch ausgelogged. Bitte loggen Sie sich mit dem neuen Passwort erneut an.'
         ));
+      };
+
+      var showPasswordSetMessage = function() {
+        //show welcome message
+        alertService.addAlert('info', gettext(
+          'Das Passwort wurde erfolgreich gesetzt. Sie können sich nun anmelden.'
+        ));
+
+        $timeout(function() {
+          $location.path('/login');
+        }, 1000);
       };
 
       var logout = $route.current.$$route.logout;
@@ -127,6 +142,19 @@ angular.module('openolitor-core')
               showPasswordChangedMessage();
             }, function(error) {
               $scope.changePwd.message = gettext(error.data);
+            });
+        }
+      };
+
+      $scope.setPassword = function() {
+        if ($scope.setPasswordForm.$valid) {
+          $scope.initPassword.token = $routeParams.token;
+          $http.post(API_URL + 'auth/zugangaktivieren', $scope.initPassword)
+            .then(function() {
+              $scope.initPassword.message = undefined;
+              showPasswordSetMessage();
+            }, function(error) {
+              $scope.initPassword.message = gettext(error.data);
             });
         }
       };

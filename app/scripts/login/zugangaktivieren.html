@@ -1,0 +1,42 @@
+<div class="row">
+  <div oo-error-overlay></div>
+  <div class="container">
+    <div class="jumbotron">
+      <h3 translate>Passwort setzen und Zugang aktivieren</h3>
+      <p>
+        <div class="container">
+          <div class="alert alert-danger" role="alert" ng-if="initPassword.message">{{initPassword.message}}</div>
+          <form class="form-signin" name="setPasswordForm">
+            <div class="form-group">
+              <input type="password" name="newPassword" class="form-control" placeholder="{{'Passwort' | translate}}" required="true" ng-model="initPassword.neu" ng-minlength="6" ng-maxlength="50" ng-pattern="/(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z])/">
+              <div ng-show="setPasswordForm.newPassword.$dirty && setPasswordForm.newPassword.$invalid" ng-messages="setPasswordForm.newPassword.$error">
+                <div class="messages">
+                  <div ng-message="required" translate>Eingabe erforderlich</div>
+                  <div ng-message="minlength" translate>Das Passwort muss aus mindestens 6 Zeichen bestehen</div>
+                  <div ng-message="pattern" translate>Das Passwort muss mindestens einen Gross- und Kleinbuchstaben, sowie einen numerischen Wert oder ein Symbol enthalten</div>
+                  <div ng-message="ooCompareTo" translate>Passworteingabe stimmt nicht übereint</div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="passwortStrength" translate>Passwortstärke</label>
+              <div ng-password-strength="initPassword.neu" css-mode="bootstrap" strength="[0-100]" inner-class="progress-bar" inner-class-prefix="progress-bar-"> </div>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" name="confirmPassword" placeholder="{{'Passwort wiederholen' | translate}}" required="true" ng-model="initPassword.neuConfirmed" oo-compare-to="initPassword.neu">
+              <div ng-show="setPasswordForm.confirmPassword.$dirty && setPasswordForm.confirmPassword.$invalid" ng-messages="setPasswordForm.confirmPassword.$error">
+                <div class="messages">
+                  <div ng-message="required" translate>Eingabe erforderlich</div>
+                  <div ng-message="ooCompareTo" translate>Passworteingabe stimmt nicht übereint</div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <button ng-disabled="setPasswordForm.$invalid || env === 'test'" class="btn btn-lg btn-primary" type="submit" ng-click="setPassword()" translate>Passwort setzen</button>
+            </div>
+          </form>
+        </div>
+      </p>
+    </div>
+  </div>
+</div>
