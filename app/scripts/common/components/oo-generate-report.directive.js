@@ -69,14 +69,22 @@ angular.module('openolitor-core').directive('ooGenerateReport', function() {
         generateWithFormData(fd);
       };
 
+      $scope.selectDatenExtrakt = function() {
+        $scope.form.vorlage = undefined;
+        $scope.form.datenExtrakt = true;
+        $scope.form.projektVorlageId = undefined;
+      };
+
       $scope.selectStandardVorlage = function() {
         $scope.form.vorlage = undefined;
+        $scope.form.datenExtrakt = false;
       };
 
       $scope.selectProjektVorlage = function(vorlage) {
         $scope.form.projektVorlageId = vorlage.id;
         $scope.form.vorlage = undefined;
         $scope.projektVorlage = vorlage;
+        $scope.form.datenExtrakt = false;
       };
 
       $scope.selectFile = function(file) {
