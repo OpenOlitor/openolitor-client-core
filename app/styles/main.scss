@@ -210,6 +210,11 @@ input.ng-invalid {
   text-align: left;
 }
 
+.ng-table-export {
+  float: right;
+  margin-right: 10px;
+}
+
 .openolitor .ng-table-filters select,
 .openolitor .ng-table th.filter .input-filter{
   padding: 3px 6px;
