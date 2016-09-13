@@ -3,18 +3,20 @@
 /**
  */
 angular.module('openolitor-core')
-  .controller('NgTableExportController', ['$scope', '$element', 'exportTable',
-    function($scope, $element, exportTable) {
+  .controller('NgTableExportController', ['$scope', '$element', 'exportTable', 'FileSaver',
+    function($scope, $element, exportTable, FileSaver) {
       $scope.showExport = false;
       var fileName = 'Export';
-      var idToExport = '';
       if(angular.isDefined($element.parent().parent().parent().parent())) {
-        idToExport = $element.parent().parent().parent().parent().attr('id');
         fileName = $element.parent().parent().parent().parent().attr('export-file-name');
         $scope.showExport = $element.parent().parent().parent().parent().attr('display-export');
       }
       $scope.exportData = function() {
-        exportTable($element.parent().parent().parent().parent(), fileName + '.xlsx');
+        $element.parent().parent().parent().scope().params.settings().exportODSModel.exportODS({
+          q: $element.parent().parent().parent().scope().query
+        }, function(file) {
+          FileSaver.saveAs(file.response, fileName + '.ods');
+        });
       };
 
     }
