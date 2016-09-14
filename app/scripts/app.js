@@ -378,6 +378,12 @@ angular
         name: 'Einladung',
         access: userRoles.Guest
       })
+      .when('/passwordreset', {
+        templateUrl: 'scripts/login/passwordreset.html',
+        controller: 'LoginController',
+        name: 'PasswordReset',
+        access: userRoles.Guest
+      })
       .otherwise({
         templateUrl: 'scripts/not-found.html',
         access: userRoles.Guest

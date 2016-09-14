@@ -20,7 +20,7 @@
             </div>
             <div class="form-group">
               <label for="passwortStrength" translate>Passwortstärke</label>
-              <div ng-password-strength="initPassword.neu" css-mode="bootstrap" strength="[0-100]" inner-class="progress-bar" inner-class-prefix="progress-bar-"> </div>
+              <div ng-password-strength="initPassword.neu" css-mode="bootstrap" strength="passStrength" inner-class="progress-bar" inner-class-prefix="progress-bar-"> </div>
             </div>
             <div class="form-group">
               <input type="password" class="form-control" name="confirmPassword" placeholder="{{'Passwort wiederholen' | translate}}" required="true" ng-model="initPassword.neuConfirmed" oo-compare-to="initPassword.neu">
