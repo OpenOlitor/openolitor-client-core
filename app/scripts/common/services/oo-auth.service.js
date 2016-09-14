@@ -96,7 +96,8 @@
             return resolveUser().then(function(user) {
               $log.debug('authorize:', accessLevel + ' => ' + user.rolle);
               return accessLevel === undefined || accessLevel ===
-                userRoles.Guest || accessLevel === user.rolle;
+                userRoles.Guest || accessLevel === user.rolle ||
+                Array.isArray(accessLevel) && (accessLevel.includes(userRoles.Guest) || accessLevel.includes(user.rolle));
             });
           },
           isLoggedIn: function() {
