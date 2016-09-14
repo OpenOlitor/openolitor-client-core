@@ -7,7 +7,8 @@ var regexIso8601 =
 
 var userRoles = {
   Guest: 'Guest',
-  Administrator: 'Administrator'
+  Administrator: 'Administrator',
+  Kunde: 'Kunde'
 };
 
 function convertDateStringsToDates(input) {
@@ -357,14 +358,14 @@ angular
         templateUrl: 'scripts/login/change_password.html',
         controller: 'LoginController',
         name: 'Passwortwechsel',
-        access: userRoles.Administrator
+        access: [userRoles.Administrator, userRoles.Kunde]
       })
       .when('/logout', {
         templateUrl: 'scripts/login/logout.html',
         controller: 'LoginController',
         logout: true,
         name: 'Logout',
-        access: userRoles.Administrator
+        access: [userRoles.Administrator, userRoles.Kunde]
       })
       .when('/forbidden', {
         templateUrl: 'scripts/login/forbidden.html',
@@ -376,6 +377,12 @@ angular
         templateUrl: 'scripts/login/zugangaktivieren.html',
         controller: 'LoginController',
         name: 'Einladung',
+        access: userRoles.Guest
+      })
+      .when('/passwordreset', {
+        templateUrl: 'scripts/login/passwordreset.html',
+        controller: 'LoginController',
+        name: 'PasswordReset',
         access: userRoles.Guest
       })
       .otherwise({
