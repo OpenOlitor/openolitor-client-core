@@ -6,16 +6,31 @@
         <small ng-if="env === 'test'">- Testumgebung</small>
         <small ng-if="env === 'dev'" class="">- Entwicklungsumgebung</small>
       </h1>
-      <p translate>Für den Zugriff auf die Administrationsumgebung ist eine Anmeldung erforderlich</p>
-      <div class="alert alert-info" ng-if="env === 'test' || env === 'dev'" translate>
-        Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen an der Administrationsumgebung anmelden:
-        <br /><br />
-        <ul>
-          <li>Email: <b>admin@openolitor.ch</b></li>
-          <li>Passwort: <b>admin</b></li>
-        </ul>
-        <br /> Die Daten in diesem System werden sporadisch auf die Standardwerte zurückgesetzt.
-      </div>
+      <span ng-if="appName === 'openolitor-admin'">
+        <p translate>Für den Zugriff auf die Administrationsumgebung ist eine Anmeldung erforderlich</p>
+        <div class="alert alert-info" ng-if="env === 'test' || env === 'dev'" translate>
+          Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen an der Administrationsumgebung anmelden:
+          <br /><br />
+          <ul>
+            <li>Email: <b>admin@openolitor.ch</b></li>
+            <li>Passwort: <b>admin</b></li>
+          </ul>
+          <br /> Die Daten in diesem System werden sporadisch auf die Standardwerte zurückgesetzt.
+        </div>
+      </span>
+      <span ng-if="appName !== 'openolitor-admin'">
+        <p translate>Für den Zugriff auf OpenOlitor ist eine Anmeldung erforderlich</p>
+        <div class="alert alert-info" ng-if="env === 'test' || env === 'dev'" translate>
+          Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen als Konsument anmelden:
+          <br /><br />
+          <ul>
+            <li>Email: <b>konsument@openolitor.ch</b></li>
+            <li>Passwort: <b>zugang</b></li>
+          </ul>
+          <br /> Für den Zugang auf die Administrationsumgebung von OpenOlitor, bitte den Link unten rechts verwenden.
+          <br /> Die Daten in diesem System werden sporadisch auf die Standardwerte zurückgesetzt.
+        </div>
+      </span>
       <p>
         <div class="container" ng-show="status === 'login'">
           <div class="alert alert-danger" role="alert" ng-if="loginData.message">{{loginData.message}}</div>
@@ -33,6 +48,7 @@
               <a ng-href="#/passwordreset" translate>Passwort vergessen?</a>
             </div>
           </form>
+          <div class="pull-right" ng-if="appName === 'openolitor-admin'"><a class="btn btn-xs btn-default" href="/admin/#" tooltip-placement="left" tooltip-enable="(env === 'test' || env === 'dev')" tooltip-is-open="true" uib-tooltip-html="'Für das Testen der Administrationsumgebung, bitte hier klicken!' | translate" translate>Login Administration</a></div>
         </div>
 
         <div class="container" ng-show="status === 'twoFactor'">

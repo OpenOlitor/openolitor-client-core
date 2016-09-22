@@ -4,10 +4,10 @@
  */
 angular.module('openolitor-core')
   .controller('LoginController', ['$scope', '$rootScope', '$http',
-    'API_URL', 'ENV', 'gettext',
+    'API_URL', 'ENV', 'gettext', '$rootElement',
     'alertService', '$timeout', '$location', '$route', '$routeParams', 'ooAuthService',
-    function($scope, $rootScope, $http, API_URL, ENV, gettext, alertService, $timeout,
-      $location, $route, $routeParams, ooAuthService) {
+    function($scope, $rootScope, $http, API_URL, ENV, gettext, $rootElement,
+      alertService, $timeout, $location, $route, $routeParams, ooAuthService) {
       $scope.loginData = {};
       $scope.resetPasswordData = {};
       $scope.secondFactorData = {};
@@ -46,6 +46,8 @@ angular.module('openolitor-core')
           usr.vorname + ' ' +
           usr.name);
       };
+
+      $scope.appName = $rootElement.attr('ng-app');
 
       var doLogout = function(showMessage, msg) {
         var usr = ooAuthService.getUser();
