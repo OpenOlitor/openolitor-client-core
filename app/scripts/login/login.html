@@ -48,7 +48,7 @@
               <a ng-href="#/passwordreset" translate>Passwort vergessen?</a>
             </div>
           </form>
-          <div class="pull-right" ng-if="appName === 'openolitor-admin'"><a class="btn btn-xs btn-default" href="/admin/#" tooltip-placement="left" tooltip-enable="(env === 'test' || env === 'dev')" tooltip-is-open="true" uib-tooltip-html="'Für das Testen der Administrationsumgebung, bitte hier klicken!' | translate" translate>Login Administration</a></div>
+          <div class="pull-right" ng-if="appName !== 'openolitor-admin'"><a class="btn btn-xs btn-default" href="/admin/#" tooltip-placement="left" tooltip-enable="(env === 'test' || env === 'dev')" tooltip-is-open="true" uib-tooltip-html="'Für das Testen der Administrationsumgebung, bitte hier klicken!' | translate" translate>Login Administration</a></div>
         </div>
 
         <div class="container" ng-show="status === 'twoFactor'">
