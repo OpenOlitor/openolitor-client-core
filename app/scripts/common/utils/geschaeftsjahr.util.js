@@ -13,8 +13,8 @@ angular.module('openolitor-core')
         if(angular.isUndefined) {
           date = new Date();
         }
-        var geschaftsjahrInJahr = new Date(date.year.get, monat, tag, 0, 0, 0, 0);
-        if(date.isBefore(geschaftsjahrInJahr)) {
+        var geschaftsjahrInJahr = new Date(date.getFullYear(), monat, tag, 0, 0, 0, 0);
+        if(date < geschaftsjahrInJahr) {
             //Wir sind noch im "alten" Geschäftsjahr
             return geschaftsjahrInJahr.minusYears(1);
         } else {
@@ -80,7 +80,7 @@ angular.module('openolitor-core')
       return new Geschaeftsjahr(projekt.geschaeftsjahrMonat, projekt.geschaeftsjahrTag).isInOrLater(date);
     };
 
-    var getMatchingGJItem = function(array, date) {
+    var getMatchingGJItem = function(array, projekt, date) {
       if(angular.isUndefined(date)) {
         date = new Date();
       }
@@ -92,8 +92,19 @@ angular.module('openolitor-core')
           if(gj.isIn(date)) {
             matchingElement = value;
           }
+        } else {
+          var gj2 = new Geschaeftsjahr(1, 1, value.key);
+          if(gj2.isIn(date)) {
+            matchingElement = value;
+          }
         }
       });
+      if(angular.isUndefined(matchingElement) && !angular.isUndefined(projekt)) {
+        matchingElement = {
+          key: new Geschaeftsjahr(projekt.geschaeftsjahrMonat, projekt.geschaeftsjahrTag).key(date),
+          value: 0
+        };
+      }
       return matchingElement;
     };
 
