@@ -34,9 +34,9 @@ angular.module('openolitor-core')
         }
         var startDate = this.start(date);
         if (monat === 1 && tag === 1) {
-          return startDate.year.getAsText;
+          return startDate.getFullYear();
         } else {
-          return startDate.getMonthOfYear + '/' + startDate.getYear;
+          return (startDate.getMonth() + 1) + '/' + startDate.getFullYear;
         }
       };
 
