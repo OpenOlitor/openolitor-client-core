@@ -36,7 +36,7 @@ angular.module('openolitor-core').directive('ooActionsButton', ['msgBus', 'gette
         model: '=',
         actions: '=',
         form: '=',
-        reduced: '@?',
+        condensed: '@?',
         small: '@?',
         onCreated: '='
       },
@@ -44,7 +44,7 @@ angular.module('openolitor-core').directive('ooActionsButton', ['msgBus', 'gette
       templateUrl: 'scripts/common/components/oo-actionsbutton.directive.html',
       controller: function($scope) {
 
-        if (!angular.isUndefined($scope.reduced) && $scope.reduced) {
+        if (!angular.isUndefined($scope.condensed) && $scope.condensed) {
           $scope.notext = true;
           $scope.small = true;
         }
