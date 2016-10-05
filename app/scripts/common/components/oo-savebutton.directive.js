@@ -15,7 +15,7 @@ angular.module('openolitor-core').directive('ooSaveButton', ['msgBus',
         onCancel: '=',
         form: '=',
         onCreated: '=',
-        reduced: '@?',
+        condensed: '@?',
         notext: '@?',
         small: '@?'
       },
@@ -23,7 +23,7 @@ angular.module('openolitor-core').directive('ooSaveButton', ['msgBus',
       templateUrl: 'scripts/common/components/oo-savebutton.directive.html',
       controller: function($scope) {
 
-        if (!angular.isUndefined($scope.reduced) && $scope.reduced) {
+        if (!angular.isUndefined($scope.condensed) && $scope.condensed) {
           $scope.notext = true;
           $scope.small = true;
         }

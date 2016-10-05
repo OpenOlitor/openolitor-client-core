@@ -15,7 +15,7 @@ angular.module('openolitor-core').directive('ooDeleteButton', ['msgBus', 'gettex
         onDeleted: '=',
         confirm: '@?',
         confirmMessage: '=?',
-        reduced: '@?',
+        condensed: '@?',
         notext: '@?',
         small: '@?',
         buttonClass: '@?'
@@ -24,7 +24,7 @@ angular.module('openolitor-core').directive('ooDeleteButton', ['msgBus', 'gettex
       templateUrl: 'scripts/common/components/oo-deletebutton.directive.html',
       controller: function($scope) {
 
-        if(!angular.isUndefined($scope.reduced) && $scope.reduced) {
+        if(!angular.isUndefined($scope.condensed) && $scope.condensed) {
           $scope.notext = true;
           $scope.small = true;
         }
@@ -91,7 +91,7 @@ angular.module('openolitor-core').directive('ooDeleteButton', ['msgBus', 'gettex
         $scope.deleteAction = function() {
           $scope.model.actionInProgress = 'deleting';
           var ret = $scope.onDelete($scope.model);
-          if(!angular.isUndefined(ret.catch)) {
+          if(ret && !angular.isUndefined(ret.catch)) {
             ret.catch(function(req) {
               $scope.model.actionInProgress = undefined;
               alertService.addAlert('error', gettext($scope.entity +
