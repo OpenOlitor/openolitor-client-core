@@ -10,52 +10,10 @@ module.exports = function(grunt) {
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
 
-  //TODO Mandantenfähigkeit fehlt (siehe var config = ...)
-  var API_URL_CONFIG = {
-    'dev': {
-      'm1': 'http://localhost:9003/m1/',
-      'm2': 'http://localhost:9003/m2/'
-    },
-    'test': {
-      'm1': 'https://test.openolitor.ch/m1/'
-    },
-    'prod-soliterre': {
-      'm1': 'https://prod.openolitor.ch/soliterre/'
-    },
-    'prod-bioabi': {
-      'm1': 'https://prod.openolitor.ch/bioabi/'
-    }
-  };
-  var env = 'dev';
+  var env = 'dist';
   if (grunt.option('env') !== null && grunt.option('env') !== undefined) {
     env = grunt.option('env');
   }
-
-  // text replace in js files used for environment specific configurations
-  var config = {
-    'API_URL': API_URL_CONFIG[env].m1 || 'http://localhost:9003/m1/', //replace @@API_URL with value
-    'API_WS_URL': API_URL_CONFIG[env].m1 + 'ws' ||
-      'http://localhost:9003/m1/ws', //replace @@API_WS_URL with value
-    'BUILD_NR': grunt.option('buildnr') || 'dev',
-    'ENV': env
-  };
-
-  var mandantenConfig = {
-    mandant1: {
-      'API_URL': API_URL_CONFIG[env].m1 || 'http://localhost:9003/m1/', //replace @@API_URL with value
-      'API_WS_URL': API_URL_CONFIG[env].m1 + 'ws' ||
-        'http://localhost:9003/m1/ws', //replace @@API_WS_URL with value
-      'BUILD_NR': grunt.option('buildnr') || 'dev',
-      'ENV': env
-    },
-    mandant2: {
-      'API_URL': API_URL_CONFIG[env].m2 || 'http://localhost:9003/m2/', //replace @@API_URL with value
-      'API_WS_URL': API_URL_CONFIG[env].m2 + 'ws' ||
-        'http://localhost:9003/m2/ws', //replace @@API_WS_URL with value
-      'BUILD_NR': grunt.option('buildnr') || 'dev',
-      'ENV': env
-    }
-  };
 
   // Define the configuration for all the tasks
   grunt.initConfig({
@@ -64,63 +22,12 @@ module.exports = function(grunt) {
     openolitor: {
       // configurable paths
       app: require('./bower.json').appPath || 'app',
-      dist: 'dist',
-      mandanten: 'mandanten'
+      dist: 'dist'
     },
 
     // task used to replace config values in js files
     replace: {
-      options: {
-        patterns: [{
-          json: config
-        }]
-      },
-      dev: {
-        files: [{
-          expand: true,
-          flatten: true,
-          src: ['<%= openolitor.app %>/scripts/app.js'],
-          dest: '.tmp/scripts'
-        }]
-      },
-      prod: {
-        files: [{
-          expand: true,
-          flatten: true,
-          src: ['.tmp/concat/scripts/openolitor-core.js'],
-          dest: '.tmp/concat/scripts'
-        }]
-      },
-      mandant1: {
-        options: {
-          patterns: [{
-            json: mandantenConfig.mandant1
-          }]
-        },
-        files: [{
-          expand: true,
-          flatten: true,
-          src: [
-            '<%= openolitor.mandanten %>/mandant1/scripts/*.openolitor-core.js'
-          ],
-          dest: '<%= openolitor.mandanten %>/mandant1/scripts/'
-        }]
-      },
-      mandant2: {
-        options: {
-          patterns: [{
-            json: mandantenConfig.mandant2
-          }]
-        },
-        files: [{
-          expand: true,
-          flatten: true,
-          src: [
-            '<%= openolitor.mandanten %>/mandant2/scripts/*.openolitor-core.js'
-          ],
-          dest: '<%= openolitor.mandanten %>/mandant2/scripts/'
-        }]
-      }
+
     },
 
     // Watches files for changes and runs tasks based on the changed files
@@ -131,7 +38,7 @@ module.exports = function(grunt) {
       },
       js: {
         files: ['<%= openolitor.app %>/scripts/**/*.js'],
-        tasks: ['newer:jshint:all', 'replace:dev'],
+        tasks: ['newer:jshint:all'],
         options: {
           livereload: '<%= connect.options.livereload %>'
         }
@@ -222,7 +129,6 @@ module.exports = function(grunt) {
             '.tmp',
             '<%= openolitor.dist %>/*',
             '!<%= openolitor.dist %>/.git*',
-            '<%= openolitor.mandanten %>',
             '!<%= openolitor.dist %>/index.php'
           ]
         }]
@@ -448,18 +354,6 @@ module.exports = function(grunt) {
         cwd: '<%= openolitor.app %>/styles',
         dest: '.tmp/styles/',
         src: '**/*.css'
-      },
-      mandant1: {
-        expand: true,
-        cwd: '<%= openolitor.dist %>',
-        src: '**',
-        dest: '<%= openolitor.mandanten %>/mandant1'
-      },
-      mandant2: {
-        expand: true,
-        cwd: '<%= openolitor.dist %>',
-        src: '**',
-        dest: '<%= openolitor.mandanten %>/mandant2'
       }
     },
 
@@ -581,18 +475,7 @@ module.exports = function(grunt) {
           src: ['**/*'],
           dest: '/'
         }]
-      },
-      mandanten: {
-        options: {
-          archive: 'mandanten/openolitor-client-mandanten.zip'
-        },
-        files: [{
-          expand: true,
-          cwd: 'mandanten/',
-          src: ['**/*'],
-          dest: '/'
-        }]
-      },
+      }
     }
   });
 
@@ -607,7 +490,6 @@ module.exports = function(grunt) {
       'concurrent:server',
       'autoprefixer',
       'connect:livereload',
-      'replace:dev',
       'watch'
     ]);
   });
@@ -651,7 +533,6 @@ module.exports = function(grunt) {
     'concurrent:dist',
     'autoprefixer',
     'concat',
-    'replace:prod',
     'ngAnnotate',
     'copy:dist',
     'cdnify',
@@ -660,12 +541,7 @@ module.exports = function(grunt) {
     'rev',
     'usemin',
     'htmlmin',
-    'copy:mandant1',
-    'copy:mandant2',
-    'replace:mandant1',
-    'replace:mandant2',
-    'compress:main',
-    'compress:mandanten'
+    'compress:main'
   ]);
 
   grunt.registerTask('i18nextract', ['nggettext_extract']);
