@@ -91,27 +91,27 @@ angular.module('openolitor-core').directive('ooActionsButton', ['msgBus', 'gette
           }
         });
 
+        var errorMessage = function(action, entity, status, statusText, errorData) {
+          var actionText = gettext(action.label || action.labelFunction());
+          var errorText = gettext(errorData.message);
+          var entityText = entity && gettext($scope.entity) + ': ';
+          alertService.addAlert('error',
+            entityText +
+            gettext('Aktion') + ' "' +
+            actionText + '" ' +
+            gettext('konnte nicht ausgeführt werden. Fehler:') + ' ' +
+            status + '-' + gettext(statusText) + ': ' +
+            errorText
+          );
+        };
+
         $scope.executeAction = function(action) {
           $scope.model.actionInProgress = 'updating';
           var result = action.onExecute($scope.model);
           if (result && result.catch) {
             result.catch(function(req) {
               $scope.model.actionInProgress = undefined;
-              if ($scope.entity) {
-                alertService.addAlert('error', gettext(
-                    'Aktion ' + action.label + ' für ' + $scope.entity +
-                    ' konnte nicht ausgeführt werden. Fehler: ') +
-                  req.status +
-                  '-' + req.statusText + ':' + req.data
-                );
-              } else {
-                alertService.addAlert('error', gettext(
-                    'Aktion ' + action.label +
-                    ' konnte nicht ausgeführt werden. Fehler: ') +
-                  req.status +
-                  '-' + req.statusText + ':' + req.data
-                );
-              }
+              errorMessage(action, $scope.entity, req.status, req.statusText, req.data);
             });
           } else {
             $scope.model.actionInProgress = undefined;
