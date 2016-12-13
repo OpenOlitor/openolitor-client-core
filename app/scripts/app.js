@@ -81,7 +81,8 @@ angular
     'angularMoment',
     'ngFileUpload',
     'ngLodash',
-    'angular-sortable-view'
+    'angular-sortable-view',
+    'angular-loading-bar'
   ])
   .constant('API_URL', '@@API_URL')
   .constant('API_WS_URL', '@@API_WS_URL')
@@ -346,6 +347,9 @@ angular
       return filtered;
     };
   })
+  .config(['cfpLoadingBarProvider', function(cfpLoadingBarProvider) {
+    cfpLoadingBarProvider.includeSpinner = false;
+  }])
   .config(function($routeProvider) {
     $routeProvider
       .when('/login', {
