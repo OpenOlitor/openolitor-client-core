@@ -97,7 +97,7 @@
               $log.debug('authorize:', accessLevel + ' => ' + user.rolle);
               return accessLevel === undefined || accessLevel ===
                 userRoles.Guest || accessLevel === user.rolle ||
-                Array.isArray(accessLevel) && (accessLevel.includes(userRoles.Guest) || accessLevel.includes(user.rolle));
+                Array.isArray(accessLevel) && (accessLevel.indexOf(userRoles.Guest) > -1 || accessLevel.indexOf(user.rolle) > -1);
             });
           },
           isLoggedIn: function() {
