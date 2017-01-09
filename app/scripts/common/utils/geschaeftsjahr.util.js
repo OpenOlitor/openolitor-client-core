@@ -16,7 +16,8 @@ angular.module('openolitor-core')
         var geschaftsjahrInJahr = new Date(date.getFullYear(), monat, tag, 0, 0, 0, 0);
         if(date < geschaftsjahrInJahr) {
             //Wir sind noch im "alten" Geschäftsjahr
-            return geschaftsjahrInJahr.minusYears(1);
+            geschaftsjahrInJahr.setFullYear(geschaftsjahrInJahr.getFullYear() - 1);
+            return geschaftsjahrInJahr;
         } else {
             //Wir sind bereits im neuen Geschäftsjahr
             return geschaftsjahrInJahr;
