@@ -5,9 +5,9 @@
 angular.module('openolitor-core')
   .controller('LoginController', ['$scope', '$rootScope', '$http',
     'API_URL', 'ENV', 'gettext', '$rootElement',
-    'alertService', '$timeout', '$location', '$route', '$routeParams', 'ooAuthService',
+    'alertService', '$timeout', '$location', '$route', '$routeParams', 'ooAuthService', '$interval',
     function($scope, $rootScope, $http, API_URL, ENV, gettext, $rootElement,
-      alertService, $timeout, $location, $route, $routeParams, ooAuthService) {
+      alertService, $timeout, $location, $route, $routeParams, ooAuthService, $interval) {
       $scope.loginData = {};
       $scope.resetPasswordData = {};
       $scope.secondFactorData = {};
@@ -23,6 +23,10 @@ angular.module('openolitor-core')
       };
       $scope.status = 'login';
       $scope.env = ENV;
+      $scope.secondFactorCountdown = 600;
+      $scope.secondFactorCountdownDate = function() {
+        return moment().add($scope.secondFactorCountdown, 'seconds');
+      };
 
       $scope.originalTgState = $rootScope.tgState;
       $rootScope.tgState = false;
@@ -123,6 +127,14 @@ angular.module('openolitor-core')
                 $scope.status = 'twoFactor';
                 $scope.person = result.data.person;
                 $scope.secondFactorData.token = result.data.token;
+
+                $scope.cancelSecondFactorTimer = $interval(function() {
+                  $scope.secondFactorCountdown--;
+                  if($scope.secondFactorCountdown === 0) {
+                    $interval.cancel($scope.cancelSecondFactorTimer);
+                    $scope.resetForm();
+                  }
+                }, 1000, 0);
               } else {
                 showWelcomeMessage(result.data.token, result.data.person);
               }
@@ -139,6 +151,9 @@ angular.module('openolitor-core')
             .then(function(
               result) {
               $scope.secondFactorData.message = undefined;
+              if ($scope.cancelSecondFactorTimer) {
+                $interval.cancel($scope.cancelSecondFactorTimer);
+              }
               showWelcomeMessage(result.data.token, result.data.person);
             }, function(error) {
               $scope.secondFactorData.message = gettext(error.data);
@@ -182,6 +197,11 @@ angular.module('openolitor-core')
               $scope.resetPasswordData.message = gettext(error.data);
             });
         }
+      };
+
+      $scope.resetForm = function() {
+        $scope.loginData = {};
+        $scope.status = 'login';
       };
     }
   ]);
