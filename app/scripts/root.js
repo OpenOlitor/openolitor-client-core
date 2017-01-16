@@ -6,11 +6,10 @@ angular.module('openolitor-core')
   .controller('OpenOlitorRootController', ['$scope', '$rootScope',
     'ServerService', 'ProjektService', 'gettextCatalog', 'amMoment',
     '$location', 'msgBus', 'checkSize', '$window', '$timeout', 'BUILD_NR',
-    'ENV',
-    'ooAuthService',
+    'ENV', 'ooAuthService', '$cookies',
     function($scope, $rootScope, ServerService, ProjektService,
       gettextCatalog, amMoment, $location, msgBus, checkSize, $window,
-      $timeout, BUILD_NR, ENV, ooAuthService) {
+      $timeout, BUILD_NR, ENV, ooAuthService, $cookies) {
       angular.element($window).bind('resize', function() {
         checkSize();
       });
@@ -75,6 +74,7 @@ angular.module('openolitor-core')
         if (!angular.isUndefined(lang)) {
           gettextCatalog.setCurrentLanguage(lang);
           amMoment.changeLocale(lang);
+          $scope.storeActiveLang(lang);
           $scope.$emit('languageChanged');
         }
       };
@@ -83,8 +83,27 @@ angular.module('openolitor-core')
         return gettextCatalog.getCurrentLanguage();
       };
 
-      if (angular.isUndefined($scope.activeLang() || ($scope.activeLang() !== 'de' && $scope.activeLang().indexOf('fr') === -1))) {
-        $scope.changeLang('de');
+      $scope.storedActiveLang = function() {
+        return $cookies.get('activeLang');
+      };
+
+      $scope.storeActiveLang = function(lang) {
+        $cookies.put('activeLang', lang);
+      };
+
+      if (angular.isUndefined($scope.storedActiveLang())) {
+        var lang = $window.navigator.language || $window.navigator.userLanguage;
+        if(lang.indexOf('de-') > 0) {
+          $scope.changeLang('de');
+        } else if(lang.indexOf('fr-') > 0) {
+          $scope.changeLang('fr');
+        } else if(lang.indexOf('en-') > 0) {
+          $scope.changeLang('en');
+        } else {
+          $scope.changeLang('de');
+        }
+      } else {
+        $scope.changeLang($scope.storedActiveLang());
       }
 
       $scope.$on('destroy', function() {
