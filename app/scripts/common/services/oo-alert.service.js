@@ -38,6 +38,10 @@
         }
       },
 
+      removeAllAlerts: function() {
+        $rootScope.alerts = [];
+      },
+
       removeAlert: function() {
         return function(index) {
           checkAlerts($rootScope);

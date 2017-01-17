@@ -369,7 +369,7 @@ angular
         controller: 'LoginController',
         logout: true,
         name: 'Logout',
-        access: [userRoles.Administrator, userRoles.Kunde]
+        access: userRoles.Guest
       })
       .when('/forbidden', {
         templateUrl: 'scripts/login/forbidden.html',
