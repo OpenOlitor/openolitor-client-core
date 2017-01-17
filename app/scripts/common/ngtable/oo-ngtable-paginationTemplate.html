@@ -1,12 +1,12 @@
 <div class="ng-cloak ng-table-pager" ng-if="params.data.length">
-    <div ng-if="params.settings().counts.length" class="ng-table-counts btn-group pull-right">
-        <button ng-repeat="count in params.settings().counts" type="button" ng-show="count <= params.settings().total"
-                ng-class="{'active':params.count() == count}"
-                ng-click="params.count(count)" class="btn btn-default">
-            <span ng-bind="count"></span>
+    <div ng-controller="NgTableCountController" ng-if="params.settings().counts.length" class="ng-table-counts btn-group pull-right">
+        <button ng-repeat="cnt in params.settings().counts" type="button" ng-show="cnt <= params.settings().total"
+                ng-class="{'active':params.count() == cnt}"
+                ng-click="count(cnt)" class="btn btn-default">
+            <span ng-bind="cnt"></span>
         </button>
-        <button type="button" ng-class="{'active':params.count() == params.settings().total}"
-                ng-click="params.count(params.settings().total)" class="btn btn-default">
+        <button type="button" ng-class="{'active':params.count() >= params.settings().total}"
+                ng-click="count(5000)" class="btn btn-default">
             <span translate>Alle</span> <span>({{params.settings().total}})</span>
         </button>
     </div>
