@@ -268,8 +268,13 @@ angular
       return convertDateStringsToDates(responseData);
     });
   }])
-  .run(['alertService', '$rootScope', function(alertService, $rootScope) {
+  .run(['alertService', '$rootScope', 'msgBus', 'gettextCatalog', function(alertService, $rootScope, msgBus, gettextCatalog) {
     $rootScope.$removeAlert = alertService.removeAlert();
+
+    msgBus.onMsg('ChangeLang', $rootScope, function(event, msg) {
+      console.log('Got ChangeLang Message'  + msg.reason);
+      gettextCatalog.setCurrentLanguage(msg.reason);
+    });
   }])
   .config(['$provide', function($provide) {
     $provide.decorator('$exceptionHandler', ['$log', '$injector',

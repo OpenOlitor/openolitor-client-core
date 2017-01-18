@@ -2,33 +2,33 @@
   <div oo-error-overlay></div>
   <div class="container">
     <div class="jumbotron">
-      <h1 translate>Anmeldung
-        <small ng-if="env === 'test'">- Testumgebung</small>
-        <small ng-if="env === 'dev'" class="">- Entwicklungsumgebung</small>
+      <h1><span translate>Anmeldung</span>
+        <small ng-if="env === 'test'" translate>- Testumgebung</small>
+        <small ng-if="env === 'dev'" class="" translate>- Entwicklungsumgebung</small>
       </h1>
       <span ng-if="appName === 'openolitor-admin'">
         <p translate>Für den Zugriff auf die Administrationsumgebung ist eine Anmeldung erforderlich</p>
-        <div class="alert alert-info" ng-if="env === 'test' || env === 'dev'" translate>
-          Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen an der Administrationsumgebung anmelden:
+        <div class="alert alert-info" ng-if="env === 'test' || env === 'dev'">
+          <span translate>Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen an der Administrationsumgebung anmelden:</span>
           <br /><br />
           <ul>
-            <li>Email: <b>admin@openolitor.ch</b></li>
-            <li>Passwort: <b>admin</b></li>
+            <li><span translate>E-Mail:</span> <b>admin@openolitor.ch</b></li>
+            <li><span translate>Passwort:</span> <b>admin</b></li>
           </ul>
-          <br /> Die Daten in diesem System werden sporadisch auf die Standardwerte zurückgesetzt.
+          <br /><span translate>Die Daten in diesem System werden sporadisch auf die Standardwerte zurückgesetzt.</span>
         </div>
       </span>
       <span ng-if="appName !== 'openolitor-admin'">
         <p translate>Für den Zugriff auf OpenOlitor ist eine Anmeldung erforderlich</p>
-        <div class="alert alert-info" ng-if="env === 'test' || env === 'dev'" translate>
-          Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen als Konsument anmelden:
+        <div class="alert alert-info" ng-if="env === 'test' || env === 'dev'">
+          <span translate>Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen als Konsument anmelden:</span>
           <br /><br />
           <ul>
-            <li>Email: <b>konsument@openolitor.ch</b></li>
-            <li>Passwort: <b>kunde</b></li>
+            <li><span translate>E-Mail:</span> <b>konsument@openolitor.ch</b></li>
+            <li><span translate>Passwort:</span> <b>kunde</b></li>
           </ul>
-          <br /> Für den Zugang auf die Administrationsumgebung von OpenOlitor, bitte den Link unten rechts verwenden.
-          <br /> Die Daten in diesem System werden sporadisch auf die Standardwerte zurückgesetzt.
+          <br /><span translate>Für den Zugang auf die Administrationsumgebung von OpenOlitor, bitte den Link unten rechts verwenden.</span>
+          <br /><span translate>Die Daten in diesem System werden sporadisch auf die Standardwerte zurückgesetzt.</span>
         </div>
       </span>
       <p>
@@ -36,7 +36,7 @@
           <div class="alert alert-danger" role="alert" ng-if="loginData.message">{{loginData.message}}</div>
           <form class="form-signin" name="loginForm">
             <div class="form-group">
-              <input type="email" class="form-control" placeholder="{{'Email Adresse' | translate}}" required="true" autofocus="" ng-model="loginData.email">
+              <input type="email" class="form-control" placeholder="{{'E-Mail Adresse' | translate}}" required="true" autofocus="" ng-model="loginData.email">
             </div>
             <div class="form-group">
               <input type="password" class="form-control" placeholder="{{'Passwort' | translate}}" required="true" ng-model="loginData.passwort">
