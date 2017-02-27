@@ -3,9 +3,16 @@
 angular.module('openolitor-core')
   .factory('OverviewCheckboxUtil', function() {
     var checkboxWatchCallback = function($scope, value) {
-      angular.forEach($scope.entries, function(item) {
-        $scope.checkboxes.items[item.id] = value;
-      });
+      if(angular.isUndefined($scope.filteredEntries)) {
+        angular.forEach($scope.entries, function(item) {
+          $scope.checkboxes.items[item.id] = value;
+        });
+      } else {
+        angular.forEach($scope.filteredEntries, function(item) {
+          $scope.checkboxes.items[item.id] = value;
+        });
+      }
+
     };
 
     var dataCheckboxWatchCallback = function($scope) {
