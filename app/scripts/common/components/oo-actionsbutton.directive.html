@@ -6,7 +6,7 @@
       <span ng-if="!notext && !actions[0].noText">{{actions[0].labelFunction() || actions[0].label | translate}}</span>
       <i ng-show="model.actionInProgress === 'updating'" ng-cloak class="fa fa-circle-o-notch fa-spin"></i>
     </button>
-    <button ng-hide="actions.length < 2 || model.actionInProgress" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span> <span class="sr-only" translate>Weitere Aktionen</span> </button>
+    <button ng-disabled="actions.length < 2 || model.actionInProgress" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span> <span class="sr-only" translate>Weitere Aktionen</span> </button>
 
     <ul ng-if="actions.length > 1" class="dropdown-menu">
       <li ng-if="!$first" ng-repeat="action in actions" ng-class="{disabled: action.isDisabled()}">

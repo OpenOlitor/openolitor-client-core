@@ -46,9 +46,11 @@ angular.module('openolitor-core')
       };
 
       var showGoodbyeMessage = function(usr) {
-        alertService.addAlert('info', gettext('Aufwiedersehen') + ' ' +
-          usr.vorname + ' ' +
-          usr.name);
+        if(!angular.isUndefined(usr)) {
+          alertService.addAlert('info', gettext('Aufwiedersehen') + ' ' +
+            usr.vorname + ' ' +
+            usr.name);
+        }
       };
 
       $scope.appName = $rootElement.attr('ng-app');
