@@ -25,8 +25,8 @@
  *                         }
  */
 angular.module('openolitor-core').directive('ooActionsButton', ['msgBus', 'gettext',
-  'alertService', 'DataUtil',
-  function(msgBus, gettext, alertService, DataUtil) {
+  'alertService', 'DataUtil', 'dialogService',
+  function(msgBus, gettext, alertService, DataUtil, dialogService) {
     return {
       restrict: 'E',
       replace: true,
@@ -36,13 +36,19 @@ angular.module('openolitor-core').directive('ooActionsButton', ['msgBus', 'gette
         model: '=',
         actions: '=',
         form: '=',
+        confirm: '@?',
         condensed: '@?',
         small: '@?',
-        onCreated: '='
+        onCreated: '=',
+        btnStyle: '@?'
       },
       transclude: true,
       templateUrl: 'scripts/common/components/oo-actionsbutton.directive.html',
       controller: function($scope) {
+
+        if(angular.isUndefined($scope.btnStyle) || !$scope.btnStyle) {
+          $scope.btnStyle = 'btn-primary';
+        }
 
         if (!angular.isUndefined($scope.condensed) && $scope.condensed) {
           $scope.notext = true;
@@ -103,6 +109,18 @@ angular.module('openolitor-core').directive('ooActionsButton', ['msgBus', 'gette
             status + '-' + gettext(statusText) + ': ' +
             errorText
           );
+        };
+
+        $scope.execute = function(action) {
+          if((angular.isDefined($scope.confirm) && $scope.confirm) ||
+             (angular.isDefined(action.confirm) && action.confirm)) {
+            dialogService.displayDialogOkAbort(action.confirmMessage,
+              function() {
+                $scope.executeAction(action);
+              });
+            } else {
+              $scope.executeAction(action);
+            }
         };
 
         $scope.executeAction = function(action) {
