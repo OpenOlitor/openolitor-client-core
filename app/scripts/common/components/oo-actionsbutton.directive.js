@@ -112,7 +112,7 @@ angular.module('openolitor-core').directive('ooActionsButton', ['msgBus', 'gette
         };
 
         $scope.execute = function(action) {
-          if((angular.isDefined(action.confirm) && action.confirm) ||
+          if((!angular.isDefined(action.confirm) || !action.confirm) &&
             (angular.isDefined($scope.confirm) && $scope.confirm)) {
             dialogService.displayDialogOkAbort(action.confirmMessage,
               function() {
