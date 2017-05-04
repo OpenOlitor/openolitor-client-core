@@ -13,7 +13,8 @@ angular.module('openolitor-core').directive('ooGenerateReport', function() {
       projektVorlagen: '=?'
     },
     templateUrl: 'scripts/common/components/oo-generate-report.directive.html',
-    controller: function($scope, $http, API_URL, FileUtil, gettext) {
+    controller: function($scope, $http, API_URL, FileUtil, gettext, lodash,
+      alertService) {
       $scope.form = {
         vorlage: undefined,
         projektVorlageId: undefined,
@@ -36,13 +37,36 @@ angular.module('openolitor-core').directive('ooGenerateReport', function() {
             'Content-Type': undefined
           },
           // angular.identity prevents Angular to do anything on our data (like serializing it).
-          transformRequest: angular.identity,
-          responseType: 'arraybuffer'
+          transformRequest: angular.identity
+            // responseType: 'arraybuffer'
         }).then(function(res) {
-          var name = res.headers('Content-Disposition');
-          var contentType = res.headers('Content-Type');
-          FileUtil.open(name || $scope.defaultFileName, res.data,
-            contentType);
+          console.log('Report result', res);
+          // handle json result
+          if (res.data.validationErrors && res.data.validationErrors
+            .length > 0) {
+            var distinctErrors = lodash.groupBy(res.data.validationErrors,
+              'message');
+            var errors = Object.keys(distinctErrors);
+            var details = lodash.map(errors,
+              function(error) {
+                return error + '(' + distinctErrors[error].length +
+                  ')';
+              });
+            alertService.addAlert('warning',
+              gettext(
+                'Beim erstellen der Dokumente sind folgende Fehler aufgetreten'
+              ),
+              details
+            );
+            console.log('errors', res.data.validationErrors);
+          } else {
+            // assume file download
+            var name = res.headers('Content-Disposition');
+            var json = JSON.stringify(res.data);
+            FileUtil.open(name || $scope.defaultFileName, [json], {
+              type: 'application/json'
+            });
+          }
           $scope.generating = false;
           $scope.onGenerated()();
         }, function(response) {
