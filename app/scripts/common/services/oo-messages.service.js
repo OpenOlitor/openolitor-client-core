@@ -28,8 +28,7 @@ angular.module('openolitor-core')
 
         ws.onmessage = function(msg) {
           var data = convertDateStringsToDates(JSON.parse(msg.data));
-          console.log('WS received event');
-          console.log(data);
+          console.log('WS received event', data);
           msgBus.emitMsg(data);
         };
         ws.onopen = function(event) {
