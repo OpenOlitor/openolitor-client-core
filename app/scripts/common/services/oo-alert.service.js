@@ -17,7 +17,6 @@
          * Add an alert to the global scope using type (error, lighterror, info, warning)
          */
         addAlert: function(type, msg, details) {
-          console.log('Add alert', type, msg, details);
           var message = {
             'type': type,
             'msg': msg,

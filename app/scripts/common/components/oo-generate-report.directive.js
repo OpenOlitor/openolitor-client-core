@@ -40,7 +40,6 @@ angular.module('openolitor-core').directive('ooGenerateReport', function() {
           transformRequest: angular.identity
             // responseType: 'arraybuffer'
         }).then(function(res) {
-          console.log('Report result', res);
           // handle json result
           if (res.data.validationErrors && res.data.validationErrors
             .length > 0) {
@@ -58,7 +57,6 @@ angular.module('openolitor-core').directive('ooGenerateReport', function() {
               ),
               details
             );
-            console.log('errors', res.data.validationErrors);
           } else {
             // assume file download
             var name = res.headers('Content-Disposition');
