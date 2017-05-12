@@ -10,7 +10,8 @@ angular.module('openolitor-core').directive('ooGenerateReport', function() {
       onClose: '&',
       defaultFileName: '=',
       ids: '=?',
-      projektVorlagen: '=?'
+      projektVorlagen: '=?',
+      directDownload: '=?'
     },
     templateUrl: 'scripts/common/components/oo-generate-report.directive.html',
     controller: function($scope, $http, API_URL, FileUtil, gettext, lodash,
@@ -57,7 +58,7 @@ angular.module('openolitor-core').directive('ooGenerateReport', function() {
               ),
               details
             );
-          } else {
+          } else if(!angular.isUndefined($scope.directDownload) && $scope.directDownload) {
             // assume file download
             var name = res.headers('Content-Disposition');
             var json = JSON.stringify(res.data);
