@@ -21,7 +21,8 @@ angular.module('openolitor-core').directive('ooGenerateReport', function() {
         projektVorlageId: undefined,
         pdfGenerieren: true,
         pdfAblegen: false,
-        pdfDownloaden: true
+        pdfDownloaden: true,
+        datenExtrakt: false
       };
 
       var generateWithFormData = function(formData) {
@@ -58,7 +59,7 @@ angular.module('openolitor-core').directive('ooGenerateReport', function() {
               ),
               details
             );
-          } else if(!angular.isUndefined($scope.directDownload) && $scope.directDownload) {
+          } else if($scope.form.datenExtrakt || (!angular.isUndefined($scope.directDownload) && $scope.directDownload)) {
             // assume file download
             var name = res.headers('Content-Disposition');
             var json = JSON.stringify(res.data);
