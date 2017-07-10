@@ -268,6 +268,12 @@ angular
       return convertDateStringsToDates(responseData);
     });
   }])
+  .config(['$locationProvider', function($locationProvider) {
+    $locationProvider.hashPrefix('');
+  }])
+  .config(['$qProvider', function ($qProvider) {
+    $qProvider.errorOnUnhandledRejections(false);
+  }])
   .run(['alertService', '$rootScope', 'msgBus', 'gettextCatalog', function(alertService, $rootScope, msgBus, gettextCatalog) {
     $rootScope.$removeAlert = alertService.removeAlert();
 
