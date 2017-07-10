@@ -297,13 +297,6 @@ module.exports = function(grunt) {
       }
     },
 
-    // Replace Google CDN references
-    cdnify: {
-      dist: {
-        html: ['<%= openolitor.dist %>/*.html']
-      }
-    },
-
     // Copies remaining files to places other tasks can use
     copy: {
       dist: {
@@ -371,14 +364,17 @@ module.exports = function(grunt) {
       ]
     },
 
-    ngTemplateCache: {
-      views: {
-        files: {
-          './.tmp/concat/scripts/views.js': '<%= openolitor.app %>/scripts/**/*.html'
-        },
+    ngtemplates: {
+      dist: {
+        cwd: '<%= openolitor.app %>',
+        src: 'scripts/**/*.html',
+        dest: './.tmp/concat/scripts/views.js',
         options: {
-          trim: '<%= openolitor.app %>/',
-          module: 'openolitor-core'
+          module: 'openolitor-core',
+          htmlmin: {
+            collapseBooleanAttributes:      true,
+            collapseWhitespace:             true
+          }
         }
       }
     },
@@ -464,21 +460,8 @@ module.exports = function(grunt) {
           ]
         }
       }
-    },
-
-    compress: {
-      main: {
-        options: {
-          archive: 'dist/openolitor-client.zip'
-        },
-        files: [{
-          expand: true,
-          cwd: 'dist/',
-          src: ['**/*'],
-          dest: '/'
-        }]
-      }
     }
+
   });
 
   grunt.registerTask('serve', function(target) {
@@ -530,20 +513,18 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'wiredep',
-    'ngTemplateCache',
+    'ngtemplates',
     'useminPrepare',
     'concurrent:dist',
     'autoprefixer',
     'concat',
     'ngAnnotate',
     'copy:dist',
-    'cdnify',
     'cssmin',
     'uglify',
     'rev',
     'usemin',
-    'htmlmin',
-    'compress:main'
+    'htmlmin'
   ]);
 
   grunt.registerTask('i18nextract', ['nggettext_extract']);
