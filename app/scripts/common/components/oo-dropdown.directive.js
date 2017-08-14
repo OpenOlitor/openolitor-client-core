@@ -121,7 +121,6 @@ angular.module('openolitor-core').directive('ooDropdown', function() {
       $scope.unwatchSelected = $scope.$watch('selected', function() {
         if (!angular.isUndefined($scope.selected)) {
           $scope.updateDisplay();
-          $scope.unwatchSelected();
         }
       }, true);
 
