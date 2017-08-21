@@ -31,42 +31,61 @@
           <br /><span translate>Die Daten in diesem System werden sporadisch auf die Standardwerte zurückgesetzt.</span>
         </div>
       </span>
-      <p>
-        <div class="container" ng-show="status === 'login'">
-          <div class="alert alert-danger" role="alert" ng-if="loginData.message">{{loginData.message}}</div>
-          <form class="form-signin" name="loginForm">
-            <div class="form-group">
-              <input type="email" class="form-control" placeholder="{{'E-Mail Adresse' | translate}}" required="true" autofocus="" ng-model="loginData.email">
-            </div>
-            <div class="form-group">
-              <input type="password" class="form-control" placeholder="{{'Passwort' | translate}}" required="true" ng-model="loginData.passwort">
-            </div>
-            <div class="form-group">
-              <button ng-disabled="loginForm.$invalid" class="btn btn-lg btn-primary" type="submit" ng-click="login()" translate>Anmelden</button>
-            </div>
-            <div class="form-group">
-              <a ng-href="#/passwordreset" translate>Passwort vergessen?</a>
-            </div>
-          </form>
-          <div class="pull-right" ng-if="appName !== 'openolitor-admin'"><a class="btn btn-xs btn-default" href="/admin/#" tooltip-placement="left" tooltip-enable="(env === 'test' || env === 'dev')" tooltip-is-open="true" uib-tooltip-html="'Für das Testen der Administrationsumgebung, bitte hier klicken!' | translate" translate>Login Administration</a></div>
+      <span ng-show="projekt.welcomeMessage1 && (!projekt.maintenanceMode || appName === 'openolitor-admin')">
+        <div class="alert alert-info">
+          <p>{{projekt.welcomeMessage1}}</p>
         </div>
+      </span>
 
-        <div class="container" ng-show="status === 'twoFactor'">
-          <div class="alert alert-info" role="alert"><span translate>Es wurde ein Zugangscode an ihre Email-Adresse</span> <b>{{person.email}}</b> <span translate>zugestellt.</span></div>
-          <div class="alert alert-danger" role="alert" ng-if="secondFactorForm.message">{{secondFactorForm.message}}</div>
-          <form class="form-signin" name="secondFactorForm">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="{{'Zugangscode' | translate}} - {{secondFactorCountdownDate() | fromNow}} {{'läuft dieser Loginversuch ab'}}" required="true" autofocus="" ng-model="secondFactorData.code">
-            </div>
-            <div class="form-group">
-              <button ng-disabled="secondFactorForm.$invalid" class="btn btn-lg btn-primary" type="submit" ng-click="secondFactorLogin()" translate>Anmelden</button>
-            </div>
-            <div class="form-group">
-              <a ng-href="#/login" ng-click="resetForm()" translate>Zugangscode erneut versenden</a>
-            </div>
-          </form>
+      <span ng-show="projekt.maintenanceMode && appName !== 'openolitor-admin'">
+        <div class="alert alert-info">
+          <p translate>Das Kundenportal ist gegenwärtig nicht verfügbar. Wir führen Unterhaltsarbeiten durch. In Kürze sind wir wieder online und wie gewohnt für Sie da.</p>
         </div>
-      </p>
+      </span>
+      <span ng-show="projekt.maintenanceMode && appName === 'openolitor-admin'">
+        <div class="alert alert-info">
+          <p translate>Unterhalts-Moduls! Das Kundenportal ist gegenwärtig nicht verfügbar. Bitte sobald wie möglich wieder aktivieren!</p>
+        </div>
+      </span>
+
+      <span ng-show="!projekt.maintenanceMode || appName === 'openolitor-admin'">
+        <p>
+          <div class="container" ng-show="status === 'login'"  >
+            <div class="alert alert-danger" role="alert" ng-if="loginData.message">{{loginData.message}}</div>
+            <form class="form-signin" name="loginForm">
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="{{'E-Mail Adresse' | translate}}" required="true" autofocus="" ng-model="loginData.email">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="{{'Passwort' | translate}}" required="true" ng-model="loginData.passwort">
+              </div>
+              <div class="form-group">
+                <button ng-disabled="loginForm.$invalid" class="btn btn-lg btn-primary" type="submit" ng-click="login()" translate>Anmelden</button>
+              </div>
+              <div class="form-group">
+                <a ng-href="#/passwordreset" translate>Passwort vergessen?</a>
+              </div>
+            </form>
+            <div class="pull-right" ng-if="appName !== 'openolitor-admin'"><a class="btn btn-xs btn-default" href="/admin/#" tooltip-placement="left" tooltip-enable="(env === 'test' || env === 'dev')" tooltip-is-open="true" uib-tooltip-html="'Für das Testen der Administrationsumgebung, bitte hier klicken!' | translate" translate>Login Administration</a></div>
+          </div>
+
+          <div class="container" ng-show="status === 'twoFactor'">
+            <div class="alert alert-info" role="alert"><span translate>Es wurde ein Zugangscode an ihre Email-Adresse</span> <b>{{person.email}}</b> <span translate>zugestellt.</span></div>
+            <div class="alert alert-danger" role="alert" ng-if="secondFactorForm.message">{{secondFactorForm.message}}</div>
+            <form class="form-signin" name="secondFactorForm">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="{{'Zugangscode' | translate}} - {{secondFactorCountdownDate() | fromNow}} {{'läuft dieser Loginversuch ab'}}" required="true" autofocus="" ng-model="secondFactorData.code">
+              </div>
+              <div class="form-group">
+                <button ng-disabled="secondFactorForm.$invalid" class="btn btn-lg btn-primary" type="submit" ng-click="secondFactorLogin()" translate>Anmelden</button>
+              </div>
+              <div class="form-group">
+                <a ng-href="#/login" ng-click="resetForm()" translate>Zugangscode erneut versenden</a>
+              </div>
+            </form>
+          </div>
+        </p>
+      </span>
     </div>
   </div>
 </div>
