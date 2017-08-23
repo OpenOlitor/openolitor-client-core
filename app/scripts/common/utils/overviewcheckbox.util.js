@@ -20,6 +20,7 @@ angular.module('openolitor-core')
         unchecked = 0,
         total = $scope.filteredEntries.length;
       $scope.checkboxes.ids = [];
+      $scope.checkboxes.checkedItems = [];
       if (!$scope.checkboxes.data) {
         $scope.checkboxes.data = {};
       }
@@ -28,6 +29,7 @@ angular.module('openolitor-core')
         unchecked += (!$scope.checkboxes.items[item.id]) || 0;
         if ($scope.checkboxes.items[item.id]) {
           $scope.checkboxes.ids.push(item.id);
+          $scope.checkboxes.checkedItems.push(item);
         }
         $scope.checkboxes.data[item.id] = item;
       });
