@@ -18,6 +18,7 @@ angular.module('openolitor-core')
         }
         $element.parent().parent().parent().scope().params.settings().exportODSModel.exportODS(
           filter,
+          filter,
           function(file) {
             FileSaver.saveAs(file.response, fileName + '.ods');
           }
