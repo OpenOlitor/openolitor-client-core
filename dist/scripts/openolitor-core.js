@@ -1356,9 +1356,12 @@ angular.module('openolitor-core').controller('ooDeleteButtonModalInstanceCtrl', 
 
 'use strict';
 
-angular.module('openolitor-core').controller('ooDialogOkAbortModalInstanceCtrl', function ($scope, $uibModalInstance, message) {
+angular.module('openolitor-core').controller('ooDialogOkAbortModalInstanceCtrl', function ($scope, $uibModalInstance, message, title, dismissOnly, dismissButtonTitle) {
 
+  $scope.title = title;
   $scope.message = message;
+  $scope.dismissOnly = dismissOnly;
+  $scope.dismissButtonTitle = dismissButtonTitle;
 
   $scope.ok = function () {
     $uibModalInstance.close();
@@ -2335,7 +2338,7 @@ angular.module('openolitor-core')
   angular.module('openolitor-core').factory('dialogService', ['$uibModal', function($uibModal) {
 
     return {
-      displayDialogOkAbort: function(msg, okFct) {
+      displayDialogOkAbort: function(msg, okFct, title, dismissOnly, dismissButtonTitle) {
         var modalInstance = $uibModal.open({
           animation: true,
           templateUrl: 'scripts/common/components/oo-dialogokabort.directive.modal.html',
@@ -2343,6 +2346,18 @@ angular.module('openolitor-core')
           resolve: {
             message: function() {
               return msg;
+            },
+
+            title: function() {
+              return title;
+            },
+
+            dismissOnly: function() {
+              return dismissOnly;
+            },
+
+            dismissButtonTitle: function() {
+              return dismissButtonTitle;
             }
           }
         });
@@ -2779,12 +2794,12 @@ angular.module('openolitor-core').run(['$templateCache', function($templateCache
 
 
   $templateCache.put('scripts/common/components/oo-dialogokabort.directive.modal.html',
-    "<div class=\"modal-header\"><h3 translate>Bestätigung</h3></div>'<div class=\"modal-body\"><div><span ng-if=\"message\">{{message}}</span> <span ng-if=\"!message\" translate>Wollen Sie fortfahren?</span></div></div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-danger\" ng-show=\"true\" ng-click=\"ok()\" translate>Ok</button> <button type=\"button\" class=\"btn btn-primary\" ng-click=\"cancel()\" translate>Abbrechen</button></div>"
+    "<div class=\"modal-header\"><h3 ng-if=\"title\" translate>{{title | translate}}</h3><h3 ng-if=\"!title\" translate>Bestätigung</h3></div><div class=\"modal-body\"><div><span ng-if=\"message\">{{message}}</span> <span ng-if=\"!message\" translate>Wollen Sie fortfahren?</span></div></div><div class=\"modal-footer\"><button ng-if=\"!dismissOnly\" type=\"button\" class=\"btn btn-danger\" ng-show=\"true\" ng-click=\"ok()\" translate>Ok</button> <button ng-if=\"dismissButtonTitle\" type=\"button\" class=\"btn btn-primary\" ng-click=\"cancel()\">{{dismissButtonTitle | translate}}</button> <button ng-if=\"!dismissButtonTitle\" type=\"button\" class=\"btn btn-primary\" ng-click=\"cancel()\" translate>Abbrechen</button></div>"
   );
 
 
   $templateCache.put('scripts/common/components/oo-dropdown.directive.html',
-    "<span><div ng-if=\"label\" class=\"navbar-header navbar-brand\">{{label}}</div><ul ng-if=\"displayStyle === 'navbar'\" class=\"nav navbar-nav\"><li uib-dropdown class=\"uib-dropdown\"><a href=\"#\" uib-dropdown-toggle class=\"uib-dropdown-toggle\" data-toggle=\"uib-dropdown\" data-target=\"#\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\" ng-disabled=\"disabled\"><span ng-if=\"!isPlaceholder\">{{display|translate}}</span> <span class=\"placeholder\" ng-if=\"isPlaceholder\">{{placeholder|translate}}</span> <span class=\"caret\"></span></a><ul class=\"dropdown-menu\" role=\"menu\" area-labeled-by=\"{{dropdownId}}\"><li ng-repeat=\"item in values\" role=\"menuitem\"><a href=\"\" ng-click=\"select(item)\">{{getDisplayedText(item)|translate}}</a></li></ul></li></ul><div ng-if=\"displayStyle === 'uib-dropdown'\" uib-dropdown><button type=\"button\" uib-dropdown-toggle class=\"btn btn-default uib-dropdown-toggle\" ng-class=\"getClass()\" data-toggle=\"uib-dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\" ng-disabled=\"disabled\"><span ng-if=\"!isPlaceholder\">{{display|translate}}</span> <span class=\"placeholder\" ng-if=\"isPlaceholder\">{{placeholder|translate}}</span> <span class=\"caret\"></span></button><ul class=\"dropdown-menu\" role=\"menu\" area-labeled-by=\"{{dropdownId}}\"><li ng-repeat=\"item in values\" role=\"menuitem\"><a href=\"\" ng-click=\"select(item)\">{{getDisplayedText(item)|translate}}</a></li></ul></div></span>"
+    "<span><div ng-if=\"label\" class=\"navbar-header navbar-brand\">{{label}}</div><ul ng-if=\"displayStyle === 'navbar'\" class=\"nav navbar-nav\"><li uib-dropdown class=\"uib-dropdown\"><a href=\"#\" uib-dropdown-toggle class=\"uib-dropdown-toggle\" data-toggle=\"uib-dropdown\" data-target=\"#\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\" ng-disabled=\"disabled\"><span ng-if=\"!isPlaceholder\">{{display|translate}}</span> <span class=\"placeholder\" ng-if=\"isPlaceholder\">{{placeholder|translate}}</span> <span class=\"caret\"></span></a><ul class=\"dropdown-menu\" role=\"menu\" area-labeled-by=\"{{dropdownId}}\"><li ng-repeat=\"item in values\" role=\"menuitem\"><a href=\"\" ng-click=\"select(item)\">{{getDisplayedText(item)|translate}}</a></li></ul></li></ul><div ng-if=\"displayStyle === 'uib-dropdown'\" uib-dropdown><button type=\"button\" uib-dropdown-toggle class=\"btn btn-default uib-dropdown-toggle\" ng-class=\"getClass()\" data-toggle=\"uib-dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\" ng-disabled=\"disabled\"><span ng-if=\"!isPlaceholder\">{{display|translate}}</span> <span class=\"placeholder\" ng-if=\"isPlaceholder\">{{placeholder|translate}}</span> <span class=\"caret\"></span></button><ul class=\"dropdown-menu dropdown-menu-right\" role=\"menu\" area-labeled-by=\"{{dropdownId}}\"><li ng-repeat=\"item in values\" role=\"menuitem\"><a href=\"\" ng-click=\"select(item)\">{{getDisplayedText(item)|translate}}</a></li></ul></div></span>"
   );
 
 
