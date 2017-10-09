@@ -91,6 +91,11 @@ angular.module('openolitor-core').directive('ooActionsButton', ['msgBus', 'gette
             DataUtil.update(msg.data, $scope.model);
             $scope.model.actionInProgress = undefined;
             if ($scope.onCreated) {
+              if ($scope.form) {
+                if ($scope.form.destroyConfirmOnDirty) {
+                  $scope.form.destroyConfirmOnDirty();
+                }
+              }
               $scope.onCreated(msg.data.id);
             }
             $scope.$apply();

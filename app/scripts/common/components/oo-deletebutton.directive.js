@@ -81,8 +81,17 @@ angular.module('openolitor-core').directive('ooDeleteButton', ['msgBus', 'gettex
         };
 
         $scope.delete = function() {
+          console.log('call delete');
           if(angular.isDefined($scope.confirm) && $scope.confirm) {
-            $scope.modalDialog($scope.deleteAction);
+            $scope.modalDialog(function() {
+              if ($scope.form) {
+                if ($scope.form.destroyConfirmOnDirty) {
+                  console.log('call destroyConfirm');
+                  $scope.form.destroyConfirmOnDirty();
+                }
+              }
+              $scope.deleteAction();
+            });
           } else {
             $scope.deleteAction();
           }
@@ -95,7 +104,7 @@ angular.module('openolitor-core').directive('ooDeleteButton', ['msgBus', 'gettex
             ret.catch(function(req) {
               $scope.model.actionInProgress = undefined;
               alertService.addAlert('error', gettext($scope.entity +
-                  ' konnte nicht gelöscht werden. Fehler: ') +
+                ' konnte nicht gelöscht werden. Fehler: ') +
                 req.status +
                 '-' + req.statusText + ':' + req.data
               );
