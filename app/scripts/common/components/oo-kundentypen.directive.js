@@ -12,14 +12,6 @@ angular.module('openolitor-core').directive('ooKundentypen', ['KundentypenServic
       templateUrl: 'scripts/common/components/oo-kundentypen.directive.html',
       controller: function($scope) {
 
-        var remove = function(kundentyp) {
-          var index = $scope.kundentypen.indexOf(kundentyp);
-          if (index >= 0) {
-            $scope.kundentypen.splice(index, 1);
-          }
-        };
-
-
         var rebuildKundentypenList = function() {
           if ($scope.kundentypenList && $scope.allKundentypen) {
             $scope.kundentypen = [];
@@ -28,7 +20,7 @@ angular.module('openolitor-core').directive('ooKundentypen', ['KundentypenServic
               var id = (kundentyp.kundentyp) ? kundentyp.kundentyp :
                 kundentyp;
               var index = $scope.kundentypenList.indexOf(id);
-              if (index < 0) {
+              if (id.length > 0 && index < 0) {
                 $scope.kundentypen.push(id);
               }
             });
@@ -65,7 +57,7 @@ angular.module('openolitor-core').directive('ooKundentypen', ['KundentypenServic
             $scope.kundentypenList.splice(index, 1);
           }
           rebuildKundentypenList();
-        }
+        };
       }
     };
   }
