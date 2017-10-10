@@ -9,7 +9,6 @@ angular.module('openolitor-core').directive('ooConfirmOnDirty', ['dialogService'
                 var isDirtyFn = undefined;
                 if (typeof form.$dirty === 'boolean') {
                     isDirtyFn = function () {
-                        console.log('lamda execution: ' + form.$dirty);
                         return form.$dirty;
                     };
                 }
@@ -42,7 +41,6 @@ angular.module('openolitor-core').directive('ooConfirmOnDirty', ['dialogService'
                                     $location.path(nextUrl.substring($location.absUrl().length - $location.url().length));
                                 });
 
-                            //}
 
                         }
                     });

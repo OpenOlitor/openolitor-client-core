@@ -82,20 +82,19 @@ angular.module('openolitor-core').directive('ooDeleteButton', ['msgBus', 'gettex
 
         $scope.delete = function() {
           if(angular.isDefined($scope.confirm) && $scope.confirm) {
-            $scope.modalDialog(function() {
-              if ($scope.form) {
-                if ($scope.form.destroyConfirmOnDirty) {
-                  $scope.form.destroyConfirmOnDirty();
-                }
-              }
-              $scope.deleteAction();
-            });
+            $scope.modalDialog($scope.deleteAction);
           } else {
             $scope.deleteAction();
           }
         };
 
         $scope.deleteAction = function() {
+          if ($scope.form) {
+            if ($scope.form.destroyConfirmOnDirty &&
+                typeof $scope.form.destroyConfirmOnDirty === 'function') {
+              $scope.form.destroyConfirmOnDirty();
+            }
+          }
           $scope.model.actionInProgress = 'deleting';
           var ret = $scope.onDelete($scope.model);
           if(ret && !angular.isUndefined(ret.catch)) {

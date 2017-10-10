@@ -57,7 +57,8 @@ angular.module('openolitor-core').directive('ooSaveButton', ['msgBus',
             $scope.model.actionInProgress = undefined;
             if ($scope.onCreated) {
               if ($scope.form) {
-                if ($scope.form.destroyConfirmOnDirty) {
+                if ($scope.form.destroyConfirmOnDirty &&
+                    typeof $scope.form.destroyConfirmOnDirty === 'function') {
                   $scope.form.destroyConfirmOnDirty();
                 }
               }
