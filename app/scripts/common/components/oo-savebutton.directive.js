@@ -42,8 +42,8 @@ angular.module('openolitor-core').directive('ooSaveButton', ['msgBus',
 
         msgBus.onMsg('EntityModified', $scope, function(event, msg) {
           if (entityMatches(msg.entity) && !angular.isUndefined(
-              $scope.model) && msg.data.id === $scope.model
-            .id) {
+            $scope.model) && msg.data.id === $scope.model
+              .id) {
             DataUtil.update(msg.data, $scope.model);
             $scope.model.actionInProgress = undefined;
             $scope.$apply();
@@ -56,6 +56,12 @@ angular.module('openolitor-core').directive('ooSaveButton', ['msgBus',
             DataUtil.update(msg.data, $scope.model);
             $scope.model.actionInProgress = undefined;
             if ($scope.onCreated) {
+              if ($scope.form) {
+                if ($scope.form.destroyConfirmOnDirty &&
+                    typeof $scope.form.destroyConfirmOnDirty === 'function') {
+                  $scope.form.destroyConfirmOnDirty();
+                }
+              }
               $scope.onCreated(msg.data.id);
             }
             $scope.$apply();
