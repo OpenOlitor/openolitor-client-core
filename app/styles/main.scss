@@ -596,10 +596,14 @@ tr.error {
     right: 0;
     background-color: rgba(218, 217, 217, 0.9);
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 70px; /* Place content 60px from the top */
+    padding-top: 60px; /* Place content 60px from the top */
     transition: 0.2s; /* 0.5 second transition effect to slide in the sidenav */
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.sliding-detail .panel-default {
+  margin-top: 10px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
