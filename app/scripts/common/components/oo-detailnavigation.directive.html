@@ -1,7 +1,7 @@
 <div class="btn-group" role="group" ng-show="getCurrentPosition() > 0">
-  <a ng-if="getPrevious()" ng-click="navigateTo(getPrevious())" class="btn btn-default" ng-href="{{getSubpath()}}/{{getPrevious()}}"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a ng-if="getPrevious()" ng-click="navigateTo(getPrevious())" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span></a>
   <button ng-if="!getPrevious()" class="btn btn-default" disabled><span class="glyphicon glyphicon-chevron-left"></span></button>
   <a class="btn btn-default" ng-href="{{getOverviewPath()}}">{{getCurrentPosition()}}/{{getListSize()}}</a>
-  <a ng-if="getNext()" ng-click="navigateTo(getNext())" class="btn btn-default" ng-href="{{getSubpath()}}/{{getNext()}}"><span class="glyphicon glyphicon-chevron-right"></span></a>
+  <a ng-if="getNext()" ng-click="navigateTo(getNext())" class="btn btn-default"><span class="glyphicon glyphicon-chevron-right"></span></a>
   <button ng-if="!getNext()" class="btn btn-default" disabled><span class="glyphicon glyphicon-chevron-right"></span></button>
 </div>

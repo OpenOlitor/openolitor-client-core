@@ -3,8 +3,8 @@
 /**
  * A directive for within detail navigation.
  */
-angular.module('openolitor-core').directive('ooDetailNavigation', ['DetailNavigationService',
-  function(DetailNavigationService) {
+angular.module('openolitor-core').directive('ooDetailNavigation', ['DetailNavigationService', '$location',
+  function(DetailNavigationService, $location) {
     return {
       restrict: 'E',
       replace: true,
@@ -22,6 +22,7 @@ angular.module('openolitor-core').directive('ooDetailNavigation', ['DetailNaviga
 
         $scope.navigateTo = function(id) {
           DetailNavigationService.detailFromWithin(id);
+          $location.path($scope.getSubpath() + '/' + id);
         };
 
         $scope.getCurrentString = function() {
@@ -37,7 +38,7 @@ angular.module('openolitor-core').directive('ooDetailNavigation', ['DetailNaviga
         };
 
         $scope.getSubpath = function() {
-          return '#/' + DetailNavigationService.getSubpath();
+          return DetailNavigationService.getSubpath();
         };
 
         $scope.getOverviewPath = function() {

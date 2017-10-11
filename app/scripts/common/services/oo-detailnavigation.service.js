@@ -5,9 +5,9 @@
 
       // an ordered list of ids to enable in detail navigation
       var idList = [];
-      var currentId = undefined;
-      var subpath = undefined;
-      var overviewPath = undefined;
+      var currentId;
+      var subpath;
+      var overviewPath;
 
       function detailWithNavigation(targetId, ids, originSubpath, originPath) {
         currentId = targetId;
