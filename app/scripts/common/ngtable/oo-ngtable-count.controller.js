@@ -34,6 +34,9 @@ angular.module('openolitor-core')
       };
 
       $scope.count = function(count) {
+          if (count === 'maxValue' ){
+              count = Number.MAX_VALUE
+          }
         deepFind($scope.$parent, 'params').count(count);
         setCookie(count);
       };
