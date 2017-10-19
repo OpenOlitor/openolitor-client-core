@@ -17,8 +17,7 @@ msgid "- Testumgebung"
 msgstr ""
 
 #: app/scripts/common/components/oo-deletebutton.directive.modal.html:13
-#: app/scripts/common/components/oo-dialogokabort.directive.modal.html:13
-#: app/scripts/common/components/oo-generate-report.directive.html:71
+#: app/scripts/common/components/oo-dialogokabort.directive.modal.html:15
 msgid "Abbrechen"
 msgstr ""
 
@@ -26,27 +25,27 @@ msgstr ""
 msgid "Abgeschlossen"
 msgstr ""
 
-#: app/index.html:55
+#: app/index.html:56
 msgid "Abmelden"
 msgstr ""
 
-#: app/index.html:68
+#: app/index.html:69
 msgid "Abos"
 msgstr ""
 
-#: app/index.html:84
+#: app/index.html:85
 msgid "Abotypen"
 msgstr ""
 
-#: app/index.html:72
+#: app/index.html:73
 msgid "Abrechnung*"
 msgstr ""
 
-#: app/index.html:38
+#: app/index.html:39
 msgid "Administrationsumgebung <span ng-if=\"projekt\">für</span>"
 msgstr ""
 
-#: app/scripts/common/components/oo-actionsbutton.directive.js:100
+#: app/scripts/common/components/oo-actionsbutton.directive.js:112
 msgid "Aktion"
 msgstr ""
 
@@ -58,8 +57,8 @@ msgstr ""
 msgid "Alle"
 msgstr ""
 
-#: app/scripts/login/login.html:45
-#: app/scripts/login/login.html:62
+#: app/scripts/login/login.html:63
+#: app/scripts/login/login.html:80
 msgid "Anmelden"
 msgstr ""
 
@@ -67,7 +66,7 @@ msgstr ""
 msgid "Anmeldung"
 msgstr ""
 
-#: app/scripts/login/login.controller.js:99
+#: app/scripts/login/login.controller.js:101
 msgid "Anweisungen um Ihr Passwort neu zu setzten wurden Ihnen an Ihre Email-Adresse gesendet."
 msgstr ""
 
@@ -79,7 +78,7 @@ msgstr ""
 msgid "April"
 msgstr ""
 
-#: app/scripts/login/login.controller.js:49
+#: app/scripts/login/login.controller.js:50
 msgid "Aufwiedersehen"
 msgstr ""
 
@@ -95,12 +94,16 @@ msgstr ""
 msgid "Ausgeliefert"
 msgstr ""
 
-#: app/index.html:73
+#: app/index.html:74
 msgid "Auslieferungen"
 msgstr ""
 
 #: app/scripts/app.js:200
 msgid "Ausstehend"
+msgstr ""
+
+#: app/scripts/common/components/oo-generate-report.directive.js:57
+msgid "Beim erstellen der Dokumente sind folgende Fehler aufgetreten"
 msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:34
@@ -111,12 +114,16 @@ msgstr ""
 msgid "Bericht erstellen"
 msgstr ""
 
-#: app/scripts/common/components/oo-generate-report.directive.js:51
+#: app/scripts/common/components/oo-generate-report.directive.js:75
 msgid "Bericht konnte nicht erzeugt werden"
 msgstr ""
 
-#: app/scripts/common/components/oo-dialogokabort.directive.modal.html:2
+#: app/scripts/common/components/oo-dialogokabort.directive.modal.html:3
 msgid "Bestätigung"
+msgstr ""
+
+#: app/scripts/common/components/oo-email-dialog.html:21
+msgid "Betreff"
 msgstr ""
 
 #: app/scripts/app.js:137
@@ -131,7 +138,7 @@ msgstr ""
 msgid "Bu."
 msgstr ""
 
-#: app/index.html:77
+#: app/index.html:78
 msgid "Buchhaltung"
 msgstr ""
 
@@ -155,8 +162,12 @@ msgstr ""
 msgid "DO"
 msgstr ""
 
-#: app/index.html:63
+#: app/index.html:64
 msgid "Das Backend steht im Moment nicht zur Verfügung. Bitte besuchen Sie uns später wieder."
+msgstr ""
+
+#: app/scripts/login/login.html:42
+msgid "Das Kundenportal ist gegenwärtig nicht verfügbar. Wir führen Unterhaltsarbeiten durch. In Kürze sind wir wieder online und wie gewohnt für Sie da."
 msgstr ""
 
 #: app/scripts/login/change_password.html:21
@@ -169,7 +180,7 @@ msgstr ""
 msgid "Das Passwort muss mindestens einen Gross- und Kleinbuchstaben, sowie einen numerischen Wert oder ein Symbol enthalten"
 msgstr ""
 
-#: app/scripts/login/login.controller.js:89
+#: app/scripts/login/login.controller.js:91
 msgid "Das Passwort wurde erfolgreich gesetzt. Sie können sich nun anmelden."
 msgstr ""
 
@@ -178,7 +189,7 @@ msgstr ""
 msgid "Datenextrakt"
 msgstr ""
 
-#: app/index.html:74
+#: app/index.html:75
 msgid "Depotauslieferungen"
 msgstr ""
 
@@ -190,7 +201,7 @@ msgstr ""
 msgid "DepotlieferungAbo"
 msgstr ""
 
-#: app/index.html:82
+#: app/index.html:83
 msgid "Depots"
 msgstr ""
 
@@ -211,6 +222,11 @@ msgstr ""
 msgid "Die Daten in diesem System werden sporadisch auf die Standardwerte zurückgesetzt."
 msgstr ""
 
+#: app/scripts/common/components/oo-confirmondirty-directive.js:22
+#: app/scripts/common/components/oo-confirmondirty-directive.js:36
+msgid "Die Seite enthält Modifikationen. Wollen Sie diese verwerfen?"
+msgstr ""
+
 #: app/scripts/app.js:165
 msgid "Dienstag"
 msgstr ""
@@ -223,8 +239,12 @@ msgstr ""
 msgid "Donnerstag"
 msgstr ""
 
-#: app/scripts/login/login.html:39
+#: app/scripts/login/login.html:57
 msgid "E-Mail Adresse"
+msgstr ""
+
+#: app/scripts/common/components/oo-email-dialog.html:5
+msgid "E-Mail versenden an selektierte Einträge"
 msgstr ""
 
 #: app/scripts/login/login.html:15
@@ -260,12 +280,12 @@ msgstr ""
 msgid "Eingage zu lang"
 msgstr ""
 
-#: app/index.html:80
+#: app/index.html:81
 msgid "Einkauf*"
 msgstr ""
 
-#: app/index.html:52
-#: app/index.html:88
+#: app/index.html:53
+#: app/index.html:89
 msgid "Einstellungen"
 msgstr ""
 
@@ -293,7 +313,7 @@ msgstr ""
 msgid "Erstellt"
 msgstr ""
 
-#: app/scripts/login/login.html:55
+#: app/scripts/login/login.html:73
 msgid "Es wurde ein Zugangscode an ihre Email-Adresse"
 msgstr ""
 
@@ -329,7 +349,7 @@ msgstr ""
 msgid "Freitag"
 msgstr ""
 
-#: app/scripts/login/login.html:51
+#: app/scripts/login/login.html:69
 msgid "Für das Testen der Administrationsumgebung, bitte hier klicken!"
 msgstr ""
 
@@ -415,15 +435,15 @@ msgstr ""
 msgid "Kilogramm"
 msgstr ""
 
-#: app/index.html:67
+#: app/index.html:68
 msgid "Kunden"
 msgstr ""
 
-#: app/index.html:70
+#: app/index.html:71
 msgid "Lieferanten"
 msgstr ""
 
-#: app/index.html:71
+#: app/index.html:72
 msgid "Lieferplanung"
 msgstr ""
 
@@ -439,7 +459,7 @@ msgstr ""
 msgid "Liter"
 msgstr ""
 
-#: app/scripts/login/login.html:51
+#: app/scripts/login/login.html:69
 msgid "Login Administration"
 msgstr ""
 
@@ -461,6 +481,24 @@ msgstr ""
 
 #: app/scripts/app.js:185
 msgid "Mai"
+msgstr ""
+
+#: app/scripts/common/components/oo-email-dialog.html:29
+msgid "Mail-Body"
+msgstr ""
+
+#: app/scripts/common/components/oo-email-dialog.html:13
+msgid "Mail-Template"
+msgstr ""
+
+#: app/scripts/common/components/oo-email-dialog.html:49
+msgid ""
+"Mails konnten nicht verschickt werden.<span>\n"
+"  </span>"
+msgstr ""
+
+#: app/scripts/common/components/oo-email-dialog.html:46
+msgid "Mails wurden verschickt"
 msgstr ""
 
 #: app/scripts/app.js:183
@@ -513,7 +551,7 @@ msgstr ""
 msgid "Offen"
 msgstr ""
 
-#: app/scripts/common/components/oo-dialogokabort.directive.modal.html:12
+#: app/scripts/common/components/oo-dialogokabort.directive.modal.html:13
 msgid "Ok"
 msgstr ""
 
@@ -533,7 +571,7 @@ msgstr ""
 msgid "PDF Erstellen"
 msgstr ""
 
-#: app/scripts/login/login.html:42
+#: app/scripts/login/login.html:60
 #: app/scripts/login/zugangaktivieren.html:11
 msgid "Passwort"
 msgstr ""
@@ -546,12 +584,12 @@ msgstr ""
 msgid "Passwort setzen und Zugang aktivieren"
 msgstr ""
 
-#: app/scripts/login/login.html:48
+#: app/scripts/login/login.html:66
 #: app/scripts/login/passwordreset.html:5
 msgid "Passwort vergessen?"
 msgstr ""
 
-#: app/index.html:54
+#: app/index.html:55
 #: app/scripts/login/change_password.html:41
 msgid "Passwort wechseln"
 msgstr ""
@@ -561,11 +599,11 @@ msgstr ""
 msgid "Passwort wiederholen"
 msgstr ""
 
-#: app/scripts/login/login.controller.js:79
+#: app/scripts/login/login.controller.js:81
 msgid "Passwort wurde erfolgreich geändert, Sie werden automatisch ausgelogged."
 msgstr ""
 
-#: app/scripts/login/login.controller.js:83
+#: app/scripts/login/login.controller.js:85
 msgid "Passwort wurde erfolgreich geändert, Sie wurden automatisch ausgelogged. Bitte loggen Sie sich mit dem neuen Passwort erneut an."
 msgstr ""
 
@@ -590,11 +628,11 @@ msgstr ""
 msgid "Passwortstärke"
 msgstr ""
 
-#: app/index.html:69
+#: app/index.html:70
 msgid "Pendenzen"
 msgstr ""
 
-#: app/index.html:76
+#: app/index.html:77
 msgid "Postauslieferungen"
 msgstr ""
 
@@ -606,23 +644,27 @@ msgstr ""
 msgid "PostlieferungAbo"
 msgstr ""
 
-#: app/index.html:86
+#: app/index.html:87
 msgid "Produkte"
 msgstr ""
 
-#: app/index.html:85
+#: app/index.html:86
 msgid "Produzenten"
 msgstr ""
 
-#: app/index.html:89
+#: app/index.html:90
 msgid "Projekt"
 msgstr ""
 
-#: app/index.html:78
+#: app/scripts/common/components/oo-email-dialog.html:24
+msgid "Prägnanter Betreff"
+msgstr ""
+
+#: app/index.html:79
 msgid "Rechnungen"
 msgstr ""
 
-#: app/index.html:87
+#: app/index.html:88
 msgid "Reports*"
 msgstr ""
 
@@ -636,6 +678,11 @@ msgstr ""
 
 #: app/scripts/app.js:173
 msgid "Samstag"
+msgstr ""
+
+#: app/scripts/common/components/oo-email-dialog.html:39
+#: app/scripts/common/components/oo-sliding-detail.directive.html:5
+msgid "Schliessen"
 msgstr ""
 
 #: app/scripts/app.js:153
@@ -674,7 +721,7 @@ msgstr ""
 msgid "St."
 msgstr ""
 
-#: app/index.html:81
+#: app/index.html:82
 msgid "Stammdaten"
 msgstr ""
 
@@ -691,11 +738,15 @@ msgstr ""
 msgid "Stück"
 msgstr ""
 
-#: app/index.html:75
+#: app/scripts/common/components/oo-email-dialog.html:32
+msgid "Text mit [Platzhalter]"
+msgstr ""
+
+#: app/index.html:76
 msgid "Tourauslieferungen"
 msgstr ""
 
-#: app/index.html:83
+#: app/index.html:84
 msgid "Touren"
 msgstr ""
 
@@ -719,8 +770,16 @@ msgstr ""
 msgid "Unregelmaessig"
 msgstr ""
 
+#: app/scripts/login/login.html:47
+msgid "Unterhalts-Moduls! Das Kundenportal ist gegenwärtig nicht verfügbar. Bitte sobald wie möglich wieder aktivieren!"
+msgstr ""
+
 #: app/scripts/app.js:132
 msgid "Verrechnet"
+msgstr ""
+
+#: app/scripts/common/components/oo-email-dialog.html:38
+msgid "Verschicken"
 msgstr ""
 
 #: app/scripts/app.js:136
@@ -731,7 +790,7 @@ msgstr ""
 msgid "Vorlage"
 msgstr ""
 
-#: app/index.html:90
+#: app/index.html:91
 msgid "Vorlagen*"
 msgstr ""
 
@@ -751,19 +810,19 @@ msgstr ""
 msgid "Woechentlich"
 msgstr ""
 
-#: app/scripts/common/components/oo-dialogokabort.directive.modal.html:7
+#: app/scripts/common/components/oo-dialogokabort.directive.modal.html:8
 msgid "Wollen Sie fortfahren?"
 msgstr ""
 
-#: app/index.html:79
+#: app/index.html:80
 msgid "Zahlungs-Imports"
 msgstr ""
 
-#: app/scripts/login/login.html:59
+#: app/scripts/login/login.html:77
 msgid "Zugangscode"
 msgstr ""
 
-#: app/scripts/login/login.html:65
+#: app/scripts/login/login.html:83
 msgid "Zugangscode erneut versenden"
 msgstr ""
 
@@ -787,15 +846,15 @@ msgstr ""
 msgid "kg"
 msgstr ""
 
-#: app/scripts/common/components/oo-actionsbutton.directive.js:102
+#: app/scripts/common/components/oo-actionsbutton.directive.js:114
 msgid "konnte nicht ausgeführt werden. Fehler:"
 msgstr ""
 
-#: app/scripts/common/components/oo-deletebutton.directive.js:97
+#: app/scripts/common/components/oo-deletebutton.directive.js:103
 msgid "konnte nicht gelöscht werden. Fehler:"
 msgstr ""
 
-#: app/scripts/common/components/oo-savebutton.directive.js:71
+#: app/scripts/common/components/oo-savebutton.directive.js:77
 msgid "konnte nicht gespeichert werden. Fehler:"
 msgstr ""
 
@@ -811,11 +870,15 @@ msgstr ""
 msgid "speichern"
 msgstr ""
 
+#: app/scripts/common/components/oo-email-dialog.html:46
+msgid "von"
+msgstr ""
+
 #: app/scripts/common/components/oo-deletebutton.directive.js:43
 msgid "wurde durch eine andere Person gelöscht."
 msgstr ""
 
-#: app/scripts/common/components/oo-actionsbutton.directive.js:70
+#: app/scripts/common/components/oo-actionsbutton.directive.js:76
 msgid "wurde durch eine andere Person geändert. Bitte laden Sie die Ansicht neu."
 msgstr ""
 
@@ -823,7 +886,7 @@ msgstr ""
 msgid "wurde erfolgreich gelöscht."
 msgstr ""
 
-#: app/scripts/login/login.html:55
+#: app/scripts/login/login.html:73
 msgid "zugestellt."
 msgstr ""
 
@@ -833,6 +896,10 @@ msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:24
 msgid "{{projektVorlage.name}}"
+msgstr ""
+
+#: app/scripts/common/components/oo-dialogokabort.directive.modal.html:2
+msgid "{{title | translate}}"
 msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:32
