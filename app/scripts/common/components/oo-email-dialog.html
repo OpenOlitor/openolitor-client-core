@@ -1,0 +1,51 @@
+<div class="panel panel-default">
+  <div class="panel-heading clearfix">
+    <h3 class="panel-title">
+      <span>
+        <span translate>E-Mail versenden an selektierte Einträge</span>
+    </span>
+  </h3>
+  </div>
+  <div class="panel-body">
+    <form name="emailForm">
+      <div class="row form-group">
+        <div class="col-md-12">
+          <label for="subject" translate>Mail-Template</label>
+        </div>
+        <div class="col-md-12">
+          <oo-dropdown dropdown-id="template" display-style="uib-dropdown" values="tempalteL" property="name" selected-prop="id" selected-function="selectTemplateFunc()"></oo-dropdown>
+        </div>
+      </div>
+      <div class="row form-group">
+        <div class="col-md-12">
+          <label for="subject" translate>Betreff</label>
+        </div>
+        <div class="col-md-12">
+          <input type="text" class="form-control" name="subject" ng-model="kundenToMailTo.subject" required placeholder="{{'Prägnanter Betreff'|translate}}" maxlength="30">
+        </div>
+      </div>
+      <div class="row form-group">
+        <div class="col-md-12">
+          <label for="body" translate>Mail-Body</label>
+        </div>
+        <div class="col-md-12">
+          <textarea name="body" cols="45" rows="10" ng-model="kundenToMailTo.body" required placeholder="{{'Text mit [Platzhalter]'|translate}}"></textarea>
+        </div>
+      </div>
+      <div class="row form-group">
+        <div class="col-md-12">
+          <span class="pull-right">
+            <a ng-if="!commandIssued" href="" role="button" ng-disabled="emailForm.$invalid" ng-click="batchCreate()" class="btn btn-primary"><i class="fa fa-share-square-o" aria-hidden="true"></i> <span translate>Verschicken</span></a>
+            <a ng-if="commandIssued" href="" role="button" ng-click="onClose()()" class="btn btn-danger"><i class="fa fa-times"></i> <span translate>Schliessen</span></a>
+          </span>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="panel-footer" ng-if="createHasWorked && commandIssued" >
+    {{batchCreated.ids.length}} <span translate>von</span> {{mailsSend.ids.length + batchCreated.ids.length}} <span translate> Mails wurden verschickt</span>
+  </div>
+  <div class="panel-footer" ng-if="!createHasWorked && commandIssued">
+      <span translate>Mails konnten nicht verschickt werden.<span/>
+  </div>
+</div>

@@ -1,9 +1,9 @@
 <span class="error-overlay" ng-cloak ng-show="!!alerts">
   <div uib-alert class="alert alert-{{(alert.type === 'error' || alert.type === 'lighterror' ) ? 'danger' : alert.type}} alert-dismissible" ng-repeat="alert in alerts" type="{{ alert.type }}" close="$removeAlert($index)">
    <span>
-     {{ alert.msg }}
+     {{ alert.msg | translate }}
      <ul ng-if="alert.details">
-       <li ng-repeat="detail in alert.details">{{ detail }}</li>
+       <li>{{alert.details | translate}}</li>
      </ul>
    </span>
   </div>

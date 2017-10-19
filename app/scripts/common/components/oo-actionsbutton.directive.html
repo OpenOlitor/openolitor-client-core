@@ -8,7 +8,7 @@
     </button>
     <button ng-disabled="actions.length < 2 || model.actionInProgress" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span> <span class="sr-only" translate>Weitere Aktionen</span> </button>
 
-    <ul ng-if="actions.length > 1" class="dropdown-menu">
+    <ul ng-if="actions.length > 1" class="dropdown-menu dropdown-menu-right">
       <li ng-if="!$first" ng-repeat="action in actions" ng-class="{disabled: action.isDisabled()}">
         <a href="" ng-click="!action.isDisabled() && execute(action)">
           <i class="{{ action.iconClass ? action.iconClass : 'fa fa-floppy-o'}}"></i>
