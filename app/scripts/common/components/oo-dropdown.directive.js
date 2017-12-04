@@ -17,12 +17,17 @@ angular.module('openolitor-core').directive('ooDropdown', function() {
       displayStyle: '@',
       label: '=',
       disabled: '=',
-      selectionRequired: '='
+      selectionRequired: '=',
+      alignment: '@'
     },
     templateUrl: 'scripts/common/components/oo-dropdown.directive.html',
     compile: function(element, attrs) {
       if (!attrs.displayStyle) {
         attrs.displayStyle = 'navbar';
+      }
+
+      if (!attrs.alignment) {
+        attrs.alignment = 'left';
       }
     },
     controller: function($scope) {
