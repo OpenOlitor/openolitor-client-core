@@ -24,7 +24,7 @@ angular.module('openolitor-core').directive('ooSlidingDetail',
 
         /* Set the width of the side navigation to 250px */
         $scope.openNav = function() {
-          $scope.stateStyle = {width: '400px',right:'0'};
+          $scope.stateStyle = {width: '400px',right:'0','overflow-x':'scroll'};
         };
 
         /* Set the width of the side navigation to 0 */
