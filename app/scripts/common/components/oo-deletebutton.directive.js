@@ -14,7 +14,7 @@ angular.module('openolitor-core').directive('ooDeleteButton', ['msgBus', 'gettex
         form: '=',
         onDeleted: '=',
         confirm: '@?',
-        confirmMessage: '=?',
+        confirmMessage: '@?',
         condensed: '@?',
         notext: '@?',
         small: '@?',
@@ -115,7 +115,11 @@ angular.module('openolitor-core').directive('ooDeleteButton', ['msgBus', 'gettex
   }
 ]);
 
-angular.module('openolitor-core').controller('ooDeleteButtonModalInstanceCtrl', function ($scope, $uibModalInstance) {
+angular.module('openolitor-core').controller('ooDeleteButtonModalInstanceCtrl', function ($scope, $uibModalInstance, message) {
+
+  $scope.getMessage = function() {
+    return message;
+  };
 
   $scope.ok = function () {
     $uibModalInstance.close();

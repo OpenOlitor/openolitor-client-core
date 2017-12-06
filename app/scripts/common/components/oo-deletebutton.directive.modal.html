@@ -1,10 +1,10 @@
 <div class="modal-header">
   <h3 translate>Sind Sie sicher?</h3>
-</div>'
+</div>
 <div class="modal-body">
  <div>
-   <span ng-if="message">{{message()}}</span>
-   <span ng-if="!message" translate>Soll der Löschvorgang fortgesetzt werden?</span>
+   <span ng-if="getMessage()">{{getMessage()}}</span>
+   <span ng-if="!getMessage()" translate>Soll der Löschvorgang fortgesetzt werden?</span>
  </div>
 
 </div>
