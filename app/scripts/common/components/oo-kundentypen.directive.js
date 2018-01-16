@@ -13,13 +13,14 @@ angular.module('openolitor-core').directive('ooKundentypen', ['KundentypenServic
       controller: function($scope) {
 
         var rebuildKundentypenList = function() {
-          if ($scope.kundentypenList && $scope.allKundentypen) {
+          var useKundentypenList = $scope.kundentypenList || [] ;
+          if ($scope.allKundentypen) {
             $scope.kundentypen = [];
             angular.forEach($scope.allKundentypen, function(kundentyp) {
               //check if system or custom kundentyp, use only id
               var id = (kundentyp.kundentyp) ? kundentyp.kundentyp :
                 kundentyp;
-              var index = $scope.kundentypenList.indexOf(id);
+              var index = useKundentypenList.indexOf(id);
               if (id.length > 0 && index < 0) {
                 $scope.kundentypen.push(id);
               }
@@ -33,6 +34,11 @@ angular.module('openolitor-core').directive('ooKundentypen', ['KundentypenServic
               $scope.allKundentypen = list;
               rebuildKundentypenList();
             }
+          });
+
+        $scope.$watch($scope.kundentypenList,
+          function(list) {
+              rebuildKundentypenList();
           });
 
         // initialize the set kundentypen
