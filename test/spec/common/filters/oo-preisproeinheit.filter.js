@@ -18,7 +18,7 @@ describe('Filter: ooPreisProEinheit', function() {
       waehrung: 'CHF'
     };
 
-    var result = $filter('ooPreisProEinheit')(input);
+    var result = $filter('ooPreisProEinheit')(input,input.waehrung);
 
     expect(result).toEqual('CHF 3.00 pro Tag');
   });
