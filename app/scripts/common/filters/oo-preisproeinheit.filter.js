@@ -1,10 +1,9 @@
 'use strict';
 
 angular.module('openolitor-core').filter('ooPreisProEinheit', function(gettext, $filter) {
-  return function(value) {
+  return function(value,currency) {
     var result = '' +
-      gettext(value.waehrung) + ' ' +
-      $filter('ooCHF')(value.preis) + ' ' +
+      $filter('ooCHF')(value.preis,true,currency) + ' ' +
       gettext('pro') + ' ' +
       gettext(value.preiseinheit);
 
