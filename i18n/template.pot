@@ -25,19 +25,19 @@ msgstr ""
 msgid "Abgeschlossen"
 msgstr ""
 
-#: app/index.html:56
+#: app/index.html:58
 msgid "Abmelden"
 msgstr ""
 
-#: app/index.html:69
+#: app/index.html:71
 msgid "Abos"
 msgstr ""
 
-#: app/index.html:85
+#: app/index.html:87
 msgid "Abotypen"
 msgstr ""
 
-#: app/index.html:73
+#: app/index.html:75
 msgid "Abrechnung*"
 msgstr ""
 
@@ -94,7 +94,7 @@ msgstr ""
 msgid "Ausgeliefert"
 msgstr ""
 
-#: app/index.html:74
+#: app/index.html:76
 msgid "Auslieferungen"
 msgstr ""
 
@@ -138,7 +138,7 @@ msgstr ""
 msgid "Bu."
 msgstr ""
 
-#: app/index.html:78
+#: app/index.html:80
 msgid "Buchhaltung"
 msgstr ""
 
@@ -162,7 +162,7 @@ msgstr ""
 msgid "DO"
 msgstr ""
 
-#: app/index.html:64
+#: app/index.html:66
 msgid "Das Backend steht im Moment nicht zur Verfügung. Bitte besuchen Sie uns später wieder."
 msgstr ""
 
@@ -189,7 +189,7 @@ msgstr ""
 msgid "Datenextrakt"
 msgstr ""
 
-#: app/index.html:75
+#: app/index.html:77
 msgid "Depotauslieferungen"
 msgstr ""
 
@@ -201,7 +201,7 @@ msgstr ""
 msgid "DepotlieferungAbo"
 msgstr ""
 
-#: app/index.html:83
+#: app/index.html:85
 msgid "Depots"
 msgstr ""
 
@@ -280,12 +280,12 @@ msgstr ""
 msgid "Eingage zu lang"
 msgstr ""
 
-#: app/index.html:81
+#: app/index.html:83
 msgid "Einkauf*"
 msgstr ""
 
-#: app/index.html:53
-#: app/index.html:89
+#: app/index.html:55
+#: app/index.html:91
 msgid "Einstellungen"
 msgstr ""
 
@@ -435,15 +435,15 @@ msgstr ""
 msgid "Kilogramm"
 msgstr ""
 
-#: app/index.html:68
+#: app/index.html:70
 msgid "Kunden"
 msgstr ""
 
-#: app/index.html:71
+#: app/index.html:73
 msgid "Lieferanten"
 msgstr ""
 
-#: app/index.html:72
+#: app/index.html:74
 msgid "Lieferplanung"
 msgstr ""
 
@@ -589,7 +589,7 @@ msgstr ""
 msgid "Passwort vergessen?"
 msgstr ""
 
-#: app/index.html:55
+#: app/index.html:57
 #: app/scripts/login/change_password.html:41
 msgid "Passwort wechseln"
 msgstr ""
@@ -628,11 +628,11 @@ msgstr ""
 msgid "Passwortstärke"
 msgstr ""
 
-#: app/index.html:70
+#: app/index.html:72
 msgid "Pendenzen"
 msgstr ""
 
-#: app/index.html:77
+#: app/index.html:79
 msgid "Postauslieferungen"
 msgstr ""
 
@@ -644,15 +644,15 @@ msgstr ""
 msgid "PostlieferungAbo"
 msgstr ""
 
-#: app/index.html:87
+#: app/index.html:89
 msgid "Produkte"
 msgstr ""
 
-#: app/index.html:86
+#: app/index.html:88
 msgid "Produzenten"
 msgstr ""
 
-#: app/index.html:90
+#: app/index.html:92
 msgid "Projekt"
 msgstr ""
 
@@ -660,11 +660,11 @@ msgstr ""
 msgid "Prägnanter Betreff"
 msgstr ""
 
-#: app/index.html:79
+#: app/index.html:81
 msgid "Rechnungen"
 msgstr ""
 
-#: app/index.html:88
+#: app/index.html:90
 msgid "Reports*"
 msgstr ""
 
@@ -721,7 +721,7 @@ msgstr ""
 msgid "St."
 msgstr ""
 
-#: app/index.html:82
+#: app/index.html:84
 msgid "Stammdaten"
 msgstr ""
 
@@ -742,11 +742,11 @@ msgstr ""
 msgid "Text mit [Platzhalter]"
 msgstr ""
 
-#: app/index.html:76
+#: app/index.html:78
 msgid "Tourauslieferungen"
 msgstr ""
 
-#: app/index.html:84
+#: app/index.html:86
 msgid "Touren"
 msgstr ""
 
@@ -790,7 +790,7 @@ msgstr ""
 msgid "Vorlage"
 msgstr ""
 
-#: app/index.html:91
+#: app/index.html:93
 msgid "Vorlagen*"
 msgstr ""
 
@@ -814,7 +814,7 @@ msgstr ""
 msgid "Wollen Sie fortfahren?"
 msgstr ""
 
-#: app/index.html:80
+#: app/index.html:82
 msgid "Zahlungs-Imports"
 msgstr ""
 
@@ -862,7 +862,7 @@ msgstr ""
 msgid "l"
 msgstr ""
 
-#: app/scripts/common/filters/oo-preisproeinheit.filter.js:8
+#: app/scripts/common/filters/oo-preisproeinheit.filter.js:7
 msgid "pro"
 msgstr ""
 
