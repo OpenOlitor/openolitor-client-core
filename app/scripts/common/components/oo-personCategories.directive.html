@@ -1,0 +1,11 @@
+<div class="btn-group" data-toggle="buttons">
+  <label ng-repeat="personCategory in personCategoriesList" class="btn btn-primary btn-sm">{{kundentyp}} <i class="fa fa-times" ng-click="removePersonCategory(personCategory)"></i></label>
+  <div class="btn-group" role="group">
+    <button ng-show="personCategories.length > 0" class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" >
+      <li ng-repeat="personCategory in personCategories"><a href="" ng-click="addPersonCategory(personCategory)">{{personCategory}}</a></li>
+    </ul>
+  </div>
+</div>
