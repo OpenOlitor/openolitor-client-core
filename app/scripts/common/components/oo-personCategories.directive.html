@@ -1,5 +1,5 @@
 <div class="btn-group" data-toggle="buttons">
-  <label ng-repeat="personCategory in personCategoriesList" class="btn btn-primary btn-sm">{{kundentyp}} <i class="fa fa-times" ng-click="removePersonCategory(personCategory)"></i></label>
+  <label ng-repeat="personCategory in personCategoriesList" class="btn btn-primary btn-sm">{{personCategory}} <i class="fa fa-times" ng-click="removePersonCategory(personCategory)"></i></label>
   <div class="btn-group" role="group">
     <button ng-show="personCategories.length > 0" class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
       <span class="caret"></span>
