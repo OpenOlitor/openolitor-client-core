@@ -20,7 +20,7 @@ angular.module('openolitor-core').directive('ooPersonCategories', ['PersonCatego
               //check if system or custom personCategory, use only id
               var id = (personCategory.name) ? personCategory.name:
                 personCategory;
-              var index = usePersonCategoriestypenList.indexOf(id);
+              var index = usePersonCategoriesList.indexOf(id);
               if (id.length > 0 && index < 0) {
                 $scope.personCategories.push(id);
               }
