@@ -45,6 +45,7 @@ angular.module('openolitor-core').directive('ooActionsButton', ['msgBus', 'gette
       transclude: true,
       templateUrl: 'scripts/common/components/oo-actionsbutton.directive.html',
       controller: function($scope) {
+        $scope.btnSize = '';
 
         if(angular.isUndefined($scope.btnStyle) || !$scope.btnStyle) {
           $scope.btnStyle = 'btn-primary';
@@ -53,6 +54,10 @@ angular.module('openolitor-core').directive('ooActionsButton', ['msgBus', 'gette
         if (!angular.isUndefined($scope.condensed) && $scope.condensed) {
           $scope.notext = true;
           $scope.small = true;
+        }
+
+        if($scope.small) {
+          $scope.btnSize = 'btn-sm';
         }
 
         $scope.isNew = function() {
