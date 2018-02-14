@@ -52,9 +52,12 @@ angular.module('openolitor-core').directive('ooPersonCategories', ['PersonCatego
           });
 
         $scope.addPersonCategory = function(personCategory) {
-          $scope.personCategoriesList.push(personCategory);
-          $scope.personCategoriesList.sort();
-          rebuildPersonCategoriesList();
+            if ($scope.personCategoriesList === undefined){
+                $scope.personCategoriesList  = [];
+            }
+            $scope.personCategoriesList.push(personCategory);
+            $scope.personCategoriesList.sort();
+            rebuildPersonCategoriesList();
         };
 
         $scope.removePersonCategory = function(personCategory) {
