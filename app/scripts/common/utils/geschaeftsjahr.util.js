@@ -116,10 +116,19 @@ angular.module('openolitor-core')
       }
     };
 
+    var sumValues = function(array) {
+      var sum = 0;
+      angular.forEach(array, function(value) {
+        sum += value.value;
+      });
+      return sum;
+    };
+
     return {
       isInCurrentGJ: isInCurrentGJ,
       isInCurrentOrLaterGJ: isInCurrentOrLaterGJ,
       getMatchingGJItem: getMatchingGJItem,
-      setOnMatchingGJItem: setOnMatchingGJItem
+      setOnMatchingGJItem: setOnMatchingGJItem,
+      sumValues: sumValues
     };
   });
