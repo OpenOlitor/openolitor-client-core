@@ -36,7 +36,7 @@ msgstr "clôturé"
 
 #: app/index.html:56
 msgid "Abmelden"
-msgstr "déconnexion"
+msgstr "Se déconnecter"
 
 #: app/index.html:69
 msgid "Abos"
@@ -913,4 +913,3 @@ msgstr ""
 #: app/scripts/common/components/oo-generate-report.directive.html:32
 msgid "{{vorlage.name}}"
 msgstr ""
-
