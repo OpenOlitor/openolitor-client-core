@@ -12,24 +12,16 @@ angular.module('openolitor-core').directive('ooArbeitskategorien', ['Arbeitskate
       templateUrl: 'scripts/common/components/oo-arbeitskategorien.directive.html',
       controller: function($scope) {
 
-        var remove = function(kundentyp) {
-          var index = $scope.arbeitskategorien.indexOf(kundentyp);
-          if (index >= 0) {
-            $scope.arbeitskategorien.splice(index, 1);
-          }
-        };
-
-
         var rebuildArbeitskategorienList = function() {
-          if ($scope.arbeitskategorienList && $scope.allArbeitskategorien) {
+          var useArbeitskategorienList = $scope.arbeitskategorienList || [] ;
+          if ($scope.allArbeitskategorien) {
             $scope.arbeitskategorien = [];
-            angular.forEach($scope.allArbeitskategorien, function(kundentyp) {
-              //check if system or custom kundentyp, use only id
-              var id = (kundentyp.kundentyp) ? kundentyp.kundentyp :
-                kundentyp;
-              var index = $scope.arbeitskategorienList.indexOf(id);
-              if (index < 0) {
-                $scope.arbeitskategorien.push(id);
+            angular.forEach($scope.allArbeitskategorien, function(arbeitskategorie) {
+              var beschreibung = (arbeitskategorie.beschreibung) ? arbeitskategorie.beschreibung :
+                arbeitskategorie;
+              var index = useArbeitskategorienList.indexOf(beschreibung);
+              if (beschreibung.length > 0 && index < 0) {
+                $scope.arbeitskategorien.push(beschreibung);
               }
             });
           }
@@ -53,19 +45,19 @@ angular.module('openolitor-core').directive('ooArbeitskategorien', ['Arbeitskate
             }
           });
 
-        $scope.addArbeitskategorie = function(kundentyp) {
-          $scope.arbeitskategorienList.push(kundentyp);
+        $scope.addArbeitskategorie = function(arbeitskategorie) {
+          $scope.arbeitskategorienList.push(arbeitskategorie);
           $scope.arbeitskategorienList.sort();
           rebuildArbeitskategorienList();
         };
 
-        $scope.removeArbeitskategorie = function(kundentyp) {
-          var index = $scope.arbeitskategorienList.indexOf(kundentyp);
+        $scope.removeArbeitskategorie = function(arbeitskategorie) {
+          var index = $scope.arbeitskategorienList.indexOf(arbeitskategorie);
           if (index >= 0) {
             $scope.arbeitskategorienList.splice(index, 1);
           }
           rebuildArbeitskategorienList();
-        }
+        };
       }
     };
   }

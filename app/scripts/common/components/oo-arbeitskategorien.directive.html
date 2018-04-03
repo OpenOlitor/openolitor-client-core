@@ -1,5 +1,5 @@
 <div class="btn-group" data-toggle="buttons">
-  <label ng-repeat="arbeitskategorie in arbeitskategorienList" class="btn btn-primary btn-sm">{{arbeitskategorie}} <i ng-if="arbeitskategorienList.length > 1" class="fa fa-times" ng-click="removeArbeitskategorie(arbeitskategorie)"></i></label>
+  <label ng-repeat="arbeitskategorie in arbeitskategorienList" class="btn btn-primary btn-sm">{{arbeitskategorie}} <i class="fa fa-times" ng-click="removeArbeitskategorie(arbeitskategorie)"></i></label>
   <div class="btn-group" role="group">
     <button ng-show="arbeitskategorien.length > 0"  class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
       <span class="caret"></span>

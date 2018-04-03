@@ -36,11 +36,6 @@ angular.module('openolitor-core').directive('ooKundentypen', ['KundentypenServic
             }
           });
 
-        $scope.$watch($scope.kundentypenList,
-          function(list) {
-              rebuildKundentypenList();
-          });
-
         // initialize the set kundentypen
         var deregister = $scope.$watchCollection('kundentypenList',
           function() {
