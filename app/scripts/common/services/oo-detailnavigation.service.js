@@ -56,6 +56,11 @@
         return getWithOffset(1);
       }
 
+      // Clean the kunde id list 
+      function cleanKundeList() {
+          idList = []; 
+      }
+
       // return the id of the previous detail in order
       function getPrevious() {
         return getWithOffset(-1);
@@ -80,6 +85,7 @@
       return {
         detailFromOverview: detailFromOverview,
         detailFromWithin: detailFromWithin,
+        cleanKundeList: cleanKundeList,
         getNext: getNext,
         getPrevious: getPrevious,
         getCurrentIndex: getCurrentIndex,
