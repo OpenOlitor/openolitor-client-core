@@ -18,7 +18,7 @@ angular.module('openolitor-core')
     var dataCheckboxWatchCallback = function($scope) {
       var checked = 0,
         unchecked = 0,
-        total = $scope.filteredEntries.length;
+        total = angular.isDefined($scope.filteredEntries) ? $scope.filteredEntries.length : 0;
       $scope.checkboxes.ids = [];
       $scope.checkboxes.checkedItems = [];
       if (!$scope.checkboxes.data) {
