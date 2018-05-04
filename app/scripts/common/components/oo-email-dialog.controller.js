@@ -34,11 +34,7 @@ angular.module('openolitor-core')
       };
 
       $scope.batchCreate = function() {
-          console.log("Aqui estoy!!")
-          console.log($scope)
         if ($scope.ids){
-          console.log("Ya estoy dentro!!")
-          console.log($scope)
             $scope.selectedMailTemplate.ids = $scope.ids;
             MailerService.sendEMail($scope.selectedMailTemplate,$scope.url).then(function() {
                 $scope.commandIssued = true;
