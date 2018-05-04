@@ -13,9 +13,7 @@
           <label for="subject" translate>Mail-Template</label>
         </div>
         <div class="col-md-6">
-        <i ng-show="kundeIds" uib-tooltip="{{kundeInfoText | translate}}" tooltip-placement="bottom" class="fa fa-question-circle" aria-hidden="true"></i>
-        <i ng-show="personIds" uib-tooltip="{{personInfoText | translate}}" tooltip-placement="bottom" class="fa fa-question-circle" aria-hidden="true"></i>
-        <i ng-show="aboIds" uib-tooltip="{{aboInfoText | translate}}" tooltip-placement="bottom" class="fa fa-question-circle" aria-hidden="true"></i>
+        <i uib-tooltip="{{message | translate}}" tooltip-placement="bottom" class="fa fa-question-circle" aria-hidden="true"></i>
         </div>
         <div class="col-md-12">
           <oo-dropdown dropdown-id="mailTemplateDropdown" display-style="uib-dropdown" values="templateT" property="subject" selected-prop="id" selected-function="selectTemplateFunc()"></oo-dropdown>
