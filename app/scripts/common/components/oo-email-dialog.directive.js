@@ -7,7 +7,9 @@ angular.module('openolitor-core').directive('ooEmailDialog', [
       restrict: 'E',
       replace: true,
       scope: {
-        kundeIds: '=',
+        ids: '=',
+        message: '=',
+        url: '=',
         onClose: '&'
       },
       transclude: false,

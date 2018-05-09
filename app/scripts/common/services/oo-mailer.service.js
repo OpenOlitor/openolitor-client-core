@@ -10,14 +10,13 @@ angular.module('openolitor-core')
         return $http.get(API_URL + 'mailtemplates');
       }
 
-      function sendEMailToKunden(mailSendTo) {
-        return $http.post(API_URL + 'mailing/sendEMailToKunden',
-          mailSendTo);
+      function sendEMail(mailSendTo, Url) {
+        return $http.post(API_URL + Url, mailSendTo);
       }
-
+      
       var service = {
         getTemplates: getTemplates,
-        sendEMailToKunden: sendEMailToKunden
+        sendEMail : sendEMail
       };
 
       return service;
