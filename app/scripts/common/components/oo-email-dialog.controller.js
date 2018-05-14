@@ -26,7 +26,8 @@ angular.module('openolitor-core')
 
       $scope.selectedMailTemplate = {
         subject: undefined,
-        body: undefined
+        body: undefined,
+        attachInvoice: false
       }
 
       $scope.open = {

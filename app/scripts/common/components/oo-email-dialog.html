@@ -9,6 +9,12 @@
   <div class="panel-body">
     <form name="emailForm">
       <div class="row form-group">
+<div class="col-md-12">
+        <div class="alert alert-danger" role="alert" ng-show="!attachment && selectedMailTemplate.attachInvoice">
+            <span translate>Einige selektierte Einträge verfügen über kein angehängtes Rechnungsdokument. Diese E-Mails werden ohne Anhang verschickt.</span>
+            <i class="fa fa-info-circle" aria-hidden="true" ng-if="abo.ende === undefined && abo.abotyp.kuendigungsfrist" uib-tooltip-template="'kuendigungsterminTooltipTemplate.html'"></i>                  
+         </div>
+        </div>
         <div class="col-md-6">
           <label for="subject" translate>Mail-Template</label>
         </div>
@@ -25,6 +31,14 @@
         </div>
         <div class="col-md-12">
           <input type="text" class="form-control" name="subject" ng-model="selectedMailTemplate.subject" required placeholder="{{'Prägnanter Betreff'|translate}}" maxlength="30">
+        </div>
+      </div>
+      <div ng-show="url === 'mailing/sendEmailToInvoicesSubscribers'" class="row form-group">
+        <div class="col-md-6">
+            <label for="attachment" translate>Rechnung anhängen</label>
+        </div>
+        <div class="col-md-6">
+            <input bs-switch name="attachInvoice" ng-model="selectedMailTemplate.attachInvoice" type="checkbox" switch-size="medium" switch-animate="true" switch-on-text="{{'Ja'|translate}}" switch-off-text="{{'Nein'|translate}}" switch-on-color="success" switch-off-color="danger" switch-radio-off="false" ng-true-value="true" ng-false-value="false">
         </div>
       </div>
       <div class="row form-group">
