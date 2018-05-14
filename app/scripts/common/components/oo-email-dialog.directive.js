@@ -10,6 +10,7 @@ angular.module('openolitor-core').directive('ooEmailDialog', [
         ids: '=',
         message: '=',
         url: '=',
+        attachment: '=',
         onClose: '&'
       },
       transclude: false,
