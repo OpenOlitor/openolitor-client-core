@@ -18,7 +18,7 @@
           <br /><span translate>Die Daten in diesem System werden sporadisch auf die Standardwerte zurückgesetzt.</span>
         </div>
       </span>
-      <span ng-if="appName !== 'openolitor-admin'">
+      <span ng-if="appName == 'openolitor-kundenportal'">
         <p translate>Für den Zugriff auf OpenOlitor ist eine Anmeldung erforderlich</p>
         <div class="alert alert-info" ng-if="env === 'test' || env === 'dev'">
           <span translate>Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen als Konsument anmelden:</span>
@@ -28,6 +28,18 @@
             <li><span translate>Passwort:</span> <b>kunde</b></li>
           </ul>
           <br /><span translate>Für den Zugang auf die Administrationsumgebung von OpenOlitor, bitte den Link unten rechts verwenden.</span>
+          <br /><span translate>Die Daten in diesem System werden sporadisch auf die Standardwerte zurückgesetzt.</span>
+        </div>
+      </span>
+      <span ng-if="appName === 'lasius-admin'">
+        <p translate>Für den Zugriff auf die Administrationsumgebung ist eine Anmeldung erforderlich</p>
+        <div class="alert alert-info" ng-if="env === 'test' || env === 'dev'">
+          <span translate>Sie befinden sich auf dem Lasius Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen an der Administrationsumgebung anmelden:</span>
+          <br /><br />
+          <ul>
+            <li><span translate>E-Mail:</span> <b>admin@openolitor.ch</b></li>
+            <li><span translate>Passwort:</span> <b>admin</b></li>
+          </ul>
           <br /><span translate>Die Daten in diesem System werden sporadisch auf die Standardwerte zurückgesetzt.</span>
         </div>
       </span>

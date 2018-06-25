@@ -1,0 +1,15 @@
+<div class="modal-header" >
+    <h3><span translate>Sending emails</span></h3>
+</div>'
+<div class="modal-body">
+    <form name="emailSendingForm">
+        <!-- abos -->
+        <div class="row">
+            <span class="col-md-12"><label for="guthaben" class="form-label" translate>Are you sure you want to send this email to {{emailNumber}} {{entity | translate}}</label></span>
+        </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-disabled="emailSendingForm.$invalid" ng-click="ok()" translate>Speichern</button>
+    <button class="btn btn-warning" ng-click="cancel()" translate>Abbrechen</button>
+</div>
+

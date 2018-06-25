@@ -1,4 +1,3 @@
-
 'use strict';
 
 angular.module('openolitor-core').directive('ooEmailDialog', [
@@ -9,13 +8,22 @@ angular.module('openolitor-core').directive('ooEmailDialog', [
       scope: {
         ids: '=',
         message: '=',
+        entity: '=',
         url: '=',
         attachment: '=',
+        dialog: '=',
         onClose: '&'
       },
-      transclude: false,
+      transclude: true,
       templateUrl: 'scripts/common/components/oo-email-dialog.html',
-      controller: 'EmailDialogController'
-    };
+      controller: 'EmailDialogController',
+      link: function($scope,$elem,$attrs){
+         $scope.$on('resetDirectiveEmailDialog',function (event) {
+           var form = document.querySelector('[name=emailForm]');
+           $scope.resetDropdown();
+           form.reset();
+         });
+      }
+    }
   }
 ]);
