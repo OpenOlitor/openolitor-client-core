@@ -11,7 +11,7 @@ msgstr ""
 "Last-Translator: al_openolitor <alwin.egger@openolitor.ch>\n"
 "Language-Team: English\n"
 "Language: en_US\n"
-"PO-Revision-Date: 2017-10-19 08:50-0400\n"
+"PO-Revision-Date: 2018-01-31 14:23-0500\n"
 
 #: app/scripts/app.js:119
 msgid "-"
@@ -470,7 +470,7 @@ msgstr "Liter"
 
 #: app/scripts/login/login.html:69
 msgid "Login Administration"
-msgstr ""
+msgstr "Login administration"
 
 #: app/scripts/common/components/oo-deletebutton.directive.modal.html:12
 msgid "Löschen"
@@ -498,7 +498,7 @@ msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:13
 msgid "Mail-Template"
-msgstr ""
+msgstr "Mail template"
 
 #: app/scripts/common/components/oo-email-dialog.html:49
 msgid "Mails konnten nicht verschickt werden.<span>\n"
@@ -622,7 +622,7 @@ msgstr ""
 #: app/scripts/login/login.html:16
 #: app/scripts/login/login.html:28
 msgid "Passwort:"
-msgstr ""
+msgstr "Contraseña:"
 
 #: app/scripts/login/change_password.html:23
 #: app/scripts/login/change_password.html:36
@@ -848,7 +848,7 @@ msgstr "create"
 
 #: app/scripts/app.js:144
 msgid "gr"
-msgstr ""
+msgstr "gr"
 
 #: app/scripts/app.js:146
 msgid "kg"
@@ -868,7 +868,7 @@ msgstr "could not be saved. Error:"
 
 #: app/scripts/app.js:147
 msgid "l"
-msgstr ""
+msgstr "l"
 
 #: app/scripts/common/filters/oo-preisproeinheit.filter.js:8
 msgid "pro"
