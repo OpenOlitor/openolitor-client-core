@@ -18,7 +18,18 @@
           <br /><span translate>Die Daten in diesem System werden sporadisch auf die Standardwerte zurückgesetzt.</span>
         </div>
       </span>
-      <span ng-if="appName !== 'openolitor-admin'">
+      <span ng-if="appName == 'lasius-admin'">
+        <div class="alert alert-info" ng-if="env === 'test' || env === 'dev'">
+          <span translate>Sie befinden sich auf dem Lasius Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen an der Administrationsumgebung anmelden:</span>
+          <br /><br />
+          <ul>
+            <li><span translate>E-Mail:</span> <b>admin@openolitor.ch</b></li>
+            <li><span translate>Passwort:</span> <b>admin</b></li>
+          </ul>
+          <br /><span translate>Die Daten in diesem System werden sporadisch auf die Standardwerte zurückgesetzt.</span>
+        </div>
+      </span>
+      <span ng-if="appName == 'openolitor-kundenportal'">
         <p translate>Für den Zugriff auf OpenOlitor ist eine Anmeldung erforderlich</p>
         <div class="alert alert-info" ng-if="env === 'test' || env === 'dev'">
           <span translate>Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen als Konsument anmelden:</span>
@@ -66,7 +77,7 @@
                 <a ng-href="#/passwordreset" translate>Passwort vergessen?</a>
               </div>
             </form>
-            <div class="pull-right" ng-if="appName !== 'openolitor-admin'"><a class="btn btn-xs btn-default" href="/admin/#" tooltip-placement="left" tooltip-enable="(env === 'test' || env === 'dev')" tooltip-is-open="true" uib-tooltip-html="'Für das Testen der Administrationsumgebung, bitte hier klicken!' | translate" translate>Login Administration</a></div>
+            <div class="pull-right" ng-if="appName == 'openolitor-kundenportal'"><a class="btn btn-xs btn-default" href="/admin/#" tooltip-placement="left" tooltip-enable="(env === 'test' || env === 'dev')" tooltip-is-open="true" uib-tooltip-html="'Für das Testen der Administrationsumgebung, bitte hier klicken!' | translate" translate>Login Administration</a></div>
           </div>
 
           <div class="container" ng-show="status === 'twoFactor'">
