@@ -3,8 +3,8 @@
     <h3 class="panel-title">
       <span>
         <span translate>E-Mail versenden an selektierte Einträge</span>
-    </span>
-  </h3>
+      </span>
+    </h3>
   </div>
   <div class="panel-body">
     <form name="emailForm">
@@ -22,7 +22,7 @@
         <i uib-tooltip="{{message | translate}}" tooltip-placement="bottom" class="fa fa-question-circle" aria-hidden="true"></i>
         </div>
         <div class="col-md-12">
-          <oo-dropdown dropdown-id="mailTemplateDropdown" display-style="uib-dropdown" values="templateT" property="subject" selected-prop="id" selected-function="selectTemplateFunc()"></oo-dropdown>
+          <oo-dropdown name="mailTemplateDropdown" dropdown-id="mailTemplateDropdown" display-style="uib-dropdown" values="templateT" property="label" selected-prop="id" selected-function="selectTemplateFunc(false)" selected="selectedId"></oo-dropdown>
         </div>
       </div>
       <div class="row form-group">
@@ -46,13 +46,13 @@
           <label for="body" translate>Mail-Body</label>
         </div>
         <div class="col-md-12">
-          <textarea name="body" cols="40" rows="10" ng-model="selectedMailTemplate.body" required placeholder="{{'Text mit [Platzhalter]'|translate}}"></textarea>
+          <textarea name="body" rows="10" style="width:100%" ng-model="selectedMailTemplate.body" required placeholder="{{'Text mit [Platzhalter]'|translate}}"></textarea>
         </div>
       </div>
       <div class="row form-group">
         <div class="col-md-12">
           <span class="pull-right">
-            <a ng-if="!commandIssued" href="" role="button" ng-disabled="emailForm.$invalid" ng-click="batchCreate()" class="btn btn-primary"><i class="fa fa-share-square-o" aria-hidden="true"></i> <span translate>Verschicken</span></a>
+              <a ng-if="!commandIssued" href="" role="button" ng-disabled="emailForm.$invalid" ng-click="emailForm.$invalid || showEmailConfirmationDialog()" class="btn btn-primary"><i class="fa fa-share-square-o" aria-hidden="true"></i> <span translate>Verschicken</span> {{ids.length}} <span translate>E-Mails</span></a>
             <a ng-if="commandIssued" href="" role="button" ng-click="onClose()()" class="btn btn-danger"><i class="fa fa-times"></i> <span translate>Schliessen</span></a>
           </span>
         </div>
