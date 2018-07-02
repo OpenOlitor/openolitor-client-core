@@ -38,19 +38,6 @@ angular.module('openolitor-core')
         start: false
       };
       
-      $scope.batchCreate = function() {
-        if ($scope.ids){
-            $scope.selectedMailTemplate.ids = $scope.ids;
-            MailerService.sendEMail($scope.selectedMailTemplate,$scope.url).then(function() {
-                $scope.commandIssued = true;
-                $scope.createHasWorked = true;
-            }, function (){
-                $scope.commandIssued = true;
-                $scope.createHasWorked = false;
-            });
-        }
-      };
-
       $scope.showEmailConfirmationDialog = function(){
           var modalInstance = $uibModal.open({
               animation: true,
@@ -62,12 +49,22 @@ angular.module('openolitor-core')
                   },
                   entity: function() {
                       return $scope.entity;
+                  },
+                  ids: function() {
+                      return $scope.ids;
+                  },
+                  selectedMailTemplate: function() {
+                      return $scope.selectedMailTemplate;
+                  },
+                  url:  function() {
+                      return $scope.url;
                   }
               }
           });
           modalInstance.result.then(function(data) {
           }, function() {
           });       
+          $scope.onClose()();
       }
 
       $scope.onchange = function() {
