@@ -11,7 +11,7 @@ msgstr ""
 "Last-Translator: al_openolitor <alwin.egger@openolitor.ch>\n"
 "Language-Team: English\n"
 "Language: en_US\n"
-"PO-Revision-Date: 2018-10-03 14:43\n"
+"PO-Revision-Date: 2018-10-03 15:18\n"
 
 #: app/scripts/app.js:119
 msgid "-"
@@ -34,19 +34,19 @@ msgstr "Quit"
 msgid "Abgeschlossen"
 msgstr "Completed"
 
-#: app/index.html:56
+#: app/index.html:57
 msgid "Abmelden"
 msgstr "Log out"
 
-#: app/index.html:69
+#: app/index.html:70
 msgid "Abos"
 msgstr "Subscriptions"
 
-#: app/index.html:85
+#: app/index.html:86
 msgid "Abotypen"
 msgstr "Subscription types"
 
-#: app/index.html:73
+#: app/index.html:74
 msgid "Abrechnung*"
 msgstr "Billing*"
 
@@ -54,7 +54,7 @@ msgstr "Billing*"
 msgid "Administrationsumgebung <span ng-if=\"projekt\">für</span>"
 msgstr "Administration portal <span ng-if=\"projekt\">for</span>"
 
-#: app/scripts/common/components/oo-actionsbutton.directive.js:112
+#: app/scripts/common/components/oo-actionsbutton.directive.js:117
 msgid "Aktion"
 msgstr "Action"
 
@@ -66,8 +66,8 @@ msgstr "Current password"
 msgid "Alle"
 msgstr "All"
 
-#: app/scripts/login/login.html:63
-#: app/scripts/login/login.html:80
+#: app/scripts/login/login.html:74
+#: app/scripts/login/login.html:91
 msgid "Anmelden"
 msgstr "Sign in"
 
@@ -103,7 +103,7 @@ msgstr "August"
 msgid "Ausgeliefert"
 msgstr "Delivered"
 
-#: app/index.html:74
+#: app/index.html:75
 msgid "Auslieferungen"
 msgstr "Deliveries"
 
@@ -147,7 +147,7 @@ msgstr "UK Pound"
 msgid "Bu."
 msgstr "Acc."
 
-#: app/index.html:78
+#: app/index.html:79
 msgid "Buchhaltung"
 msgstr "Accounting"
 
@@ -171,11 +171,11 @@ msgstr "TUES"
 msgid "DO"
 msgstr "THURS"
 
-#: app/index.html:64
+#: app/index.html:65
 msgid "Das Backend steht im Moment nicht zur Verfügung. Bitte besuchen Sie uns später wieder."
 msgstr "The backend is currently not available. Please visit us later."
 
-#: app/scripts/login/login.html:42
+#: app/scripts/login/login.html:53
 msgid "Das Kundenportal ist gegenwärtig nicht verfügbar. Wir führen Unterhaltsarbeiten durch. In Kürze sind wir wieder online und wie gewohnt für Sie da."
 msgstr "The customer portal is currently unavailable. We are currently working on some maintenance tasks. We will be back online soon."
 
@@ -198,7 +198,7 @@ msgstr "The password has been set successfully. You can access now."
 msgid "Datenextrakt"
 msgstr "Data extract"
 
-#: app/index.html:75
+#: app/index.html:76
 msgid "Depotauslieferungen"
 msgstr "Pick-up deliveries"
 
@@ -210,7 +210,7 @@ msgstr "Depot Delivery"
 msgid "DepotlieferungAbo"
 msgstr "Depot DeliverySuscription"
 
-#: app/index.html:83
+#: app/index.html:84
 msgid "Depots"
 msgstr "depots"
 
@@ -227,7 +227,8 @@ msgid "Dezember"
 msgstr "December"
 
 #: app/scripts/login/login.html:18
-#: app/scripts/login/login.html:31
+#: app/scripts/login/login.html:29
+#: app/scripts/login/login.html:42
 msgid "Die Daten in diesem System werden sporadisch auf die Standardwerte zurückgesetzt."
 msgstr "The data in the system are sporadically reset to their default values."
 
@@ -248,7 +249,7 @@ msgstr "The page cannot be found"
 msgid "Donnerstag"
 msgstr "Thursday"
 
-#: app/scripts/login/login.html:57
+#: app/scripts/login/login.html:68
 msgid "E-Mail Adresse"
 msgstr "Email address"
 
@@ -257,7 +258,8 @@ msgid "E-Mail versenden an selektierte Einträge"
 msgstr "Send email to selected entries"
 
 #: app/scripts/login/login.html:15
-#: app/scripts/login/login.html:27
+#: app/scripts/login/login.html:26
+#: app/scripts/login/login.html:38
 msgid "E-Mail:"
 msgstr "Email:"
 
@@ -289,12 +291,12 @@ msgstr "Input too short"
 msgid "Eingage zu lang"
 msgstr "Input too long"
 
-#: app/index.html:81
+#: app/index.html:82
 msgid "Einkauf*"
 msgstr "Purchase"
 
-#: app/index.html:53
-#: app/index.html:89
+#: app/index.html:54
+#: app/index.html:90
 msgid "Einstellungen"
 msgstr "Settings"
 
@@ -322,7 +324,7 @@ msgstr "Create"
 msgid "Erstellt"
 msgstr "Created"
 
-#: app/scripts/login/login.html:73
+#: app/scripts/login/login.html:84
 msgid "Es wurde ein Zugangscode an ihre Email-Adresse"
 msgstr "An access code was sent to your email address"
 
@@ -358,15 +360,15 @@ msgstr "Mrs."
 msgid "Freitag"
 msgstr "Friday"
 
-#: app/scripts/login/login.html:69
+#: app/scripts/login/login.html:80
 msgid "Für das Testen der Administrationsumgebung, bitte hier klicken!"
 msgstr "For testing the administration portal, click here!"
 
-#: app/scripts/login/login.html:30
+#: app/scripts/login/login.html:41
 msgid "Für den Zugang auf die Administrationsumgebung von OpenOlitor, bitte den Link unten rechts verwenden."
 msgstr "To access the OpenOlitor administration portal, use the link on the bottom right."
 
-#: app/scripts/login/login.html:22
+#: app/scripts/login/login.html:33
 msgid "Für den Zugriff auf OpenOlitor ist eine Anmeldung erforderlich"
 msgstr "Registration is required for access to OpenOlitor"
 
@@ -444,15 +446,15 @@ msgstr "None"
 msgid "Kilogramm"
 msgstr "kilograms"
 
-#: app/index.html:68
+#: app/index.html:69
 msgid "Kunden"
 msgstr "Participants"
 
-#: app/index.html:71
+#: app/index.html:72
 msgid "Lieferanten"
 msgstr "Suppliers"
 
-#: app/index.html:72
+#: app/index.html:73
 msgid "Lieferplanung"
 msgstr "Delivery planning"
 
@@ -468,7 +470,7 @@ msgstr "Deliveries"
 msgid "Liter"
 msgstr "Liter"
 
-#: app/scripts/login/login.html:69
+#: app/scripts/login/login.html:80
 msgid "Login Administration"
 msgstr "Login administration"
 
@@ -580,7 +582,7 @@ msgstr "Store PDF"
 msgid "PDF Erstellen"
 msgstr "PDF Settings"
 
-#: app/scripts/login/login.html:60
+#: app/scripts/login/login.html:71
 #: app/scripts/login/zugangaktivieren.html:11
 msgid "Passwort"
 msgstr "Password"
@@ -593,12 +595,12 @@ msgstr "Define password"
 msgid "Passwort setzen und Zugang aktivieren"
 msgstr "Reset password and enable access"
 
-#: app/scripts/login/login.html:66
+#: app/scripts/login/login.html:77
 #: app/scripts/login/passwordreset.html:5
 msgid "Passwort vergessen?"
 msgstr "Forgot your password?"
 
-#: app/index.html:55
+#: app/index.html:56
 #: app/scripts/login/change_password.html:41
 msgid "Passwort wechseln"
 msgstr "Change password"
@@ -621,7 +623,8 @@ msgid "Passwort zurücksetzen"
 msgstr "Reset password"
 
 #: app/scripts/login/login.html:16
-#: app/scripts/login/login.html:28
+#: app/scripts/login/login.html:27
+#: app/scripts/login/login.html:39
 msgid "Passwort:"
 msgstr "Contraseña:"
 
@@ -637,11 +640,11 @@ msgstr "Password doesn't match"
 msgid "Passwortstärke"
 msgstr "Password quality"
 
-#: app/index.html:70
+#: app/index.html:71
 msgid "Pendenzen"
 msgstr "Open Issues"
 
-#: app/index.html:77
+#: app/index.html:78
 msgid "Postauslieferungen"
 msgstr "Postal deliveries"
 
@@ -653,15 +656,15 @@ msgstr "post Delivery"
 msgid "PostlieferungAbo"
 msgstr "Post Delivery Subscription"
 
-#: app/index.html:87
+#: app/index.html:88
 msgid "Produkte"
 msgstr "Products"
 
-#: app/index.html:86
+#: app/index.html:87
 msgid "Produzenten"
 msgstr "Producers"
 
-#: app/index.html:90
+#: app/index.html:91
 msgid "Projekt"
 msgstr "Project"
 
@@ -669,11 +672,11 @@ msgstr "Project"
 msgid "Prägnanter Betreff"
 msgstr "Concise subject"
 
-#: app/index.html:79
+#: app/index.html:80
 msgid "Rechnungen"
 msgstr "Invoices"
 
-#: app/index.html:88
+#: app/index.html:89
 msgid "Reports*"
 msgstr "Reports"
 
@@ -706,7 +709,11 @@ msgstr "Sept"
 msgid "September"
 msgstr "September"
 
-#: app/scripts/login/login.html:24
+#: app/scripts/login/login.html:23
+msgid "Sie befinden sich auf dem Lasius Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen an der Administrationsumgebung anmelden:"
+msgstr "You are on the Lasius testing system. You can login as an administrator with the following credentials:"
+
+#: app/scripts/login/login.html:35
 msgid "Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen als Konsument anmelden:"
 msgstr "You are on the OpenOlitor testing system. You can login with the following credentials:"
 
@@ -730,7 +737,7 @@ msgstr "Sunday"
 msgid "St."
 msgstr "piece"
 
-#: app/index.html:82
+#: app/index.html:83
 msgid "Stammdaten"
 msgstr "Basic data"
 
@@ -751,11 +758,11 @@ msgstr "Piece"
 msgid "Text mit [Platzhalter]"
 msgstr "Text with [Platzhalter]"
 
-#: app/index.html:76
+#: app/index.html:77
 msgid "Tourauslieferungen"
 msgstr "Tour deliveries"
 
-#: app/index.html:84
+#: app/index.html:85
 msgid "Touren"
 msgstr "Tours"
 
@@ -779,7 +786,7 @@ msgstr "Unplanned"
 msgid "Unregelmaessig"
 msgstr "Irregular"
 
-#: app/scripts/login/login.html:47
+#: app/scripts/login/login.html:58
 msgid "Unterhalts-Moduls! Das Kundenportal ist gegenwärtig nicht verfügbar. Bitte sobald wie möglich wieder aktivieren!"
 msgstr "Maintenance mode! The customer portal is currently unavailable.We will activate it as soon as possible!"
 
@@ -799,7 +806,7 @@ msgstr "Sent"
 msgid "Vorlage"
 msgstr "Template"
 
-#: app/index.html:91
+#: app/index.html:92
 msgid "Vorlagen*"
 msgstr "Templates"
 
@@ -823,15 +830,15 @@ msgstr "Weekly"
 msgid "Wollen Sie fortfahren?"
 msgstr "Do you want to continue?"
 
-#: app/index.html:80
+#: app/index.html:81
 msgid "Zahlungs-Imports"
 msgstr "Import payments"
 
-#: app/scripts/login/login.html:77
+#: app/scripts/login/login.html:88
 msgid "Zugangscode"
 msgstr "Access code"
 
-#: app/scripts/login/login.html:83
+#: app/scripts/login/login.html:94
 msgid "Zugangscode erneut versenden"
 msgstr "Send access code again"
 
@@ -855,7 +862,7 @@ msgstr "gr"
 msgid "kg"
 msgstr "kg"
 
-#: app/scripts/common/components/oo-actionsbutton.directive.js:114
+#: app/scripts/common/components/oo-actionsbutton.directive.js:119
 msgid "konnte nicht ausgeführt werden. Fehler:"
 msgstr "this action could not be executed. Error:"
 
@@ -887,7 +894,7 @@ msgstr "from"
 msgid "wurde durch eine andere Person gelöscht."
 msgstr "was deleted by another person."
 
-#: app/scripts/common/components/oo-actionsbutton.directive.js:76
+#: app/scripts/common/components/oo-actionsbutton.directive.js:81
 msgid "wurde durch eine andere Person geändert. Bitte laden Sie die Ansicht neu."
 msgstr "has been changed by another person. Please refresh the display."
 
@@ -895,7 +902,7 @@ msgstr "has been changed by another person. Please refresh the display."
 msgid "wurde erfolgreich gelöscht."
 msgstr "has been successfully deleted."
 
-#: app/scripts/login/login.html:73
+#: app/scripts/login/login.html:84
 msgid "zugestellt."
 msgstr "delivered."
 
