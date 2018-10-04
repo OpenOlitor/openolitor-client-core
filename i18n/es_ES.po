@@ -11,7 +11,7 @@ msgstr ""
 "Last-Translator: al_openolitor <alwin.egger@openolitor.ch>\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2018-02-06 16:39-0500\n"
+"PO-Revision-Date: 2018-10-04 12:54\n"
 
 #: app/scripts/app.js:119
 msgid "-"
@@ -34,19 +34,19 @@ msgstr "Cancelar"
 msgid "Abgeschlossen"
 msgstr "Completado"
 
-#: app/index.html:56
+#: app/index.html:57
 msgid "Abmelden"
 msgstr "Cerrar sesión"
 
-#: app/index.html:69
+#: app/index.html:70
 msgid "Abos"
 msgstr "Suscripciones"
 
-#: app/index.html:85
+#: app/index.html:86
 msgid "Abotypen"
 msgstr "Tipo de subscripción"
 
-#: app/index.html:73
+#: app/index.html:74
 msgid "Abrechnung*"
 msgstr "Facturación"
 
@@ -54,7 +54,7 @@ msgstr "Facturación"
 msgid "Administrationsumgebung <span ng-if=\"projekt\">für</span>"
 msgstr "Portal de administración <span ng-if=\"projekt\">para</span>"
 
-#: app/scripts/common/components/oo-actionsbutton.directive.js:112
+#: app/scripts/common/components/oo-actionsbutton.directive.js:117
 msgid "Aktion"
 msgstr "Acción"
 
@@ -66,8 +66,8 @@ msgstr "Contraseña actual"
 msgid "Alle"
 msgstr "Todos"
 
-#: app/scripts/login/login.html:63
-#: app/scripts/login/login.html:80
+#: app/scripts/login/login.html:74
+#: app/scripts/login/login.html:91
 msgid "Anmelden"
 msgstr "Conectarse"
 
@@ -77,7 +77,7 @@ msgstr "Bienvenido"
 
 #: app/scripts/login/login.controller.js:101
 msgid "Anweisungen um Ihr Passwort neu zu setzten wurden Ihnen an Ihre Email-Adresse gesendet."
-msgstr "Te hemos enviado un correo electrónico con la información neceseria para modificar tu contraseña."
+msgstr "Te hemos enviado un correo electrónico con la información necesaria para modificar tu contraseña."
 
 #: app/scripts/app.js:184
 msgid "Apr"
@@ -103,7 +103,7 @@ msgstr "Agosto"
 msgid "Ausgeliefert"
 msgstr "Entregado"
 
-#: app/index.html:74
+#: app/index.html:75
 msgid "Auslieferungen"
 msgstr "Entregas"
 
@@ -147,7 +147,7 @@ msgstr "Libra esterlina"
 msgid "Bu."
 msgstr "Cont."
 
-#: app/index.html:78
+#: app/index.html:79
 msgid "Buchhaltung"
 msgstr "Contabilidad"
 
@@ -157,7 +157,7 @@ msgstr "Manojo"
 
 #: app/scripts/app.js:159
 msgid "CAD"
-msgstr ""
+msgstr "CAD"
 
 #: app/scripts/app.js:153
 msgid "CHF"
@@ -171,11 +171,11 @@ msgstr "MAR"
 msgid "DO"
 msgstr "JUE"
 
-#: app/index.html:64
+#: app/index.html:65
 msgid "Das Backend steht im Moment nicht zur Verfügung. Bitte besuchen Sie uns später wieder."
 msgstr "El servidor parece que no está respondiendo. Espera unos segundos e intentalo de nuevo."
 
-#: app/scripts/login/login.html:42
+#: app/scripts/login/login.html:53
 msgid "Das Kundenportal ist gegenwärtig nicht verfügbar. Wir führen Unterhaltsarbeiten durch. In Kürze sind wir wieder online und wie gewohnt für Sie da."
 msgstr "El portal de abonado no está actualmente disponible ya que estamos realizando alguna tarea de mantenimiento. En breve, el portal estará disponible de nuevo."
 
@@ -198,9 +198,9 @@ msgstr "La contraseña ha sido inicializada. Ahora puedes conectarte con el nomb
 msgid "Datenextrakt"
 msgstr "Extracto de datos"
 
-#: app/index.html:75
+#: app/index.html:76
 msgid "Depotauslieferungen"
-msgstr "Entregas a domicilio"
+msgstr "Entregas a punto de recogida"
 
 #: app/scripts/app.js:105
 msgid "Depotlieferung"
@@ -210,7 +210,7 @@ msgstr "Entrega a domicilio"
 msgid "DepotlieferungAbo"
 msgstr "Abono de entrega a domicilio"
 
-#: app/index.html:83
+#: app/index.html:84
 msgid "Depots"
 msgstr "Puntos de recogida"
 
@@ -227,7 +227,8 @@ msgid "Dezember"
 msgstr "Diciembre"
 
 #: app/scripts/login/login.html:18
-#: app/scripts/login/login.html:31
+#: app/scripts/login/login.html:29
+#: app/scripts/login/login.html:42
 msgid "Die Daten in diesem System werden sporadisch auf die Standardwerte zurückgesetzt."
 msgstr "Los datos se reinicializan periódicamente."
 
@@ -248,7 +249,7 @@ msgstr "¡La página solicitada no ha sido encontrada!"
 msgid "Donnerstag"
 msgstr "Jueves"
 
-#: app/scripts/login/login.html:57
+#: app/scripts/login/login.html:68
 msgid "E-Mail Adresse"
 msgstr "Correo electrónico"
 
@@ -257,7 +258,8 @@ msgid "E-Mail versenden an selektierte Einträge"
 msgstr "Enviar un correo electrónico a las direcciones seleccionadas"
 
 #: app/scripts/login/login.html:15
-#: app/scripts/login/login.html:27
+#: app/scripts/login/login.html:26
+#: app/scripts/login/login.html:38
 msgid "E-Mail:"
 msgstr "Correo electrónico:"
 
@@ -289,12 +291,12 @@ msgstr "Entrada muy corta"
 msgid "Eingage zu lang"
 msgstr "Entrada muy larga"
 
-#: app/index.html:81
+#: app/index.html:82
 msgid "Einkauf*"
 msgstr "Encargos"
 
-#: app/index.html:53
-#: app/index.html:89
+#: app/index.html:54
+#: app/index.html:90
 msgid "Einstellungen"
 msgstr "Parametros"
 
@@ -322,7 +324,7 @@ msgstr "Crear"
 msgid "Erstellt"
 msgstr "Creado"
 
-#: app/scripts/login/login.html:73
+#: app/scripts/login/login.html:84
 msgid "Es wurde ein Zugangscode an ihre Email-Adresse"
 msgstr "Se le ha enviado un código de acceso a su dirección de correo electrónico"
 
@@ -358,15 +360,15 @@ msgstr "Sra."
 msgid "Freitag"
 msgstr "Viernes"
 
-#: app/scripts/login/login.html:69
+#: app/scripts/login/login.html:80
 msgid "Für das Testen der Administrationsumgebung, bitte hier klicken!"
 msgstr "Para probar el portal de admistración, ir aquí"
 
-#: app/scripts/login/login.html:30
+#: app/scripts/login/login.html:41
 msgid "Für den Zugang auf die Administrationsumgebung von OpenOlitor, bitte den Link unten rechts verwenden."
 msgstr "Para acceder al espacio del administrador en OpenOlitor, clicar en el enlace que se encuentra abajo a la derecha."
 
-#: app/scripts/login/login.html:22
+#: app/scripts/login/login.html:33
 msgid "Für den Zugriff auf OpenOlitor ist eine Anmeldung erforderlich"
 msgstr "Para acceder al sistema de administración, introduzca las credenciales"
 
@@ -444,15 +446,15 @@ msgstr "Ninguno"
 msgid "Kilogramm"
 msgstr "Kilogramos"
 
-#: app/index.html:68
+#: app/index.html:69
 msgid "Kunden"
 msgstr "Clientes"
 
-#: app/index.html:71
+#: app/index.html:72
 msgid "Lieferanten"
 msgstr "Productores"
 
-#: app/index.html:72
+#: app/index.html:73
 msgid "Lieferplanung"
 msgstr "Planificación de las entregas"
 
@@ -468,7 +470,7 @@ msgstr "Entregas"
 msgid "Liter"
 msgstr "Litro"
 
-#: app/scripts/login/login.html:69
+#: app/scripts/login/login.html:80
 msgid "Login Administration"
 msgstr "Administración de inicio de sesión"
 
@@ -580,7 +582,7 @@ msgstr "Guardar el PDF"
 msgid "PDF Erstellen"
 msgstr "Crear un PDF"
 
-#: app/scripts/login/login.html:60
+#: app/scripts/login/login.html:71
 #: app/scripts/login/zugangaktivieren.html:11
 msgid "Passwort"
 msgstr "Contraseña"
@@ -593,12 +595,12 @@ msgstr "Definir una contraseña"
 msgid "Passwort setzen und Zugang aktivieren"
 msgstr "Restablecer contraseña y permitir el acceso"
 
-#: app/scripts/login/login.html:66
+#: app/scripts/login/login.html:77
 #: app/scripts/login/passwordreset.html:5
 msgid "Passwort vergessen?"
 msgstr "¿Te has olvidado la contraseña?"
 
-#: app/index.html:55
+#: app/index.html:56
 #: app/scripts/login/change_password.html:41
 msgid "Passwort wechseln"
 msgstr "Cambiar la contraseña"
@@ -621,7 +623,8 @@ msgid "Passwort zurücksetzen"
 msgstr "Restablecer contraseña"
 
 #: app/scripts/login/login.html:16
-#: app/scripts/login/login.html:28
+#: app/scripts/login/login.html:27
+#: app/scripts/login/login.html:39
 msgid "Passwort:"
 msgstr "Contraseña:"
 
@@ -637,11 +640,11 @@ msgstr "Las contraseñas no coinciden"
 msgid "Passwortstärke"
 msgstr "Calidad de la contraseña"
 
-#: app/index.html:70
+#: app/index.html:71
 msgid "Pendenzen"
 msgstr "Tareas pendientes"
 
-#: app/index.html:77
+#: app/index.html:78
 msgid "Postauslieferungen"
 msgstr "Entregas postales"
 
@@ -653,15 +656,15 @@ msgstr "Entrega a domicilio"
 msgid "PostlieferungAbo"
 msgstr "Abono de entrega a domicilio"
 
-#: app/index.html:87
+#: app/index.html:88
 msgid "Produkte"
 msgstr "Productos"
 
-#: app/index.html:86
+#: app/index.html:87
 msgid "Produzenten"
 msgstr "Productores"
 
-#: app/index.html:90
+#: app/index.html:91
 msgid "Projekt"
 msgstr "Proyecto"
 
@@ -669,11 +672,11 @@ msgstr "Proyecto"
 msgid "Prägnanter Betreff"
 msgstr "Asunto (pertinente)"
 
-#: app/index.html:79
+#: app/index.html:80
 msgid "Rechnungen"
 msgstr "Facturas"
 
-#: app/index.html:88
+#: app/index.html:89
 msgid "Reports*"
 msgstr "Informes*"
 
@@ -706,9 +709,13 @@ msgstr "Sep"
 msgid "September"
 msgstr "Septiembre"
 
-#: app/scripts/login/login.html:24
+#: app/scripts/login/login.html:23
+msgid "Sie befinden sich auf dem Lasius Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen an der Administrationsumgebung anmelden:"
+msgstr "Estás en el sistema de prueba de Lasius. Te puedes conectar como administrador utilizado la información de identificación siguiente:"
+
+#: app/scripts/login/login.html:35
 msgid "Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen als Konsument anmelden:"
-msgstr "Estás en el sistema de prueba de OpenOlitor. Te puedes conectar como abonado utilizado la información de identificación siguienteÑ"
+msgstr "Estás en el sistema de prueba de OpenOlitor. Te puedes conectar como abonado utilizado la información de identificación siguiente:"
 
 #: app/scripts/login/login.html:12
 msgid "Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen an der Administrationsumgebung anmelden:"
@@ -730,7 +737,7 @@ msgstr "Domingo"
 msgid "St."
 msgstr "Unidad"
 
-#: app/index.html:82
+#: app/index.html:83
 msgid "Stammdaten"
 msgstr "Base de datos"
 
@@ -751,11 +758,11 @@ msgstr "Unidad"
 msgid "Text mit [Platzhalter]"
 msgstr "Texto con [Platzhalter]"
 
-#: app/index.html:76
+#: app/index.html:77
 msgid "Tourauslieferungen"
 msgstr "Entrega a domicilio"
 
-#: app/index.html:84
+#: app/index.html:85
 msgid "Touren"
 msgstr "Recorridos"
 
@@ -779,7 +786,7 @@ msgstr "Sin planificar"
 msgid "Unregelmaessig"
 msgstr "Irregularmente"
 
-#: app/scripts/login/login.html:47
+#: app/scripts/login/login.html:58
 msgid "Unterhalts-Moduls! Das Kundenportal ist gegenwärtig nicht verfügbar. Bitte sobald wie möglich wieder aktivieren!"
 msgstr "¡estamos realizando tareas de mantenimiento! el portal del abonado está indisponible. Intentalo un poco más tarde"
 
@@ -799,7 +806,7 @@ msgstr "Enviado"
 msgid "Vorlage"
 msgstr "Modelo"
 
-#: app/index.html:91
+#: app/index.html:92
 msgid "Vorlagen*"
 msgstr "modelos*"
 
@@ -823,15 +830,15 @@ msgstr "Semanal"
 msgid "Wollen Sie fortfahren?"
 msgstr "¿Desea continuar?"
 
-#: app/index.html:80
+#: app/index.html:81
 msgid "Zahlungs-Imports"
 msgstr "Importación de los pagos"
 
-#: app/scripts/login/login.html:77
+#: app/scripts/login/login.html:88
 msgid "Zugangscode"
 msgstr "Código de acceso"
 
-#: app/scripts/login/login.html:83
+#: app/scripts/login/login.html:94
 msgid "Zugangscode erneut versenden"
 msgstr "Enviar el código de acceso una vez más"
 
@@ -855,7 +862,7 @@ msgstr "gr"
 msgid "kg"
 msgstr "kg"
 
-#: app/scripts/common/components/oo-actionsbutton.directive.js:114
+#: app/scripts/common/components/oo-actionsbutton.directive.js:119
 msgid "konnte nicht ausgeführt werden. Fehler:"
 msgstr "no se puede realizar. Error:"
 
@@ -887,7 +894,7 @@ msgstr "de"
 msgid "wurde durch eine andere Person gelöscht."
 msgstr "ha sido borrado por otra persona."
 
-#: app/scripts/common/components/oo-actionsbutton.directive.js:76
+#: app/scripts/common/components/oo-actionsbutton.directive.js:81
 msgid "wurde durch eine andere Person geändert. Bitte laden Sie die Ansicht neu."
 msgstr "ha sido borrado por otra persona, para ver los datos actuales refresque la página."
 
@@ -895,7 +902,7 @@ msgstr "ha sido borrado por otra persona, para ver los datos actuales refresque 
 msgid "wurde erfolgreich gelöscht."
 msgstr "ha sido borrado."
 
-#: app/scripts/login/login.html:73
+#: app/scripts/login/login.html:84
 msgid "zugestellt."
 msgstr "entregado."
 

@@ -25,19 +25,19 @@ msgstr ""
 msgid "Abgeschlossen"
 msgstr ""
 
-#: app/index.html:56
+#: app/index.html:57
 msgid "Abmelden"
 msgstr ""
 
-#: app/index.html:69
+#: app/index.html:70
 msgid "Abos"
 msgstr ""
 
-#: app/index.html:85
+#: app/index.html:86
 msgid "Abotypen"
 msgstr ""
 
-#: app/index.html:73
+#: app/index.html:74
 msgid "Abrechnung*"
 msgstr ""
 
@@ -45,7 +45,7 @@ msgstr ""
 msgid "Administrationsumgebung <span ng-if=\"projekt\">für</span>"
 msgstr ""
 
-#: app/scripts/common/components/oo-actionsbutton.directive.js:112
+#: app/scripts/common/components/oo-actionsbutton.directive.js:117
 msgid "Aktion"
 msgstr ""
 
@@ -57,8 +57,8 @@ msgstr ""
 msgid "Alle"
 msgstr ""
 
-#: app/scripts/login/login.html:63
-#: app/scripts/login/login.html:80
+#: app/scripts/login/login.html:74
+#: app/scripts/login/login.html:91
 msgid "Anmelden"
 msgstr ""
 
@@ -94,7 +94,7 @@ msgstr ""
 msgid "Ausgeliefert"
 msgstr ""
 
-#: app/index.html:74
+#: app/index.html:75
 msgid "Auslieferungen"
 msgstr ""
 
@@ -138,7 +138,7 @@ msgstr ""
 msgid "Bu."
 msgstr ""
 
-#: app/index.html:78
+#: app/index.html:79
 msgid "Buchhaltung"
 msgstr ""
 
@@ -162,11 +162,11 @@ msgstr ""
 msgid "DO"
 msgstr ""
 
-#: app/index.html:64
+#: app/index.html:65
 msgid "Das Backend steht im Moment nicht zur Verfügung. Bitte besuchen Sie uns später wieder."
 msgstr ""
 
-#: app/scripts/login/login.html:42
+#: app/scripts/login/login.html:53
 msgid "Das Kundenportal ist gegenwärtig nicht verfügbar. Wir führen Unterhaltsarbeiten durch. In Kürze sind wir wieder online und wie gewohnt für Sie da."
 msgstr ""
 
@@ -189,7 +189,7 @@ msgstr ""
 msgid "Datenextrakt"
 msgstr ""
 
-#: app/index.html:75
+#: app/index.html:76
 msgid "Depotauslieferungen"
 msgstr ""
 
@@ -201,7 +201,7 @@ msgstr ""
 msgid "DepotlieferungAbo"
 msgstr ""
 
-#: app/index.html:83
+#: app/index.html:84
 msgid "Depots"
 msgstr ""
 
@@ -218,7 +218,8 @@ msgid "Dezember"
 msgstr ""
 
 #: app/scripts/login/login.html:18
-#: app/scripts/login/login.html:31
+#: app/scripts/login/login.html:29
+#: app/scripts/login/login.html:42
 msgid "Die Daten in diesem System werden sporadisch auf die Standardwerte zurückgesetzt."
 msgstr ""
 
@@ -239,7 +240,7 @@ msgstr ""
 msgid "Donnerstag"
 msgstr ""
 
-#: app/scripts/login/login.html:57
+#: app/scripts/login/login.html:68
 msgid "E-Mail Adresse"
 msgstr ""
 
@@ -248,7 +249,8 @@ msgid "E-Mail versenden an selektierte Einträge"
 msgstr ""
 
 #: app/scripts/login/login.html:15
-#: app/scripts/login/login.html:27
+#: app/scripts/login/login.html:26
+#: app/scripts/login/login.html:38
 msgid "E-Mail:"
 msgstr ""
 
@@ -280,12 +282,12 @@ msgstr ""
 msgid "Eingage zu lang"
 msgstr ""
 
-#: app/index.html:81
+#: app/index.html:82
 msgid "Einkauf*"
 msgstr ""
 
-#: app/index.html:53
-#: app/index.html:89
+#: app/index.html:54
+#: app/index.html:90
 msgid "Einstellungen"
 msgstr ""
 
@@ -313,7 +315,7 @@ msgstr ""
 msgid "Erstellt"
 msgstr ""
 
-#: app/scripts/login/login.html:73
+#: app/scripts/login/login.html:84
 msgid "Es wurde ein Zugangscode an ihre Email-Adresse"
 msgstr ""
 
@@ -349,15 +351,15 @@ msgstr ""
 msgid "Freitag"
 msgstr ""
 
-#: app/scripts/login/login.html:69
+#: app/scripts/login/login.html:80
 msgid "Für das Testen der Administrationsumgebung, bitte hier klicken!"
 msgstr ""
 
-#: app/scripts/login/login.html:30
+#: app/scripts/login/login.html:41
 msgid "Für den Zugang auf die Administrationsumgebung von OpenOlitor, bitte den Link unten rechts verwenden."
 msgstr ""
 
-#: app/scripts/login/login.html:22
+#: app/scripts/login/login.html:33
 msgid "Für den Zugriff auf OpenOlitor ist eine Anmeldung erforderlich"
 msgstr ""
 
@@ -435,15 +437,15 @@ msgstr ""
 msgid "Kilogramm"
 msgstr ""
 
-#: app/index.html:68
+#: app/index.html:69
 msgid "Kunden"
 msgstr ""
 
-#: app/index.html:71
+#: app/index.html:72
 msgid "Lieferanten"
 msgstr ""
 
-#: app/index.html:72
+#: app/index.html:73
 msgid "Lieferplanung"
 msgstr ""
 
@@ -459,7 +461,7 @@ msgstr ""
 msgid "Liter"
 msgstr ""
 
-#: app/scripts/login/login.html:69
+#: app/scripts/login/login.html:80
 msgid "Login Administration"
 msgstr ""
 
@@ -571,7 +573,7 @@ msgstr ""
 msgid "PDF Erstellen"
 msgstr ""
 
-#: app/scripts/login/login.html:60
+#: app/scripts/login/login.html:71
 #: app/scripts/login/zugangaktivieren.html:11
 msgid "Passwort"
 msgstr ""
@@ -584,12 +586,12 @@ msgstr ""
 msgid "Passwort setzen und Zugang aktivieren"
 msgstr ""
 
-#: app/scripts/login/login.html:66
+#: app/scripts/login/login.html:77
 #: app/scripts/login/passwordreset.html:5
 msgid "Passwort vergessen?"
 msgstr ""
 
-#: app/index.html:55
+#: app/index.html:56
 #: app/scripts/login/change_password.html:41
 msgid "Passwort wechseln"
 msgstr ""
@@ -612,7 +614,8 @@ msgid "Passwort zurücksetzen"
 msgstr ""
 
 #: app/scripts/login/login.html:16
-#: app/scripts/login/login.html:28
+#: app/scripts/login/login.html:27
+#: app/scripts/login/login.html:39
 msgid "Passwort:"
 msgstr ""
 
@@ -628,11 +631,11 @@ msgstr ""
 msgid "Passwortstärke"
 msgstr ""
 
-#: app/index.html:70
+#: app/index.html:71
 msgid "Pendenzen"
 msgstr ""
 
-#: app/index.html:77
+#: app/index.html:78
 msgid "Postauslieferungen"
 msgstr ""
 
@@ -644,15 +647,15 @@ msgstr ""
 msgid "PostlieferungAbo"
 msgstr ""
 
-#: app/index.html:87
+#: app/index.html:88
 msgid "Produkte"
 msgstr ""
 
-#: app/index.html:86
+#: app/index.html:87
 msgid "Produzenten"
 msgstr ""
 
-#: app/index.html:90
+#: app/index.html:91
 msgid "Projekt"
 msgstr ""
 
@@ -660,11 +663,11 @@ msgstr ""
 msgid "Prägnanter Betreff"
 msgstr ""
 
-#: app/index.html:79
+#: app/index.html:80
 msgid "Rechnungen"
 msgstr ""
 
-#: app/index.html:88
+#: app/index.html:89
 msgid "Reports*"
 msgstr ""
 
@@ -697,7 +700,11 @@ msgstr ""
 msgid "September"
 msgstr ""
 
-#: app/scripts/login/login.html:24
+#: app/scripts/login/login.html:23
+msgid "Sie befinden sich auf dem Lasius Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen an der Administrationsumgebung anmelden:"
+msgstr ""
+
+#: app/scripts/login/login.html:35
 msgid "Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen als Konsument anmelden:"
 msgstr ""
 
@@ -721,7 +728,7 @@ msgstr ""
 msgid "St."
 msgstr ""
 
-#: app/index.html:82
+#: app/index.html:83
 msgid "Stammdaten"
 msgstr ""
 
@@ -742,11 +749,11 @@ msgstr ""
 msgid "Text mit [Platzhalter]"
 msgstr ""
 
-#: app/index.html:76
+#: app/index.html:77
 msgid "Tourauslieferungen"
 msgstr ""
 
-#: app/index.html:84
+#: app/index.html:85
 msgid "Touren"
 msgstr ""
 
@@ -770,7 +777,7 @@ msgstr ""
 msgid "Unregelmaessig"
 msgstr ""
 
-#: app/scripts/login/login.html:47
+#: app/scripts/login/login.html:58
 msgid "Unterhalts-Moduls! Das Kundenportal ist gegenwärtig nicht verfügbar. Bitte sobald wie möglich wieder aktivieren!"
 msgstr ""
 
@@ -790,7 +797,7 @@ msgstr ""
 msgid "Vorlage"
 msgstr ""
 
-#: app/index.html:91
+#: app/index.html:92
 msgid "Vorlagen*"
 msgstr ""
 
@@ -814,15 +821,15 @@ msgstr ""
 msgid "Wollen Sie fortfahren?"
 msgstr ""
 
-#: app/index.html:80
+#: app/index.html:81
 msgid "Zahlungs-Imports"
 msgstr ""
 
-#: app/scripts/login/login.html:77
+#: app/scripts/login/login.html:88
 msgid "Zugangscode"
 msgstr ""
 
-#: app/scripts/login/login.html:83
+#: app/scripts/login/login.html:94
 msgid "Zugangscode erneut versenden"
 msgstr ""
 
@@ -846,7 +853,7 @@ msgstr ""
 msgid "kg"
 msgstr ""
 
-#: app/scripts/common/components/oo-actionsbutton.directive.js:114
+#: app/scripts/common/components/oo-actionsbutton.directive.js:119
 msgid "konnte nicht ausgeführt werden. Fehler:"
 msgstr ""
 
@@ -878,7 +885,7 @@ msgstr ""
 msgid "wurde durch eine andere Person gelöscht."
 msgstr ""
 
-#: app/scripts/common/components/oo-actionsbutton.directive.js:76
+#: app/scripts/common/components/oo-actionsbutton.directive.js:81
 msgid "wurde durch eine andere Person geändert. Bitte laden Sie die Ansicht neu."
 msgstr ""
 
@@ -886,7 +893,7 @@ msgstr ""
 msgid "wurde erfolgreich gelöscht."
 msgstr ""
 
-#: app/scripts/login/login.html:73
+#: app/scripts/login/login.html:84
 msgid "zugestellt."
 msgstr ""
 

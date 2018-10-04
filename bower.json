@@ -1,11 +1,9 @@
 {
   "name": "openolitor-core",
-  "version": "2.2.12-SNAPSHOT",
+  "version": "2.2.13",
   "ignore": [],
   "private": false,
-  "main": [
-    "dist/scripts/openolitor-core.js"
-  ],
+  "main": ["dist/scripts/openolitor-core.js"],
   "dependencies": {
     "angular": "~1.6.5",
     "angular-animate": "~1.6.5",
@@ -54,9 +52,7 @@
   },
   "overrides": {
     "moment": {
-      "main": [
-        "./min/moment-with-locales.min.js"
-      ]
+      "main": ["./min/moment-with-locales.min.js"]
     }
   }
 }

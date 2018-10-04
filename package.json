@@ -1,6 +1,6 @@
 {
   "name": "openolitor-core",
-  "version": "2.2.12-SNAPSHOT",
+  "version": "2.2.13",
   "description": "OpenOlitor Client Core Module",
   "repository": {
     "type": "git",
