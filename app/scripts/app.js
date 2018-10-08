@@ -1,5 +1,31 @@
 'use strict';
 
+require('angular');
+require('angular-animate');
+require('angular-resource');
+require('angular-route');
+require('angular-sanitize');
+require('angular-touch');
+require('ng-table');
+require('angular-file-saver');
+require('angular-cookie');
+require('ng-password-strength');
+require('angular-messages');
+require('angular-gettext');
+require('angular-moment');
+require('angular-file-saver');
+require('ng1-lodash');
+require('angular-cookies');
+require('angular-filter');
+require('angular-ui-bootstrap');
+require('bootstrap-ui-datetime-picker');
+require('angular-bootstrap-switch');
+require('angularjs-color-picker');
+require('ng-file-upload');
+require('angular-sortable-view');
+require('./lib/hamburger');
+require('angular-loader');
+
 var regexIso8601 =
   /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})\.(\d{1,})(Z|([\-+])(\d{2}):(\d{2}))?$/;
 // Matches YYYY-MM-ddThh:mm:ss.sssZ where .sss is optional
