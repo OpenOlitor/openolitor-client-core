@@ -5,11 +5,10 @@
     <form name="emailSendingForm">
         <!-- abos -->
         <div class="row">
-            <span class="col-md-12"><label class="form-label"><span translate> Bist du sicher, dass du diese E-Mail an &nbsp;</span>{{emailNumber}} {{entity | translate}} <span translate> versenden möchtest </span></label></span>
+            <span class="col-md-12"><label class="form-label"><span translate> Bist du sicher, dass du diese E-Mail an &nbsp;</span>{{emailNumber}} <span style="text-transform: capitalize">{{entity | translate}}</span> <span translate> versenden möchtest </span></label></span>
         </div>
 </div>
 <div class="modal-footer">
     <button class="btn btn-primary" ng-disabled="emailSendingForm.$invalid" ng-click="ok()" translate>Senden</button>
     <button class="btn btn-warning" ng-click="cancel()" translate>Abbrechen</button>
 </div>
-
