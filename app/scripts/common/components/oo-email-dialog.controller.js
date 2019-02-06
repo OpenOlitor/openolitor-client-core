@@ -4,8 +4,8 @@
  */
 angular.module('openolitor-core')
   .controller('EmailDialogController', ['$scope', '$filter',
-    'msgBus', 'lodash', 'MailerService','$uibModal',
-    function($scope, $filter, msgBus, _, MailerService, $uibModal) {
+    'msgBus', 'lodash', 'MailerService','$uibModal', 'gettext',
+    function($scope, $filter, msgBus, _, MailerService, $uibModal, gettext) {
 
       $scope.batchCreated = {
         ids: [],
@@ -13,36 +13,35 @@ angular.module('openolitor-core')
       };
 
       $scope.commandIssued = false;
-        
+
       $scope.defaultEmptyTemplate = {id:0,label:gettext('Keine Vorlage'),subject:undefined,body:undefined,attachInvoice:false};
       $scope.templateT = [$scope.defaultEmptyTemplate];
       MailerService.getTemplates().then(function(result){
-          var i = 0;
-          angular.forEach(result.data, function(value,key){
+          angular.forEach(result.data, function(value){
               if (value.templateType === 'CustomMailTemplateType' ){
                   value.label = value.subject;
                 $scope.templateT.push(value);
               }
           });
-      },function(result){ });
-        
+      });
+
       $scope.selectedMailTemplate = {
         id: $scope.defaultEmptyTemplate.id ,
         subject: $scope.defaultEmptyTemplate.subject,
         body: $scope.defaultEmptyTemplate.body,
         label: $scope.defaultEmptyTemplate.label,
         attachInvoice: $scope.defaultEmptyTemplate.id
-      }
+      };
 
       $scope.open = {
         start: false
       };
-      
+
       $scope.showEmailConfirmationDialog = function(){
-          var modalInstance = $uibModal.open({
+          $uibModal.open({
               animation: true,
               templateUrl: 'scripts/common/components/oo-email-confirmation-message.html',
-              controller: 'EmailConfirmationMessageController', 
+              controller: 'EmailConfirmationMessageController',
               resolve: {
                   number: function() {
                       return $scope.ids.length;
@@ -61,14 +60,10 @@ angular.module('openolitor-core')
                   }
               }
           });
-          modalInstance.result.then(function(data) {
-          }, function() {
-          });       
-          $scope.onClose()();
-      }
+      };
 
       $scope.onchange = function() {
-          angular.forEach($scope.templateT, function(value,key){
+          angular.forEach($scope.templateT, function(value){
             if (value.id === $scope.selectedId){
                 $scope.selectedMailTemplate.subject = value.subject;
                 $scope.selectedMailTemplate.body = value.body;
@@ -76,20 +71,20 @@ angular.module('openolitor-core')
                 $scope.selectedMailTemplate.id = value.id;
             }
           });
-      }
+      };
 
-      $scope.resetDropdown = function(reset){
-              $scope.$broadcast("resetDropdown", $scope.defaultEmptyTemplate.id);
-      }
+      $scope.resetDropdown = function(){
+              $scope.$broadcast('resetDropdown', $scope.defaultEmptyTemplate.id);
+      };
 
-      $scope.selectTemplateFunc = function(reset) {
+      $scope.selectTemplateFunc = function() {
         var selectTemplate = function(template) {
           $scope.selectedMailTemplate.subject = template.subject;
           $scope.selectedMailTemplate.body = template.body;
           $scope.selectedMailTemplate.label = template.label;
           $scope.selectedId = template.id;
-          return false; 
-        }
+          return false;
+        };
         return selectTemplate;
       };
 
