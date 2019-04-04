@@ -6,24 +6,28 @@ angular.module('openolitor-core').directive('ooDraggable', ['$rootScope', 'uuid'
     return {
         restrict: 'A',
         scope: {
-            ooDragedType: '='
+            ooDragedType: '=',
+            ooDraggable: '='
         },
         link: function (scope, el, attrs, controller) {
-            angular.element(el).attr('draggable', 'true');
+            scope.$watch('ooDraggable', function (newValue, oldValue) {
+            angular.element(el).attr('draggable', newValue);
+            if (newValue){
+                var id = angular.element(el).attr('id');
 
-            var id = angular.element(el).attr('id');
+                if (!id) {
+                    id = uuid.new();
+                    angular.element(el).attr('id', id);
+                }
+                el.bind('dragstart', function (e) {
+                    e.originalEvent.dataTransfer.setData('text', '{ \"data\": \"' + id + '\", \"type\": \"' + scope.ooDragedType + '\" }');
+                    $rootScope.$emit('OO-DRAG-START');
+                });
 
-            if (!id) {
-                id = uuid.new();
-                angular.element(el).attr('id', id);
-            }
-            el.bind('dragstart', function (e) {
-                e.originalEvent.dataTransfer.setData('text', '{ \"data\": \"' + id + '\", \"type\": \"' + scope.ooDragedType + '\" }');
-                $rootScope.$emit('OO-DRAG-START');
-            });
-
-            el.bind('dragend', function (e) {
-                $rootScope.$emit('OO-DRAG-END');
+                el.bind('dragend', function (e) {
+                    $rootScope.$emit('OO-DRAG-END');
+                });
+              } 
             });
         }
     };

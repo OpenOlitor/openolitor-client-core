@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('openolitor-core').directive('ooDropdown', function() {
+angular.module('openolitor-core').directive('ooDropdown', [function() {
   return {
     restrict: 'E',
     replace: true,
@@ -28,6 +28,14 @@ angular.module('openolitor-core').directive('ooDropdown', function() {
 
       if (!attrs.alignment) {
         attrs.alignment = 'left';
+      }
+      return {
+        pre: function($scope, $elem, $attrs){
+          $scope.$on('resetDropdown', function(event, id) {
+            $scope.selectedItem = undefined;
+            $scope.selected = id;
+          });
+        }
       }
     },
     controller: function($scope) {
@@ -131,4 +139,4 @@ angular.module('openolitor-core').directive('ooDropdown', function() {
 
     }
   };
-});
+}]);

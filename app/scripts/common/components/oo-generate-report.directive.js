@@ -116,6 +116,19 @@ angular.module('openolitor-core').directive('ooGenerateReport', function() {
           $scope.form.vorlage = file;
         }
       };
+    },
+    link: function($scope,$elem,$attrs){
+         $scope.$on('resetDirectiveGenerateReport',function (event) {
+           var form = document.querySelector('[name=berichtForm]');
+           $scope.form = {
+             vorlage: undefined,
+             projektVorlageId: undefined,
+             pdfGenerieren: true,
+             pdfAblegen: false,
+             pdfDownloaden: true,
+             datenExtrakt: false
+            };
+         });
     }
   };
 });
