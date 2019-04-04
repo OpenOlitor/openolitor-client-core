@@ -98,16 +98,6 @@ angular.module('openolitor-core')
         }, 1000);
       };
 
-      var showPasswordResetMessage = function() {
-        alertService.addAlert('warning', gettext(
-          'Anweisungen um Ihr Passwort neu zu setzten wurden Ihnen an Ihre Email-Adresse gesendet.'
-        ));
-
-        $timeout(function() {
-          $location.path('/');
-        }, 3000);
-      };
-
       var logout = $route.current.$$route.logout;
       if (logout) {
         doLogout(true);
