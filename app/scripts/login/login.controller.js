@@ -9,6 +9,7 @@ angular.module('openolitor-core')
     function($scope, $rootScope, $http, API_URL, ENV, gettext, $rootElement,
       alertService, $timeout, $location, $route, $routeParams, ooAuthService, $interval) {
       $scope.loginData = {};
+      $scope.submitted = false;
       $scope.resetPasswordData = {};
       $scope.secondFactorData = {};
       $scope.changePwd = {
@@ -94,16 +95,6 @@ angular.module('openolitor-core')
 
         $timeout(function() {
           $location.path('/login');
-        }, 1000);
-      };
-
-      var showPasswordResetMessage = function() {
-        alertService.addAlert('info', gettext(
-          'Anweisungen um Ihr Passwort neu zu setzten wurden Ihnen an Ihre Email-Adresse gesendet.'
-        ));
-
-        $timeout(function() {
-          $location.path('/');
         }, 1000);
       };
 
@@ -193,7 +184,7 @@ angular.module('openolitor-core')
           $http.post(API_URL + 'auth/passwordreset', $scope.resetPasswordData).then(
             function() {
               $scope.resetPasswordData.message = undefined;
-              showPasswordResetMessage();
+              $scope.submitted = true;
             },
             function(error) {
               $scope.resetPasswordData.message = gettext(error.data);
