@@ -10,7 +10,7 @@ msgstr ""
 "X-Crowdin-File: /core-project/template.pot\n"
 "Last-Translator: al_openolitor\n"
 "Language-Team: Hungarian\n"
-"Language: hu_HU\n"
+"Language: hu\n"
 "PO-Revision-Date: 2019-04-24 06:32\n"
 
 #: app/scripts/app.js:119
