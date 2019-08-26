@@ -142,7 +142,7 @@ msgstr "Paid"
 
 #: app/scripts/common/components/oo-email-confirmation-message.html:8
 msgid "Bist du sicher, dass du diese E-Mail an &nbsp;"
-msgstr ""
+msgstr "Please confirm that you would like to send this email to &nbsp;"
 
 #: app/scripts/app.js:157
 msgid "Britisches Pfund"
@@ -182,7 +182,7 @@ msgstr "The backend is currently not available. Please visit us later."
 
 #: app/scripts/login/login.html:65
 msgid "Das Kundenportal ist gegenwärtig nicht verfügbar. Wir führen Unterhaltsarbeiten durch. In Kürze sind wir wieder online und wie gewohnt für Sie da."
-msgstr "The customer portal is currently unavailable. We are currently working on some maintenance tasks. We will be back online soon."
+msgstr "The member portal is currently unavailable. We are currently working on some maintenance tasks. We will be back online soon."
 
 #: app/scripts/login/change_password.html:21
 #: app/scripts/login/zugangaktivieren.html:15
@@ -261,11 +261,11 @@ msgstr "Email address"
 
 #: app/scripts/common/components/oo-email-dialog.html:19
 msgid "E-Mail Volage"
-msgstr ""
+msgstr "E-mail template"
 
 #: app/scripts/common/components/oo-email-confirmation-message.html:2
 msgid "E-Mail versenden"
-msgstr ""
+msgstr "Send e-mail"
 
 #: app/scripts/common/components/oo-email-dialog.html:5
 msgid "E-Mail versenden an selektierte Einträge"
@@ -308,7 +308,7 @@ msgstr "Input too long"
 
 #: app/scripts/common/components/oo-email-dialog.html:14
 msgid "Einige selektierte Einträge verfügen über kein angehängtes Rechnungsdokument. Diese E-Mails werden ohne Anhang verschickt."
-msgstr ""
+msgstr "Some of the selected entries do not have an invoice document attached. These e-mails will be sent without attachment."
 
 #: app/index.html:83
 msgid "Einkauf*"
@@ -465,7 +465,7 @@ msgstr "None"
 
 #: app/scripts/common/components/oo-email-dialog.controller.js:17
 msgid "Keine Vorlage"
-msgstr ""
+msgstr "No template"
 
 #: app/scripts/app.js:145
 msgid "Kilogramm"
@@ -473,7 +473,7 @@ msgstr "kilograms"
 
 #: app/index.html:70
 msgid "Kunden"
-msgstr "Participants"
+msgstr "Members"
 
 #: app/index.html:73
 msgid "Lieferanten"
@@ -697,7 +697,7 @@ msgstr "Concise subject"
 
 #: app/scripts/common/components/oo-email-dialog.html:38
 msgid "Rechnung anhängen"
-msgstr ""
+msgstr "Attach invoice PDF to email"
 
 #: app/index.html:81
 msgid "Rechnungen"
@@ -731,7 +731,7 @@ msgstr "Swiss Franc"
 #: app/scripts/common/components/oo-email-confirmation-message.html:12
 #: app/scripts/common/components/oo-email-dialog.html:55
 msgid "Senden"
-msgstr ""
+msgstr "Send"
 
 #: app/scripts/app.js:191
 msgid "Sep"
@@ -917,7 +917,7 @@ msgstr "Save"
 
 #: app/scripts/common/components/oo-email-confirmation-message.html:8
 msgid "versenden möchtest"
-msgstr ""
+msgstr " "
 
 #: app/scripts/common/components/oo-email-dialog.html:63
 msgid "von"
@@ -954,4 +954,3 @@ msgstr "{{title | translate}}"
 #: app/scripts/common/components/oo-generate-report.directive.html:32
 msgid "{{vorlage.name}}"
 msgstr "{{vorlage.name}}"
-
