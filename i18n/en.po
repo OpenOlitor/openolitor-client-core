@@ -10,8 +10,8 @@ msgstr ""
 "X-Crowdin-File: /core-project/template.pot\n"
 "Last-Translator: al_openolitor\n"
 "Language-Team: English\n"
-"Language: en_US\n"
-"PO-Revision-Date: 2019-07-18 13:00\n"
+"Language: en\n"
+"PO-Revision-Date: 2019-05-09 11:56\n"
 
 #: app/scripts/app.js:119
 msgid "-"
@@ -954,4 +954,3 @@ msgstr "{{title | translate}}"
 #: app/scripts/common/components/oo-generate-report.directive.html:32
 msgid "{{vorlage.name}}"
 msgstr "{{vorlage.name}}"
-

@@ -8,10 +8,10 @@ msgstr ""
 "X-Crowdin-Project: openolitor\n"
 "X-Crowdin-Language: fr-CH\n"
 "X-Crowdin-File: /core-project/template.pot\n"
-"Last-Translator: al_openolitor <alwin.egger@openolitor.ch>\n"
+"Last-Translator: al_openolitor\n"
 "Language-Team: French, Switzerland\n"
 "Language: fr_CH\n"
-"PO-Revision-Date: 2018-10-03 15:17\n"
+"PO-Revision-Date: 2019-04-24 06:32\n"
 
 #: app/scripts/app.js:119
 msgid "-"
@@ -27,6 +27,7 @@ msgstr "-Environnement de test"
 
 #: app/scripts/common/components/oo-deletebutton.directive.modal.html:13
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:15
+#: app/scripts/common/components/oo-email-confirmation-message.html:13
 msgid "Abbrechen"
 msgstr "Annuler"
 
@@ -34,19 +35,19 @@ msgstr "Annuler"
 msgid "Abgeschlossen"
 msgstr "Clôturé"
 
-#: app/index.html:57
+#: app/index.html:58
 msgid "Abmelden"
 msgstr "Déconnexion"
 
-#: app/index.html:70
+#: app/index.html:71
 msgid "Abos"
 msgstr "Abonnements"
 
-#: app/index.html:86
+#: app/index.html:87
 msgid "Abotypen"
 msgstr "Types d'abonnement"
 
-#: app/index.html:74
+#: app/index.html:75
 msgid "Abrechnung*"
 msgstr "Décompte*"
 
@@ -66,8 +67,8 @@ msgstr "Mot de passe actuel"
 msgid "Alle"
 msgstr "Tous"
 
-#: app/scripts/login/login.html:74
-#: app/scripts/login/login.html:91
+#: app/scripts/login/login.html:103
+#: app/scripts/login/login.html:86
 msgid "Anmelden"
 msgstr "Se connecter"
 
@@ -103,7 +104,7 @@ msgstr "Août"
 msgid "Ausgeliefert"
 msgstr "livré"
 
-#: app/index.html:75
+#: app/index.html:76
 msgid "Auslieferungen"
 msgstr "Livraisons"
 
@@ -131,13 +132,17 @@ msgstr "Le rapport n'as pas pu être créé"
 msgid "Bestätigung"
 msgstr "Confirmation"
 
-#: app/scripts/common/components/oo-email-dialog.html:21
+#: app/scripts/common/components/oo-email-dialog.html:30
 msgid "Betreff"
 msgstr "Sujet"
 
 #: app/scripts/app.js:137
 msgid "Bezahlt"
 msgstr "Payé"
+
+#: app/scripts/common/components/oo-email-confirmation-message.html:8
+msgid "Bist du sicher, dass du diese E-Mail an &nbsp;"
+msgstr ""
 
 #: app/scripts/app.js:157
 msgid "Britisches Pfund"
@@ -147,7 +152,7 @@ msgstr "Livre sterling"
 msgid "Bu."
 msgstr "Compt."
 
-#: app/index.html:79
+#: app/index.html:80
 msgid "Buchhaltung"
 msgstr "Comptabilité"
 
@@ -171,11 +176,11 @@ msgstr "MAR"
 msgid "DO"
 msgstr "JEU"
 
-#: app/index.html:65
+#: app/index.html:66
 msgid "Das Backend steht im Moment nicht zur Verfügung. Bitte besuchen Sie uns später wieder."
 msgstr "Le backend n'est pas disponible pour le moment, veuillez attendre quelques secondes, s'il vous plaît."
 
-#: app/scripts/login/login.html:53
+#: app/scripts/login/login.html:65
 msgid "Das Kundenportal ist gegenwärtig nicht verfügbar. Wir führen Unterhaltsarbeiten durch. In Kürze sind wir wieder online und wie gewohnt für Sie da."
 msgstr "Le portail des membres est actuellement indisponible. Nous effectuons des travaux d’entretien. Sous peu le portail sera de nouveau disponible."
 
@@ -198,19 +203,19 @@ msgstr "Le mot de passe a été défini avec succès. Vous pouvez vous connecter
 msgid "Datenextrakt"
 msgstr "Extrait des données"
 
-#: app/index.html:76
+#: app/index.html:77
 msgid "Depotauslieferungen"
-msgstr "Livraisons à dépôt"
+msgstr "Livraisons au dépôt"
 
 #: app/scripts/app.js:105
 msgid "Depotlieferung"
-msgstr "Livraison à dépôt"
+msgstr "Livraison au dépôt"
 
 #: app/scripts/app.js:124
 msgid "DepotlieferungAbo"
-msgstr "Abonnement livraison à dépôt"
+msgstr "Abonnement livraison au dépôt"
 
-#: app/index.html:84
+#: app/index.html:85
 msgid "Depots"
 msgstr "Dépôts"
 
@@ -229,6 +234,7 @@ msgstr "Décembre"
 #: app/scripts/login/login.html:18
 #: app/scripts/login/login.html:29
 #: app/scripts/login/login.html:42
+#: app/scripts/login/login.html:54
 msgid "Die Daten in diesem System werden sporadisch auf die Standardwerte zurückgesetzt."
 msgstr "De temps en temps, les données dans ce système sont réinitialisées aux valeurs de défaut."
 
@@ -249,9 +255,17 @@ msgstr "La page demandée n’a pas été trouvée"
 msgid "Donnerstag"
 msgstr "Jeudi"
 
-#: app/scripts/login/login.html:68
+#: app/scripts/login/login.html:80
 msgid "E-Mail Adresse"
 msgstr "Adresse courriel"
+
+#: app/scripts/common/components/oo-email-dialog.html:19
+msgid "E-Mail Volage"
+msgstr ""
+
+#: app/scripts/common/components/oo-email-confirmation-message.html:2
+msgid "E-Mail versenden"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:5
 msgid "E-Mail versenden an selektierte Einträge"
@@ -260,6 +274,7 @@ msgstr "Envoyer un courriel aux adresses sélectionnées"
 #: app/scripts/login/login.html:15
 #: app/scripts/login/login.html:26
 #: app/scripts/login/login.html:38
+#: app/scripts/login/login.html:51
 msgid "E-Mail:"
 msgstr "Courriel:"
 
@@ -291,12 +306,16 @@ msgstr "Entrée trop courte"
 msgid "Eingage zu lang"
 msgstr "Entrée trop longue"
 
-#: app/index.html:82
+#: app/scripts/common/components/oo-email-dialog.html:14
+msgid "Einige selektierte Einträge verfügen über kein angehängtes Rechnungsdokument. Diese E-Mails werden ohne Anhang verschickt."
+msgstr ""
+
+#: app/index.html:83
 msgid "Einkauf*"
 msgstr "Commandes"
 
-#: app/index.html:54
-#: app/index.html:90
+#: app/index.html:55
+#: app/index.html:91
 msgid "Einstellungen"
 msgstr "Paramètres"
 
@@ -324,7 +343,7 @@ msgstr "Créer"
 msgid "Erstellt"
 msgstr "Créé"
 
-#: app/scripts/login/login.html:84
+#: app/scripts/login/login.html:96
 msgid "Es wurde ein Zugangscode an ihre Email-Adresse"
 msgstr "Un code d’accès a été envoyé à votre adresse courriel"
 
@@ -360,7 +379,7 @@ msgstr "Madame"
 msgid "Freitag"
 msgstr "Vendredi"
 
-#: app/scripts/login/login.html:80
+#: app/scripts/login/login.html:92
 msgid "Für das Testen der Administrationsumgebung, bitte hier klicken!"
 msgstr "Pour tester le frontend d’administration, cliquez ici !"
 
@@ -373,6 +392,7 @@ msgid "Für den Zugriff auf OpenOlitor ist eine Anmeldung erforderlich"
 msgstr "Une inscription est nécessaire pour accéder à OpenOlitor"
 
 #: app/scripts/login/login.html:10
+#: app/scripts/login/login.html:46
 msgid "Für den Zugriff auf die Administrationsumgebung ist eine Anmeldung erforderlich"
 msgstr "Une inscription est nécessaire pour accéder à OpenOlitor"
 
@@ -404,6 +424,7 @@ msgstr "Télécharger"
 msgid "Hr."
 msgstr "M."
 
+#: app/scripts/common/components/oo-email-dialog.html:41
 #: app/scripts/common/components/oo-generate-report.directive.html:48
 #: app/scripts/common/components/oo-generate-report.directive.html:56
 #: app/scripts/common/components/oo-generate-report.directive.html:64
@@ -442,19 +463,23 @@ msgstr "Dollar canadien"
 msgid "Keine"
 msgstr "Aucun"
 
+#: app/scripts/common/components/oo-email-dialog.controller.js:17
+msgid "Keine Vorlage"
+msgstr ""
+
 #: app/scripts/app.js:145
 msgid "Kilogramm"
 msgstr "kilogramme"
 
-#: app/index.html:69
+#: app/index.html:70
 msgid "Kunden"
 msgstr "Participants"
 
-#: app/index.html:72
+#: app/index.html:73
 msgid "Lieferanten"
 msgstr "Producteurs"
 
-#: app/index.html:73
+#: app/index.html:74
 msgid "Lieferplanung"
 msgstr "Planification de livraison"
 
@@ -470,7 +495,7 @@ msgstr "Livraisons"
 msgid "Liter"
 msgstr "Litre"
 
-#: app/scripts/login/login.html:80
+#: app/scripts/login/login.html:92
 msgid "Login Administration"
 msgstr "Login frontend d'administration"
 
@@ -494,21 +519,17 @@ msgstr "Rappel-envoyé"
 msgid "Mai"
 msgstr "Mai"
 
-#: app/scripts/common/components/oo-email-dialog.html:29
+#: app/scripts/common/components/oo-email-dialog.html:46
 msgid "Mail-Body"
 msgstr "Corps du courriel"
 
-#: app/scripts/common/components/oo-email-dialog.html:13
-msgid "Mail-Template"
-msgstr "Modèle de courriel"
-
-#: app/scripts/common/components/oo-email-dialog.html:49
+#: app/scripts/common/components/oo-email-dialog.html:66
 msgid "Mails konnten nicht verschickt werden.<span>\n"
 "  </span>"
 msgstr "Les courriels n’ont pas pu être envoyés. <span>\n"
 "</span>"
 
-#: app/scripts/common/components/oo-email-dialog.html:46
+#: app/scripts/common/components/oo-email-dialog.html:63
 msgid "Mails wurden verschickt"
 msgstr "Les courriels ont été envoyés"
 
@@ -536,6 +557,7 @@ msgstr "Lundi"
 msgid "März"
 msgstr "Mars"
 
+#: app/scripts/common/components/oo-email-dialog.html:41
 #: app/scripts/common/components/oo-generate-report.directive.html:48
 #: app/scripts/common/components/oo-generate-report.directive.html:56
 #: app/scripts/common/components/oo-generate-report.directive.html:64
@@ -582,7 +604,7 @@ msgstr "Sauvegarde le PDF"
 msgid "PDF Erstellen"
 msgstr "Créer un PDF"
 
-#: app/scripts/login/login.html:71
+#: app/scripts/login/login.html:83
 #: app/scripts/login/zugangaktivieren.html:11
 msgid "Passwort"
 msgstr "Mot de passe"
@@ -595,12 +617,12 @@ msgstr "Saisir un mot de passe"
 msgid "Passwort setzen und Zugang aktivieren"
 msgstr "Saisir un mot de passe et activer l'accès à OpenOlitor"
 
-#: app/scripts/login/login.html:77
+#: app/scripts/login/login.html:89
 #: app/scripts/login/passwordreset.html:5
 msgid "Passwort vergessen?"
 msgstr "Oubliez le mot de passe ?"
 
-#: app/index.html:56
+#: app/index.html:57
 #: app/scripts/login/change_password.html:41
 msgid "Passwort wechseln"
 msgstr "Changer le mot de passe"
@@ -625,6 +647,7 @@ msgstr "Réinitialiser le mot de passe"
 #: app/scripts/login/login.html:16
 #: app/scripts/login/login.html:27
 #: app/scripts/login/login.html:39
+#: app/scripts/login/login.html:52
 msgid "Passwort:"
 msgstr "Mot de passe:"
 
@@ -640,11 +663,11 @@ msgstr "Les deux entrées du mot de passe ne sont pas identiques"
 msgid "Passwortstärke"
 msgstr "Qualité du mot de passe"
 
-#: app/index.html:71
+#: app/index.html:72
 msgid "Pendenzen"
 msgstr "Liste des affaires en suspens"
 
-#: app/index.html:78
+#: app/index.html:79
 msgid "Postauslieferungen"
 msgstr "Livraisons par poste"
 
@@ -656,27 +679,31 @@ msgstr "Livraison par poste"
 msgid "PostlieferungAbo"
 msgstr "Abonnement de livraison par poste"
 
-#: app/index.html:88
+#: app/index.html:89
 msgid "Produkte"
 msgstr "Produits"
 
-#: app/index.html:87
+#: app/index.html:88
 msgid "Produzenten"
 msgstr "Producteurs"
 
-#: app/index.html:91
+#: app/index.html:92
 msgid "Projekt"
 msgstr "Initiative"
 
-#: app/scripts/common/components/oo-email-dialog.html:24
+#: app/scripts/common/components/oo-email-dialog.html:33
 msgid "Prägnanter Betreff"
 msgstr "Sujet (pertinent)"
 
-#: app/index.html:80
+#: app/scripts/common/components/oo-email-dialog.html:38
+msgid "Rechnung anhängen"
+msgstr ""
+
+#: app/index.html:81
 msgid "Rechnungen"
 msgstr "Factures"
 
-#: app/index.html:89
+#: app/index.html:90
 msgid "Reports*"
 msgstr "Rapports"
 
@@ -692,7 +719,7 @@ msgstr "SO"
 msgid "Samstag"
 msgstr "Samedi"
 
-#: app/scripts/common/components/oo-email-dialog.html:39
+#: app/scripts/common/components/oo-email-dialog.html:56
 #: app/scripts/common/components/oo-sliding-detail.directive.html:5
 msgid "Schliessen"
 msgstr "Fermer"
@@ -700,6 +727,11 @@ msgstr "Fermer"
 #: app/scripts/app.js:153
 msgid "Schweizer Franken"
 msgstr "Francs suisses"
+
+#: app/scripts/common/components/oo-email-confirmation-message.html:12
+#: app/scripts/common/components/oo-email-dialog.html:55
+msgid "Senden"
+msgstr ""
 
 #: app/scripts/app.js:191
 msgid "Sep"
@@ -710,6 +742,7 @@ msgid "September"
 msgstr "Septembre"
 
 #: app/scripts/login/login.html:23
+#: app/scripts/login/login.html:48
 msgid "Sie befinden sich auf dem Lasius Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen an der Administrationsumgebung anmelden:"
 msgstr "Vous êtes sur le système de test de Lasius. Vous pouvez vous connecter en utilisant les informations d’identification suivantes (en tant qu'administratrice):"
 
@@ -737,7 +770,7 @@ msgstr "Dimanche"
 msgid "St."
 msgstr "Pièce"
 
-#: app/index.html:83
+#: app/index.html:84
 msgid "Stammdaten"
 msgstr "Données de base"
 
@@ -754,15 +787,15 @@ msgstr "Annulé"
 msgid "Stück"
 msgstr "Pièce"
 
-#: app/scripts/common/components/oo-email-dialog.html:32
+#: app/scripts/common/components/oo-email-dialog.html:49
 msgid "Text mit [Platzhalter]"
 msgstr "Texte avec [Platzhalter]"
 
-#: app/index.html:77
+#: app/index.html:78
 msgid "Tourauslieferungen"
 msgstr "Livraison à tour"
 
-#: app/index.html:85
+#: app/index.html:86
 msgid "Touren"
 msgstr "Tours"
 
@@ -786,17 +819,13 @@ msgstr "Non planifié"
 msgid "Unregelmaessig"
 msgstr "irrégulièrement"
 
-#: app/scripts/login/login.html:58
+#: app/scripts/login/login.html:70
 msgid "Unterhalts-Moduls! Das Kundenportal ist gegenwärtig nicht verfügbar. Bitte sobald wie möglich wieder aktivieren!"
 msgstr "Travaux de maintenance ! Le portail client est actuellement indisponible. Veuillez l'activer prochainement."
 
 #: app/scripts/app.js:132
 msgid "Verrechnet"
 msgstr "Décompté"
-
-#: app/scripts/common/components/oo-email-dialog.html:38
-msgid "Verschicken"
-msgstr "Envoyer"
 
 #: app/scripts/app.js:136
 msgid "Verschickt"
@@ -806,7 +835,7 @@ msgstr "Envoyé"
 msgid "Vorlage"
 msgstr "Modèle"
 
-#: app/index.html:92
+#: app/index.html:93
 msgid "Vorlagen*"
 msgstr "Modèles*"
 
@@ -830,15 +859,15 @@ msgstr "Hebdomadaire"
 msgid "Wollen Sie fortfahren?"
 msgstr "Voulez-vous continuer ?"
 
-#: app/index.html:81
+#: app/index.html:82
 msgid "Zahlungs-Imports"
 msgstr "Importations des paiements"
 
-#: app/scripts/login/login.html:88
+#: app/scripts/login/login.html:100
 msgid "Zugangscode"
 msgstr "Code d’accès"
 
-#: app/scripts/login/login.html:94
+#: app/scripts/login/login.html:106
 msgid "Zugangscode erneut versenden"
 msgstr "Envoyer le code d'accès encore une fois"
 
@@ -878,7 +907,7 @@ msgstr "ne pouvait pas être  sauvegardé. Erreur:"
 msgid "l"
 msgstr "l"
 
-#: app/scripts/common/filters/oo-preisproeinheit.filter.js:8
+#: app/scripts/common/filters/oo-preisproeinheit.filter.js:7
 msgid "pro"
 msgstr "par"
 
@@ -886,7 +915,11 @@ msgstr "par"
 msgid "speichern"
 msgstr "sauvegarder"
 
-#: app/scripts/common/components/oo-email-dialog.html:46
+#: app/scripts/common/components/oo-email-confirmation-message.html:8
+msgid "versenden möchtest"
+msgstr ""
+
+#: app/scripts/common/components/oo-email-dialog.html:63
 msgid "von"
 msgstr "de"
 
@@ -902,7 +935,7 @@ msgstr "a été supprimé/e par une autre personne, Veuillez actualiser cette pa
 msgid "wurde erfolgreich gelöscht."
 msgstr "a été supprimé avec succès."
 
-#: app/scripts/login/login.html:84
+#: app/scripts/login/login.html:96
 msgid "zugestellt."
 msgstr "livré."
 
