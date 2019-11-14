@@ -11,7 +11,7 @@ msgstr ""
 "Last-Translator: al_openolitor\n"
 "Language-Team: Czech\n"
 "Language: cs\n"
-"PO-Revision-Date: 2019-05-09 11:56\n"
+"PO-Revision-Date: 2019-09-14 13:37\n"
 
 #: app/scripts/app.js:119
 msgid "-"
