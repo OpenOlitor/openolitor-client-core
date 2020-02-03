@@ -10,13 +10,15 @@ angular.module('openolitor-core').directive('ooKundentypen', ['KundentypenServic
       },
       transclude: true,
       templateUrl: 'scripts/common/components/oo-kundentypen.directive.html',
-      controller: function($scope) {
+      controller: function($scope, lodash) {
 
         var rebuildKundentypenList = function() {
           var useKundentypenList = $scope.kundentypenList || [] ;
           if ($scope.allKundentypen) {
             $scope.kundentypen = [];
-            angular.forEach($scope.allKundentypen, function(kundentyp) {
+            angular.forEach(lodash.sortBy($scope.allKundentypen, function(kt){
+              return kt.kundentyp;
+            }), function(kundentyp) {
               //check if system or custom kundentyp, use only id
               var id = (kundentyp.kundentyp) ? kundentyp.kundentyp :
                 kundentyp;
