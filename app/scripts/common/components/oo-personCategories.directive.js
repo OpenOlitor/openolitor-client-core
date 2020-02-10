@@ -10,13 +10,15 @@ angular.module('openolitor-core').directive('ooPersonCategories', ['PersonCatego
       },
       transclude: true,
       templateUrl: 'scripts/common/components/oo-personCategories.directive.html',
-      controller: function($scope) {
+      controller: function($scope, lodash) {
 
         var rebuildPersonCategoriesList = function() {
           var usePersonCategoriesList = $scope.personCategoriesList || [] ;
           if ($scope.allPersonCategories) {
             $scope.personCategories = [];
-            angular.forEach($scope.allPersonCategories, function(personCategory) {
+            angular.forEach(lodash.sortBy($scope.allPersonCategories, function(pc){
+              return pc.name;
+            }), function(personCategory) {
               //check if system or custom personCategory, use only id
               var id = (personCategory.name) ? personCategory.name:
                 personCategory;
