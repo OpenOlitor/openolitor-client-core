@@ -4,14 +4,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: openolitor\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: crowdin.com\n"
 "X-Crowdin-Project: openolitor\n"
 "X-Crowdin-Language: es-ES\n"
-"X-Crowdin-File: /core-project/template.pot\n"
-"Last-Translator: al_openolitor\n"
+"X-Crowdin-File: /prod/template.pot\n"
 "Language-Team: Spanish\n"
-"Language: es\n"
-"PO-Revision-Date: 2019-05-09 11:56\n"
+"Language: es_ES\n"
+"PO-Revision-Date: 2020-03-16 14:41\n"
 
 #: app/scripts/app.js:119
 msgid "-"
@@ -41,11 +39,11 @@ msgstr "Cerrar sesión"
 
 #: app/index.html:71
 msgid "Abos"
-msgstr "Suscripciones"
+msgstr "Abonos"
 
 #: app/index.html:87
 msgid "Abotypen"
-msgstr "Tipo de subscripción"
+msgstr "Tipo de abono"
 
 #: app/index.html:75
 msgid "Abrechnung*"
@@ -53,7 +51,7 @@ msgstr "Facturación"
 
 #: app/index.html:39
 msgid "Administrationsumgebung <span ng-if=\"projekt\">für</span>"
-msgstr "Portal de administración <span ng-if=\"projekt\">para</span>"
+msgstr "Entorno de administración <span ng-if=\"projekt\"> para </span>"
 
 #: app/scripts/common/components/oo-actionsbutton.directive.js:117
 msgid "Aktion"
@@ -110,7 +108,7 @@ msgstr "Entregas"
 
 #: app/scripts/app.js:200
 msgid "Ausstehend"
-msgstr "No pagado"
+msgstr "Debe"
 
 #: app/scripts/common/components/oo-generate-report.directive.js:57
 msgid "Beim erstellen der Dokumente sind folgende Fehler aufgetreten"
@@ -162,7 +160,7 @@ msgstr "Manojo"
 
 #: app/scripts/app.js:159
 msgid "CAD"
-msgstr "CAD"
+msgstr ""
 
 #: app/scripts/app.js:153
 msgid "CHF"
@@ -209,11 +207,11 @@ msgstr "Entregas en punto de recogida"
 
 #: app/scripts/app.js:105
 msgid "Depotlieferung"
-msgstr "Entrega a domicilio"
+msgstr "Entrega en punto de recogida"
 
 #: app/scripts/app.js:124
 msgid "DepotlieferungAbo"
-msgstr "Abono de entrega a domicilio"
+msgstr "Abono a entrega en punto de recogida"
 
 #: app/index.html:85
 msgid "Depots"
@@ -249,7 +247,7 @@ msgstr "Martes"
 
 #: app/scripts/not-found.html:9
 msgid "Diese Seite konnte nicht gefunden werden!"
-msgstr "¡La página solicitada no ha sido encontrada!"
+msgstr "¡No se puede encontrar la página solicitada!"
 
 #: app/scripts/app.js:169
 msgid "Donnerstag"
@@ -292,7 +290,7 @@ msgstr "Cambiar la contraseña"
 #: app/scripts/login/zugangaktivieren.html:14
 #: app/scripts/login/zugangaktivieren.html:29
 msgid "Eingabe erforderlich"
-msgstr "Campo obligatorio"
+msgstr "Entrada necesaria"
 
 #: app/messages.html:6
 msgid "Eingabe stimmt nicht übereint"
@@ -325,7 +323,7 @@ msgstr "Correo electrónico"
 
 #: app/scripts/app.js:205
 msgid "Erfasst"
-msgstr "Salvado"
+msgstr "Captura realizada"
 
 #: app/scripts/app.js:201
 msgid "Erledigt"
@@ -398,7 +396,7 @@ msgstr "Para acceder a OpenOlitor tienes que introducir tus credenciales"
 
 #: app/scripts/app.js:157
 msgid "GBP"
-msgstr "GBP"
+msgstr ""
 
 #: app/scripts/app.js:144
 msgid "Gramm"
@@ -410,7 +408,7 @@ msgstr "Entrega a domicilio"
 
 #: app/scripts/app.js:125
 msgid "HeimlieferungAbo"
-msgstr "Suscripción con entrega a domicilio"
+msgstr "Abono con entrega a domicilio"
 
 #: app/scripts/app.js:120
 msgid "Herr"
@@ -521,7 +519,7 @@ msgstr "Mayo"
 
 #: app/scripts/common/components/oo-email-dialog.html:46
 msgid "Mail-Body"
-msgstr "Mensaje del correo electrónico "
+msgstr "Cuerpo del correo"
 
 #: app/scripts/common/components/oo-email-dialog.html:66
 msgid "Mails konnten nicht verschickt werden.<span>\n"
@@ -535,11 +533,11 @@ msgstr "Los correos han sido enviados"
 
 #: app/scripts/app.js:183
 msgid "Mar"
-msgstr "Mar"
+msgstr "Marzo"
 
 #: app/scripts/app.js:167
 msgid "Mittwoch"
-msgstr "Miércoles"
+msgstr "Miercoles"
 
 #: app/scripts/app.js:112
 msgid "Monate"
@@ -693,7 +691,7 @@ msgstr "Proyecto"
 
 #: app/scripts/common/components/oo-email-dialog.html:33
 msgid "Prägnanter Betreff"
-msgstr "Asunto (pertinente)"
+msgstr "Asunto"
 
 #: app/scripts/common/components/oo-email-dialog.html:38
 msgid "Rechnung anhängen"
@@ -793,7 +791,7 @@ msgstr "Texto con [Platzhalter]"
 
 #: app/index.html:78
 msgid "Tourauslieferungen"
-msgstr "Entrega a domicilio"
+msgstr "Entregas a domicilio"
 
 #: app/index.html:86
 msgid "Touren"
@@ -805,7 +803,7 @@ msgstr "Dólar estadounidense"
 
 #: app/scripts/app.js:156
 msgid "USD"
-msgstr "USD"
+msgstr "Dólar estadounidense"
 
 #: app/scripts/app.js:110
 msgid "Unbeschraenkt"
@@ -877,7 +875,7 @@ msgstr "Acceso denegado"
 
 #: app/scripts/app.js:93
 msgid "Zweiwoechentlich"
-msgstr "Quincenal"
+msgstr "Quincenalmente"
 
 #: app/scripts/common/components/oo-savebutton.directive.html:5
 msgid "erstellen"
@@ -945,7 +943,7 @@ msgstr "{{form.modele.nom}}"
 
 #: app/scripts/common/components/oo-generate-report.directive.html:24
 msgid "{{projektVorlage.name}}"
-msgstr "{{projektVorlage.name}}"
+msgstr ""
 
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:2
 msgid "{{title | translate}}"
@@ -953,5 +951,5 @@ msgstr "{title | translate}"
 
 #: app/scripts/common/components/oo-generate-report.directive.html:32
 msgid "{{vorlage.name}}"
-msgstr "{{vorlage.name}}"
+msgstr ""
 
