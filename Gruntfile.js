@@ -456,7 +456,7 @@ module.exports = function(grunt) {
         },
         files: {
           '<%= openolitor.app %>/scripts/i18n/translations.js': [
-            'i18n/*.po'
+            'i18n/*/*.po'
           ]
         }
       }
