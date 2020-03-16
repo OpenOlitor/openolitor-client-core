@@ -4,14 +4,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: openolitor\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: crowdin.com\n"
 "X-Crowdin-Project: openolitor\n"
 "X-Crowdin-Language: de\n"
-"X-Crowdin-File: /core-project/template.pot\n"
-"Last-Translator: al_openolitor\n"
+"X-Crowdin-File: /prod/template.pot\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2019-04-24 06:32\n"
+"PO-Revision-Date: 2020-03-16 14:41\n"
 
 #: app/scripts/app.js:119
 msgid "-"
@@ -53,7 +51,7 @@ msgstr ""
 
 #: app/index.html:39
 msgid "Administrationsumgebung <span ng-if=\"projekt\">für</span>"
-msgstr ""
+msgstr "Verwaltungsumgebung <span ng-if=\"projekt\">für</span>"
 
 #: app/scripts/common/components/oo-actionsbutton.directive.js:117
 msgid "Aktion"
@@ -209,7 +207,7 @@ msgstr "Lieferungen an Abholstationen"
 
 #: app/scripts/app.js:105
 msgid "Depotlieferung"
-msgstr "Lieferung an Abholstationen"
+msgstr "Lieferung an Abholstation"
 
 #: app/scripts/app.js:124
 msgid "DepotlieferungAbo"
@@ -410,7 +408,7 @@ msgstr ""
 
 #: app/scripts/app.js:125
 msgid "HeimlieferungAbo"
-msgstr ""
+msgstr "HeimlieferungAnteil"
 
 #: app/scripts/app.js:120
 msgid "Herr"
@@ -676,7 +674,7 @@ msgstr ""
 
 #: app/scripts/app.js:126
 msgid "PostlieferungAbo"
-msgstr "PostlieferungAnteil"
+msgstr ""
 
 #: app/index.html:89
 msgid "Produkte"
