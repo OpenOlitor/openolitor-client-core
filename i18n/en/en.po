@@ -4,18 +4,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: openolitor\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: crowdin.com\n"
 "X-Crowdin-Project: openolitor\n"
 "X-Crowdin-Language: en\n"
-"X-Crowdin-File: /core-project/template.pot\n"
-"Last-Translator: al_openolitor\n"
+"X-Crowdin-File: /prod/template.pot\n"
 "Language-Team: English\n"
-"Language: en\n"
-"PO-Revision-Date: 2019-05-09 11:56\n"
+"Language: en_US\n"
+"PO-Revision-Date: 2020-03-16 14:40\n"
 
 #: app/scripts/app.js:119
 msgid "-"
-msgstr "-"
+msgstr ""
 
 #: app/scripts/login/login.html:7
 msgid "- Entwicklungsumgebung"
@@ -53,7 +51,7 @@ msgstr "Billing*"
 
 #: app/index.html:39
 msgid "Administrationsumgebung <span ng-if=\"projekt\">für</span>"
-msgstr "Administration portal <span ng-if=\"projekt\">for</span>"
+msgstr "Administration environment <span ng-if=\"projekt\">for</span>"
 
 #: app/scripts/common/components/oo-actionsbutton.directive.js:117
 msgid "Aktion"
@@ -82,11 +80,11 @@ msgstr "An email was send with the required information to modify the email pass
 
 #: app/scripts/app.js:184
 msgid "Apr"
-msgstr "Apr"
+msgstr ""
 
 #: app/scripts/app.js:184
 msgid "April"
-msgstr "April"
+msgstr ""
 
 #: app/scripts/login/login.controller.js:50
 msgid "Aufwiedersehen"
@@ -94,11 +92,11 @@ msgstr "Goodbye"
 
 #: app/scripts/app.js:188
 msgid "Aug"
-msgstr "Aug"
+msgstr ""
 
 #: app/scripts/app.js:188
 msgid "August"
-msgstr "August"
+msgstr ""
 
 #: app/scripts/app.js:206
 msgid "Ausgeliefert"
@@ -162,11 +160,11 @@ msgstr "Bunch"
 
 #: app/scripts/app.js:159
 msgid "CAD"
-msgstr "CAD"
+msgstr ""
 
 #: app/scripts/app.js:153
 msgid "CHF"
-msgstr "CHF"
+msgstr ""
 
 #: app/scripts/app.js:165
 msgid "DI"
@@ -205,11 +203,11 @@ msgstr "Data extract"
 
 #: app/index.html:77
 msgid "Depotauslieferungen"
-msgstr "Pick-up deliveries"
+msgstr "Deliveries to depot"
 
 #: app/scripts/app.js:105
 msgid "Depotlieferung"
-msgstr "Depot Delivery"
+msgstr "Delivery to Depot"
 
 #: app/scripts/app.js:124
 msgid "DepotlieferungAbo"
@@ -217,7 +215,7 @@ msgstr "Depot DeliverySuscription"
 
 #: app/index.html:85
 msgid "Depots"
-msgstr "depots"
+msgstr ""
 
 #: app/scripts/login/forbidden.html:6
 msgid "Der Zugriff auf diese Ressource wurde verweigert."
@@ -265,7 +263,7 @@ msgstr "E-mail template"
 
 #: app/scripts/common/components/oo-email-confirmation-message.html:2
 msgid "E-Mail versenden"
-msgstr "Send e-mail"
+msgstr "Send Email"
 
 #: app/scripts/common/components/oo-email-dialog.html:5
 msgid "E-Mail versenden an selektierte Einträge"
@@ -280,7 +278,7 @@ msgstr "Email:"
 
 #: app/scripts/app.js:155
 msgid "EUR"
-msgstr "EUR"
+msgstr ""
 
 #: app/scripts/login/change_password.html:5
 msgid "Eigenes Passwort wechseln"
@@ -296,7 +294,7 @@ msgstr "Input required"
 
 #: app/messages.html:6
 msgid "Eingabe stimmt nicht übereint"
-msgstr "Password doesn't match"
+msgstr "Input doesn't match"
 
 #: app/messages.html:3
 msgid "Eingabe zu kurz"
@@ -325,7 +323,7 @@ msgstr "E-mail Address"
 
 #: app/scripts/app.js:205
 msgid "Erfasst"
-msgstr "Saved"
+msgstr "Captures"
 
 #: app/scripts/app.js:201
 msgid "Erledigt"
@@ -333,7 +331,7 @@ msgstr "Done"
 
 #: app/scripts/not-found.html:6
 msgid "Error 404"
-msgstr "Error 404"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:70
 msgid "Erstellen"
@@ -357,7 +355,7 @@ msgstr "FRI"
 
 #: app/scripts/app.js:181
 msgid "Feb"
-msgstr "Feb"
+msgstr ""
 
 #: app/scripts/app.js:181
 msgid "Februar"
@@ -398,7 +396,7 @@ msgstr "Registration is required to access to OpenOlitor"
 
 #: app/scripts/app.js:157
 msgid "GBP"
-msgstr "GBP"
+msgstr ""
 
 #: app/scripts/app.js:144
 msgid "Gramm"
@@ -433,7 +431,7 @@ msgstr "Yes"
 
 #: app/scripts/app.js:179
 msgid "Jan"
-msgstr "Jan"
+msgstr ""
 
 #: app/scripts/app.js:179
 msgid "Januar"
@@ -473,7 +471,7 @@ msgstr "kilograms"
 
 #: app/index.html:70
 msgid "Kunden"
-msgstr "Members"
+msgstr "Participants"
 
 #: app/index.html:73
 msgid "Lieferanten"
@@ -493,7 +491,7 @@ msgstr "Deliveries"
 
 #: app/scripts/app.js:147
 msgid "Liter"
-msgstr "Liter"
+msgstr ""
 
 #: app/scripts/login/login.html:92
 msgid "Login Administration"
@@ -535,7 +533,7 @@ msgstr "Mails were sent"
 
 #: app/scripts/app.js:183
 msgid "Mar"
-msgstr "Mar"
+msgstr ""
 
 #: app/scripts/app.js:167
 msgid "Mittwoch"
@@ -574,11 +572,11 @@ msgstr "Not done"
 
 #: app/scripts/app.js:194
 msgid "Nov"
-msgstr "Nov"
+msgstr ""
 
 #: app/scripts/app.js:194
 msgid "November"
-msgstr "November"
+msgstr ""
 
 #: app/scripts/app.js:130
 msgid "Offen"
@@ -586,7 +584,7 @@ msgstr "open"
 
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:13
 msgid "Ok"
-msgstr "Ok"
+msgstr ""
 
 #: app/scripts/app.js:192
 msgid "Okt"
@@ -693,7 +691,7 @@ msgstr "Project"
 
 #: app/scripts/common/components/oo-email-dialog.html:33
 msgid "Prägnanter Betreff"
-msgstr "Concise subject"
+msgstr "Subject"
 
 #: app/scripts/common/components/oo-email-dialog.html:38
 msgid "Rechnung anhängen"
@@ -739,7 +737,7 @@ msgstr "Sept"
 
 #: app/scripts/app.js:190
 msgid "September"
-msgstr "September"
+msgstr ""
 
 #: app/scripts/login/login.html:23
 #: app/scripts/login/login.html:48
@@ -801,11 +799,11 @@ msgstr "Tours"
 
 #: app/scripts/app.js:156
 msgid "US Dollar"
-msgstr "US-Dollar"
+msgstr "US dollar"
 
 #: app/scripts/app.js:156
 msgid "USD"
-msgstr "USD"
+msgstr ""
 
 #: app/scripts/app.js:110
 msgid "Unbeschraenkt"
@@ -825,7 +823,7 @@ msgstr "Maintenance mode! The customer portal is currently unavailable.We will a
 
 #: app/scripts/app.js:132
 msgid "Verrechnet"
-msgstr "Invoiced"
+msgstr "Settled"
 
 #: app/scripts/app.js:136
 msgid "Verschickt"
@@ -861,7 +859,7 @@ msgstr "Do you want to continue?"
 
 #: app/index.html:82
 msgid "Zahlungs-Imports"
-msgstr "Import payments"
+msgstr "Payment import"
 
 #: app/scripts/login/login.html:100
 msgid "Zugangscode"
@@ -885,11 +883,11 @@ msgstr "create"
 
 #: app/scripts/app.js:144
 msgid "gr"
-msgstr "gr"
+msgstr ""
 
 #: app/scripts/app.js:146
 msgid "kg"
-msgstr "kg"
+msgstr ""
 
 #: app/scripts/common/components/oo-actionsbutton.directive.js:119
 msgid "konnte nicht ausgeführt werden. Fehler:"
@@ -905,7 +903,7 @@ msgstr "could not be saved. Error:"
 
 #: app/scripts/app.js:147
 msgid "l"
-msgstr "l"
+msgstr ""
 
 #: app/scripts/common/filters/oo-preisproeinheit.filter.js:7
 msgid "pro"
@@ -913,7 +911,7 @@ msgstr "per"
 
 #: app/scripts/common/components/oo-savebutton.directive.html:6
 msgid "speichern"
-msgstr "Save"
+msgstr "save"
 
 #: app/scripts/common/components/oo-email-confirmation-message.html:8
 msgid "versenden möchtest"
@@ -941,16 +939,17 @@ msgstr "delivered."
 
 #: app/scripts/common/components/oo-generate-report.directive.html:23
 msgid "{{form.vorlage.name}}"
-msgstr "{{form.vorlage.name}}"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:24
 msgid "{{projektVorlage.name}}"
-msgstr "{{projektVorlage.name}}"
+msgstr ""
 
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:2
 msgid "{{title | translate}}"
-msgstr "{{title | translate}}"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:32
 msgid "{{vorlage.name}}"
-msgstr "{{vorlage.name}}"
+msgstr ""
+
