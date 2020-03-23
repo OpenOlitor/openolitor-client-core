@@ -2,20 +2,18 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version: openolitor\n"
+"Project-Id-Version: openolitor-core-client\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: crowdin.com\n"
-"X-Crowdin-Project: openolitor\n"
+"X-Crowdin-Project: openolitor-core-client\n"
 "X-Crowdin-Language: fr-CH\n"
-"X-Crowdin-File: /core-project/template.pot\n"
-"Last-Translator: al_openolitor\n"
+"X-Crowdin-File: /prod/template.pot\n"
 "Language-Team: French, Switzerland\n"
 "Language: fr_CH\n"
-"PO-Revision-Date: 2019-04-24 06:32\n"
+"PO-Revision-Date: 2020-03-23 18:36\n"
 
 #: app/scripts/app.js:119
 msgid "-"
-msgstr "-"
+msgstr ""
 
 #: app/scripts/login/login.html:7
 msgid "- Entwicklungsumgebung"
@@ -162,11 +160,11 @@ msgstr "Bouquet"
 
 #: app/scripts/app.js:159
 msgid "CAD"
-msgstr "CAD"
+msgstr ""
 
 #: app/scripts/app.js:153
 msgid "CHF"
-msgstr "CHF"
+msgstr ""
 
 #: app/scripts/app.js:165
 msgid "DI"
@@ -280,7 +278,7 @@ msgstr "Courriel:"
 
 #: app/scripts/app.js:155
 msgid "EUR"
-msgstr "EUR"
+msgstr ""
 
 #: app/scripts/login/change_password.html:5
 msgid "Eigenes Passwort wechseln"
@@ -349,11 +347,11 @@ msgstr "Un code d’accès a été envoyé à votre adresse courriel"
 
 #: app/scripts/app.js:155
 msgid "Euro"
-msgstr "Euro"
+msgstr ""
 
 #: app/scripts/app.js:171
 msgid "FR"
-msgstr "FR"
+msgstr ""
 
 #: app/scripts/app.js:181
 msgid "Feb"
@@ -369,7 +367,7 @@ msgstr "Adresse courriel non valide"
 
 #: app/scripts/app.js:121
 msgid "Fr."
-msgstr "Fr."
+msgstr ""
 
 #: app/scripts/app.js:121
 msgid "Frau"
@@ -398,7 +396,7 @@ msgstr "Une inscription est nécessaire pour accéder à OpenOlitor"
 
 #: app/scripts/app.js:157
 msgid "GBP"
-msgstr "GBP"
+msgstr ""
 
 #: app/scripts/app.js:144
 msgid "Gramm"
@@ -517,7 +515,7 @@ msgstr "Rappel-envoyé"
 
 #: app/scripts/app.js:185
 msgid "Mai"
-msgstr "Mai"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:46
 msgid "Mail-Body"
@@ -574,7 +572,7 @@ msgstr "non achevé"
 
 #: app/scripts/app.js:194
 msgid "Nov"
-msgstr "Nov"
+msgstr ""
 
 #: app/scripts/app.js:194
 msgid "November"
@@ -586,7 +584,7 @@ msgstr "Ouvert"
 
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:13
 msgid "Ok"
-msgstr "Ok"
+msgstr ""
 
 #: app/scripts/app.js:192
 msgid "Okt"
@@ -709,11 +707,11 @@ msgstr "Rapports"
 
 #: app/scripts/app.js:173
 msgid "SA"
-msgstr "SA"
+msgstr ""
 
 #: app/scripts/app.js:175
 msgid "SO"
-msgstr "SO"
+msgstr ""
 
 #: app/scripts/app.js:173
 msgid "Samstag"
@@ -735,7 +733,7 @@ msgstr ""
 
 #: app/scripts/app.js:191
 msgid "Sep"
-msgstr "Sep"
+msgstr ""
 
 #: app/scripts/app.js:190
 msgid "September"
@@ -805,7 +803,7 @@ msgstr "Dollar des Etats-Unis"
 
 #: app/scripts/app.js:156
 msgid "USD"
-msgstr "USD"
+msgstr ""
 
 #: app/scripts/app.js:110
 msgid "Unbeschraenkt"
@@ -885,11 +883,11 @@ msgstr "créer"
 
 #: app/scripts/app.js:144
 msgid "gr"
-msgstr "gr"
+msgstr ""
 
 #: app/scripts/app.js:146
 msgid "kg"
-msgstr "kg"
+msgstr ""
 
 #: app/scripts/common/components/oo-actionsbutton.directive.js:119
 msgid "konnte nicht ausgeführt werden. Fehler:"
@@ -905,7 +903,7 @@ msgstr "ne pouvait pas être  sauvegardé. Erreur:"
 
 #: app/scripts/app.js:147
 msgid "l"
-msgstr "l"
+msgstr ""
 
 #: app/scripts/common/filters/oo-preisproeinheit.filter.js:7
 msgid "pro"
@@ -949,7 +947,7 @@ msgstr "{{projetmodele.nom}}"
 
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:2
 msgid "{{title | translate}}"
-msgstr "{{title | translate}}"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:32
 msgid "{{vorlage.name}}"
