@@ -2,20 +2,18 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Project-Id-Version: openolitor\n"
+"Project-Id-Version: openolitor-core-client\n"
 "Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 3;\n"
-"X-Generator: crowdin.com\n"
-"X-Crowdin-Project: openolitor\n"
+"X-Crowdin-Project: openolitor-core-client\n"
 "X-Crowdin-Language: cs\n"
-"X-Crowdin-File: /core-project/template.pot\n"
-"Last-Translator: al_openolitor\n"
+"X-Crowdin-File: /prod/template.pot\n"
 "Language-Team: Czech\n"
-"Language: cs\n"
-"PO-Revision-Date: 2019-09-14 13:37\n"
+"Language: cs_CZ\n"
+"PO-Revision-Date: 2020-03-23 18:36\n"
 
 #: app/scripts/app.js:119
 msgid "-"
-msgstr "-"
+msgstr ""
 
 #: app/scripts/login/login.html:7
 msgid "- Entwicklungsumgebung"
@@ -162,11 +160,11 @@ msgstr "Trs"
 
 #: app/scripts/app.js:159
 msgid "CAD"
-msgstr "CAD"
+msgstr ""
 
 #: app/scripts/app.js:153
 msgid "CHF"
-msgstr "CHF"
+msgstr ""
 
 #: app/scripts/app.js:165
 msgid "DI"
@@ -280,7 +278,7 @@ msgstr "E-mail:"
 
 #: app/scripts/app.js:155
 msgid "EUR"
-msgstr "EUR"
+msgstr ""
 
 #: app/scripts/login/change_password.html:5
 msgid "Eigenes Passwort wechseln"
@@ -349,11 +347,11 @@ msgstr "Přístupový kód byl zaslán na váš email"
 
 #: app/scripts/app.js:155
 msgid "Euro"
-msgstr "Euro"
+msgstr ""
 
 #: app/scripts/app.js:171
 msgid "FR"
-msgstr "FR"
+msgstr ""
 
 #: app/scripts/app.js:181
 msgid "Feb"
@@ -398,7 +396,7 @@ msgstr "Pro přístup do administrace je vyžadováno přihlášení"
 
 #: app/scripts/app.js:157
 msgid "GBP"
-msgstr "GBP"
+msgstr ""
 
 #: app/scripts/app.js:144
 msgid "Gramm"
@@ -586,7 +584,7 @@ msgstr "Otevřeno"
 
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:13
 msgid "Ok"
-msgstr "Ok"
+msgstr ""
 
 #: app/scripts/app.js:192
 msgid "Okt"
@@ -689,7 +687,7 @@ msgstr "Výrobci"
 
 #: app/index.html:92
 msgid "Projekt"
-msgstr "Projekt"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:33
 msgid "Prägnanter Betreff"
@@ -805,7 +803,7 @@ msgstr "AMERICKÝ dolar"
 
 #: app/scripts/app.js:156
 msgid "USD"
-msgstr "USD"
+msgstr ""
 
 #: app/scripts/app.js:110
 msgid "Unbeschraenkt"
@@ -885,11 +883,11 @@ msgstr "vytvořit"
 
 #: app/scripts/app.js:144
 msgid "gr"
-msgstr "gr"
+msgstr ""
 
 #: app/scripts/app.js:146
 msgid "kg"
-msgstr "kg"
+msgstr ""
 
 #: app/scripts/common/components/oo-actionsbutton.directive.js:119
 msgid "konnte nicht ausgeführt werden. Fehler:"
@@ -905,7 +903,7 @@ msgstr "nelze uložit. Chyba:"
 
 #: app/scripts/app.js:147
 msgid "l"
-msgstr "l"
+msgstr ""
 
 #: app/scripts/common/filters/oo-preisproeinheit.filter.js:7
 msgid "pro"
@@ -941,17 +939,17 @@ msgstr "doručeno."
 
 #: app/scripts/common/components/oo-generate-report.directive.html:23
 msgid "{{form.vorlage.name}}"
-msgstr "{{form.vorlage.name}}"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:24
 msgid "{{projektVorlage.name}}"
-msgstr "{{projektVorlage.name}}"
+msgstr ""
 
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:2
 msgid "{{title | translate}}"
-msgstr "{{title | translate}}"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:32
 msgid "{{vorlage.name}}"
-msgstr "{{vorlage.name}}"
+msgstr ""
 
