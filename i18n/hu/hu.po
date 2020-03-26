@@ -9,11 +9,11 @@ msgstr ""
 "X-Crowdin-File: /prod/template.pot\n"
 "Language-Team: Hungarian\n"
 "Language: hu_HU\n"
-"PO-Revision-Date: 2020-03-23 18:36\n"
+"PO-Revision-Date: 2020-03-26 17:10\n"
 
 #: app/scripts/app.js:119
 msgid "-"
-msgstr ""
+msgstr "-"
 
 #: app/scripts/login/login.html:7
 msgid "- Entwicklungsumgebung"
@@ -160,11 +160,11 @@ msgstr "Csokor"
 
 #: app/scripts/app.js:159
 msgid "CAD"
-msgstr ""
+msgstr "CAD"
 
 #: app/scripts/app.js:153
 msgid "CHF"
-msgstr ""
+msgstr "CHF"
 
 #: app/scripts/app.js:165
 msgid "DI"
@@ -278,7 +278,7 @@ msgstr "E-mail:"
 
 #: app/scripts/app.js:155
 msgid "EUR"
-msgstr ""
+msgstr "EUR"
 
 #: app/scripts/login/change_password.html:5
 msgid "Eigenes Passwort wechseln"
@@ -347,7 +347,7 @@ msgstr "Megerősítő kódot elküldtük az e-mail címedre."
 
 #: app/scripts/app.js:155
 msgid "Euro"
-msgstr ""
+msgstr "Euro"
 
 #: app/scripts/app.js:171
 msgid "FR"
@@ -396,7 +396,7 @@ msgstr "Az admin felület használatához bejelentkezés szükséges."
 
 #: app/scripts/app.js:157
 msgid "GBP"
-msgstr ""
+msgstr "GBP"
 
 #: app/scripts/app.js:144
 msgid "Gramm"
@@ -467,7 +467,7 @@ msgstr "Nincs sablon"
 
 #: app/scripts/app.js:145
 msgid "Kilogramm"
-msgstr ""
+msgstr "Kilogramm"
 
 #: app/index.html:70
 msgid "Kunden"
@@ -491,7 +491,7 @@ msgstr "Szállítások"
 
 #: app/scripts/app.js:147
 msgid "Liter"
-msgstr ""
+msgstr "Liter"
 
 #: app/scripts/login/login.html:92
 msgid "Login Administration"
@@ -576,7 +576,7 @@ msgstr "Nov."
 
 #: app/scripts/app.js:194
 msgid "November"
-msgstr ""
+msgstr "November"
 
 #: app/scripts/app.js:130
 msgid "Offen"
@@ -687,7 +687,7 @@ msgstr "Termelők"
 
 #: app/index.html:92
 msgid "Projekt"
-msgstr ""
+msgstr "Projekt"
 
 #: app/scripts/common/components/oo-email-dialog.html:33
 msgid "Prägnanter Betreff"
@@ -803,7 +803,7 @@ msgstr "USA dollár"
 
 #: app/scripts/app.js:156
 msgid "USD"
-msgstr ""
+msgstr "USD"
 
 #: app/scripts/app.js:110
 msgid "Unbeschraenkt"
@@ -883,11 +883,11 @@ msgstr "Létrehozás"
 
 #: app/scripts/app.js:144
 msgid "gr"
-msgstr ""
+msgstr "gr"
 
 #: app/scripts/app.js:146
 msgid "kg"
-msgstr ""
+msgstr "kg"
 
 #: app/scripts/common/components/oo-actionsbutton.directive.js:119
 msgid "konnte nicht ausgeführt werden. Fehler:"
@@ -903,7 +903,7 @@ msgstr "nem menthető. Hiba:"
 
 #: app/scripts/app.js:147
 msgid "l"
-msgstr ""
+msgstr "l"
 
 #: app/scripts/common/filters/oo-preisproeinheit.filter.js:7
 msgid "pro"
@@ -939,17 +939,17 @@ msgstr "szállított."
 
 #: app/scripts/common/components/oo-generate-report.directive.html:23
 msgid "{{form.vorlage.name}}"
-msgstr ""
+msgstr "{{form.vorlage.name}}"
 
 #: app/scripts/common/components/oo-generate-report.directive.html:24
 msgid "{{projektVorlage.name}}"
-msgstr ""
+msgstr "{{projektVorlage.name}}"
 
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:2
 msgid "{{title | translate}}"
-msgstr ""
+msgstr "{{title | translate}}"
 
 #: app/scripts/common/components/oo-generate-report.directive.html:32
 msgid "{{vorlage.name}}"
-msgstr ""
+msgstr "{{vorlage.name}}"
 
