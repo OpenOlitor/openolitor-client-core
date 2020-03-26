@@ -3,286 +3,286 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: openolitor-core-client\n"
-"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 3;\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 "X-Crowdin-Project: openolitor-core-client\n"
-"X-Crowdin-Language: cs\n"
+"X-Crowdin-Language: pl\n"
 "X-Crowdin-File: /prod/template.pot\n"
-"Language-Team: Czech\n"
-"Language: cs_CZ\n"
-"PO-Revision-Date: 2020-03-26 17:10\n"
+"Language-Team: Polish\n"
+"Language: pl_PL\n"
+"PO-Revision-Date: 2020-03-23 18:36\n"
 
 #: app/scripts/app.js:119
 msgid "-"
-msgstr "-"
+msgstr ""
 
 #: app/scripts/login/login.html:7
 msgid "- Entwicklungsumgebung"
-msgstr "-Vývojové prostředí"
+msgstr ""
 
 #: app/scripts/login/login.html:6
 msgid "- Testumgebung"
-msgstr "-Testovací prostředí"
+msgstr ""
 
 #: app/scripts/common/components/oo-deletebutton.directive.modal.html:13
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:15
 #: app/scripts/common/components/oo-email-confirmation-message.html:13
 msgid "Abbrechen"
-msgstr "Zrušit"
+msgstr ""
 
 #: app/scripts/app.js:131
 msgid "Abgeschlossen"
-msgstr "Dokončeno"
+msgstr ""
 
 #: app/index.html:58
 msgid "Abmelden"
-msgstr "Odhlásit se"
+msgstr ""
 
 #: app/index.html:71
 msgid "Abos"
-msgstr "Podíly"
+msgstr ""
 
 #: app/index.html:87
 msgid "Abotypen"
-msgstr "Druhy podílů"
+msgstr ""
 
 #: app/index.html:75
 msgid "Abrechnung*"
-msgstr "Vyúčtování*"
+msgstr ""
 
 #: app/index.html:39
 msgid "Administrationsumgebung <span ng-if=\"projekt\">für</span>"
-msgstr "Administrační prostředí<span ng-if=\"projekt\">pro</span>"
+msgstr ""
 
 #: app/scripts/common/components/oo-actionsbutton.directive.js:117
 msgid "Aktion"
-msgstr "Akce"
+msgstr ""
 
 #: app/scripts/login/change_password.html:11
 msgid "Aktuelles Passwort"
-msgstr "Vaše současné heslo"
+msgstr ""
 
 #: app/scripts/common/ngtable/oo-ngtable-paginationTemplate.html:10
 msgid "Alle"
-msgstr "Vše "
+msgstr ""
 
 #: app/scripts/login/login.html:103
 #: app/scripts/login/login.html:86
 msgid "Anmelden"
-msgstr "Přihlásit se"
+msgstr ""
 
 #: app/scripts/login/login.html:5
 msgid "Anmeldung"
-msgstr "Přihlášení"
+msgstr ""
 
 #: app/scripts/login/login.controller.js:101
 msgid "Anweisungen um Ihr Passwort neu zu setzten wurden Ihnen an Ihre Email-Adresse gesendet."
-msgstr "Pokyny pro nastavení hesla že vám byly odeslány na vaši e-mailovou adresu."
+msgstr ""
 
 #: app/scripts/app.js:184
 msgid "Apr"
-msgstr "Dub"
+msgstr ""
 
 #: app/scripts/app.js:184
 msgid "April"
-msgstr "Duben"
+msgstr ""
 
 #: app/scripts/login/login.controller.js:50
 msgid "Aufwiedersehen"
-msgstr "Nashledanou"
+msgstr ""
 
 #: app/scripts/app.js:188
 msgid "Aug"
-msgstr "Srp"
+msgstr ""
 
 #: app/scripts/app.js:188
 msgid "August"
-msgstr "Srpen"
+msgstr ""
 
 #: app/scripts/app.js:206
 msgid "Ausgeliefert"
-msgstr "Dodáno"
+msgstr ""
 
 #: app/index.html:76
 msgid "Auslieferungen"
-msgstr "Dodávky"
+msgstr ""
 
 #: app/scripts/app.js:200
 msgid "Ausstehend"
-msgstr "Nezaplaceno"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.js:57
 msgid "Beim erstellen der Dokumente sind folgende Fehler aufgetreten"
-msgstr "Při vytváření těchto dokumentů došlo k chybám"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:34
 msgid "Benutzerdefiniert..."
-msgstr "Určeno uživatelem..."
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:3
 msgid "Bericht erstellen"
-msgstr "Vytvořit report"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.js:75
 msgid "Bericht konnte nicht erzeugt werden"
-msgstr "Zprávu se nepodařilo vytvořit"
+msgstr ""
 
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:3
 msgid "Bestätigung"
-msgstr "Potvrzení"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:30
 msgid "Betreff"
-msgstr "Předmět"
+msgstr ""
 
 #: app/scripts/app.js:137
 msgid "Bezahlt"
-msgstr "Zaplaceno"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-confirmation-message.html:8
 msgid "Bist du sicher, dass du diese E-Mail an &nbsp;"
-msgstr "Určitě jste tento email na &nbsp;"
+msgstr ""
 
 #: app/scripts/app.js:157
 msgid "Britisches Pfund"
-msgstr "Britská libra"
+msgstr ""
 
 #: app/scripts/app.js:143
 msgid "Bu."
-msgstr "Úč."
+msgstr ""
 
 #: app/index.html:80
 msgid "Buchhaltung"
-msgstr "Účetnictví"
+msgstr ""
 
 #: app/scripts/app.js:143
 msgid "Bund"
-msgstr "Trs"
+msgstr ""
 
 #: app/scripts/app.js:159
 msgid "CAD"
-msgstr "CAD"
+msgstr ""
 
 #: app/scripts/app.js:153
 msgid "CHF"
-msgstr "CHF"
+msgstr ""
 
 #: app/scripts/app.js:165
 msgid "DI"
-msgstr "Út"
+msgstr ""
 
 #: app/scripts/app.js:170
 msgid "DO"
-msgstr "Čtvrtek"
+msgstr ""
 
 #: app/index.html:66
 msgid "Das Backend steht im Moment nicht zur Verfügung. Bitte besuchen Sie uns später wieder."
-msgstr "Administrace není momentálně dostupná. Prosíme, navštivte nás později."
+msgstr ""
 
 #: app/scripts/login/login.html:65
 msgid "Das Kundenportal ist gegenwärtig nicht verfügbar. Wir führen Unterhaltsarbeiten durch. In Kürze sind wir wieder online und wie gewohnt für Sie da."
-msgstr "Podílnický portál momentálně nění dostupný. Pracuejem právě na úpravách. Budeme brzy online."
+msgstr ""
 
 #: app/scripts/login/change_password.html:21
 #: app/scripts/login/zugangaktivieren.html:15
 msgid "Das Passwort muss aus mindestens 6 Zeichen bestehen"
-msgstr "Heslo musí obsahovat minimálně 6 znaků"
+msgstr ""
 
 #: app/scripts/login/change_password.html:22
 #: app/scripts/login/zugangaktivieren.html:16
 msgid "Das Passwort muss mindestens einen Gross- und Kleinbuchstaben, sowie einen numerischen Wert oder ein Symbol enthalten"
-msgstr "Heslo musí obsahovat nejméně jedno velké a malé písmeno, a také číslo či jiný znak"
+msgstr ""
 
 #: app/scripts/login/login.controller.js:91
 msgid "Das Passwort wurde erfolgreich gesetzt. Sie können sich nun anmelden."
-msgstr "Heslo bylo úspěšně nastaveno. Nyní se můžete přihlásit."
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:22
 #: app/scripts/common/components/oo-generate-report.directive.html:38
 msgid "Datenextrakt"
-msgstr "Výtah ze souborů"
+msgstr ""
 
 #: app/index.html:77
 msgid "Depotauslieferungen"
-msgstr "Dodání na výdejní místo"
+msgstr ""
 
 #: app/scripts/app.js:105
 msgid "Depotlieferung"
-msgstr "Dodávka na výdejní místo"
+msgstr ""
 
 #: app/scripts/app.js:124
 msgid "DepotlieferungAbo"
-msgstr "Podíl dodávaný na výdejní místo"
+msgstr ""
 
 #: app/index.html:85
 msgid "Depots"
-msgstr "Výdejní místa"
+msgstr ""
 
 #: app/scripts/login/forbidden.html:6
 msgid "Der Zugriff auf diese Ressource wurde verweigert."
-msgstr "Přístup k tomuto zdroji byl odepřen."
+msgstr ""
 
 #: app/scripts/app.js:196
 msgid "Dez"
-msgstr "Pro"
+msgstr ""
 
 #: app/scripts/app.js:196
 msgid "Dezember"
-msgstr "Prosinec"
+msgstr ""
 
 #: app/scripts/login/login.html:18
 #: app/scripts/login/login.html:29
 #: app/scripts/login/login.html:42
 #: app/scripts/login/login.html:54
 msgid "Die Daten in diesem System werden sporadisch auf die Standardwerte zurückgesetzt."
-msgstr "Data v tomto systému jsou sporadicky resetována na výchozí hodnoty."
+msgstr ""
 
 #: app/scripts/common/components/oo-confirmondirty-directive.js:22
 #: app/scripts/common/components/oo-confirmondirty-directive.js:36
 msgid "Die Seite enthält Modifikationen. Wollen Sie diese verwerfen?"
-msgstr "Stránka obsahuje změny. Chcete je zahodit?"
+msgstr ""
 
 #: app/scripts/app.js:165
 msgid "Dienstag"
-msgstr "Úterý"
+msgstr ""
 
 #: app/scripts/not-found.html:9
 msgid "Diese Seite konnte nicht gefunden werden!"
-msgstr "Tuto stránku se nepodařilo najít!"
+msgstr ""
 
 #: app/scripts/app.js:169
 msgid "Donnerstag"
-msgstr "Čtvrtek"
+msgstr ""
 
 #: app/scripts/login/login.html:80
 msgid "E-Mail Adresse"
-msgstr "Emailová adresa"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:19
 msgid "E-Mail Volage"
-msgstr "Vzor zprávy"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-confirmation-message.html:2
 msgid "E-Mail versenden"
-msgstr "Poslat e-mail"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:5
 msgid "E-Mail versenden an selektierte Einträge"
-msgstr "E-mail odeslán na vybrané položky"
+msgstr ""
 
 #: app/scripts/login/login.html:15
 #: app/scripts/login/login.html:26
 #: app/scripts/login/login.html:38
 #: app/scripts/login/login.html:51
 msgid "E-Mail:"
-msgstr "E-mail:"
+msgstr ""
 
 #: app/scripts/app.js:155
 msgid "EUR"
-msgstr "EUR"
+msgstr ""
 
 #: app/scripts/login/change_password.html:5
 msgid "Eigenes Passwort wechseln"
-msgstr "Změnit vlastní heslo"
+msgstr ""
 
 #: app/messages.html:2
 #: app/scripts/login/change_password.html:20
@@ -290,666 +290,665 @@ msgstr "Změnit vlastní heslo"
 #: app/scripts/login/zugangaktivieren.html:14
 #: app/scripts/login/zugangaktivieren.html:29
 msgid "Eingabe erforderlich"
-msgstr "Vyžadován vstup"
+msgstr ""
 
 #: app/messages.html:6
 msgid "Eingabe stimmt nicht übereint"
-msgstr "Zadané informace se neshodují"
+msgstr ""
 
 #: app/messages.html:3
 msgid "Eingabe zu kurz"
-msgstr "Zadané informace příliš krátké"
+msgstr ""
 
 #: app/messages.html:4
 msgid "Eingage zu lang"
-msgstr "Zadané informace příliš dlouhé"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:14
 msgid "Einige selektierte Einträge verfügen über kein angehängtes Rechnungsdokument. Diese E-Mails werden ohne Anhang verschickt."
-msgstr "Některé vybrané položky nemají připojen doklad. Tyto e-maily jsou odesílány bez přílohy."
+msgstr ""
 
 #: app/index.html:83
 msgid "Einkauf*"
-msgstr "Nákup*"
+msgstr ""
 
 #: app/index.html:55
 #: app/index.html:91
 msgid "Einstellungen"
-msgstr "Nastavení"
+msgstr ""
 
 #: app/scripts/login/passwordreset.html:14
 msgid "Email Adresse"
-msgstr "Emailová adresa"
+msgstr ""
 
 #: app/scripts/app.js:205
 msgid "Erfasst"
-msgstr "Uloženo"
+msgstr ""
 
 #: app/scripts/app.js:201
 msgid "Erledigt"
-msgstr "Hotovo"
+msgstr ""
 
 #: app/scripts/not-found.html:6
 msgid "Error 404"
-msgstr "Chyba 404"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:70
 msgid "Erstellen"
-msgstr "Vytvořit"
+msgstr ""
 
 #: app/scripts/app.js:135
 msgid "Erstellt"
-msgstr "Vytvořeno"
+msgstr ""
 
 #: app/scripts/login/login.html:96
 msgid "Es wurde ein Zugangscode an ihre Email-Adresse"
-msgstr "Přístupový kód byl zaslán na váš email"
+msgstr ""
 
 #: app/scripts/app.js:155
 msgid "Euro"
-msgstr "Euro"
+msgstr ""
 
 #: app/scripts/app.js:171
 msgid "FR"
-msgstr "FR"
+msgstr ""
 
 #: app/scripts/app.js:181
 msgid "Feb"
-msgstr "Únor"
+msgstr ""
 
 #: app/scripts/app.js:181
 msgid "Februar"
-msgstr "Únor"
+msgstr ""
 
 #: app/messages.html:5
 msgid "Fehlerhafte Email Adresse"
-msgstr "Nesprávná emailová adresa"
+msgstr ""
 
 #: app/scripts/app.js:121
 msgid "Fr."
-msgstr "Paní"
+msgstr ""
 
 #: app/scripts/app.js:121
 msgid "Frau"
-msgstr "Paní"
+msgstr ""
 
 #: app/scripts/app.js:171
 msgid "Freitag"
-msgstr "Pátek"
+msgstr ""
 
 #: app/scripts/login/login.html:92
 msgid "Für das Testen der Administrationsumgebung, bitte hier klicken!"
-msgstr "Pro testovací administrační prostředí klikněte zde!"
+msgstr ""
 
 #: app/scripts/login/login.html:41
 msgid "Für den Zugang auf die Administrationsumgebung von OpenOlitor, bitte den Link unten rechts verwenden."
-msgstr "Pro přístup do administrace systému OpenOlitor, prosím klikněte na odkaz dole vpravo."
+msgstr ""
 
 #: app/scripts/login/login.html:33
 msgid "Für den Zugriff auf OpenOlitor ist eine Anmeldung erforderlich"
-msgstr "Pro přístup k OpenOlitor je vyžadováno přihlášení"
+msgstr ""
 
 #: app/scripts/login/login.html:10
 #: app/scripts/login/login.html:46
 msgid "Für den Zugriff auf die Administrationsumgebung ist eine Anmeldung erforderlich"
-msgstr "Pro přístup do administrace je vyžadováno přihlášení"
+msgstr ""
 
 #: app/scripts/app.js:157
 msgid "GBP"
-msgstr "GBP"
+msgstr ""
 
 #: app/scripts/app.js:144
 msgid "Gramm"
-msgstr "Gram"
+msgstr ""
 
 #: app/scripts/app.js:106
 msgid "Heimlieferung"
-msgstr "Dodávka domů"
+msgstr ""
 
 #: app/scripts/app.js:125
 msgid "HeimlieferungAbo"
-msgstr "Podíl dodávaný domů"
+msgstr ""
 
 #: app/scripts/app.js:120
 msgid "Herr"
-msgstr "Pan"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:61
 msgid "Herunterladen"
-msgstr "Stáhnout"
+msgstr ""
 
 #: app/scripts/app.js:120
 msgid "Hr."
-msgstr "Pan"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:41
 #: app/scripts/common/components/oo-generate-report.directive.html:48
 #: app/scripts/common/components/oo-generate-report.directive.html:56
 #: app/scripts/common/components/oo-generate-report.directive.html:64
 msgid "Ja"
-msgstr "Ano"
+msgstr ""
 
 #: app/scripts/app.js:179
 msgid "Jan"
-msgstr "Led"
+msgstr ""
 
 #: app/scripts/app.js:179
 msgid "Januar"
-msgstr "Leden"
+msgstr ""
 
 #: app/scripts/app.js:187
 msgid "Jul"
-msgstr "Červenec"
+msgstr ""
 
 #: app/scripts/app.js:187
 msgid "Juli"
-msgstr "Červenec"
+msgstr ""
 
 #: app/scripts/app.js:186
 msgid "Jun"
-msgstr "Čer"
+msgstr ""
 
 #: app/scripts/app.js:186
 msgid "Juni"
-msgstr "Červen"
+msgstr ""
 
 #: app/scripts/app.js:159
 msgid "Kanadischer Dollar"
-msgstr "Kanadský dolar"
+msgstr ""
 
 #: app/scripts/app.js:119
 msgid "Keine"
-msgstr "Žádný"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.controller.js:17
 msgid "Keine Vorlage"
-msgstr "Žádná šablona"
+msgstr ""
 
 #: app/scripts/app.js:145
 msgid "Kilogramm"
-msgstr "Kilogram"
+msgstr ""
 
 #: app/index.html:70
 msgid "Kunden"
-msgstr "Podílníci"
+msgstr ""
 
 #: app/index.html:73
 msgid "Lieferanten"
-msgstr "Dodavatelé"
+msgstr ""
 
 #: app/index.html:74
 msgid "Lieferplanung"
-msgstr "Plány závozů"
+msgstr ""
 
 #: app/scripts/app.js:101
 msgid "Lieferung"
-msgstr "Závoz"
+msgstr ""
 
 #: app/scripts/app.js:111
 msgid "Lieferungen"
-msgstr "Závozy"
+msgstr ""
 
 #: app/scripts/app.js:147
 msgid "Liter"
-msgstr "Litr"
+msgstr ""
 
 #: app/scripts/login/login.html:92
 msgid "Login Administration"
-msgstr "Přihlášení do administrace"
+msgstr ""
 
 #: app/scripts/common/components/oo-deletebutton.directive.modal.html:12
 msgid "Löschen"
-msgstr "Odstranit"
+msgstr ""
 
 #: app/scripts/app.js:167
 msgid "MI"
-msgstr "Stř"
+msgstr ""
 
 #: app/scripts/app.js:163
 msgid "MO"
-msgstr "Po"
+msgstr ""
 
 #: app/scripts/app.js:138
 msgid "MahnungVerschickt"
-msgstr "Připomínkaodeslána"
+msgstr ""
 
 #: app/scripts/app.js:185
 msgid "Mai"
-msgstr "Květen"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:46
 msgid "Mail-Body"
-msgstr "Tělo emailu"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:66
 msgid "Mails konnten nicht verschickt werden.<span>\n"
 "  </span>"
-msgstr "Poštu nelze odeslat.<span>\n"
-"  </span>"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:63
 msgid "Mails wurden verschickt"
-msgstr "Email byl odeslán"
+msgstr ""
 
 #: app/scripts/app.js:183
 msgid "Mar"
-msgstr "Bře"
+msgstr ""
 
 #: app/scripts/app.js:167
 msgid "Mittwoch"
-msgstr "Středa"
+msgstr ""
 
 #: app/scripts/app.js:112
 msgid "Monate"
-msgstr "Měsíce"
+msgstr ""
 
 #: app/scripts/app.js:94
 msgid "Monatlich"
-msgstr "Měsíčně"
+msgstr ""
 
 #: app/scripts/app.js:163
 msgid "Montag"
-msgstr "Pondělí"
+msgstr ""
 
 #: app/scripts/app.js:183
 msgid "März"
-msgstr "Březen"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:41
 #: app/scripts/common/components/oo-generate-report.directive.html:48
 #: app/scripts/common/components/oo-generate-report.directive.html:56
 #: app/scripts/common/components/oo-generate-report.directive.html:64
 msgid "Nein"
-msgstr "Ne"
+msgstr ""
 
 #: app/scripts/login/change_password.html:17
 msgid "Neues Passwort"
-msgstr "Nové heslo"
+msgstr ""
 
 #: app/scripts/app.js:202
 msgid "NichtErledigt"
-msgstr "Nedokončeno"
+msgstr ""
 
 #: app/scripts/app.js:194
 msgid "Nov"
-msgstr "List"
+msgstr ""
 
 #: app/scripts/app.js:194
 msgid "November"
-msgstr "Listopad"
+msgstr ""
 
 #: app/scripts/app.js:130
 msgid "Offen"
-msgstr "Otevřeno"
+msgstr ""
 
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:13
 msgid "Ok"
-msgstr "Ok"
+msgstr ""
 
 #: app/scripts/app.js:192
 msgid "Okt"
-msgstr "Říj"
+msgstr ""
 
 #: app/scripts/app.js:192
 msgid "Oktober"
-msgstr "Říjen"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:53
 msgid "PDF Ablegen"
-msgstr "Uložit jako PDF"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:45
 msgid "PDF Erstellen"
-msgstr "Vytvořit PDF"
+msgstr ""
 
 #: app/scripts/login/login.html:83
 #: app/scripts/login/zugangaktivieren.html:11
 msgid "Passwort"
-msgstr "Heslo"
+msgstr ""
 
 #: app/scripts/login/zugangaktivieren.html:35
 msgid "Passwort setzen"
-msgstr "Nastavit heslo"
+msgstr ""
 
 #: app/scripts/login/zugangaktivieren.html:5
 msgid "Passwort setzen und Zugang aktivieren"
-msgstr "Resetovat heslo a povolit přístup"
+msgstr ""
 
 #: app/scripts/login/login.html:89
 #: app/scripts/login/passwordreset.html:5
 msgid "Passwort vergessen?"
-msgstr "Zapomenuté heslo?"
+msgstr ""
 
 #: app/index.html:57
 #: app/scripts/login/change_password.html:41
 msgid "Passwort wechseln"
-msgstr "Změnit heslo"
+msgstr ""
 
 #: app/scripts/login/change_password.html:32
 #: app/scripts/login/zugangaktivieren.html:26
 msgid "Passwort wiederholen"
-msgstr "Zadejte heslo znovu"
+msgstr ""
 
 #: app/scripts/login/login.controller.js:81
 msgid "Passwort wurde erfolgreich geändert, Sie werden automatisch ausgelogged."
-msgstr "Heslo bylo úspěšně změněno, budete automaticky odhlášeni."
+msgstr ""
 
 #: app/scripts/login/login.controller.js:85
 msgid "Passwort wurde erfolgreich geändert, Sie wurden automatisch ausgelogged. Bitte loggen Sie sich mit dem neuen Passwort erneut an."
-msgstr "Heslo bylo úspěšně změněno, byli jste automaticky odhlášeni. Přihlaste se znovu s novým heslem."
+msgstr ""
 
 #: app/scripts/login/passwordreset.html:17
 msgid "Passwort zurücksetzen"
-msgstr "Obnovit heslo"
+msgstr ""
 
 #: app/scripts/login/login.html:16
 #: app/scripts/login/login.html:27
 #: app/scripts/login/login.html:39
 #: app/scripts/login/login.html:52
 msgid "Passwort:"
-msgstr "Heslo:"
+msgstr ""
 
 #: app/scripts/login/change_password.html:23
 #: app/scripts/login/change_password.html:36
 #: app/scripts/login/zugangaktivieren.html:17
 #: app/scripts/login/zugangaktivieren.html:30
 msgid "Passworteingabe stimmt nicht übereint"
-msgstr "Zadané heslo neodpovídá"
+msgstr ""
 
 #: app/scripts/login/change_password.html:28
 #: app/scripts/login/zugangaktivieren.html:22
 msgid "Passwortstärke"
-msgstr "Síla hesla"
+msgstr ""
 
 #: app/index.html:72
 msgid "Pendenzen"
-msgstr "Čekající"
+msgstr ""
 
 #: app/index.html:79
 msgid "Postauslieferungen"
-msgstr "Doručení poštou"
+msgstr ""
 
 #: app/scripts/app.js:107
 msgid "Postlieferung"
-msgstr "Doručení poštou"
+msgstr ""
 
 #: app/scripts/app.js:126
 msgid "PostlieferungAbo"
-msgstr "Podíl doručovaný poštou"
+msgstr ""
 
 #: app/index.html:89
 msgid "Produkte"
-msgstr "Produkty"
+msgstr ""
 
 #: app/index.html:88
 msgid "Produzenten"
-msgstr "Výrobci"
+msgstr ""
 
 #: app/index.html:92
 msgid "Projekt"
-msgstr "Projekt"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:33
 msgid "Prägnanter Betreff"
-msgstr "Stručný předmět"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:38
 msgid "Rechnung anhängen"
-msgstr "Připojit doklad"
+msgstr ""
 
 #: app/index.html:81
 msgid "Rechnungen"
-msgstr "Doklady"
+msgstr ""
 
 #: app/index.html:90
 msgid "Reports*"
-msgstr "Zprávy*"
+msgstr ""
 
 #: app/scripts/app.js:173
 msgid "SA"
-msgstr "So"
+msgstr ""
 
 #: app/scripts/app.js:175
 msgid "SO"
-msgstr "Ned"
+msgstr ""
 
 #: app/scripts/app.js:173
 msgid "Samstag"
-msgstr "Sobota"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:56
 #: app/scripts/common/components/oo-sliding-detail.directive.html:5
 msgid "Schliessen"
-msgstr "Zavřít"
+msgstr ""
 
 #: app/scripts/app.js:153
 msgid "Schweizer Franken"
-msgstr "Švýcarské franky"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-confirmation-message.html:12
 #: app/scripts/common/components/oo-email-dialog.html:55
 msgid "Senden"
-msgstr "Odeslat"
+msgstr ""
 
 #: app/scripts/app.js:191
 msgid "Sep"
-msgstr "Zář"
+msgstr ""
 
 #: app/scripts/app.js:190
 msgid "September"
-msgstr "Září"
+msgstr ""
 
 #: app/scripts/login/login.html:23
 #: app/scripts/login/login.html:48
 msgid "Sie befinden sich auf dem Lasius Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen an der Administrationsumgebung anmelden:"
-msgstr "Nacházíte se v testovacím systému Lasius. Do administrace se můžete přihlásit pomocí následujících přihlašovacích údajů:"
+msgstr ""
 
 #: app/scripts/login/login.html:35
 msgid "Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen als Konsument anmelden:"
-msgstr "Nacházíte se v testovacím systému OpenOlitor. Jako zákazník se můžete přihlásit pomocí následujících přihlašovacích údajů:"
+msgstr ""
 
 #: app/scripts/login/login.html:12
 msgid "Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen an der Administrationsumgebung anmelden:"
-msgstr "Nacházíte se v testovacím systému OpenOlitor. Do administrace se můžete přihlásit pomocí následujících přihlašovacích údajů:"
+msgstr ""
 
 #: app/scripts/common/components/oo-deletebutton.directive.modal.html:2
 msgid "Sind Sie sicher?"
-msgstr "Jste si jisti?"
+msgstr ""
 
 #: app/scripts/common/components/oo-deletebutton.directive.modal.html:7
 msgid "Soll der Löschvorgang fortgesetzt werden?"
-msgstr "Má proces odstranění pokračovat?"
+msgstr ""
 
 #: app/scripts/app.js:175
 msgid "Sonntag"
-msgstr "Neděle"
+msgstr ""
 
 #: app/scripts/app.js:142
 msgid "St."
-msgstr "kus"
+msgstr ""
 
 #: app/index.html:84
 msgid "Stammdaten"
-msgstr "Základní data"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:21
 #: app/scripts/common/components/oo-generate-report.directive.html:31
 msgid "Standardvorlage"
-msgstr "Výchozí šablona"
+msgstr ""
 
 #: app/scripts/app.js:139
 msgid "Storniert"
-msgstr "Zrušeno"
+msgstr ""
 
 #: app/scripts/app.js:142
 msgid "Stück"
-msgstr "Kus"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:49
 msgid "Text mit [Platzhalter]"
-msgstr "Text s [Platzhalter]"
+msgstr ""
 
 #: app/index.html:78
 msgid "Tourauslieferungen"
-msgstr "Postupné závozy"
+msgstr ""
 
 #: app/index.html:86
 msgid "Touren"
-msgstr "Postupné závozy"
+msgstr ""
 
 #: app/scripts/app.js:156
 msgid "US Dollar"
-msgstr "AMERICKÝ dolar"
+msgstr ""
 
 #: app/scripts/app.js:156
 msgid "USD"
-msgstr "USD"
+msgstr ""
 
 #: app/scripts/app.js:110
 msgid "Unbeschraenkt"
-msgstr "Neomezený počet"
+msgstr ""
 
 #: app/scripts/app.js:129
 msgid "Ungeplant"
-msgstr "Neplánované"
+msgstr ""
 
 #: app/scripts/app.js:95
 msgid "Unregelmaessig"
-msgstr "Nepravidelné"
+msgstr ""
 
 #: app/scripts/login/login.html:70
 msgid "Unterhalts-Moduls! Das Kundenportal ist gegenwärtig nicht verfügbar. Bitte sobald wie möglich wieder aktivieren!"
-msgstr "Probíhá údržba! Podílnický portál není v současné době k dispozici. Bude co nejdříve znovu zprovzněn!"
+msgstr ""
 
 #: app/scripts/app.js:132
 msgid "Verrechnet"
-msgstr "Vyúčtováno"
+msgstr ""
 
 #: app/scripts/app.js:136
 msgid "Verschickt"
-msgstr "Odesláno"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:16
 msgid "Vorlage"
-msgstr "Šablona"
+msgstr ""
 
 #: app/index.html:93
 msgid "Vorlagen*"
-msgstr "Šablony*"
+msgstr ""
 
 #: app/scripts/common/components/oo-actionsbutton.directive.html:9
 msgid "Weitere Aktionen"
-msgstr "Další možnosti"
+msgstr ""
 
 #: app/scripts/login/passwordreset.html:6
 msgid "Wenn Sie ihr Passwort vergessen haben, können Sie sich einen Reset-Link senden lassen."
-msgstr "Pokud jste zapomněli své heslo, můžete si nechat poslat odkaz pro obnovení."
+msgstr ""
 
 #: app/scripts/login/login.controller.js:36
 msgid "Willkommen"
-msgstr "Vítejte"
+msgstr ""
 
 #: app/scripts/app.js:92
 msgid "Woechentlich"
-msgstr "Týdně"
+msgstr ""
 
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:8
 msgid "Wollen Sie fortfahren?"
-msgstr "Chcete pokračovat?"
+msgstr ""
 
 #: app/index.html:82
 msgid "Zahlungs-Imports"
-msgstr "Import platby"
+msgstr ""
 
 #: app/scripts/login/login.html:100
 msgid "Zugangscode"
-msgstr "Přístupový kód"
+msgstr ""
 
 #: app/scripts/login/login.html:106
 msgid "Zugangscode erneut versenden"
-msgstr "Znovu odeslat přístupový kód"
+msgstr ""
 
 #: app/scripts/login/forbidden.html:5
 msgid "Zugriff verweigert"
-msgstr "Přístup odepřen"
+msgstr ""
 
 #: app/scripts/app.js:93
 msgid "Zweiwoechentlich"
-msgstr "Čtrnáctidenní"
+msgstr ""
 
 #: app/scripts/common/components/oo-savebutton.directive.html:5
 msgid "erstellen"
-msgstr "vytvořit"
+msgstr ""
 
 #: app/scripts/app.js:144
 msgid "gr"
-msgstr "gr"
+msgstr ""
 
 #: app/scripts/app.js:146
 msgid "kg"
-msgstr "kg"
+msgstr ""
 
 #: app/scripts/common/components/oo-actionsbutton.directive.js:119
 msgid "konnte nicht ausgeführt werden. Fehler:"
-msgstr "nelze provést. Chyba:"
+msgstr ""
 
 #: app/scripts/common/components/oo-deletebutton.directive.js:103
 msgid "konnte nicht gelöscht werden. Fehler:"
-msgstr "nelze odstranit. Chyba:"
+msgstr ""
 
 #: app/scripts/common/components/oo-savebutton.directive.js:77
 msgid "konnte nicht gespeichert werden. Fehler:"
-msgstr "nelze uložit. Chyba:"
+msgstr ""
 
 #: app/scripts/app.js:147
 msgid "l"
-msgstr "l"
+msgstr ""
 
 #: app/scripts/common/filters/oo-preisproeinheit.filter.js:7
 msgid "pro"
-msgstr "za"
+msgstr ""
 
 #: app/scripts/common/components/oo-savebutton.directive.html:6
 msgid "speichern"
-msgstr "uložit"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-confirmation-message.html:8
 msgid "versenden möchtest"
-msgstr "chcete poslat"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:63
 msgid "von"
-msgstr "od"
+msgstr ""
 
 #: app/scripts/common/components/oo-deletebutton.directive.js:43
 msgid "wurde durch eine andere Person gelöscht."
-msgstr "byl odstraněn jiným uživatelem."
+msgstr ""
 
 #: app/scripts/common/components/oo-actionsbutton.directive.js:81
 msgid "wurde durch eine andere Person geändert. Bitte laden Sie die Ansicht neu."
-msgstr "byla změněna jiným uživatelem. Prosím znovu načtěte zobrazení."
+msgstr ""
 
 #: app/scripts/common/components/oo-deletebutton.directive.js:47
 msgid "wurde erfolgreich gelöscht."
-msgstr "byla úspěšně odstraněna."
+msgstr ""
 
 #: app/scripts/login/login.html:96
 msgid "zugestellt."
-msgstr "doručeno."
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:23
 msgid "{{form.vorlage.name}}"
-msgstr "{{form.vorlage.name}}"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:24
 msgid "{{projektVorlage.name}}"
-msgstr "{{projektVorlage.name}}"
+msgstr ""
 
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:2
 msgid "{{title | translate}}"
-msgstr "{{title | translate}}"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:32
 msgid "{{vorlage.name}}"
-msgstr "{{vorlage.name}}"
+msgstr ""
 
