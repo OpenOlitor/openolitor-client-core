@@ -30,7 +30,7 @@ angular.module('openolitor-core')
         subject: $scope.defaultEmptyTemplate.subject,
         body: $scope.defaultEmptyTemplate.body,
         label: $scope.defaultEmptyTemplate.label,
-        attachInvoice: $scope.defaultEmptyTemplate.id
+        attachInvoice: $scope.defaultEmptyTemplate.attachInvoice
       };
 
       $scope.open = {
