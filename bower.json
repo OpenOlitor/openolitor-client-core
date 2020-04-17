@@ -1,6 +1,6 @@
 {
   "name": "openolitor-core",
-  "version": "2.3.15",
+  "version": "2.3.16",
   "ignore": [],
   "private": false,
   "main": ["dist/scripts/openolitor-core.js"],
