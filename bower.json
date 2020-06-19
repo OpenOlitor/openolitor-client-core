@@ -1,24 +1,24 @@
 {
   "name": "openolitor-core",
-  "version": "2.4.2",
+  "version": "2.5.0",
   "ignore": [],
   "private": false,
   "main": ["dist/scripts/openolitor-core.js"],
   "dependencies": {
-    "angular": "~1.7.8",
-    "angular-animate": "~1.7.8",
+    "angular": "~1.8.0",
+    "angular-animate": "~1.8.0",
     "angular-base64": "~2.0.5",
     "angular-bootstrap": "~2.5.0",
     "angular-bootstrap-switch": "~0.5.2",
     "angular-cookie": "~4.1.0",
-    "angular-cookies": "~1.7.8",
+    "angular-cookies": "~1.8.0",
     "angular-gettext": "~2.3.10",
-    "angular-i18n": "~1.7.8",
-    "angular-loader": "~1.7.8",
-    "angular-resource": "~1.7.8",
-    "angular-route": "~1.7.8",
-    "angular-sanitize": "~1.7.8",
-    "angular-touch": "~1.7.8",
+    "angular-i18n": "~1.8.0",
+    "angular-loader": "~1.8.0",
+    "angular-resource": "~1.8.0",
+    "angular-route": "~1.8.0",
+    "angular-sanitize": "~1.8.0",
+    "angular-touch": "~1.8.0",
     "bootstrap": "~3.3.7",
     "bootstrap3-dialog": "~1.35.4",
     "es5-shim": "~4.5.9",
@@ -37,17 +37,17 @@
     "ng-lodash": "~0.5.0",
     "angular-filter": "^0.5.15",
     "ng-password-strength": "~0.2.1",
-    "angular-messages": "~1.7.8",
+    "angular-messages": "~1.8.0",
     "angular-sortable-view": "~0.0.15",
     "angular-loading-bar": "^0.9.0",
     "jquery": "3.2.1"
   },
   "devDependencies": {
-    "angular-mocks": "~1.7.8",
-    "angular-scenario": "~1.7.8"
+    "angular-mocks": "~1.8.0",
+    "angular-scenario": "~1.8.0"
   },
   "resolutions": {
-    "angular": "~1.7.8",
+    "angular": "~1.8.0",
     "jquery": "3.2.1"
   },
   "overrides": {
