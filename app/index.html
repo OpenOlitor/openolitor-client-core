@@ -96,14 +96,22 @@
     </ul>
   </div>
 
-  <div class="master-content content" ng-class="{'sidenav-open': tgState}">
+  <div class="master-content content" ng-class="{'sidenav-open': tgState}" ng-if="loaded">
     <!--[if lt IE 9]>
           <p class="browsehappy" translate>Sie nutzen einen <strong>alten</strong> Browser. Bitte <a href="http://browsehappy.com/">installieren</a> Sie einen aktuelle Brwoser. So stellen Sie sicher, dass dies Webseite wie beabsichtigt funktioniert.</p>
       <![endif]-->
     <div ng-view="" ng-cloak class="container-fluid"></div>
   </div>
 
-  <footer>
+  <div class="master-content content" ng-if="!loaded">
+    <div ng-cloak class="container">
+      <div class="jumbotron">
+        <h3 translate>Wir sind gleich bereit...</h3>
+      </div>
+    </div>
+  </div>
+
+  <footer ng-if="loaded">
     <a href="http://www.openolitor.ch" target="_blank">www.openolitor.ch</a> Build: UI #{{buildNr}} WS: #{{serverInfo.buildNr}} Env: {{env}}
     <span ng-class="[{disconnected:!connected, connected:connected}]"><i class="fa fa-wifi" ng-attr-title="{{messagingSocketClosedReason}}"></i></span>
   </footer>

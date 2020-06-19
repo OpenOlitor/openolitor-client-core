@@ -205,13 +205,20 @@ angular
     $rootScope.location = $location;
   })
   .service('appConfig', ['$http', function($http) {
-    var configData = {};
+    var loaded = false;
+    var configData = {
+    };
     $http.get('environments/config.json').then(function(payload) {
       configData = payload.data;
+      loaded = true;
+    }, function(error) {
     });
     return {
       get: function() {
         return configData;
+      },
+      isLoaded: function() {
+        return loaded;
       }
     };
   }])
