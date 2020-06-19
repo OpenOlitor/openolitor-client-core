@@ -4,9 +4,9 @@
  */
 angular.module('openolitor-core')
   .controller('LoginController', ['$scope', '$rootScope', '$http',
-    'API_URL', 'ENV', 'gettext', '$rootElement',
+    'appConfig', 'ENV', 'gettext', '$rootElement',
     'alertService', '$timeout', '$location', '$route', '$routeParams', 'ooAuthService', '$interval',
-    function($scope, $rootScope, $http, API_URL, ENV, gettext, $rootElement,
+    function($scope, $rootScope, $http, appConfig, ENV, gettext, $rootElement,
       alertService, $timeout, $location, $route, $routeParams, ooAuthService, $interval) {
       $scope.loginData = {};
       $scope.submitted = false;
@@ -58,7 +58,7 @@ angular.module('openolitor-core')
 
       var doLogout = function(showMessage, msg) {
         var usr = ooAuthService.getUser();
-        $http.post(API_URL + 'auth/logout').then(function() {
+        $http.post(appConfig.get().API_URL + 'auth/logout').then(function() {
           $scope.loginData.message = undefined;
 
           ooAuthService.loggedOut();
@@ -109,7 +109,7 @@ angular.module('openolitor-core')
 
       $scope.login = function() {
         if ($scope.loginForm.$valid) {
-          $http.post(API_URL + 'auth/login', $scope.loginData).then(
+          $http.post(appConfig.get().API_URL + 'auth/login', $scope.loginData).then(
             function(
               result) {
               $scope.loginData.message = undefined;
@@ -140,7 +140,7 @@ angular.module('openolitor-core')
 
       $scope.secondFactorLogin = function() {
         if ($scope.secondFactorForm.$valid) {
-          $http.post(API_URL + 'auth/secondFactor', $scope.secondFactorData)
+          $http.post(appConfig.get().API_URL + 'auth/secondFactor', $scope.secondFactorData)
             .then(function(
               result) {
               $scope.secondFactorData.message = undefined;
@@ -156,7 +156,7 @@ angular.module('openolitor-core')
 
       $scope.changePassword = function() {
         if ($scope.changePwdForm.$valid) {
-          $http.post(API_URL + 'auth/passwd', $scope.changePwd)
+          $http.post(appConfig.get().API_URL + 'auth/passwd', $scope.changePwd)
             .then(function() {
               $scope.changePwd.message = undefined;
               showPasswordChangedMessage();
@@ -169,7 +169,7 @@ angular.module('openolitor-core')
       $scope.setPassword = function() {
         if ($scope.setPasswordForm.$valid) {
           $scope.initPassword.token = $routeParams.token;
-          $http.post(API_URL + 'auth/zugangaktivieren', $scope.initPassword)
+          $http.post(appConfig.get().API_URL + 'auth/zugangaktivieren', $scope.initPassword)
             .then(function() {
               $scope.initPassword.message = undefined;
               showPasswordSetMessage();
@@ -181,7 +181,7 @@ angular.module('openolitor-core')
 
       $scope.resetPassword = function() {
         if ($scope.resetPasswordForm.$valid) {
-          $http.post(API_URL + 'auth/passwordreset', $scope.resetPasswordData).then(
+          $http.post(appConfig.get().API_URL + 'auth/passwordreset', $scope.resetPasswordData).then(
             function() {
               $scope.resetPasswordData.message = undefined;
               $scope.submitted = true;

@@ -24,12 +24,12 @@
   checkAuth.$inject = ['$q', 'ooAuthService', '$rootScope', '$location', '$log'];
 
   angular.module('openolitor-core').factory('ooAuthService', ['$http', '$location',
-      '$q', '$cookies', '$log', 'API_URL',
-      function($http, $location, $q, $cookies, $log, API_URL) {
+      '$q', '$cookies', '$log', 'appConfig', 'USER_ROLES',
+      function($http, $location, $q, $cookies, $log, appConfig, USER_ROLES) {
         var user, token = $cookies.get('XSRF-TOKEN');
 
         var currentUser = function() {
-          return $http.get(API_URL + 'auth/user').then(function(response) {
+          return $http.get(appConfig.get().API_URL + 'auth/user').then(function(response) {
             user = response.data;
             $log.debug('Login succeeded:' + user);
             return user;
@@ -96,20 +96,20 @@
             return resolveUser().then(function(user) {
               $log.debug('authorize:', accessLevel + ' => ' + user.rolle);
               return accessLevel === undefined || accessLevel ===
-                userRoles.Guest || accessLevel === user.rolle ||
-                Array.isArray(accessLevel) && (accessLevel.indexOf(userRoles.Guest) > -1 || accessLevel.indexOf(user.rolle) > -1);
+                USER_ROLES.Guest || accessLevel === user.rolle ||
+                Array.isArray(accessLevel) && (accessLevel.indexOf(USER_ROLES.Guest) > -1 || accessLevel.indexOf(user.rolle) > -1);
             });
           },
           isLoggedIn: function() {
             return resolveUser().then(function(user) {
-              return user.rolle !== userRoles.Guest;
+              return user.rolle !== USER_ROLES.Guest;
             });
           },
           isUserLoggedIn: function(user) {
             if (user === undefined) {
               return false;
             }
-            return user.rolle !== userRoles.Guest;
+            return user.rolle !== USER_ROLES.Guest;
           }
         };
       }

@@ -3,9 +3,9 @@
 angular.module('openolitor-core')
   .factory('ooClientMessageService', ['$http', '$location', '$q', '$interval',
     '$rootScope', '$log',
-    'msgBus', 'API_WS_URL', 'BUILD_NR', 'ooAuthService',
+    'msgBus', 'appConfig', 'BUILD_NR', 'ooAuthService',
     function($http, $location, $q, $interval, $rootScope, $log, msgBus,
-      API_WS_URL, BUILD_NR, ooAuthService) {
+      appConfig, BUILD_NR, ooAuthService) {
 
       var send = function(eventType, eventData) {
         // append type to event data
@@ -140,7 +140,7 @@ angular.module('openolitor-core')
         //start websocket based messaging
         start: function() {
           $log.debug('registering websocket, request websocket url');
-          var wsUrl = API_WS_URL.replace('http://', 'ws://').replace(
+          var wsUrl = appConfig.get().API_WS_URL.replace('http://', 'ws://').replace(
             'https://', 'wss://');
           $log.debug('registering websocket, bind to ' + wsUrl);
           //append token to websocket url because normal http headers can't get controlled

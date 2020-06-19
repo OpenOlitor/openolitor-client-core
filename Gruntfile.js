@@ -315,6 +315,11 @@ module.exports = function(grunt) {
           ]
         }, {
           expand: true,
+          cwd: '<%= openolitor.app %>',
+          dest: '<%= openolitor.dist %>',
+          src: ['environments/*']
+        }, {
+          expand: true,
           cwd: '.',
           dest: '<%= openolitor.dist %>',
           src: ['nginx.conf']

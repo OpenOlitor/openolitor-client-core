@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('openolitor-core')
-  .factory('FileUtil', function($document, $timeout, $http, API_URL) {
+  .factory('FileUtil', function($document, $timeout, $http, appConfig) {
 
     var openFile = function(filename, arraybuffer, contentType, charset) {
       var defCharset = charset || 'utf-8';
@@ -40,7 +40,7 @@ angular.module('openolitor-core')
       defaultContentType, callback) {
       $http({
         method: method,
-        url: API_URL + url,
+        url: appConfig.get().API_URL + url,
         data: data,
         responseType: 'arraybuffer'
       }).then(function(res) {
