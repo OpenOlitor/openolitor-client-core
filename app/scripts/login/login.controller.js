@@ -4,9 +4,9 @@
  */
 angular.module('openolitor-core')
   .controller('LoginController', ['$scope', '$rootScope', '$http',
-    'appConfig', 'ENV', 'gettext', '$rootElement',
+    'appConfig', 'gettext', '$rootElement',
     'alertService', '$timeout', '$location', '$route', '$routeParams', 'ooAuthService', '$interval',
-    function($scope, $rootScope, $http, appConfig, ENV, gettext, $rootElement,
+    function($scope, $rootScope, $http, appConfig, gettext, $rootElement,
       alertService, $timeout, $location, $route, $routeParams, ooAuthService, $interval) {
       $scope.loginData = {};
       $scope.submitted = false;
@@ -23,7 +23,7 @@ angular.module('openolitor-core')
         token: undefined
       };
       $scope.status = 'login';
-      $scope.env = ENV;
+      $scope.env = appConfig.get().ENV;
       $scope.secondFactorCountdown = 600;
       $scope.secondFactorCountdownDate = function() {
         return moment().add($scope.secondFactorCountdown, 'seconds');
