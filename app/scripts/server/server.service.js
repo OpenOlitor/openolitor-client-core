@@ -13,11 +13,13 @@ angular.module('openolitor-core')
           staticServerInfo = result;
         });
       };
-      load();
 
       return {
         getStaticServerInfo: function() {
           return staticServerInfo;
+        },
+        initialize: function() {
+          load();
         }
       };
     }
