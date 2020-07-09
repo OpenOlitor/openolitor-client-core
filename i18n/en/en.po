@@ -5,11 +5,13 @@ msgstr ""
 "Project-Id-Version: openolitor-core-client\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Crowdin-Project: openolitor-core-client\n"
+"X-Crowdin-Project-ID: 393653\n"
 "X-Crowdin-Language: en\n"
 "X-Crowdin-File: /prod/template.pot\n"
+"X-Crowdin-File-ID: 8\n"
 "Language-Team: English\n"
 "Language: en_US\n"
-"PO-Revision-Date: 2020-03-26 17:10\n"
+"PO-Revision-Date: 2020-07-09 08:28\n"
 
 #: app/scripts/app.js:119
 msgid "-"
@@ -647,7 +649,7 @@ msgstr "Reset password"
 #: app/scripts/login/login.html:39
 #: app/scripts/login/login.html:52
 msgid "Passwort:"
-msgstr "Contraseña:"
+msgstr "Password:"
 
 #: app/scripts/login/change_password.html:23
 #: app/scripts/login/change_password.html:36
