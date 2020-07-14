@@ -294,7 +294,7 @@ angular
     $rootScope.$removeAlert = alertService.removeAlert();
 
     msgBus.onMsg('ChangeLang', $rootScope, function(event, msg) {
-      console.log('Got ChangeLang Message'  + msg.reason);
+      console.log('Got ChangeLang Message: '  + msg.reason);
       gettextCatalog.setCurrentLanguage(msg.reason);
     });
   }])

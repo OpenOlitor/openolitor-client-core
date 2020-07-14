@@ -12,6 +12,11 @@ angular.module('openolitor-core')
         openIds: $scope.ids,
       };
 
+      $scope.sendResult = {
+        status: false,
+        message: undefined
+      };
+
       $scope.commandIssued = false;
 
       $scope.defaultEmptyTemplate = {id:0,label:gettext('Keine Vorlage'),subject:undefined,body:undefined,attachInvoice:false};
@@ -38,7 +43,7 @@ angular.module('openolitor-core')
       };
 
       $scope.showEmailConfirmationDialog = function(){
-          $uibModal.open({
+          var modalInstance = $uibModal.open({
               animation: true,
               templateUrl: 'scripts/common/components/oo-email-confirmation-message.html',
               controller: 'EmailConfirmationMessageController',
@@ -59,6 +64,12 @@ angular.module('openolitor-core')
                       return $scope.url;
                   }
               }
+          });
+          modalInstance.result.then(function (returnMessage) {
+            $scope.sendResult.status = true;
+            $scope.sendResult.message = returnMessage;
+          }, function () {
+            //dismissed
           });
       };
 
