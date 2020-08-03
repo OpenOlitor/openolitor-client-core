@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: English\n"
 "Language: en_US\n"
-"PO-Revision-Date: 2020-07-09 08:28\n"
+"PO-Revision-Date: 2020-08-03 15:50\n"
 
 #: app/scripts/app.js:119
 msgid "-"
@@ -217,7 +217,7 @@ msgstr "Depot DeliverySuscription"
 
 #: app/index.html:85
 msgid "Depots"
-msgstr "depots"
+msgstr "Depots"
 
 #: app/scripts/login/forbidden.html:6
 msgid "Der Zugriff auf diese Ressource wurde verweigert."
