@@ -5,12 +5,6 @@ var regexIso8601 =
 // Matches YYYY-MM-ddThh:mm:ss.sssZ where .sss is optional
 //var regexIso8601 = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d{3})?Z$/
 
-var userRoles = {
-  Guest: 'Guest',
-  Administrator: 'Administrator',
-  Kunde: 'Kunde'
-};
-
 function convertDateStringsToDates(input) {
   // Ignore things that aren't objects.
   if (typeof input !== 'object') {
@@ -84,10 +78,7 @@ angular
     'angular-sortable-view',
     'angular-loading-bar'
   ])
-  .constant('API_URL', '@@API_URL')
-  .constant('API_WS_URL', '@@API_WS_URL')
   .constant('BUILD_NR', '@@BUILD_NR')
-  .constant('ENV', '@@ENV')
   .constant('LIEFERRHYTHMEN', {
     WOECHENTLICH: gettext('Woechentlich'),
     ZWEIWOECHENTLICH: gettext('Zweiwoechentlich'),
@@ -145,6 +136,11 @@ angular
     KILOGRAMM: addExtendedEnumValue('Kilogramm', gettext('Kilogramm'),
       gettext('kg')),
     LITER: addExtendedEnumValue('Liter', gettext('Liter'), gettext('l'))
+  })
+  .constant('USER_ROLES', {
+    Guest: 'Guest',
+    Administrator: 'Administrator',
+    Kunde:'Kunde'
   })
   .constant('ABOTYPEN_ARRAY', ['DepotlieferungAbo', 'HeimlieferungAbo',
     'PostlieferungAbo'
@@ -208,6 +204,24 @@ angular
   .run(function($rootScope, $location) {
     $rootScope.location = $location;
   })
+  .service('appConfig', ['$http', function($http) {
+    var loaded = false;
+    var configData = {
+    };
+    $http.get('environments/config.json').then(function(payload) {
+      configData = payload.data;
+      loaded = true;
+    }, function(error) {
+    });
+    return {
+      get: function() {
+        return configData;
+      },
+      isLoaded: function() {
+        return loaded;
+      }
+    };
+  }])
   .factory('checkSize', ['$rootScope', '$window', function($rootScope, $window) {
     return function() {
       if ($window.innerWidth >= 1200) {
@@ -259,9 +273,11 @@ angular
     };
     return msgBus;
   }])
-  .run(['ooClientMessageService', function(clientMessageService) {
-    console.log('Start clientMessageService');
-    clientMessageService.start();
+  .run(['ooClientMessageService', '$timeout', function(clientMessageService, $timeout) {
+    $timeout(function() {
+      console.log('Start clientMessageService');
+      clientMessageService.start();
+    }, 1000);
   }])
   .config(['$httpProvider', function($httpProvider) {
     $httpProvider.defaults.transformResponse.push(function(responseData) {
@@ -278,7 +294,7 @@ angular
     $rootScope.$removeAlert = alertService.removeAlert();
 
     msgBus.onMsg('ChangeLang', $rootScope, function(event, msg) {
-      console.log('Got ChangeLang Message'  + msg.reason);
+      console.log('Got ChangeLang Message: '  + msg.reason);
       gettextCatalog.setCurrentLanguage(msg.reason);
     });
   }])
@@ -361,47 +377,47 @@ angular
   .config(['cfpLoadingBarProvider', function(cfpLoadingBarProvider) {
     cfpLoadingBarProvider.includeSpinner = false;
   }])
-  .config(function($routeProvider) {
+  .config(function($routeProvider, USER_ROLES) {
     $routeProvider
       .when('/login', {
         templateUrl: 'scripts/login/login.html',
         controller: 'LoginController',
         name: 'Login',
-        access: userRoles.Guest
+        access: USER_ROLES.Guest
       })
       .when('/passwd', {
         templateUrl: 'scripts/login/change_password.html',
         controller: 'LoginController',
         name: 'Passwortwechsel',
-        access: [userRoles.Administrator, userRoles.Kunde]
+        access: [USER_ROLES.Administrator, USER_ROLES.Kunde]
       })
       .when('/logout', {
         templateUrl: 'scripts/login/logout.html',
         controller: 'LoginController',
         logout: true,
         name: 'Logout',
-        access: userRoles.Guest
+        access: USER_ROLES.Guest
       })
       .when('/forbidden', {
         templateUrl: 'scripts/login/forbidden.html',
         controller: 'LoginController',
         name: 'Forbidden',
-        access: userRoles.Guest
+        access: USER_ROLES.Guest
       })
       .when('/zugangaktivieren', {
         templateUrl: 'scripts/login/zugangaktivieren.html',
         controller: 'LoginController',
         name: 'Einladung',
-        access: userRoles.Guest
+        access: USER_ROLES.Guest
       })
       .when('/passwordreset', {
         templateUrl: 'scripts/login/passwordreset.html',
         controller: 'LoginController',
         name: 'PasswordReset',
-        access: userRoles.Guest
+        access: USER_ROLES.Guest
       })
       .otherwise({
         templateUrl: 'scripts/not-found.html',
-        access: userRoles.Guest
+        access: USER_ROLES.Guest
       });
   });

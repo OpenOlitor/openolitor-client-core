@@ -17,7 +17,7 @@ angular.module('openolitor-core').directive('ooGenerateReport', function() {
     controller: function(
       $scope,
       $http,
-      API_URL,
+      appConfig,
       FileUtil,
       gettext,
       lodash,
@@ -35,7 +35,7 @@ angular.module('openolitor-core').directive('ooGenerateReport', function() {
       var generateWithFormData = function(formData) {
         $scope.error = undefined;
         $http
-          .post(API_URL + $scope.postPath, formData, {
+          .post(appConfig.get().API_URL + $scope.postPath, formData, {
             //IMPORTANT!!! You might think this should be set to 'multipart/form-data'
             // but this is not true because when we are sending up files the request
             // needs to include a 'boundary' parameter which identifies the boundary

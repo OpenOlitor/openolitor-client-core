@@ -12,7 +12,7 @@
 <div class="col-md-12">
         <div class="alert alert-danger" role="alert" ng-show="!attachment && selectedMailTemplate.attachInvoice">
             <span translate>Einige selektierte Einträge verfügen über kein angehängtes Rechnungsdokument. Diese E-Mails werden ohne Anhang verschickt.</span>
-            <i class="fa fa-info-circle" aria-hidden="true" ng-if="abo.ende === undefined && abo.abotyp.kuendigungsfrist" uib-tooltip-template="'kuendigungsterminTooltipTemplate.html'"></i>                  
+            <i class="fa fa-info-circle" aria-hidden="true" ng-if="abo.ende === undefined && abo.abotyp.kuendigungsfrist" uib-tooltip-template="'kuendigungsterminTooltipTemplate.html'"></i>
          </div>
         </div>
         <div class="col-md-6">
@@ -59,6 +59,10 @@
       </div>
     </form>
   </div>
+  <div class="panel-footer" ng-if="sendResult.status" translate>
+    Der Mailversand wurde ausgelöst.
+  </div>
+
   <div class="panel-footer" ng-if="createHasWorked && commandIssued" >
     {{selectedMailTemplate.ids.length}} <span translate>von</span> {{selectedMailTemplate.ids.length + batchCreated.ids.length}} <span translate> Mails wurden verschickt</span>
   </div>

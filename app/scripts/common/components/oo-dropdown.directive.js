@@ -79,7 +79,9 @@ angular.module('openolitor-core').directive('ooDropdown', [function() {
       };
 
       $scope.getDisplayedText = function(item) {
-        if (!angular.isUndefined($scope.property)) {
+        if(angular.isUndefined(item)) {
+          return "na";
+        } else if (!angular.isUndefined($scope.property)) {
           return deepFind(item, $scope.property);
         } else if (!angular.isUndefined($scope.displayFunction)) {
           return $scope.displayFunction(item);
@@ -136,7 +138,6 @@ angular.module('openolitor-core').directive('ooDropdown', [function() {
           $scope.updateDisplay();
         }
       }, true);
-
     }
   };
 }]);

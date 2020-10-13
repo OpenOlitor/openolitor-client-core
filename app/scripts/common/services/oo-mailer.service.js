@@ -3,17 +3,17 @@
 /**
  */
 angular.module('openolitor-core')
-  .factory('MailerService', ['$http', 'API_URL',
-    function($http, API_URL) {
+  .factory('MailerService', ['$http', 'appConfig',
+    function($http, appConfig) {
 
       function getTemplates() {
-        return $http.get(API_URL + 'mailtemplates');
+        return $http.get(appConfig.get().API_URL + 'mailtemplates');
       }
 
       function sendEMail(mailSendTo, Url) {
-        return $http.post(API_URL + Url, mailSendTo);
+        return $http.post(appConfig.get().API_URL + Url, mailSendTo);
       }
-      
+
       var service = {
         getTemplates: getTemplates,
         sendEMail : sendEMail

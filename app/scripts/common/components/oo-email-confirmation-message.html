@@ -9,6 +9,8 @@
         </div>
 </div>
 <div class="modal-footer">
-    <button class="btn btn-primary" ng-disabled="emailSendingForm.$invalid" ng-click="ok()" translate>Senden</button>
-    <button class="btn btn-warning" ng-click="cancel()" translate>Abbrechen</button>
+    <button class="btn btn-primary" ng-disabled="sendClicked || emailSendingForm.$invalid" ng-click="ok()">
+      <i ng-show="sendClicked" ng-cloak class="fa fa-circle-o-notch fa-spin"></i>
+      <span translate>Senden</span></button>
+    <button class="btn btn-warning" ng-click="cancel()" ng-disabled="sendClicked" translate>Abbrechen</button>
 </div>

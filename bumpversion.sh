@@ -63,10 +63,13 @@ COMMIT=${COMMIT:-false}
 
 PACKAGE_JSON=$(cat package.json | perl -pe 's/'$VERSION_REGEX'/'$VERSION'/g')
 BOWER_JSON=$(cat bower.json | perl -pe 's/'$VERSION_REGEX'/'$VERSION'/g')
+CONFIG_JSON=$(cat app/environments/config.json | perl -pe 's/'$VERSION_REGEX'/'$VERSION'/g')
 
 echo "$PACKAGE_JSON" > package.json
 
 echo "$BOWER_JSON" > bower.json
+
+echo "$CONFIG_JSON" > app/environments/config.json
 
 echo "Updated the version to: $VERSION"
 
@@ -83,4 +86,3 @@ else
   echo "Commit your changes 'git commit -a -m \"$MESSAGE\" && git tag -a $VERSION -m \"$MESSAGE\"'"
   echo "After that use 'git push && git push origin $VERSION' to push everything to origin"
 fi
-

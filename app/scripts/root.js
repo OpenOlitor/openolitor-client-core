@@ -6,10 +6,10 @@ angular.module('openolitor-core')
   .controller('OpenOlitorRootController', ['$scope', '$rootScope',
     'ServerService', 'ProjektService', 'gettextCatalog', 'amMoment',
     '$location', 'msgBus', 'checkSize', '$window', '$timeout', 'BUILD_NR',
-    'ENV', 'ooAuthService', '$cookies',
+    'ooAuthService', '$cookies',
     function($scope, $rootScope, ServerService, ProjektService,
       gettextCatalog, amMoment, $location, msgBus, checkSize, $window,
-      $timeout, BUILD_NR, ENV, ooAuthService, $cookies) {
+      $timeout, BUILD_NR, ooAuthService, $cookies) {
       angular.element($window).bind('resize', function() {
         checkSize();
       });
@@ -52,7 +52,7 @@ angular.module('openolitor-core')
         });
 
       $scope.buildNr = BUILD_NR;
-      $scope.env = ENV;
+      $scope.env = appConfig.get().ENV;
 
       msgBus.onMsg('WebSocketClosed', $rootScope, function(event, msg) {
         $scope.connected = false;
