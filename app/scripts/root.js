@@ -90,9 +90,9 @@ angular.module('openolitor-core')
       $scope.displayActiveLang = function() {
         switch(gettextCatalog.getCurrentLanguage()){
           case 'en_US': return 'en';
-          case 'cs-CZ': return 'cs';
-          case 'es-ES': return 'es';
-          case 'hu-HU': return 'hu';
+          case 'cs_CZ': return 'cs';
+          case 'es_ES': return 'es';
+          case 'hu_HU': return 'hu';
           default: return(gettextCatalog.getCurrentLanguage());
         }
       };
@@ -124,15 +124,15 @@ angular.module('openolitor-core')
         } else if (lang.startsWith('fr')) {
           $scope.changeLang('fr_CH');
         } else if (lang.startsWith('en')) {
-          $scope.changeLang('en');
+          $scope.changeLang('en_US');
         } else if (lang.startsWith('es')) {
-          $scope.changeLang('es');
+          $scope.changeLang('es_ES');
         } else if (lang.startsWith('cs')) {
-          $scope.changeLang('cs');
+          $scope.changeLang('cs_CZ');
         } else if (lang.startsWith('hu')) {
-          $scope.changeLang('hu');
+          $scope.changeLang('hu_HU');
         } else {
-          $scope.changeLang('en');
+          $scope.changeLang('en_US');
         }
       } else {
         $scope.changeLang($scope.storedActiveLang());
