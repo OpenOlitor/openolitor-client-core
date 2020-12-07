@@ -6,12 +6,15 @@ angular.module('openolitor-core')
   .controller('LoginController', ['$scope', '$rootScope', '$http',
     'appConfig', 'gettext', '$rootElement',
     'alertService', '$timeout', '$location', '$route', '$routeParams', 'ooAuthService', '$interval',
+    '$window',
     function($scope, $rootScope, $http, appConfig, gettext, $rootElement,
-      alertService, $timeout, $location, $route, $routeParams, ooAuthService, $interval) {
+      alertService, $timeout, $location, $route, $routeParams, ooAuthService, $interval, $window) {
       $scope.loginData = {};
       $scope.submitted = false;
       $scope.resetPasswordData = {};
       $scope.secondFactorData = {};
+      $scope.resetOtpData = {};
+      $scope.resetOtpConfirmData = {};
       $scope.changePwd = {
         neu: undefined,
         alt: undefined,
@@ -28,11 +31,12 @@ angular.module('openolitor-core')
       $scope.secondFactorCountdownDate = function() {
         return moment().add($scope.secondFactorCountdown, 'seconds');
       };
+      $scope.secondFactorType = ooAuthService.getSecondFactorType();
 
       $scope.originalTgState = $rootScope.tgState;
       $rootScope.tgState = false;
 
-      var showWelcomeMessage = function(token, person) {
+      var showWelcomeMessage = function(token, person, secondFactorType) {
         //show welcome message
         alertService.addAlert('info', gettext('Willkommen') + ' ' +
           person.vorname + ' ' +
@@ -43,7 +47,7 @@ angular.module('openolitor-core')
           $rootScope.tgState = $scope.originalTgState;
         }, 1000);
 
-        ooAuthService.loggedIn(token);
+        ooAuthService.loggedIn(token, secondFactorType);
       };
 
       var showGoodbyeMessage = function(usr) {
@@ -107,6 +111,23 @@ angular.module('openolitor-core')
         $scope.loginData.message = msg;
       }
 
+      var sanitizeSecretBase32 = function(secretBase32) {
+        // replace base32 padding signs to make it work for all clients
+        return secretBase32.replace('=', '');
+      }
+
+      var getOtpUrl = function(username, secretBase32) {
+        return (
+          'otpauth://totp/' +
+          $window.location.hostname +
+          ':' +
+          username +
+          '?secret=' +
+          sanitizeSecretBase32(secretBase32) +
+          '&algorithm=SHA1&digits=6&period=30'
+        );
+      };
+
       $scope.login = function() {
         if ($scope.loginForm.$valid) {
           $http.post(appConfig.get().API_URL + 'auth/login', $scope.loginData).then(
@@ -117,8 +138,12 @@ angular.module('openolitor-core')
               //check result
               if (result.data.status === 'LoginSecondFactorRequired') {
                 //redirect to second factor authentication
-                $scope.status = 'twoFactor';
+                $scope.status = result.data.secondFactorType == 'email'?'emailTwoFactor':'otpTwoFactor';
                 $scope.person = result.data.person;
+                $scope.secondFactorType = result.data.secondFactorType;
+                if (result.data.otpSecret) {
+                  $scope.otpSecret = getOtpUrl(result.data.person.email, result.data.otpSecret);
+                }
                 $scope.secondFactorData.token = result.data.token;
 
                 $scope.cancelSecondFactorTimer = $interval(function() {
@@ -137,7 +162,7 @@ angular.module('openolitor-core')
             });
         }
       };
-
+  
       $scope.secondFactorLogin = function() {
         if ($scope.secondFactorForm.$valid) {
           $http.post(appConfig.get().API_URL + 'auth/secondFactor', $scope.secondFactorData)
@@ -147,9 +172,36 @@ angular.module('openolitor-core')
               if ($scope.cancelSecondFactorTimer) {
                 $interval.cancel($scope.cancelSecondFactorTimer);
               }
-              showWelcomeMessage(result.data.token, result.data.person);
+              showWelcomeMessage(result.data.token, result.data.person, result.data.secondFactorType);
             }, function(error) {
               $scope.secondFactorData.message = gettext(error.data);
+            });
+        }
+      };
+
+      $scope.resetOtp = function() {
+        if ($scope.resetOtpData.$valid) {
+          // fetch new OTP secret from server
+          $http.post(appConfig.get().API_URL + 'auth/otpReset', $scope.resetOtpData)
+              .then(function(
+                result) {
+            $scope.status = 'otp_reset'
+            $scope.otpSecret = getOtpUrl(result.data.person.email, result.data.otpSecret);          
+            $scope.resetOtpConfirmData.token = result.data.token;
+          });
+        }
+      }
+
+      $scope.submitSecondFactorReset = function() {
+        if ($scope.resetOtpConfirmData.$valid) {
+          $http.post(appConfig.get().API_URL + 'auth/confirmOtpReset', $scope.resetOtpConfirmData)
+            .then(function(
+              result) {
+              $scope.resetOtpConfirmData.message = undefined;              
+              $scope.status = undefined;
+              alertService.addAlert('info', gettext('OTP Passwort Erfolgreich zurückgesetzt'));        
+            }, function(error) {
+              $scope.resetOtpConfirmData.message = gettext(error.data);
             });
         }
       };

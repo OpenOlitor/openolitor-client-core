@@ -76,7 +76,8 @@ angular
     'ngFileUpload',
     'ngLodash',
     'angular-sortable-view',
-    'angular-loading-bar'
+    'angular-loading-bar',
+    'monospaced.qrcode'
   ])
   .constant('BUILD_NR', '@@BUILD_NR')
   .constant('LIEFERRHYTHMEN', {
@@ -389,6 +390,12 @@ angular
         templateUrl: 'scripts/login/change_password.html',
         controller: 'LoginController',
         name: 'Passwortwechsel',
+        access: [USER_ROLES.Administrator, USER_ROLES.Kunde]
+      })
+      .when('/reset_otp', {
+        templateUrl: 'scripts/login/reset_otp.html',
+        controller: 'LoginController',
+        name: 'OTP Secret Zurücksetzen',
         access: [USER_ROLES.Administrator, USER_ROLES.Kunde]
       })
       .when('/logout', {
