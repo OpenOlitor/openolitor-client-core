@@ -26,12 +26,13 @@
   angular.module('openolitor-core').factory('ooAuthService', ['$http', '$location',
       '$q', '$cookies', '$log', 'appConfig', 'USER_ROLES',
       function($http, $location, $q, $cookies, $log, appConfig, USER_ROLES) {
-        var user, token = $cookies.get('XSRF-TOKEN');
+        var user,secondFactorType, token = $cookies.get('XSRF-TOKEN');
 
         var currentUser = function() {
           return $http.get(appConfig.get().API_URL + 'auth/user').then(function(response) {
-            user = response.data;
-            $log.debug('Login succeeded:' + user);
+            user = response.data.user;
+            secondFactorType = response.data.subject.secondFactorType;
+            $log.debug('Login succeeded', user, secondFactorType);
             return user;
           });
         };
@@ -67,13 +68,14 @@
 
 
         return {
-          loggedIn: function(tkn) {
+          loggedIn: function(tkn, sndFactorType) {
             $cookies.put('XSRF-TOKEN', tkn);
-            $log.debug('logged in', tkn);
+            $log.debug('logged in', tkn, sndFactorType);
             return currentUser().then(function(usr) {
               $log.debug('resolved user after login', usr);
               user = usr;
               token = tkn;
+              secondFactorType = sndFactorType;
               return usr;
             });
           },
@@ -82,6 +84,7 @@
             $cookies.remove('XSRF-TOKEN');
             token = undefined;
             user = undefined;
+            secondFactorType = undefined;
             $location.$$search = {}; // clear token & token signature
             $log.debug('Good bye');
           },
@@ -91,6 +94,10 @@
           },
           getToken: function() {
             return token;
+          },
+          getSecondFactorType: function() {
+            $log.debug('get second factor type', secondFactorType);
+            return secondFactorType;
           },
           authorize: function(accessLevel) {
             return resolveUser().then(function(user) {

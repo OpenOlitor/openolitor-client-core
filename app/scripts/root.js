@@ -27,9 +27,10 @@ angular.module('openolitor-core')
         return ooAuthService.getUser();
       }, function(user) {
         $scope.loggedIn = ooAuthService.isUserLoggedIn(user);
-        $scope.user = user;
+        $scope.user = user;        
 
         if($scope.loggedIn) {
+          $scope.secondFactorType = ooAuthService.getSecondFactorType();
           ProjektService.resolveProjekt().then(function(projekt) {
             $scope.projekt = projekt;
             $rootScope.projekt = projekt;

@@ -1,0 +1,62 @@
+<div class="row">
+  <div oo-error-overlay></div>
+  <div class="container">
+    <div class="jumbotron">
+      <h3 translate>One-Time-Passwort</h3>
+      <p>
+      <div class="container" ng-show="status !== 'otp_reset'">
+        <div class="alert alert-info" role="alert"><span translate>Bitte geben Sie das Einmalpasswort basierend ihrem
+            <b>aktuellen Secret</b> aus Ihrer
+            Zwei-Faktor-Authentifizierungs-App ein.</span></div>
+        <div class="alert alert-danger" role="alert" ng-if="resetOtpData.message">{{resetOtpData.message}}
+        </div>
+        <form class="form-signin" name="resetOtpData">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="{{'Code' | translate}}" required="true" autofocus=""
+              ng-model="resetOtpData.code">
+          </div>
+          <div class="form-group">
+            <button ng-disabled="resetOtpData.$invalid" class="btn btn-lg btn-primary" type="submit"
+              ng-click="resetOtp()" translate>Neues Secret anfordern</button>
+          </div>
+        </form>
+      </div>
+      <div class="container" ng-show="status === 'otp_reset'">
+        <div class="alert alert-danger" role="alert" ng-if="resetOtp.message">{{resetOtp.message}}</div>
+
+        <div fxLayout="row" ng-if="otpSecret">
+          <p translate>
+            Bitte scannen Sie den neuen QR-Code mit einer Zwei-Faktor-Authentifizierungs-App wie z.B.:
+          </p>
+          <p>
+            <a href="https://freeotp.github.io/" target="_blank">FreeOTP</a>
+            <span translate>&nbsp;oder&nbsp;</span>
+            <a href="https://github.com/andOTP/andOTP" target="_blank">andOTP</a>
+          </p>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="center" gdAlignRows="center" ng-if="otpSecret">
+          <div class="qrcode-container">
+            <qrcode data="{{ otpSecret }}" size="200" version="10"></qrcode>
+          </div>
+        </div>
+        <div class="alert alert-info" role="alert"><span translate>Bitte geben Sie das Einmalpasswort basierend auf dem
+            <b>neuen Secret</b> aus Ihrer
+            Zwei-Faktor-Authentifizierungs-App ein.</span></div>
+        <div class="alert alert-danger" role="alert" ng-if="resetOtpConfirmData.message">{{resetOtpConfirmData.message}}
+        </div>
+        <form class="form-signin" name="resetOtpConfirmData">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="{{'Code' | translate}}" required="true" autofocus=""
+              ng-model="resetOtpConfirmData.code">
+          </div>
+          <div class="form-group">
+            <button ng-disabled="resetOtpConfirmData.$invalid" class="btn btn-lg btn-primary" type="submit"
+              ng-click="submitSecondFactorReset()" translate>Zurücksetzen</button>
+
+          </div>
+        </form>
+      </div>
+      </p>
+    </div>
+  </div>
+</div>
