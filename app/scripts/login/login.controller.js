@@ -182,7 +182,7 @@ angular.module('openolitor-core')
       $scope.resetOtp = function() {
         if ($scope.resetOtpData.$valid) {
           // fetch new OTP secret from server
-          $http.post(appConfig.get().API_URL + 'auth/otpReset', $scope.resetOtpData)
+          $http.post(appConfig.get().API_URL + 'auth/otp/requestSecret', $scope.resetOtpData)
               .then(function(
                 result) {
             $scope.status = 'otp_reset'
@@ -194,7 +194,7 @@ angular.module('openolitor-core')
 
       $scope.submitSecondFactorReset = function() {
         if ($scope.resetOtpConfirmData.$valid) {
-          $http.post(appConfig.get().API_URL + 'auth/confirmOtpReset', $scope.resetOtpConfirmData)
+          $http.post(appConfig.get().API_URL + 'auth/otp/changeSecret', $scope.resetOtpConfirmData)
             .then(function(
               result) {
               $scope.resetOtpConfirmData.message = undefined;              
