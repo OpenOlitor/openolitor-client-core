@@ -634,3 +634,13 @@ tr.error {
   display: grid;
   justify-content: center;
 }
+
+.dialog {
+  width: inherit;
+
+  > .jumbotron {
+    border-radius: 6px;
+    margin-bottom: 0px;
+    padding: 1.5em;
+  }
+}

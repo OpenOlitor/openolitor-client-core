@@ -60,7 +60,7 @@ angular.module('openolitor-core').directive('ooDropdown', [function() {
         return current;
       };
 
-      $scope.select = function(item) {
+      $scope.select = function(item) {        
         $scope.isPlaceholder = false;
         if (angular.isDefined($scope.selectedProp)) {
           $scope.selected = deepFind(item, $scope.selectedProp);
@@ -99,6 +99,7 @@ angular.module('openolitor-core').directive('ooDropdown', [function() {
       };
 
       $scope.updateDisplay = function() {
+        console.log('updateDisplay', $scope.displayFunction, $scope.selectedItem, $scope.property, $scope.values, $scope.selectedProp, $scope.selected);
         $scope.isPlaceholder = angular.isUndefined($scope.selected);
         if (!angular.isUndefined($scope.displayFunction) && !angular.isUndefined(
             $scope.selectedItem)) {
@@ -134,6 +135,7 @@ angular.module('openolitor-core').directive('ooDropdown', [function() {
       $scope.updateDisplay();
 
       $scope.unwatchSelected = $scope.$watch('selected', function() {
+        console.log('updatedSelected', $scope.selected);
         if (!angular.isUndefined($scope.selected)) {
           $scope.updateDisplay();
         }

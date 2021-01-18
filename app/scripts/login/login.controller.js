@@ -6,35 +6,39 @@ angular.module('openolitor-core')
   .controller('LoginController', ['$scope', '$rootScope', '$http',
     'appConfig', 'gettext', '$rootElement',
     'alertService', '$timeout', '$location', '$route', '$routeParams', 'ooAuthService', '$interval',
-    '$window',
+    '$window','SECOND_FACTOR_TYPES','ProjektService','EnumUtil','$uibModal',
     function($scope, $rootScope, $http, appConfig, gettext, $rootElement,
-      alertService, $timeout, $location, $route, $routeParams, ooAuthService, $interval, $window) {
+      alertService, $timeout, $location, $route, $routeParams, ooAuthService, $interval, $window, SECOND_FACTOR_TYPES,
+      ProjektService, EnumUtil,$uibModal) {
       $scope.loginData = {};
       $scope.submitted = false;
+      $scope.user = undefined;
+      $scope.modalDialogShown = false;
       $scope.resetPasswordData = {};
-      $scope.secondFactorData = {};
-      $scope.resetOtpData = {};
-      $scope.resetOtpConfirmData = {};
-      $scope.changePwd = {
-        neu: undefined,
-        alt: undefined,
-        neuConfirmed: undefined
-      };
+      $scope.secondFactorData = {};       
       $scope.initPassword = {
         neu: undefined,
         neuConfirmed: undefined,
         token: undefined
       };
+      $scope.secondFactorSettings = {
+        secondFactorEnabled: true,
+        secondFactorType: undefined,
+        canChangeSecondFactor: false
+      };
       $scope.status = 'login';
       $scope.env = appConfig.get().ENV;
-      $scope.secondFactorCountdown = 600;
+      $scope.secondFactorCountdown = 600;      
       $scope.secondFactorCountdownDate = function() {
         return moment().add($scope.secondFactorCountdown, 'seconds');
       };
       $scope.secondFactorType = ooAuthService.getSecondFactorType();
+      $scope.secondFactorTypes = EnumUtil.asArray(SECOND_FACTOR_TYPES);
 
       $scope.originalTgState = $rootScope.tgState;
       $rootScope.tgState = false;
+
+      console.log('started:', $scope.user, $scope.loggedIn);
 
       var showWelcomeMessage = function(token, person, secondFactorType) {
         //show welcome message
@@ -57,6 +61,25 @@ angular.module('openolitor-core')
             usr.name);
         }
       };
+
+      var unwatchLoggedIn = $scope.$watch(function() {
+        return ooAuthService.getUser();
+      }, function(user) {
+        $scope.loggedIn = ooAuthService.isUserLoggedIn(user);
+        if ($scope.user !== user && $scope.loggedIn) {
+          $scope.user = user;
+          ProjektService.resolveProjekt().then(function(projekt) {
+            $scope.projekt = projekt;            
+            $scope.secondFactorSettings = {
+              canChangeSecondFactor: !projekt.twoFactorAuthentication[user.rolle],
+              secondFactorEnabled: user.secondFactorType !== undefined || projekt.twoFactorAuthentication[user.rolle],
+              secondFactorType: user.secondFactorType || projekt.defaultSecondFactorType
+            }
+            $scope.secondFactorType = ooAuthService.getSecondFactorType();                 
+          });
+        } 
+      });
+
 
       $scope.appName = $rootElement.attr('ng-app');
 
@@ -136,7 +159,7 @@ angular.module('openolitor-core')
               $scope.loginData.message = undefined;
 
               //check result
-              if (result.data.status === 'LoginSecondFactorRequired') {
+              if (result.data.status === 'SecondFactorRequired') {
                 //redirect to second factor authentication
                 $scope.status = result.data.secondFactorType == 'email'?'emailTwoFactor':'otpTwoFactor';
                 $scope.person = result.data.person;
@@ -179,43 +202,103 @@ angular.module('openolitor-core')
         }
       };
 
-      $scope.resetOtp = function() {
-        if ($scope.resetOtpData.$valid) {
-          // fetch new OTP secret from server
-          $http.post(appConfig.get().API_URL + 'auth/otp/requestSecret', $scope.resetOtpData)
-              .then(function(
-                result) {
-            $scope.status = 'otp_reset'
-            $scope.otpSecret = getOtpUrl(result.data.person.email, result.data.otpSecret);          
-            $scope.resetOtpConfirmData.token = result.data.token;
-          });
-        }
-      }
+      $scope.showChangePassword = function() {
+        $scope.modalDialogShown = true;
+        var modalInstance = $uibModal.open({
+          animation: true,
+          templateUrl: 'scripts/login/change_password.html',
+          controller:function($uibModalInstance ,$scope){
+            $scope.changePwd = {
+              neu: undefined,
+              alt: undefined,
+              neuConfirmed: undefined
+            };
 
-      $scope.submitSecondFactorReset = function() {
-        if ($scope.resetOtpConfirmData.$valid) {
-          $http.post(appConfig.get().API_URL + 'auth/otp/changeSecret', $scope.resetOtpConfirmData)
-            .then(function(
-              result) {
-              $scope.resetOtpConfirmData.message = undefined;              
-              $scope.status = undefined;
-              alertService.addAlert('info', gettext('OTP Passwort Erfolgreich zurückgesetzt'));        
-            }, function(error) {
-              $scope.resetOtpConfirmData.message = gettext(error.data);
-            });
-        }
+            $scope.changePassword = function() {
+              if ($scope.changePwdForm.$valid) {
+                $http.post(appConfig.get().API_URL + 'auth/passwd', $scope.changePwd)
+                  .then(function(result) {
+
+                    if (result.data.status === 'SecondFactorRequired') {
+                      //redirect to second factor authentication
+                      $scope.status = result.data.secondFactorType == 'email'?'emailTwoFactor':'otpTwoFactor';
+                      $scope.person = result.data.person;
+                      $scope.changePwd.secondFactorAuth = {
+                        token: result.data.token
+                      };
+                    }
+                    else if (result.data.status === 'Ok') {
+                      $scope.changePwd.message = undefined;
+                      $uibModalInstance.close();    
+                    }    
+                  }, function(error) {
+                    $scope.changePwd.message = gettext(error.data);
+                  });
+              }
+            };
+          }
+        });
+        
+        modalInstance.closed.then(function(){          
+          $rootScope.alerts = [];
+          $scope.modalDialogShown = false;
+        });
+
+        modalInstance.result.then(function() {
+          $rootScope.alerts = [];
+          $scope.modalDialogShown = false;
+          showPasswordChangedMessage();
+        });
       };
 
-      $scope.changePassword = function() {
-        if ($scope.changePwdForm.$valid) {
-          $http.post(appConfig.get().API_URL + 'auth/passwd', $scope.changePwd)
-            .then(function() {
-              $scope.changePwd.message = undefined;
-              showPasswordChangedMessage();
-            }, function(error) {
-              $scope.changePwd.message = gettext(error.data);
-            });
-        }
+      $scope.showResetOtp = function() {
+        $scope.modalDialogShown = true;
+        var modalInstance = $uibModal.open({
+          animation: true,
+          templateUrl: 'scripts/login/reset_otp.html',
+          controller:function($uibModalInstance ,$scope){
+
+            $scope.resetOtpData = {};
+            $scope.resetOtpConfirmData = {};     
+
+            $scope.resetOtp = function() {
+              if ($scope.resetOtpData.$valid) {
+                // fetch new OTP secret from server
+                $http.post(appConfig.get().API_URL + 'auth/otp/requestSecret', $scope.resetOtpData)
+                    .then(function(
+                      result) {
+                  $scope.status = 'otp_reset';
+                  $scope.otpSecret = getOtpUrl(result.data.person.email, result.data.otpSecret);          
+                  $scope.resetOtpConfirmData.token = result.data.token;
+                });
+              }
+            }
+      
+            $scope.submitSecondFactorReset = function() {
+              if ($scope.resetOtpConfirmData.$valid) {
+                $http.post(appConfig.get().API_URL + 'auth/otp/changeSecret', $scope.resetOtpConfirmData)
+                  .then(function() {
+                    $scope.resetOtpConfirmData.message = undefined;              
+                    $scope.status = undefined;
+                    $uibModalInstance.close();      
+                  }, function(error) {
+                    $scope.resetOtpConfirmData.message = gettext(error.data);
+                  });
+              }
+            };
+          }
+        });
+        
+        modalInstance.closed.then(function(){
+          $rootScope.alerts = [];
+          $scope.modalDialogShown = false;
+        });
+
+        modalInstance.result.then(function() {
+          $rootScope.alerts = [];
+          $scope.modalDialogShown = false;
+          alertService.addAlert('info', gettext('OTP Passwort Erfolgreich zurückgesetzt'));          
+        });
       };
 
       $scope.setPassword = function() {
@@ -248,5 +331,56 @@ angular.module('openolitor-core')
         $scope.loginData = {};
         $scope.status = 'login';
       };
+    
+      $scope.saveSecondFactorSettings = function() {
+        if ($scope.secondFactorSettingsForm.$valid) {
+          $http.post(appConfig.get().API_URL + 'auth/user/settings', $scope.secondFactorSettings)
+            .then(function(result) {
+
+              if (result.data.status === 'SecondFactorRequired') {
+                 $scope.secondFactorSettings.secondFactorAuth = {
+                   token: result.data.token
+                 };
+
+                var modalInstance = $uibModal.open({
+                  animation: true,
+                  templateUrl: 'scripts/login/login_settings_second_factor.html',
+                  controller:function($uibModalInstance ,$scope){
+                     $scope.status = result.data.secondFactorType == 'email'?'emailTwoFactor':'otpTwoFactor';
+              
+                    $scope.secondFactorData = {
+                      code:undefined
+                    };
+
+                    $scope.submit = function() {
+                      if ($scope.secondFactorDataForm.$valid) {
+                        $uibModalInstance.close($scope.secondFactorData)
+                      }
+                    }                    
+                  }
+                });
+                
+                modalInstance.closed.then(function(){
+                  $rootScope.alerts = [];
+                  $scope.modalDialogShown = false;
+                });
+        
+                modalInstance.result.then(function(result) {
+                  $scope.secondFactorSettings.secondFactorAuth.code = result.code;
+                  $scope.saveSecondFactorSettings();          
+                });
+              }
+              else if (result.data.status === 'Ok') {
+                alertService.addAlert('info', gettext('Einstellungen erfolgreich gespeichert'));          
+              }
+            }, function(error) {
+              alertService.addAlert('error', gettext('Einstellungen konnten nicht gespeichert werden'), error.data);          
+            });
+        }
+      };
+
+      $scope.$on('destroy', function() {
+        unwatchLoggedIn();        
+      });    
     }
   ]);
