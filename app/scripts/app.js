@@ -143,6 +143,10 @@ angular
     Administrator: 'Administrator',
     Kunde:'Kunde'
   })
+  .constant('SECOND_FACTOR_TYPES', {
+    OTP: addExtendedEnumValue('otp', gettext('One-Time-Password (OTP)'), gettext('OTP')),
+    EMAIL: addExtendedEnumValue('email', gettext('E-Mail'), gettext('E-Mail'))
+  })
   .constant('ABOTYPEN_ARRAY', ['DepotlieferungAbo', 'HeimlieferungAbo',
     'PostlieferungAbo'
   ])
@@ -392,10 +396,16 @@ angular
         name: 'Passwortwechsel',
         access: [USER_ROLES.Administrator, USER_ROLES.Kunde]
       })
+      .when('/login_settings', {
+        templateUrl: 'scripts/login/login_settings.html',
+        controller: 'LoginController',
+        name: 'Anmelde-Einstellungen',
+        access: [USER_ROLES.Administrator, USER_ROLES.Kunde]
+      })
       .when('/reset_otp', {
         templateUrl: 'scripts/login/reset_otp.html',
         controller: 'LoginController',
-        name: 'OTP Secret Zurücksetzen',
+        name: 'Anmelde-Einstellungen',
         access: [USER_ROLES.Administrator, USER_ROLES.Kunde]
       })
       .when('/logout', {

@@ -61,9 +61,7 @@
             <ul class="dropdown-menu dropdown-menu-right">
               <li><a href="#" translate>Einstellungen</a></li>
               <li role="separator" class="divider"></li>
-              <li ng-if="env !== 'test'"><a href="#/passwd" translate>Passwort wechseln</a></li>
-              <li ng-if="env !== 'test'" ng-show="secondFactorType ==='otp'"><a href="#/reset_otp" translate>OTP Secret
-                  zurücksetzen</a></li>
+              <li ng-if="env !== 'test'"><a href="#/login_setttings" translate>Anmelde-Einstellungen</a></li>
               <li><a href="#/logout" translate>Abmelden</a></li>
             </ul>
           </li>

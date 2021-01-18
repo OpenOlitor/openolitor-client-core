@@ -648,3 +648,12 @@ tr.error {
 .de_DO_menu{
   display:none; 
 }
+.dialog {
+  width: inherit;
+
+  > .jumbotron {
+    border-radius: 6px;
+    margin-bottom: 0px;
+    padding: 1.5em;
+  }
+}
