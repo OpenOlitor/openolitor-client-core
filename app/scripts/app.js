@@ -76,7 +76,8 @@ angular
     'ngFileUpload',
     'ngLodash',
     'angular-sortable-view',
-    'angular-loading-bar'
+    'angular-loading-bar',
+    'monospaced.qrcode'
   ])
   .constant('BUILD_NR', '@@BUILD_NR')
   .constant('LIEFERRHYTHMEN', {
@@ -141,6 +142,10 @@ angular
     Guest: 'Guest',
     Administrator: 'Administrator',
     Kunde:'Kunde'
+  })
+  .constant('SECOND_FACTOR_TYPES', {
+    OTP: addExtendedEnumValue('otp', gettext('One-Time-Password (OTP)'), gettext('OTP')),
+    EMAIL: addExtendedEnumValue('email', gettext('E-Mail'), gettext('E-Mail'))
   })
   .constant('ABOTYPEN_ARRAY', ['DepotlieferungAbo', 'HeimlieferungAbo',
     'PostlieferungAbo'
@@ -389,6 +394,18 @@ angular
         templateUrl: 'scripts/login/change_password.html',
         controller: 'LoginController',
         name: 'Passwortwechsel',
+        access: [USER_ROLES.Administrator, USER_ROLES.Kunde]
+      })
+      .when('/login_settings', {
+        templateUrl: 'scripts/login/login_settings.html',
+        controller: 'LoginController',
+        name: 'Anmelde-Einstellungen',
+        access: [USER_ROLES.Administrator, USER_ROLES.Kunde]
+      })
+      .when('/reset_otp', {
+        templateUrl: 'scripts/login/reset_otp.html',
+        controller: 'LoginController',
+        name: 'Anmelde-Einstellungen',
         access: [USER_ROLES.Administrator, USER_ROLES.Kunde]
       })
       .when('/logout', {
