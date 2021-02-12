@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: Dollinger\n"
 "Language: de_DO\n"
-"PO-Revision-Date: 2021-02-07 11:13\n"
+"PO-Revision-Date: 2021-02-12 15:00\n"
 
 #: app/scripts/app.js:119
 msgid "-"
@@ -41,11 +41,11 @@ msgstr ""
 
 #: app/index.html:71
 msgid "Abos"
-msgstr ""
+msgstr "Anteile"
 
 #: app/index.html:87
 msgid "Abotypen"
-msgstr ""
+msgstr "Anteilstypen"
 
 #: app/index.html:75
 msgid "Abrechnung*"
@@ -182,7 +182,7 @@ msgstr ""
 
 #: app/scripts/login/login.html:65
 msgid "Das Kundenportal ist gegenwärtig nicht verfügbar. Wir führen Unterhaltsarbeiten durch. In Kürze sind wir wieder online und wie gewohnt für Sie da."
-msgstr ""
+msgstr "Das Mitgliederportal ist gegenwärtig nicht verfügbar. Wir führen Unterhaltsarbeiten durch. In Kürze sind wir wieder online und wie gewohnt für Sie da."
 
 #: app/scripts/login/change_password.html:21
 #: app/scripts/login/zugangaktivieren.html:15
@@ -213,7 +213,7 @@ msgstr ""
 
 #: app/scripts/app.js:124
 msgid "DepotlieferungAbo"
-msgstr ""
+msgstr "DepotauslieferungAnteil"
 
 #: app/index.html:85
 msgid "Depots"
@@ -410,7 +410,7 @@ msgstr ""
 
 #: app/scripts/app.js:125
 msgid "HeimlieferungAbo"
-msgstr ""
+msgstr "HeimlieferungAnteil"
 
 #: app/scripts/app.js:120
 msgid "Herr"
@@ -473,7 +473,7 @@ msgstr ""
 
 #: app/index.html:70
 msgid "Kunden"
-msgstr ""
+msgstr "Mitglieder"
 
 #: app/index.html:73
 msgid "Lieferanten"
@@ -664,7 +664,7 @@ msgstr ""
 
 #: app/index.html:72
 msgid "Pendenzen"
-msgstr ""
+msgstr "Aufgaben"
 
 #: app/index.html:79
 msgid "Postauslieferungen"
@@ -680,7 +680,7 @@ msgstr ""
 
 #: app/index.html:89
 msgid "Produkte"
-msgstr ""
+msgstr "Lebensmittel"
 
 #: app/index.html:88
 msgid "Produzenten"
@@ -747,7 +747,7 @@ msgstr ""
 
 #: app/scripts/login/login.html:35
 msgid "Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen als Konsument anmelden:"
-msgstr ""
+msgstr "Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen als Mitglied anmelden:"
 
 #: app/scripts/login/login.html:12
 msgid "Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen an der Administrationsumgebung anmelden:"
@@ -820,7 +820,7 @@ msgstr ""
 
 #: app/scripts/login/login.html:70
 msgid "Unterhalts-Moduls! Das Kundenportal ist gegenwärtig nicht verfügbar. Bitte sobald wie möglich wieder aktivieren!"
-msgstr ""
+msgstr "Unterhalts-Moduls! Das Mitgliederportal ist gegenwärtig nicht verfügbar. Bitte sobald wie möglich wieder aktivieren!"
 
 #: app/scripts/app.js:132
 msgid "Verrechnet"
