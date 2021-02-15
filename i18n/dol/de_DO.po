@@ -6,285 +6,285 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Crowdin-Project: openolitor-core-client\n"
 "X-Crowdin-Project-ID: 393653\n"
-"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-Language: dol\n"
 "X-Crowdin-File: /prod/template.pot\n"
 "X-Crowdin-File-ID: 8\n"
-"Language-Team: Spanish\n"
-"Language: es_ES\n"
-"PO-Revision-Date: 2020-09-04 22:57\n"
+"Language-Team: Dollinger\n"
+"Language: de_DO\n"
+"PO-Revision-Date: 2021-02-12 15:00\n"
 
 #: app/scripts/app.js:119
 msgid "-"
-msgstr "-"
+msgstr ""
 
 #: app/scripts/login/login.html:7
 msgid "- Entwicklungsumgebung"
-msgstr "- Plataforma de desarrollo"
+msgstr ""
 
 #: app/scripts/login/login.html:6
 msgid "- Testumgebung"
-msgstr "- Entorno de prueba"
+msgstr ""
 
 #: app/scripts/common/components/oo-deletebutton.directive.modal.html:13
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:15
 #: app/scripts/common/components/oo-email-confirmation-message.html:13
 msgid "Abbrechen"
-msgstr "Cancelar"
+msgstr ""
 
 #: app/scripts/app.js:131
 msgid "Abgeschlossen"
-msgstr "Completado"
+msgstr ""
 
 #: app/index.html:58
 msgid "Abmelden"
-msgstr "Cerrar sesión"
+msgstr ""
 
 #: app/index.html:71
 msgid "Abos"
-msgstr "Suscripciones"
+msgstr "Anteile"
 
 #: app/index.html:87
 msgid "Abotypen"
-msgstr "Tipo de subscripción"
+msgstr "Anteilstypen"
 
 #: app/index.html:75
 msgid "Abrechnung*"
-msgstr "Facturación"
+msgstr ""
 
 #: app/index.html:39
 msgid "Administrationsumgebung <span ng-if=\"projekt\">für</span>"
-msgstr "Portal de administración <span ng-if=\"projekt\">para</span>"
+msgstr ""
 
 #: app/scripts/common/components/oo-actionsbutton.directive.js:117
 msgid "Aktion"
-msgstr "Acción"
+msgstr ""
 
 #: app/scripts/login/change_password.html:11
 msgid "Aktuelles Passwort"
-msgstr "Contraseña actual"
+msgstr ""
 
 #: app/scripts/common/ngtable/oo-ngtable-paginationTemplate.html:10
 msgid "Alle"
-msgstr "Todos"
+msgstr ""
 
 #: app/scripts/login/login.html:103
 #: app/scripts/login/login.html:86
 msgid "Anmelden"
-msgstr "Conectarse"
+msgstr ""
 
 #: app/scripts/login/login.html:5
 msgid "Anmeldung"
-msgstr "Bienvenido"
+msgstr ""
 
 #: app/scripts/login/login.controller.js:101
 msgid "Anweisungen um Ihr Passwort neu zu setzten wurden Ihnen an Ihre Email-Adresse gesendet."
-msgstr "Te hemos enviado un correo electrónico con la información necesaria para modificar tu contraseña."
+msgstr ""
 
 #: app/scripts/app.js:184
 msgid "Apr"
-msgstr "Abr"
+msgstr ""
 
 #: app/scripts/app.js:184
 msgid "April"
-msgstr "Abril"
+msgstr ""
 
 #: app/scripts/login/login.controller.js:50
 msgid "Aufwiedersehen"
-msgstr "Hasta la vista"
+msgstr ""
 
 #: app/scripts/app.js:188
 msgid "Aug"
-msgstr "Ago"
+msgstr ""
 
 #: app/scripts/app.js:188
 msgid "August"
-msgstr "Agosto"
+msgstr ""
 
 #: app/scripts/app.js:206
 msgid "Ausgeliefert"
-msgstr "Entregado"
+msgstr ""
 
 #: app/index.html:76
 msgid "Auslieferungen"
-msgstr "Entregas"
+msgstr ""
 
 #: app/scripts/app.js:200
 msgid "Ausstehend"
-msgstr "No pagado"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.js:57
 msgid "Beim erstellen der Dokumente sind folgende Fehler aufgetreten"
-msgstr "Los siguientes errores se han producido al crear los documentos"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:34
 msgid "Benutzerdefiniert..."
-msgstr "Personalizado..."
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:3
 msgid "Bericht erstellen"
-msgstr "Crear un informe"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.js:75
 msgid "Bericht konnte nicht erzeugt werden"
-msgstr "El informe no ha podido ser creado"
+msgstr ""
 
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:3
 msgid "Bestätigung"
-msgstr "Confirmación"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:30
 msgid "Betreff"
-msgstr "Asunto"
+msgstr ""
 
 #: app/scripts/app.js:137
 msgid "Bezahlt"
-msgstr "Pagado"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-confirmation-message.html:8
 msgid "Bist du sicher, dass du diese E-Mail an &nbsp;"
-msgstr "Está seguro de que desea este email &nbsp;"
+msgstr ""
 
 #: app/scripts/app.js:157
 msgid "Britisches Pfund"
-msgstr "Libra esterlina"
+msgstr ""
 
 #: app/scripts/app.js:143
 msgid "Bu."
-msgstr "Cont."
+msgstr ""
 
 #: app/index.html:80
 msgid "Buchhaltung"
-msgstr "Contabilidad"
+msgstr ""
 
 #: app/scripts/app.js:143
 msgid "Bund"
-msgstr "Manojo"
+msgstr ""
 
 #: app/scripts/app.js:159
 msgid "CAD"
-msgstr "CAD"
+msgstr ""
 
 #: app/scripts/app.js:153
 msgid "CHF"
-msgstr "CHF"
+msgstr ""
 
 #: app/scripts/app.js:165
 msgid "DI"
-msgstr "MAR"
+msgstr ""
 
 #: app/scripts/app.js:170
 msgid "DO"
-msgstr "JUE"
+msgstr ""
 
 #: app/index.html:66
 msgid "Das Backend steht im Moment nicht zur Verfügung. Bitte besuchen Sie uns später wieder."
-msgstr "El servidor parece que no está respondiendo. Espera unos segundos e intentalo de nuevo."
+msgstr ""
 
 #: app/scripts/login/login.html:65
 msgid "Das Kundenportal ist gegenwärtig nicht verfügbar. Wir führen Unterhaltsarbeiten durch. In Kürze sind wir wieder online und wie gewohnt für Sie da."
-msgstr "El portal de abonado no está actualmente disponible ya que estamos realizando alguna tarea de mantenimiento. En breve, el portal estará disponible de nuevo."
+msgstr "Das Mitgliederportal ist gegenwärtig nicht verfügbar. Wir führen Unterhaltsarbeiten durch. In Kürze sind wir wieder online und wie gewohnt für Sie da."
 
 #: app/scripts/login/change_password.html:21
 #: app/scripts/login/zugangaktivieren.html:15
 msgid "Das Passwort muss aus mindestens 6 Zeichen bestehen"
-msgstr "La contraseña debe tener al menos 6 caracteres"
+msgstr ""
 
 #: app/scripts/login/change_password.html:22
 #: app/scripts/login/zugangaktivieren.html:16
 msgid "Das Passwort muss mindestens einen Gross- und Kleinbuchstaben, sowie einen numerischen Wert oder ein Symbol enthalten"
-msgstr "La contraseña debe contener letras minusculas y mayusculas así como al menos un número o caracter especial"
+msgstr ""
 
 #: app/scripts/login/login.controller.js:91
 msgid "Das Passwort wurde erfolgreich gesetzt. Sie können sich nun anmelden."
-msgstr "La contraseña ha sido inicializada. Ahora puedes conectarte con el nombre de usuario y la contraseña."
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:22
 #: app/scripts/common/components/oo-generate-report.directive.html:38
 msgid "Datenextrakt"
-msgstr "Extracto de datos"
+msgstr ""
 
 #: app/index.html:77
 msgid "Depotauslieferungen"
-msgstr "Entregas en punto de recogida"
+msgstr ""
 
 #: app/scripts/app.js:105
 msgid "Depotlieferung"
-msgstr "Entrega a domicilio"
+msgstr ""
 
 #: app/scripts/app.js:124
 msgid "DepotlieferungAbo"
-msgstr "Abono de entrega a domicilio"
+msgstr "DepotauslieferungAnteil"
 
 #: app/index.html:85
 msgid "Depots"
-msgstr "Puntos de recogida"
+msgstr ""
 
 #: app/scripts/login/forbidden.html:6
 msgid "Der Zugriff auf diese Ressource wurde verweigert."
-msgstr "El acceso ha sido denegado. Contacta a la persona encargada de la gestión de tu grupo de consumo."
+msgstr ""
 
 #: app/scripts/app.js:196
 msgid "Dez"
-msgstr "Dic"
+msgstr ""
 
 #: app/scripts/app.js:196
 msgid "Dezember"
-msgstr "Diciembre"
+msgstr ""
 
 #: app/scripts/login/login.html:18
 #: app/scripts/login/login.html:29
 #: app/scripts/login/login.html:42
 #: app/scripts/login/login.html:54
 msgid "Die Daten in diesem System werden sporadisch auf die Standardwerte zurückgesetzt."
-msgstr "Los datos se reinicializan periódicamente."
+msgstr ""
 
 #: app/scripts/common/components/oo-confirmondirty-directive.js:22
 #: app/scripts/common/components/oo-confirmondirty-directive.js:36
 msgid "Die Seite enthält Modifikationen. Wollen Sie diese verwerfen?"
-msgstr "La página contiene modificiaciones. ¿Quieres salir y perderlas?"
+msgstr ""
 
 #: app/scripts/app.js:165
 msgid "Dienstag"
-msgstr "Martes"
+msgstr ""
 
 #: app/scripts/not-found.html:9
 msgid "Diese Seite konnte nicht gefunden werden!"
-msgstr "¡La página solicitada no ha sido encontrada!"
+msgstr ""
 
 #: app/scripts/app.js:169
 msgid "Donnerstag"
-msgstr "Jueves"
+msgstr ""
 
 #: app/scripts/login/login.html:80
 msgid "E-Mail Adresse"
-msgstr "Correo electrónico"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:19
 msgid "E-Mail Volage"
-msgstr "Plantilla para correo electrónico"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-confirmation-message.html:2
 msgid "E-Mail versenden"
-msgstr "Enviar correo electrónico"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:5
 msgid "E-Mail versenden an selektierte Einträge"
-msgstr "Enviar un correo electrónico a las direcciones seleccionadas"
+msgstr ""
 
 #: app/scripts/login/login.html:15
 #: app/scripts/login/login.html:26
 #: app/scripts/login/login.html:38
 #: app/scripts/login/login.html:51
 msgid "E-Mail:"
-msgstr "Correo electrónico:"
+msgstr ""
 
 #: app/scripts/app.js:155
 msgid "EUR"
-msgstr "EUR"
+msgstr ""
 
 #: app/scripts/login/change_password.html:5
 msgid "Eigenes Passwort wechseln"
-msgstr "Cambiar la contraseña"
+msgstr ""
 
 #: app/messages.html:2
 #: app/scripts/login/change_password.html:20
@@ -292,666 +292,665 @@ msgstr "Cambiar la contraseña"
 #: app/scripts/login/zugangaktivieren.html:14
 #: app/scripts/login/zugangaktivieren.html:29
 msgid "Eingabe erforderlich"
-msgstr "Campo obligatorio"
+msgstr ""
 
 #: app/messages.html:6
 msgid "Eingabe stimmt nicht übereint"
-msgstr "Los dos campos no son idénticos"
+msgstr ""
 
 #: app/messages.html:3
 msgid "Eingabe zu kurz"
-msgstr "Entrada muy corta"
+msgstr ""
 
 #: app/messages.html:4
 msgid "Eingage zu lang"
-msgstr "Entrada muy larga"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:14
 msgid "Einige selektierte Einträge verfügen über kein angehängtes Rechnungsdokument. Diese E-Mails werden ohne Anhang verschickt."
-msgstr "Algún elemento seleccionado no tienen ningún documento adjunto. Para estos casos, el mensaje se enviará sin factura."
+msgstr ""
 
 #: app/index.html:83
 msgid "Einkauf*"
-msgstr "Encargos"
+msgstr ""
 
 #: app/index.html:55
 #: app/index.html:91
 msgid "Einstellungen"
-msgstr "Parámetros"
+msgstr ""
 
 #: app/scripts/login/passwordreset.html:14
 msgid "Email Adresse"
-msgstr "Correo electrónico"
+msgstr ""
 
 #: app/scripts/app.js:205
 msgid "Erfasst"
-msgstr "Salvado"
+msgstr ""
 
 #: app/scripts/app.js:201
 msgid "Erledigt"
-msgstr "Cerrado"
+msgstr ""
 
 #: app/scripts/not-found.html:6
 msgid "Error 404"
-msgstr "Error 404"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:70
 msgid "Erstellen"
-msgstr "Crear"
+msgstr ""
 
 #: app/scripts/app.js:135
 msgid "Erstellt"
-msgstr "Creado"
+msgstr ""
 
 #: app/scripts/login/login.html:96
 msgid "Es wurde ein Zugangscode an ihre Email-Adresse"
-msgstr "Se le ha enviado un código de acceso a su dirección de correo electrónico"
+msgstr ""
 
 #: app/scripts/app.js:155
 msgid "Euro"
-msgstr "Euro"
+msgstr ""
 
 #: app/scripts/app.js:171
 msgid "FR"
-msgstr "FR"
+msgstr ""
 
 #: app/scripts/app.js:181
 msgid "Feb"
-msgstr "Feb"
+msgstr ""
 
 #: app/scripts/app.js:181
 msgid "Februar"
-msgstr "Febrero"
+msgstr ""
 
 #: app/messages.html:5
 msgid "Fehlerhafte Email Adresse"
-msgstr "Dirección de correo electrónico incorrecta"
+msgstr ""
 
 #: app/scripts/app.js:121
 msgid "Fr."
-msgstr "Sra."
+msgstr ""
 
 #: app/scripts/app.js:121
 msgid "Frau"
-msgstr "Sra."
+msgstr ""
 
 #: app/scripts/app.js:171
 msgid "Freitag"
-msgstr "Viernes"
+msgstr ""
 
 #: app/scripts/login/login.html:92
 msgid "Für das Testen der Administrationsumgebung, bitte hier klicken!"
-msgstr "Para probar el portal de admistración, ir aquí"
+msgstr ""
 
 #: app/scripts/login/login.html:41
 msgid "Für den Zugang auf die Administrationsumgebung von OpenOlitor, bitte den Link unten rechts verwenden."
-msgstr "Para acceder al portal de administrador en OpenOlitor clicar en el enlace que se encuentra en la parte de abojo a la derecha de esta pantalla."
+msgstr ""
 
 #: app/scripts/login/login.html:33
 msgid "Für den Zugriff auf OpenOlitor ist eine Anmeldung erforderlich"
-msgstr "Para acceder a OpenOlitor tienes que introducir tus credenciales"
+msgstr ""
 
 #: app/scripts/login/login.html:10
 #: app/scripts/login/login.html:46
 msgid "Für den Zugriff auf die Administrationsumgebung ist eine Anmeldung erforderlich"
-msgstr "Para acceder a OpenOlitor tienes que introducir tus credenciales"
+msgstr ""
 
 #: app/scripts/app.js:157
 msgid "GBP"
-msgstr "GBP"
+msgstr ""
 
 #: app/scripts/app.js:144
 msgid "Gramm"
-msgstr "Gramos"
+msgstr ""
 
 #: app/scripts/app.js:106
 msgid "Heimlieferung"
-msgstr "Entrega a domicilio"
+msgstr ""
 
 #: app/scripts/app.js:125
 msgid "HeimlieferungAbo"
-msgstr "Suscripción con entrega a domicilio"
+msgstr "HeimlieferungAnteil"
 
 #: app/scripts/app.js:120
 msgid "Herr"
-msgstr "Sr."
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:61
 msgid "Herunterladen"
-msgstr "Descargar todo"
+msgstr ""
 
 #: app/scripts/app.js:120
 msgid "Hr."
-msgstr "Sr."
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:41
 #: app/scripts/common/components/oo-generate-report.directive.html:48
 #: app/scripts/common/components/oo-generate-report.directive.html:56
 #: app/scripts/common/components/oo-generate-report.directive.html:64
 msgid "Ja"
-msgstr "Sí"
+msgstr ""
 
 #: app/scripts/app.js:179
 msgid "Jan"
-msgstr "Ene"
+msgstr ""
 
 #: app/scripts/app.js:179
 msgid "Januar"
-msgstr "Enero"
+msgstr ""
 
 #: app/scripts/app.js:187
 msgid "Jul"
-msgstr "Jul"
+msgstr ""
 
 #: app/scripts/app.js:187
 msgid "Juli"
-msgstr "Julio"
+msgstr ""
 
 #: app/scripts/app.js:186
 msgid "Jun"
-msgstr "Jun"
+msgstr ""
 
 #: app/scripts/app.js:186
 msgid "Juni"
-msgstr "Junio"
+msgstr ""
 
 #: app/scripts/app.js:159
 msgid "Kanadischer Dollar"
-msgstr "Dólar canadiense"
+msgstr ""
 
 #: app/scripts/app.js:119
 msgid "Keine"
-msgstr "Ninguno"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.controller.js:17
 msgid "Keine Vorlage"
-msgstr "No hay ninguna plantilla"
+msgstr ""
 
 #: app/scripts/app.js:145
 msgid "Kilogramm"
-msgstr "Kilogramos"
+msgstr ""
 
 #: app/index.html:70
 msgid "Kunden"
-msgstr "Abonados"
+msgstr "Mitglieder"
 
 #: app/index.html:73
 msgid "Lieferanten"
-msgstr "Productores"
+msgstr ""
 
 #: app/index.html:74
 msgid "Lieferplanung"
-msgstr "Planificación de las entregas"
+msgstr ""
 
 #: app/scripts/app.js:101
 msgid "Lieferung"
-msgstr "Entrega"
+msgstr ""
 
 #: app/scripts/app.js:111
 msgid "Lieferungen"
-msgstr "Entregas"
+msgstr ""
 
 #: app/scripts/app.js:147
 msgid "Liter"
-msgstr "Litro"
+msgstr ""
 
 #: app/scripts/login/login.html:92
 msgid "Login Administration"
-msgstr "Iniciar sesión en el portal de administración"
+msgstr ""
 
 #: app/scripts/common/components/oo-deletebutton.directive.modal.html:12
 msgid "Löschen"
-msgstr "Eliminar"
+msgstr ""
 
 #: app/scripts/app.js:167
 msgid "MI"
-msgstr "MIE"
+msgstr ""
 
 #: app/scripts/app.js:163
 msgid "MO"
-msgstr "LU"
+msgstr ""
 
 #: app/scripts/app.js:138
 msgid "MahnungVerschickt"
-msgstr "Aviso enviado"
+msgstr ""
 
 #: app/scripts/app.js:185
 msgid "Mai"
-msgstr "Mayo"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:46
 msgid "Mail-Body"
-msgstr "Mensaje del correo electrónico "
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:66
 msgid "Mails konnten nicht verschickt werden.<span>\n"
 "  </span>"
-msgstr "No se puede enviar el correo. <span>\n"
-"</span>"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:63
 msgid "Mails wurden verschickt"
-msgstr "Los correos han sido enviados"
+msgstr ""
 
 #: app/scripts/app.js:183
 msgid "Mar"
-msgstr "Mar"
+msgstr ""
 
 #: app/scripts/app.js:167
 msgid "Mittwoch"
-msgstr "Miércoles"
+msgstr ""
 
 #: app/scripts/app.js:112
 msgid "Monate"
-msgstr "Meses"
+msgstr ""
 
 #: app/scripts/app.js:94
 msgid "Monatlich"
-msgstr "Mensual"
+msgstr ""
 
 #: app/scripts/app.js:163
 msgid "Montag"
-msgstr "Lunes"
+msgstr ""
 
 #: app/scripts/app.js:183
 msgid "März"
-msgstr "Marzo"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:41
 #: app/scripts/common/components/oo-generate-report.directive.html:48
 #: app/scripts/common/components/oo-generate-report.directive.html:56
 #: app/scripts/common/components/oo-generate-report.directive.html:64
 msgid "Nein"
-msgstr "No"
+msgstr ""
 
 #: app/scripts/login/change_password.html:17
 msgid "Neues Passwort"
-msgstr "Nueva contraseña"
+msgstr ""
 
 #: app/scripts/app.js:202
 msgid "NichtErledigt"
-msgstr "Sin concluir"
+msgstr ""
 
 #: app/scripts/app.js:194
 msgid "Nov"
-msgstr "Nov"
+msgstr ""
 
 #: app/scripts/app.js:194
 msgid "November"
-msgstr "Noviembre"
+msgstr ""
 
 #: app/scripts/app.js:130
 msgid "Offen"
-msgstr "Abierto"
+msgstr ""
 
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:13
 msgid "Ok"
-msgstr "Aceptar"
+msgstr ""
 
 #: app/scripts/app.js:192
 msgid "Okt"
-msgstr "Oct"
+msgstr ""
 
 #: app/scripts/app.js:192
 msgid "Oktober"
-msgstr "Octubre"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:53
 msgid "PDF Ablegen"
-msgstr "Guardar el PDF"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:45
 msgid "PDF Erstellen"
-msgstr "Crear un PDF"
+msgstr ""
 
 #: app/scripts/login/login.html:83
 #: app/scripts/login/zugangaktivieren.html:11
 msgid "Passwort"
-msgstr "Contraseña"
+msgstr ""
 
 #: app/scripts/login/zugangaktivieren.html:35
 msgid "Passwort setzen"
-msgstr "Definir una contraseña"
+msgstr ""
 
 #: app/scripts/login/zugangaktivieren.html:5
 msgid "Passwort setzen und Zugang aktivieren"
-msgstr "Restablecer contraseña y permitir el acceso"
+msgstr ""
 
 #: app/scripts/login/login.html:89
 #: app/scripts/login/passwordreset.html:5
 msgid "Passwort vergessen?"
-msgstr "¿Has olvidado tu contraseña?"
+msgstr ""
 
 #: app/index.html:57
 #: app/scripts/login/change_password.html:41
 msgid "Passwort wechseln"
-msgstr "Cambiar la contraseña"
+msgstr ""
 
 #: app/scripts/login/change_password.html:32
 #: app/scripts/login/zugangaktivieren.html:26
 msgid "Passwort wiederholen"
-msgstr "Confirma la contraseña"
+msgstr ""
 
 #: app/scripts/login/login.controller.js:81
 msgid "Passwort wurde erfolgreich geändert, Sie werden automatisch ausgelogged."
-msgstr "La contraseña ha sido modificiada y te redireccionaremos directamente a tu cuenta."
+msgstr ""
 
 #: app/scripts/login/login.controller.js:85
 msgid "Passwort wurde erfolgreich geändert, Sie wurden automatisch ausgelogged. Bitte loggen Sie sich mit dem neuen Passwort erneut an."
-msgstr "La contraseña ha sido modificada. Conectate con tu nueva contraseña."
+msgstr ""
 
 #: app/scripts/login/passwordreset.html:17
 msgid "Passwort zurücksetzen"
-msgstr "Restablecer contraseña"
+msgstr ""
 
 #: app/scripts/login/login.html:16
 #: app/scripts/login/login.html:27
 #: app/scripts/login/login.html:39
 #: app/scripts/login/login.html:52
 msgid "Passwort:"
-msgstr "Contraseña:"
+msgstr ""
 
 #: app/scripts/login/change_password.html:23
 #: app/scripts/login/change_password.html:36
 #: app/scripts/login/zugangaktivieren.html:17
 #: app/scripts/login/zugangaktivieren.html:30
 msgid "Passworteingabe stimmt nicht übereint"
-msgstr "Las contraseñas no coinciden"
+msgstr ""
 
 #: app/scripts/login/change_password.html:28
 #: app/scripts/login/zugangaktivieren.html:22
 msgid "Passwortstärke"
-msgstr "Calidad de la contraseña"
+msgstr ""
 
 #: app/index.html:72
 msgid "Pendenzen"
-msgstr "Tareas pendientes"
+msgstr "Aufgaben"
 
 #: app/index.html:79
 msgid "Postauslieferungen"
-msgstr "Entregas postales"
+msgstr ""
 
 #: app/scripts/app.js:107
 msgid "Postlieferung"
-msgstr "Entrega a domicilio"
+msgstr ""
 
 #: app/scripts/app.js:126
 msgid "PostlieferungAbo"
-msgstr "Abono de entrega a domicilio"
+msgstr ""
 
 #: app/index.html:89
 msgid "Produkte"
-msgstr "Productos"
+msgstr "Lebensmittel"
 
 #: app/index.html:88
 msgid "Produzenten"
-msgstr "Productores"
+msgstr ""
 
 #: app/index.html:92
 msgid "Projekt"
-msgstr "Proyecto"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:33
 msgid "Prägnanter Betreff"
-msgstr "Asunto (pertinente)"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:38
 msgid "Rechnung anhängen"
-msgstr "Adjuntar factura"
+msgstr ""
 
 #: app/index.html:81
 msgid "Rechnungen"
-msgstr "Facturas"
+msgstr ""
 
 #: app/index.html:90
 msgid "Reports*"
-msgstr "Informes*"
+msgstr ""
 
 #: app/scripts/app.js:173
 msgid "SA"
-msgstr "Sa"
+msgstr ""
 
 #: app/scripts/app.js:175
 msgid "SO"
-msgstr "DO"
+msgstr ""
 
 #: app/scripts/app.js:173
 msgid "Samstag"
-msgstr "Sábado"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:56
 #: app/scripts/common/components/oo-sliding-detail.directive.html:5
 msgid "Schliessen"
-msgstr "Cerrar"
+msgstr ""
 
 #: app/scripts/app.js:153
 msgid "Schweizer Franken"
-msgstr "Francos suizos"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-confirmation-message.html:12
 #: app/scripts/common/components/oo-email-dialog.html:55
 msgid "Senden"
-msgstr "Enviar"
+msgstr ""
 
 #: app/scripts/app.js:191
 msgid "Sep"
-msgstr "Sep"
+msgstr ""
 
 #: app/scripts/app.js:190
 msgid "September"
-msgstr "Septiembre"
+msgstr ""
 
 #: app/scripts/login/login.html:23
 #: app/scripts/login/login.html:48
 msgid "Sie befinden sich auf dem Lasius Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen an der Administrationsumgebung anmelden:"
-msgstr "Estás en el sistema de prueba de Lasius. Te puedes conectar como administrador utilizado la información de identificación siguiente:"
+msgstr ""
 
 #: app/scripts/login/login.html:35
 msgid "Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen als Konsument anmelden:"
-msgstr "Estás en el sistema de prueba de OpenOlitor. Te puedes conectar como abonado utilizado la información de identificación siguiente:"
+msgstr "Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen als Mitglied anmelden:"
 
 #: app/scripts/login/login.html:12
 msgid "Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden Anmeldeinformationen an der Administrationsumgebung anmelden:"
-msgstr "Estás en el sistema de prueba de OpenOlitor. Te puedes conectar como abonado utilizado la información de identificación siguiente:"
+msgstr ""
 
 #: app/scripts/common/components/oo-deletebutton.directive.modal.html:2
 msgid "Sind Sie sicher?"
-msgstr "¿Estás seguro?"
+msgstr ""
 
 #: app/scripts/common/components/oo-deletebutton.directive.modal.html:7
 msgid "Soll der Löschvorgang fortgesetzt werden?"
-msgstr "¿Estás seguro de que quieres borrar estos datos?"
+msgstr ""
 
 #: app/scripts/app.js:175
 msgid "Sonntag"
-msgstr "Domingo"
+msgstr ""
 
 #: app/scripts/app.js:142
 msgid "St."
-msgstr "Unidad"
+msgstr ""
 
 #: app/index.html:84
 msgid "Stammdaten"
-msgstr "Base de datos"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:21
 #: app/scripts/common/components/oo-generate-report.directive.html:31
 msgid "Standardvorlage"
-msgstr "Formato por Omisión"
+msgstr ""
 
 #: app/scripts/app.js:139
 msgid "Storniert"
-msgstr "Cancelado"
+msgstr ""
 
 #: app/scripts/app.js:142
 msgid "Stück"
-msgstr "Unidad"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:49
 msgid "Text mit [Platzhalter]"
-msgstr "Texto con [Platzhalter]"
+msgstr ""
 
 #: app/index.html:78
 msgid "Tourauslieferungen"
-msgstr "Entrega a domicilio"
+msgstr ""
 
 #: app/index.html:86
 msgid "Touren"
-msgstr "Recorridos"
+msgstr ""
 
 #: app/scripts/app.js:156
 msgid "US Dollar"
-msgstr "Dólar estadounidense"
+msgstr ""
 
 #: app/scripts/app.js:156
 msgid "USD"
-msgstr "USD"
+msgstr ""
 
 #: app/scripts/app.js:110
 msgid "Unbeschraenkt"
-msgstr "Ilimitado"
+msgstr ""
 
 #: app/scripts/app.js:129
 msgid "Ungeplant"
-msgstr "Sin planificar"
+msgstr ""
 
 #: app/scripts/app.js:95
 msgid "Unregelmaessig"
-msgstr "Irregularmente"
+msgstr ""
 
 #: app/scripts/login/login.html:70
 msgid "Unterhalts-Moduls! Das Kundenportal ist gegenwärtig nicht verfügbar. Bitte sobald wie möglich wieder aktivieren!"
-msgstr "¡estamos realizando tareas de mantenimiento! el portal del abonado está indisponible. Intentalo un poco más tarde"
+msgstr "Unterhalts-Moduls! Das Mitgliederportal ist gegenwärtig nicht verfügbar. Bitte sobald wie möglich wieder aktivieren!"
 
 #: app/scripts/app.js:132
 msgid "Verrechnet"
-msgstr "Deducido"
+msgstr ""
 
 #: app/scripts/app.js:136
 msgid "Verschickt"
-msgstr "Enviado"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:16
 msgid "Vorlage"
-msgstr "Modelo"
+msgstr ""
 
 #: app/index.html:93
 msgid "Vorlagen*"
-msgstr "modelos*"
+msgstr ""
 
 #: app/scripts/common/components/oo-actionsbutton.directive.html:9
 msgid "Weitere Aktionen"
-msgstr "Otras acciones"
+msgstr ""
 
 #: app/scripts/login/passwordreset.html:6
 msgid "Wenn Sie ihr Passwort vergessen haben, können Sie sich einen Reset-Link senden lassen."
-msgstr "Si has olvidado tu contraseña, aquí puedes enviarte un correo electrónico para reiniciarla."
+msgstr ""
 
 #: app/scripts/login/login.controller.js:36
 msgid "Willkommen"
-msgstr "Bienvenid@"
+msgstr ""
 
 #: app/scripts/app.js:92
 msgid "Woechentlich"
-msgstr "Semanal"
+msgstr ""
 
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:8
 msgid "Wollen Sie fortfahren?"
-msgstr "¿Desea continuar?"
+msgstr ""
 
 #: app/index.html:82
 msgid "Zahlungs-Imports"
-msgstr "Importación de los pagos"
+msgstr ""
 
 #: app/scripts/login/login.html:100
 msgid "Zugangscode"
-msgstr "Código de acceso"
+msgstr ""
 
 #: app/scripts/login/login.html:106
 msgid "Zugangscode erneut versenden"
-msgstr "Enviar el código de acceso una vez más"
+msgstr ""
 
 #: app/scripts/login/forbidden.html:5
 msgid "Zugriff verweigert"
-msgstr "Acceso denegado"
+msgstr ""
 
 #: app/scripts/app.js:93
 msgid "Zweiwoechentlich"
-msgstr "Quincenal"
+msgstr ""
 
 #: app/scripts/common/components/oo-savebutton.directive.html:5
 msgid "erstellen"
-msgstr "crear"
+msgstr ""
 
 #: app/scripts/app.js:144
 msgid "gr"
-msgstr "gr"
+msgstr ""
 
 #: app/scripts/app.js:146
 msgid "kg"
-msgstr "kg"
+msgstr ""
 
 #: app/scripts/common/components/oo-actionsbutton.directive.js:119
 msgid "konnte nicht ausgeführt werden. Fehler:"
-msgstr "no se puede realizar. Error:"
+msgstr ""
 
 #: app/scripts/common/components/oo-deletebutton.directive.js:103
 msgid "konnte nicht gelöscht werden. Fehler:"
-msgstr "No se puede borrar. Error:"
+msgstr ""
 
 #: app/scripts/common/components/oo-savebutton.directive.js:77
 msgid "konnte nicht gespeichert werden. Fehler:"
-msgstr "no se puede salvar. Error:"
+msgstr ""
 
 #: app/scripts/app.js:147
 msgid "l"
-msgstr "l"
+msgstr ""
 
 #: app/scripts/common/filters/oo-preisproeinheit.filter.js:7
 msgid "pro"
-msgstr "por"
+msgstr ""
 
 #: app/scripts/common/components/oo-savebutton.directive.html:6
 msgid "speichern"
-msgstr "guardar"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-confirmation-message.html:8
 msgid "versenden möchtest"
-msgstr "desea enviar"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:63
 msgid "von"
-msgstr "de"
+msgstr ""
 
 #: app/scripts/common/components/oo-deletebutton.directive.js:43
 msgid "wurde durch eine andere Person gelöscht."
-msgstr "ha sido borrado por otra persona."
+msgstr ""
 
 #: app/scripts/common/components/oo-actionsbutton.directive.js:81
 msgid "wurde durch eine andere Person geändert. Bitte laden Sie die Ansicht neu."
-msgstr "ha sido borrado por otra persona, para ver los datos actuales refresque la página."
+msgstr ""
 
 #: app/scripts/common/components/oo-deletebutton.directive.js:47
 msgid "wurde erfolgreich gelöscht."
-msgstr "ha sido borrado."
+msgstr ""
 
 #: app/scripts/login/login.html:96
 msgid "zugestellt."
-msgstr "entregado."
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:23
 msgid "{{form.vorlage.name}}"
-msgstr "{{form.modele.nom}}"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:24
 msgid "{{projektVorlage.name}}"
-msgstr "{{projektVorlage.name}}"
+msgstr ""
 
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:2
 msgid "{{title | translate}}"
-msgstr "{title | translate}"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:32
 msgid "{{vorlage.name}}"
-msgstr "{{vorlage.name}}"
+msgstr ""
 
