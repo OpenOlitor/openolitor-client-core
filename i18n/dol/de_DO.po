@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: Dollinger\n"
 "Language: de_DO\n"
-"PO-Revision-Date: 2021-02-12 15:00\n"
+"PO-Revision-Date: 2021-03-14 20:45\n"
 
 #: app/scripts/app.js:119
 msgid "-"
@@ -205,11 +205,11 @@ msgstr ""
 
 #: app/index.html:77
 msgid "Depotauslieferungen"
-msgstr ""
+msgstr "Lieferungen an Abholstationen"
 
 #: app/scripts/app.js:105
 msgid "Depotlieferung"
-msgstr ""
+msgstr "Lieferung an Abholstationen"
 
 #: app/scripts/app.js:124
 msgid "DepotlieferungAbo"
@@ -217,7 +217,7 @@ msgstr "DepotauslieferungAnteil"
 
 #: app/index.html:85
 msgid "Depots"
-msgstr ""
+msgstr "Abholstationen"
 
 #: app/scripts/login/forbidden.html:6
 msgid "Der Zugriff auf diese Ressource wurde verweigert."
