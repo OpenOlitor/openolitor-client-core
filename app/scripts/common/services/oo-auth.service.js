@@ -31,7 +31,7 @@
         var currentUser = function() {
           return $http.get(appConfig.get().API_URL + 'auth/user').then(function(response) {
             user = response.data.user;
-            secondFactorType = response.data.subject.secondFactorType;
+            secondFactorType = user.secondFactorType;
             $log.debug('Login succeeded', user, secondFactorType);
             return user;
           });
@@ -75,7 +75,9 @@
               $log.debug('resolved user after login', usr);
               user = usr;
               token = tkn;
-              secondFactorType = sndFactorType;
+              if (sndFactorType) {
+                secondFactorType = sndFactorType;
+              }
               return usr;
             });
           },
