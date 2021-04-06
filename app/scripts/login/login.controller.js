@@ -22,15 +22,32 @@ angular.module('openolitor-core')
         token: undefined
       };
       $scope.secondFactorSettings = {
-        secondFactorEnabled: true,
-        secondFactorType: undefined,
+        secondFactorEnabled: undefined,
+        secondFactorType: 'otp',
         canChangeSecondFactor: false
       };
       $scope.status = 'login';
       $scope.env = appConfig.get().ENV;
       $scope.secondFactorCountdown = 600;      
+
+      var getSecondFactorCountdownDate = function(scope) {
+        return moment().add(scope.secondFactorCountdown, 'seconds');
+      }
+      var startSecondFactorCountdownTimer = function(scope) {
+        if (scope.cancelSecondFactorTimer) {
+          $interval.cancel(scope.cancelSecondFactorTimer);
+        }
+        scope.secondFactorCountdown = 600;  
+        scope.cancelSecondFactorTimer = $interval(function() {
+          scope.secondFactorCountdown--;
+          if(scope.secondFactorCountdown === 0) {
+            $interval.cancel(scope.cancelSecondFactorTimer);
+            scope.resetForm();
+          }
+        }, 1000, 0);
+      }
       $scope.secondFactorCountdownDate = function() {
-        return moment().add($scope.secondFactorCountdown, 'seconds');
+        return getSecondFactorCountdownDate($scope);
       };
       $scope.secondFactorType = ooAuthService.getSecondFactorType();
       $scope.secondFactorTypes = EnumUtil.asArray(SECOND_FACTOR_TYPES);
@@ -38,7 +55,8 @@ angular.module('openolitor-core')
       $scope.originalTgState = $rootScope.tgState;
       $rootScope.tgState = false;
 
-      console.log('started:', $scope.user, $scope.loggedIn);
+      $scope.secondFactorSettingsForm = {};
+      $scope.projekt = undefined;
 
       var showWelcomeMessage = function(token, person, secondFactorType) {
         //show welcome message
@@ -70,12 +88,10 @@ angular.module('openolitor-core')
           $scope.user = user;
           ProjektService.resolveProjekt().then(function(projekt) {
             $scope.projekt = projekt;            
-            $scope.secondFactorSettings = {
-              canChangeSecondFactor: !projekt.twoFactorAuthentication[user.rolle],
-              secondFactorEnabled: user.secondFactorType !== undefined || projekt.twoFactorAuthentication[user.rolle],
-              secondFactorType: user.secondFactorType || projekt.defaultSecondFactorType
-            }
-            $scope.secondFactorType = ooAuthService.getSecondFactorType();                 
+            $scope.secondFactorSettings.canChangeSecondFactor = !projekt.twoFactorAuthentication[user.rolle];
+            $scope.secondFactorSettings.secondFactorEnabled = user.secondFactorType !== undefined || projekt.twoFactorAuthentication[user.rolle];
+            $scope.secondFactorSettings.secondFactorType = user.secondFactorType || projekt.defaultSecondFactorType;
+            $scope.secondFactorType = ooAuthService.getSecondFactorType(); 
           });
         } 
       });
@@ -169,13 +185,7 @@ angular.module('openolitor-core')
                 }
                 $scope.secondFactorData.token = result.data.token;
 
-                $scope.cancelSecondFactorTimer = $interval(function() {
-                  $scope.secondFactorCountdown--;
-                  if($scope.secondFactorCountdown === 0) {
-                    $interval.cancel($scope.cancelSecondFactorTimer);
-                    $scope.resetForm();
-                  }
-                }, 1000, 0);
+                startSecondFactorCountdownTimer($scope);
               } else {
                 showWelcomeMessage(result.data.token, result.data.person);
               }
@@ -214,8 +224,16 @@ angular.module('openolitor-core')
               neuConfirmed: undefined
             };
 
+            $scope.secondFactorCountdownDate = function() {
+              return getSecondFactorCountdownDate($scope);
+            };
+
             $scope.changePassword = function() {
               if ($scope.changePwdForm.$valid) {
+                if ($scope.changePwd && $scope.changePwd.secondFactorAuth && !$scope.changePwd.secondFactorAuth.code){
+                  // reset incomplete secondfactor auth form
+                  $scope.changePwd.secondFactorAuth = undefined;
+                }
                 $http.post(appConfig.get().API_URL + 'auth/passwd', $scope.changePwd)
                   .then(function(result) {
 
@@ -226,13 +244,17 @@ angular.module('openolitor-core')
                       $scope.changePwd.secondFactorAuth = {
                         token: result.data.token
                       };
+
+                      startSecondFactorCountdownTimer($scope);
                     }
                     else if (result.data.status === 'Ok') {
                       $scope.changePwd.message = undefined;
-                      $uibModalInstance.close();    
+                      $scope.changePwd.secondFactorAuth = undefined;
+                      $uibModalInstance.close();
                     }    
                   }, function(error) {
                     $scope.changePwd.message = gettext(error.data);
+                    $scope.changePwd.secondFactorAuth = undefined;
                   });
               }
             };
@@ -334,6 +356,10 @@ angular.module('openolitor-core')
     
       $scope.saveSecondFactorSettings = function() {
         if ($scope.secondFactorSettingsForm.$valid) {
+          if ($scope.secondFactorSettings && $scope.secondFactorSettings.secondFactorAuth && !$scope.secondFactorSettings.secondFactorAuth.code){
+            // reset incomplete secondfactor auth form
+            $scope.secondFactorSettings.secondFactorAuth = undefined;
+          }
           $http.post(appConfig.get().API_URL + 'auth/user/settings', $scope.secondFactorSettings)
             .then(function(result) {
 
@@ -352,11 +378,17 @@ angular.module('openolitor-core')
                       code:undefined
                     };
 
+                    $scope.secondFactorCountdownDate = function() {
+                      return getSecondFactorCountdownDate($scope);
+                    };
+
                     $scope.submit = function() {
                       if ($scope.secondFactorDataForm.$valid) {
                         $uibModalInstance.close($scope.secondFactorData)
                       }
-                    }                    
+                    } 
+                    
+                    startSecondFactorCountdownTimer($scope);
                   }
                 });
                 
@@ -371,10 +403,13 @@ angular.module('openolitor-core')
                 });
               }
               else if (result.data.status === 'Ok') {
-                alertService.addAlert('info', gettext('Einstellungen erfolgreich gespeichert'));          
+                alertService.addAlert('info', gettext('Einstellungen erfolgreich gespeichert')); 
+                $scope.secondFactorType = $scope.secondFactorSettings.secondFactorType;  
+                $scope.secondFactorSettings.secondFactorAuth = undefined;       
               }
             }, function(error) {
               alertService.addAlert('error', gettext('Einstellungen konnten nicht gespeichert werden'), error.data);          
+              $scope.secondFactorSettings.secondFactorAuth = undefined;
             });
         }
       };
