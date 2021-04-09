@@ -13,14 +13,14 @@
         </div>
         <div class="panel-body">
           <span class="pull-right">
-            <button class="btn btn-lg btn-primary" ng-click="showChangePassword()" translate>Passwort wechseln</button>
+            <button class="btn btn-md btn-primary" ng-click="showChangePassword()" translate>Passwort wechseln</button>
           </span>
         </div>
         <div class="panel-heading clearfix">
           <h3 class="panel-title">
             <span class="navbar-brand" translate>Zwei-Faktor-Authentisierung</span>
             <span class="pull-right">
-              <button ng-disabled="secondFactorSettingsForm.$invalid" class="btn btn-lg btn-primary" type="submit"
+              <button ng-disabled="secondFactorSettingsForm.$invalid" class="btn btn-md btn-primary" type="submit"
                 ng-click="saveSecondFactorSettings()" translate>Einstellungen Speichern</button>
             </span>
           </h3>
@@ -59,7 +59,7 @@
         </div>
         <div class="panel-body" ng-show="secondFactorType === 'otp'">
           <span class="pull-right">
-            <button ng-disabled="secondFactorSettings.$invalid" class="btn btn-lg btn-primary" ng-click="showResetOtp()"
+            <button ng-disabled="secondFactorSettings.$invalid" class="btn btn-md btn-primary" ng-click="showResetOtp()"
               translate>OTP Secret zurücksetzen</button>
           </span>
         </div>
