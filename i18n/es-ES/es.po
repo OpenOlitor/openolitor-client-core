@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2021-05-27 13:45\n"
+"PO-Revision-Date: 2021-05-27 14:12\n"
 
 #: app/scripts/app.js:110
 msgid "-"
@@ -221,7 +221,7 @@ msgstr "Puntos de recogida"
 
 #: app/scripts/common/components/oo-email-dialog.html:62
 msgid "Der Mailversand wurde ausgelöst."
-msgstr ""
+msgstr "Se activó el envío de correo."
 
 #: app/scripts/login/forbidden.html:6
 msgid "Der Zugriff auf diese Ressource wurde verweigert."
@@ -245,7 +245,7 @@ msgstr "Los datos se reinicializan periódicamente."
 #: app/scripts/common/components/oo-confirmondirty-directive.js:22
 #: app/scripts/common/components/oo-confirmondirty-directive.js:36
 msgid "Die Seite enthält Modifikationen. Wollen Sie diese verwerfen?"
-msgstr "La página contiene modificiaciones. ¿Quieres salir y perderlas?"
+msgstr "La página contiene modificaciones. ¿Quieres salir y perderlas?"
 
 #: app/scripts/app.js:161
 msgid "Dienstag"
@@ -574,7 +574,7 @@ msgstr "Nueva contraseña"
 
 #: app/scripts/login/change_password.html:31
 msgid "Neues Passwort wiederholen"
-msgstr ""
+msgstr "Repita la nueva contraseña"
 
 #: app/scripts/app.js:198
 msgid "NichtErledigt"
@@ -859,7 +859,7 @@ msgstr "Bienvenid@"
 
 #: app/index.html:111
 msgid "Wir sind gleich bereit..."
-msgstr ""
+msgstr "Estaremos listos pronto..."
 
 #: app/scripts/app.js:83
 msgid "Woechentlich"
