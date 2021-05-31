@@ -11,9 +11,9 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: Hungarian\n"
 "Language: hu_HU\n"
-"PO-Revision-Date: 2020-09-04 22:57\n"
+"PO-Revision-Date: 2021-05-27 13:45\n"
 
-#: app/scripts/app.js:119
+#: app/scripts/app.js:110
 msgid "-"
 msgstr "-"
 
@@ -27,31 +27,31 @@ msgstr "-Tesztkörnyezet"
 
 #: app/scripts/common/components/oo-deletebutton.directive.modal.html:13
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:15
-#: app/scripts/common/components/oo-email-confirmation-message.html:13
+#: app/scripts/common/components/oo-email-confirmation-message.html:15
 msgid "Abbrechen"
 msgstr "Mégsem"
 
-#: app/scripts/app.js:131
+#: app/scripts/app.js:122
 msgid "Abgeschlossen"
 msgstr "Kész"
 
-#: app/index.html:58
+#: app/index.html:62
 msgid "Abmelden"
 msgstr "Kijelentkezés"
 
-#: app/index.html:71
+#: app/index.html:75
 msgid "Abos"
 msgstr "Előfizetések"
 
-#: app/index.html:87
+#: app/index.html:91
 msgid "Abotypen"
 msgstr "Előfizetés típusok"
 
-#: app/index.html:75
+#: app/index.html:79
 msgid "Abrechnung*"
 msgstr "Számlázás"
 
-#: app/index.html:39
+#: app/index.html:40
 msgid "Administrationsumgebung <span ng-if=\"projekt\">für</span>"
 msgstr "Adminisztrációs környezet <span ng-if=\"projekt\">-</span>"
 
@@ -76,43 +76,43 @@ msgstr "Bejelentkezés"
 msgid "Anmeldung"
 msgstr "Regisztráció"
 
-#: app/scripts/login/login.controller.js:101
+#: app/scripts/login/passwordreset.html:19
 msgid "Anweisungen um Ihr Passwort neu zu setzten wurden Ihnen an Ihre Email-Adresse gesendet."
 msgstr "A jelszó beállítására vonatkozó utasításokat elküldtük az e-mail címére."
 
-#: app/scripts/app.js:184
+#: app/scripts/app.js:180
 msgid "Apr"
 msgstr "Ápr."
 
-#: app/scripts/app.js:184
+#: app/scripts/app.js:180
 msgid "April"
 msgstr "Április"
 
-#: app/scripts/login/login.controller.js:50
+#: app/scripts/login/login.controller.js:51
 msgid "Aufwiedersehen"
 msgstr "Viszlát"
 
-#: app/scripts/app.js:188
+#: app/scripts/app.js:184
 msgid "Aug"
 msgstr "Aug."
 
-#: app/scripts/app.js:188
+#: app/scripts/app.js:184
 msgid "August"
 msgstr "Augusztus"
 
-#: app/scripts/app.js:206
+#: app/scripts/app.js:202
 msgid "Ausgeliefert"
 msgstr "Kiszállítva"
 
-#: app/index.html:76
+#: app/index.html:80
 msgid "Auslieferungen"
 msgstr "Kiszállítások"
 
-#: app/scripts/app.js:200
+#: app/scripts/app.js:196
 msgid "Ausstehend"
 msgstr "Függőben"
 
-#: app/scripts/common/components/oo-generate-report.directive.js:57
+#: app/scripts/common/components/oo-generate-report.directive.js:70
 msgid "Beim erstellen der Dokumente sind folgende Fehler aufgetreten"
 msgstr "Hiba történt a dokumentum készítése közben."
 
@@ -124,7 +124,7 @@ msgstr "Személyre szabott..."
 msgid "Bericht erstellen"
 msgstr "Jelentés készítése"
 
-#: app/scripts/common/components/oo-generate-report.directive.js:75
+#: app/scripts/common/components/oo-generate-report.directive.js:93
 msgid "Bericht konnte nicht erzeugt werden"
 msgstr "Jelentést nem készülhet."
 
@@ -136,7 +136,7 @@ msgstr "Megerősítés"
 msgid "Betreff"
 msgstr "Tárgy"
 
-#: app/scripts/app.js:137
+#: app/scripts/app.js:128
 msgid "Bezahlt"
 msgstr "Fizetve"
 
@@ -144,39 +144,39 @@ msgstr "Fizetve"
 msgid "Bist du sicher, dass du diese E-Mail an &nbsp;"
 msgstr "Természetesen, e-mail címe: &nbsp;"
 
-#: app/scripts/app.js:157
+#: app/scripts/app.js:153
 msgid "Britisches Pfund"
 msgstr "Angol font"
 
-#: app/scripts/app.js:143
+#: app/scripts/app.js:134
 msgid "Bu."
 msgstr "csokor"
 
-#: app/index.html:80
+#: app/index.html:84
 msgid "Buchhaltung"
 msgstr "Könyvelés"
 
-#: app/scripts/app.js:143
+#: app/scripts/app.js:134
 msgid "Bund"
 msgstr "Csokor"
 
-#: app/scripts/app.js:159
+#: app/scripts/app.js:155
 msgid "CAD"
 msgstr "CAD"
 
-#: app/scripts/app.js:153
+#: app/scripts/app.js:149
 msgid "CHF"
 msgstr "CHF"
 
-#: app/scripts/app.js:165
+#: app/scripts/app.js:161
 msgid "DI"
 msgstr "K."
 
-#: app/scripts/app.js:170
+#: app/scripts/app.js:166
 msgid "DO"
 msgstr "Cs."
 
-#: app/index.html:66
+#: app/index.html:70
 msgid "Das Backend steht im Moment nicht zur Verfügung. Bitte besuchen Sie uns später wieder."
 msgstr "A mentés jelenleg nem elérhető. Kérjük látogasson meg minket később."
 
@@ -194,7 +194,7 @@ msgstr "A jelszó minimum 6 karaktert tartalmazzon."
 msgid "Das Passwort muss mindestens einen Gross- und Kleinbuchstaben, sowie einen numerischen Wert oder ein Symbol enthalten"
 msgstr "A jelszó tartalmazzon legalább egy-egy kis- és nagybetűt, valamint számot és különleges karaktert (szimbólumot)."
 
-#: app/scripts/login/login.controller.js:91
+#: app/scripts/login/login.controller.js:92
 msgid "Das Passwort wurde erfolgreich gesetzt. Sie können sich nun anmelden."
 msgstr "Sikeresen létrehozott egy jelszót. Most más be tud jelentkezni."
 
@@ -203,31 +203,35 @@ msgstr "Sikeresen létrehozott egy jelszót. Most más be tud jelentkezni."
 msgid "Datenextrakt"
 msgstr "Kivonat az adatokról"
 
-#: app/index.html:77
+#: app/index.html:81
 msgid "Depotauslieferungen"
 msgstr "Kiszállítások"
 
-#: app/scripts/app.js:105
+#: app/scripts/app.js:96
 msgid "Depotlieferung"
 msgstr "Kiszállítás"
 
-#: app/scripts/app.js:124
+#: app/scripts/app.js:115
 msgid "DepotlieferungAbo"
 msgstr "Feliratkozás kiszállításra"
 
-#: app/index.html:85
+#: app/index.html:89
 msgid "Depots"
 msgstr "Raktárak"
+
+#: app/scripts/common/components/oo-email-dialog.html:62
+msgid "Der Mailversand wurde ausgelöst."
+msgstr ""
 
 #: app/scripts/login/forbidden.html:6
 msgid "Der Zugriff auf diese Ressource wurde verweigert."
 msgstr "Hozzáférés megtagadva."
 
-#: app/scripts/app.js:196
+#: app/scripts/app.js:192
 msgid "Dez"
 msgstr "Dec."
 
-#: app/scripts/app.js:196
+#: app/scripts/app.js:192
 msgid "Dezember"
 msgstr "December"
 
@@ -243,7 +247,7 @@ msgstr "A rendszer adatai időként visszaállnak az alapértelmezett értékekr
 msgid "Die Seite enthält Modifikationen. Wollen Sie diese verwerfen?"
 msgstr "Az oldalon módosítások történnek. El szeretné vetni?"
 
-#: app/scripts/app.js:165
+#: app/scripts/app.js:161
 msgid "Dienstag"
 msgstr "Kedd"
 
@@ -251,7 +255,7 @@ msgstr "Kedd"
 msgid "Diese Seite konnte nicht gefunden werden!"
 msgstr "A keresett oldal nem található."
 
-#: app/scripts/app.js:169
+#: app/scripts/app.js:165
 msgid "Donnerstag"
 msgstr "Csütörtök"
 
@@ -278,7 +282,7 @@ msgstr "E-mail küldése a kijelölteknek"
 msgid "E-Mail:"
 msgstr "E-mail:"
 
-#: app/scripts/app.js:155
+#: app/scripts/app.js:151
 msgid "EUR"
 msgstr "EUR"
 
@@ -288,7 +292,7 @@ msgstr "Saját jelszó módosítása"
 
 #: app/messages.html:2
 #: app/scripts/login/change_password.html:20
-#: app/scripts/login/change_password.html:35
+#: app/scripts/login/change_password.html:34
 #: app/scripts/login/zugangaktivieren.html:14
 #: app/scripts/login/zugangaktivieren.html:29
 msgid "Eingabe erforderlich"
@@ -310,24 +314,24 @@ msgstr "Érték túl hosszú"
 msgid "Einige selektierte Einträge verfügen über kein angehängtes Rechnungsdokument. Diese E-Mails werden ohne Anhang verschickt."
 msgstr "Néhány kiválasztott tételhez nem csatolt számlát. Az e-maileket melléklet nélkül küldi el."
 
-#: app/index.html:83
+#: app/index.html:87
 msgid "Einkauf*"
 msgstr "Beszerzési *"
 
-#: app/index.html:55
-#: app/index.html:91
+#: app/index.html:59
+#: app/index.html:95
 msgid "Einstellungen"
 msgstr "Beállítások"
 
-#: app/scripts/login/passwordreset.html:14
+#: app/scripts/login/passwordreset.html:13
 msgid "Email Adresse"
 msgstr "E-mail cím"
 
-#: app/scripts/app.js:205
+#: app/scripts/app.js:201
 msgid "Erfasst"
 msgstr "Rögzít"
 
-#: app/scripts/app.js:201
+#: app/scripts/app.js:197
 msgid "Erledigt"
 msgstr "Kész"
 
@@ -339,7 +343,7 @@ msgstr "404-es hiba"
 msgid "Erstellen"
 msgstr "Létrehozás"
 
-#: app/scripts/app.js:135
+#: app/scripts/app.js:126
 msgid "Erstellt"
 msgstr "Létrehozva"
 
@@ -347,19 +351,19 @@ msgstr "Létrehozva"
 msgid "Es wurde ein Zugangscode an ihre Email-Adresse"
 msgstr "Megerősítő kódot elküldtük az e-mail címedre."
 
-#: app/scripts/app.js:155
+#: app/scripts/app.js:151
 msgid "Euro"
 msgstr "Euro"
 
-#: app/scripts/app.js:171
+#: app/scripts/app.js:167
 msgid "FR"
 msgstr "P."
 
-#: app/scripts/app.js:181
+#: app/scripts/app.js:177
 msgid "Feb"
 msgstr "Febr."
 
-#: app/scripts/app.js:181
+#: app/scripts/app.js:177
 msgid "Februar"
 msgstr "Február"
 
@@ -367,15 +371,15 @@ msgstr "Február"
 msgid "Fehlerhafte Email Adresse"
 msgstr "Helytelen e-mail cím"
 
-#: app/scripts/app.js:121
+#: app/scripts/app.js:112
 msgid "Fr."
 msgstr " "
 
-#: app/scripts/app.js:121
+#: app/scripts/app.js:112
 msgid "Frau"
 msgstr " "
 
-#: app/scripts/app.js:171
+#: app/scripts/app.js:167
 msgid "Freitag"
 msgstr "Péntek"
 
@@ -396,23 +400,23 @@ msgstr "Az OpenOlitor használatához bejelentkezés szükséges."
 msgid "Für den Zugriff auf die Administrationsumgebung ist eine Anmeldung erforderlich"
 msgstr "Az admin felület használatához bejelentkezés szükséges."
 
-#: app/scripts/app.js:157
+#: app/scripts/app.js:153
 msgid "GBP"
 msgstr "GBP"
 
-#: app/scripts/app.js:144
+#: app/scripts/app.js:135
 msgid "Gramm"
 msgstr "gramm"
 
-#: app/scripts/app.js:106
+#: app/scripts/app.js:97
 msgid "Heimlieferung"
 msgstr "Házhozszállítás"
 
-#: app/scripts/app.js:125
+#: app/scripts/app.js:116
 msgid "HeimlieferungAbo"
 msgstr "Előfizetés: házhozszállítás"
 
-#: app/scripts/app.js:120
+#: app/scripts/app.js:111
 msgid "Herr"
 msgstr " "
 
@@ -420,7 +424,7 @@ msgstr " "
 msgid "Herunterladen"
 msgstr "Letöltés"
 
-#: app/scripts/app.js:120
+#: app/scripts/app.js:111
 msgid "Hr."
 msgstr " "
 
@@ -431,67 +435,67 @@ msgstr " "
 msgid "Ja"
 msgstr "Igen"
 
-#: app/scripts/app.js:179
+#: app/scripts/app.js:175
 msgid "Jan"
 msgstr "Jan."
 
-#: app/scripts/app.js:179
+#: app/scripts/app.js:175
 msgid "Januar"
 msgstr "Január"
 
-#: app/scripts/app.js:187
+#: app/scripts/app.js:183
 msgid "Jul"
 msgstr "Júl."
 
-#: app/scripts/app.js:187
+#: app/scripts/app.js:183
 msgid "Juli"
 msgstr "Július"
 
-#: app/scripts/app.js:186
+#: app/scripts/app.js:182
 msgid "Jun"
 msgstr "Jún."
 
-#: app/scripts/app.js:186
+#: app/scripts/app.js:182
 msgid "Juni"
 msgstr "Június"
 
-#: app/scripts/app.js:159
+#: app/scripts/app.js:155
 msgid "Kanadischer Dollar"
 msgstr "Kanadai dollár"
 
-#: app/scripts/app.js:119
+#: app/scripts/app.js:110
 msgid "Keine"
 msgstr "Nem"
 
-#: app/scripts/common/components/oo-email-dialog.controller.js:17
+#: app/scripts/common/components/oo-email-dialog.controller.js:22
 msgid "Keine Vorlage"
 msgstr "Nincs sablon"
 
-#: app/scripts/app.js:145
+#: app/scripts/app.js:136
 msgid "Kilogramm"
 msgstr "Kilogramm"
 
-#: app/index.html:70
+#: app/index.html:74
 msgid "Kunden"
 msgstr "Vevők"
 
-#: app/index.html:73
+#: app/index.html:77
 msgid "Lieferanten"
 msgstr "Beszállítók"
 
-#: app/index.html:74
+#: app/index.html:78
 msgid "Lieferplanung"
 msgstr "Szállítási terv"
 
-#: app/scripts/app.js:101
+#: app/scripts/app.js:92
 msgid "Lieferung"
 msgstr "Szállítás"
 
-#: app/scripts/app.js:111
+#: app/scripts/app.js:102
 msgid "Lieferungen"
 msgstr "Szállítások"
 
-#: app/scripts/app.js:147
+#: app/scripts/app.js:138
 msgid "Liter"
 msgstr "Liter"
 
@@ -503,19 +507,19 @@ msgstr "Admin bejelentkezés"
 msgid "Löschen"
 msgstr "Törlés"
 
-#: app/scripts/app.js:167
+#: app/scripts/app.js:163
 msgid "MI"
 msgstr "Sze."
 
-#: app/scripts/app.js:163
+#: app/scripts/app.js:159
 msgid "MO"
 msgstr "H."
 
-#: app/scripts/app.js:138
+#: app/scripts/app.js:129
 msgid "MahnungVerschickt"
 msgstr "Emlékeztető elküldve"
 
-#: app/scripts/app.js:185
+#: app/scripts/app.js:181
 msgid "Mai"
 msgstr "Május"
 
@@ -523,37 +527,37 @@ msgstr "Május"
 msgid "Mail-Body"
 msgstr "Szöveg"
 
-#: app/scripts/common/components/oo-email-dialog.html:66
+#: app/scripts/common/components/oo-email-dialog.html:70
 msgid "Mails konnten nicht verschickt werden.<span>\n"
 "  </span>"
 msgstr "E-mail nem küldhető el.<span>\n"
 "  </span>"
 
-#: app/scripts/common/components/oo-email-dialog.html:63
+#: app/scripts/common/components/oo-email-dialog.html:67
 msgid "Mails wurden verschickt"
 msgstr "E-mailek elküldve"
 
-#: app/scripts/app.js:183
+#: app/scripts/app.js:179
 msgid "Mar"
 msgstr "Márc."
 
-#: app/scripts/app.js:167
+#: app/scripts/app.js:163
 msgid "Mittwoch"
 msgstr "Szerda"
 
-#: app/scripts/app.js:112
+#: app/scripts/app.js:103
 msgid "Monate"
 msgstr "Hónapok"
 
-#: app/scripts/app.js:94
+#: app/scripts/app.js:85
 msgid "Monatlich"
 msgstr "Havi"
 
-#: app/scripts/app.js:163
+#: app/scripts/app.js:159
 msgid "Montag"
 msgstr "Hétfő"
 
-#: app/scripts/app.js:183
+#: app/scripts/app.js:179
 msgid "März"
 msgstr "Március"
 
@@ -568,19 +572,23 @@ msgstr "Nem"
 msgid "Neues Passwort"
 msgstr "Új jelszó"
 
-#: app/scripts/app.js:202
+#: app/scripts/login/change_password.html:31
+msgid "Neues Passwort wiederholen"
+msgstr ""
+
+#: app/scripts/app.js:198
 msgid "NichtErledigt"
 msgstr "Nem teljesült"
 
-#: app/scripts/app.js:194
+#: app/scripts/app.js:190
 msgid "Nov"
 msgstr "Nov."
 
-#: app/scripts/app.js:194
+#: app/scripts/app.js:190
 msgid "November"
 msgstr "November"
 
-#: app/scripts/app.js:130
+#: app/scripts/app.js:121
 msgid "Offen"
 msgstr "Megnyitás"
 
@@ -588,11 +596,11 @@ msgstr "Megnyitás"
 msgid "Ok"
 msgstr "OK"
 
-#: app/scripts/app.js:192
+#: app/scripts/app.js:188
 msgid "Okt"
 msgstr "Okt."
 
-#: app/scripts/app.js:192
+#: app/scripts/app.js:188
 msgid "Oktober"
 msgstr "Október"
 
@@ -622,25 +630,24 @@ msgstr "Adjon meg egy jelszót, és aktíválja az OpenOlitor elérését"
 msgid "Passwort vergessen?"
 msgstr "Elfelejtette a jelszavát?"
 
-#: app/index.html:57
-#: app/scripts/login/change_password.html:41
+#: app/index.html:61
+#: app/scripts/login/change_password.html:40
 msgid "Passwort wechseln"
 msgstr "Jelszó módosítása"
 
-#: app/scripts/login/change_password.html:32
 #: app/scripts/login/zugangaktivieren.html:26
 msgid "Passwort wiederholen"
 msgstr "Jelszó megerősítése"
 
-#: app/scripts/login/login.controller.js:81
+#: app/scripts/login/login.controller.js:82
 msgid "Passwort wurde erfolgreich geändert, Sie werden automatisch ausgelogged."
 msgstr "Jelszó sikeresen módosításra került, automatikusan átirányítjuk a felületre."
 
-#: app/scripts/login/login.controller.js:85
+#: app/scripts/login/login.controller.js:86
 msgid "Passwort wurde erfolgreich geändert, Sie wurden automatisch ausgelogged. Bitte loggen Sie sich mit dem neuen Passwort erneut an."
 msgstr "Sikeresen megváltoztatta jelszavát, és automatikusan kijelentkezett. Kérjük, lépjem be újra az új jelszavával."
 
-#: app/scripts/login/passwordreset.html:17
+#: app/scripts/login/passwordreset.html:16
 msgid "Passwort zurücksetzen"
 msgstr "Jelszó visszaállítása"
 
@@ -651,43 +658,42 @@ msgstr "Jelszó visszaállítása"
 msgid "Passwort:"
 msgstr "Jelszó:"
 
-#: app/scripts/login/change_password.html:23
-#: app/scripts/login/change_password.html:36
+#: app/scripts/login/change_password.html:35
 #: app/scripts/login/zugangaktivieren.html:17
 #: app/scripts/login/zugangaktivieren.html:30
 msgid "Passworteingabe stimmt nicht übereint"
 msgstr "A jelszó nem megfelelő"
 
-#: app/scripts/login/change_password.html:28
+#: app/scripts/login/change_password.html:27
 #: app/scripts/login/zugangaktivieren.html:22
 msgid "Passwortstärke"
 msgstr "Jelszó erőssége"
 
-#: app/index.html:72
+#: app/index.html:76
 msgid "Pendenzen"
 msgstr "Nyitott tételek"
 
-#: app/index.html:79
+#: app/index.html:83
 msgid "Postauslieferungen"
 msgstr "Postai szállítás"
 
-#: app/scripts/app.js:107
+#: app/scripts/app.js:98
 msgid "Postlieferung"
 msgstr "Postai szállítás"
 
-#: app/scripts/app.js:126
+#: app/scripts/app.js:117
 msgid "PostlieferungAbo"
 msgstr "Feliratkozás postai szállításra"
 
-#: app/index.html:89
+#: app/index.html:93
 msgid "Produkte"
 msgstr "Termékek"
 
-#: app/index.html:88
+#: app/index.html:92
 msgid "Produzenten"
 msgstr "Termelők"
 
-#: app/index.html:92
+#: app/index.html:96
 msgid "Projekt"
 msgstr "Projekt"
 
@@ -699,23 +705,23 @@ msgstr "Téma"
 msgid "Rechnung anhängen"
 msgstr "Számla csatolása"
 
-#: app/index.html:81
+#: app/index.html:85
 msgid "Rechnungen"
 msgstr "Számlák"
 
-#: app/index.html:90
+#: app/index.html:94
 msgid "Reports*"
 msgstr "Jelentések*"
 
-#: app/scripts/app.js:173
+#: app/scripts/app.js:169
 msgid "SA"
 msgstr "Szo."
 
-#: app/scripts/app.js:175
+#: app/scripts/app.js:171
 msgid "SO"
 msgstr "V."
 
-#: app/scripts/app.js:173
+#: app/scripts/app.js:169
 msgid "Samstag"
 msgstr "Szombat"
 
@@ -724,20 +730,20 @@ msgstr "Szombat"
 msgid "Schliessen"
 msgstr "Bezárás"
 
-#: app/scripts/app.js:153
+#: app/scripts/app.js:149
 msgid "Schweizer Franken"
 msgstr "Svájci frank"
 
-#: app/scripts/common/components/oo-email-confirmation-message.html:12
+#: app/scripts/common/components/oo-email-confirmation-message.html:14
 #: app/scripts/common/components/oo-email-dialog.html:55
 msgid "Senden"
 msgstr "Küldés"
 
-#: app/scripts/app.js:191
+#: app/scripts/app.js:187
 msgid "Sep"
 msgstr "Szept."
 
-#: app/scripts/app.js:190
+#: app/scripts/app.js:186
 msgid "September"
 msgstr "Szeptember"
 
@@ -762,15 +768,15 @@ msgstr "Biztos benne?"
 msgid "Soll der Löschvorgang fortgesetzt werden?"
 msgstr "Folytatni kívánja a törlést?"
 
-#: app/scripts/app.js:175
+#: app/scripts/app.js:171
 msgid "Sonntag"
 msgstr "Sunday"
 
-#: app/scripts/app.js:142
+#: app/scripts/app.js:133
 msgid "St."
 msgstr "Db."
 
-#: app/index.html:84
+#: app/index.html:88
 msgid "Stammdaten"
 msgstr "Törzsadatok"
 
@@ -779,11 +785,11 @@ msgstr "Törzsadatok"
 msgid "Standardvorlage"
 msgstr "Alapértelmezett sablon"
 
-#: app/scripts/app.js:139
+#: app/scripts/app.js:130
 msgid "Storniert"
 msgstr "Törölve"
 
-#: app/scripts/app.js:142
+#: app/scripts/app.js:133
 msgid "Stück"
 msgstr "Darab"
 
@@ -791,31 +797,31 @@ msgstr "Darab"
 msgid "Text mit [Platzhalter]"
 msgstr "Szöveg [Platzhalter]"
 
-#: app/index.html:78
+#: app/index.html:82
 msgid "Tourauslieferungen"
 msgstr "Körök teljesítése"
 
-#: app/index.html:86
+#: app/index.html:90
 msgid "Touren"
 msgstr "Körök"
 
-#: app/scripts/app.js:156
+#: app/scripts/app.js:152
 msgid "US Dollar"
 msgstr "USA dollár"
 
-#: app/scripts/app.js:156
+#: app/scripts/app.js:152
 msgid "USD"
 msgstr "USD"
 
-#: app/scripts/app.js:110
+#: app/scripts/app.js:101
 msgid "Unbeschraenkt"
 msgstr "Korlátlan"
 
-#: app/scripts/app.js:129
+#: app/scripts/app.js:120
 msgid "Ungeplant"
 msgstr "Nem tervezett"
 
-#: app/scripts/app.js:95
+#: app/scripts/app.js:86
 msgid "Unregelmaessig"
 msgstr "Szabálytalan"
 
@@ -823,11 +829,11 @@ msgstr "Szabálytalan"
 msgid "Unterhalts-Moduls! Das Kundenportal ist gegenwärtig nicht verfügbar. Bitte sobald wie möglich wieder aktivieren!"
 msgstr "Karbantartási modul! A tagi oldal jelenleg nem érhető el. Minél előbb aktiválja!"
 
-#: app/scripts/app.js:132
+#: app/scripts/app.js:123
 msgid "Verrechnet"
 msgstr "Kiszámlázva"
 
-#: app/scripts/app.js:136
+#: app/scripts/app.js:127
 msgid "Verschickt"
 msgstr "Elküldött"
 
@@ -835,7 +841,7 @@ msgstr "Elküldött"
 msgid "Vorlage"
 msgstr "Sablon"
 
-#: app/index.html:93
+#: app/index.html:97
 msgid "Vorlagen*"
 msgstr "Sablonok*"
 
@@ -847,11 +853,15 @@ msgstr "További művelet"
 msgid "Wenn Sie ihr Passwort vergessen haben, können Sie sich einen Reset-Link senden lassen."
 msgstr "Ha elfelejtette jelszavát, igényeljen helyreállításhoz szükséges linket. "
 
-#: app/scripts/login/login.controller.js:36
+#: app/scripts/login/login.controller.js:37
 msgid "Willkommen"
 msgstr "Üdvözöljük"
 
-#: app/scripts/app.js:92
+#: app/index.html:111
+msgid "Wir sind gleich bereit..."
+msgstr ""
+
+#: app/scripts/app.js:83
 msgid "Woechentlich"
 msgstr "Heti"
 
@@ -859,7 +869,7 @@ msgstr "Heti"
 msgid "Wollen Sie fortfahren?"
 msgstr "Szeretné folytatni?"
 
-#: app/index.html:82
+#: app/index.html:86
 msgid "Zahlungs-Imports"
 msgstr "Importálások: Fizetések "
 
@@ -875,7 +885,7 @@ msgstr "Megerősítő kód küldése"
 msgid "Zugriff verweigert"
 msgstr "Hozzáférés megtagadva."
 
-#: app/scripts/app.js:93
+#: app/scripts/app.js:84
 msgid "Zweiwoechentlich"
 msgstr "Kétheti"
 
@@ -883,11 +893,11 @@ msgstr "Kétheti"
 msgid "erstellen"
 msgstr "Létrehozás"
 
-#: app/scripts/app.js:144
+#: app/scripts/app.js:135
 msgid "gr"
 msgstr "gr"
 
-#: app/scripts/app.js:146
+#: app/scripts/app.js:137
 msgid "kg"
 msgstr "kg"
 
@@ -903,7 +913,7 @@ msgstr "nem törölhető. Hiba:"
 msgid "konnte nicht gespeichert werden. Fehler:"
 msgstr "nem menthető. Hiba:"
 
-#: app/scripts/app.js:147
+#: app/scripts/app.js:138
 msgid "l"
 msgstr "l"
 
@@ -919,7 +929,7 @@ msgstr "mentés"
 msgid "versenden möchtest"
 msgstr "küldeni"
 
-#: app/scripts/common/components/oo-email-dialog.html:63
+#: app/scripts/common/components/oo-email-dialog.html:67
 msgid "von"
 msgstr "által"
 

@@ -11,9 +11,9 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: Polish\n"
 "Language: pl_PL\n"
-"PO-Revision-Date: 2020-09-04 22:57\n"
+"PO-Revision-Date: 2021-05-27 13:45\n"
 
-#: app/scripts/app.js:119
+#: app/scripts/app.js:110
 msgid "-"
 msgstr ""
 
@@ -27,31 +27,31 @@ msgstr ""
 
 #: app/scripts/common/components/oo-deletebutton.directive.modal.html:13
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:15
-#: app/scripts/common/components/oo-email-confirmation-message.html:13
+#: app/scripts/common/components/oo-email-confirmation-message.html:15
 msgid "Abbrechen"
 msgstr ""
 
-#: app/scripts/app.js:131
+#: app/scripts/app.js:122
 msgid "Abgeschlossen"
 msgstr ""
 
-#: app/index.html:58
+#: app/index.html:62
 msgid "Abmelden"
 msgstr ""
 
-#: app/index.html:71
+#: app/index.html:75
 msgid "Abos"
 msgstr ""
 
-#: app/index.html:87
+#: app/index.html:91
 msgid "Abotypen"
 msgstr ""
 
-#: app/index.html:75
+#: app/index.html:79
 msgid "Abrechnung*"
 msgstr ""
 
-#: app/index.html:39
+#: app/index.html:40
 msgid "Administrationsumgebung <span ng-if=\"projekt\">für</span>"
 msgstr ""
 
@@ -76,43 +76,43 @@ msgstr ""
 msgid "Anmeldung"
 msgstr ""
 
-#: app/scripts/login/login.controller.js:101
+#: app/scripts/login/passwordreset.html:19
 msgid "Anweisungen um Ihr Passwort neu zu setzten wurden Ihnen an Ihre Email-Adresse gesendet."
 msgstr ""
 
-#: app/scripts/app.js:184
+#: app/scripts/app.js:180
 msgid "Apr"
 msgstr ""
 
-#: app/scripts/app.js:184
+#: app/scripts/app.js:180
 msgid "April"
 msgstr ""
 
-#: app/scripts/login/login.controller.js:50
+#: app/scripts/login/login.controller.js:51
 msgid "Aufwiedersehen"
 msgstr ""
 
-#: app/scripts/app.js:188
+#: app/scripts/app.js:184
 msgid "Aug"
 msgstr ""
 
-#: app/scripts/app.js:188
+#: app/scripts/app.js:184
 msgid "August"
 msgstr ""
 
-#: app/scripts/app.js:206
+#: app/scripts/app.js:202
 msgid "Ausgeliefert"
 msgstr ""
 
-#: app/index.html:76
+#: app/index.html:80
 msgid "Auslieferungen"
 msgstr ""
 
-#: app/scripts/app.js:200
+#: app/scripts/app.js:196
 msgid "Ausstehend"
 msgstr ""
 
-#: app/scripts/common/components/oo-generate-report.directive.js:57
+#: app/scripts/common/components/oo-generate-report.directive.js:70
 msgid "Beim erstellen der Dokumente sind folgende Fehler aufgetreten"
 msgstr ""
 
@@ -124,7 +124,7 @@ msgstr ""
 msgid "Bericht erstellen"
 msgstr ""
 
-#: app/scripts/common/components/oo-generate-report.directive.js:75
+#: app/scripts/common/components/oo-generate-report.directive.js:93
 msgid "Bericht konnte nicht erzeugt werden"
 msgstr ""
 
@@ -136,7 +136,7 @@ msgstr ""
 msgid "Betreff"
 msgstr ""
 
-#: app/scripts/app.js:137
+#: app/scripts/app.js:128
 msgid "Bezahlt"
 msgstr ""
 
@@ -144,39 +144,39 @@ msgstr ""
 msgid "Bist du sicher, dass du diese E-Mail an &nbsp;"
 msgstr ""
 
-#: app/scripts/app.js:157
+#: app/scripts/app.js:153
 msgid "Britisches Pfund"
 msgstr ""
 
-#: app/scripts/app.js:143
+#: app/scripts/app.js:134
 msgid "Bu."
 msgstr ""
 
-#: app/index.html:80
+#: app/index.html:84
 msgid "Buchhaltung"
 msgstr ""
 
-#: app/scripts/app.js:143
+#: app/scripts/app.js:134
 msgid "Bund"
 msgstr ""
 
-#: app/scripts/app.js:159
+#: app/scripts/app.js:155
 msgid "CAD"
 msgstr ""
 
-#: app/scripts/app.js:153
+#: app/scripts/app.js:149
 msgid "CHF"
 msgstr ""
 
-#: app/scripts/app.js:165
+#: app/scripts/app.js:161
 msgid "DI"
 msgstr ""
 
-#: app/scripts/app.js:170
+#: app/scripts/app.js:166
 msgid "DO"
 msgstr ""
 
-#: app/index.html:66
+#: app/index.html:70
 msgid "Das Backend steht im Moment nicht zur Verfügung. Bitte besuchen Sie uns später wieder."
 msgstr ""
 
@@ -194,7 +194,7 @@ msgstr ""
 msgid "Das Passwort muss mindestens einen Gross- und Kleinbuchstaben, sowie einen numerischen Wert oder ein Symbol enthalten"
 msgstr ""
 
-#: app/scripts/login/login.controller.js:91
+#: app/scripts/login/login.controller.js:92
 msgid "Das Passwort wurde erfolgreich gesetzt. Sie können sich nun anmelden."
 msgstr ""
 
@@ -203,31 +203,35 @@ msgstr ""
 msgid "Datenextrakt"
 msgstr ""
 
-#: app/index.html:77
+#: app/index.html:81
 msgid "Depotauslieferungen"
 msgstr ""
 
-#: app/scripts/app.js:105
+#: app/scripts/app.js:96
 msgid "Depotlieferung"
 msgstr ""
 
-#: app/scripts/app.js:124
+#: app/scripts/app.js:115
 msgid "DepotlieferungAbo"
 msgstr ""
 
-#: app/index.html:85
+#: app/index.html:89
 msgid "Depots"
+msgstr ""
+
+#: app/scripts/common/components/oo-email-dialog.html:62
+msgid "Der Mailversand wurde ausgelöst."
 msgstr ""
 
 #: app/scripts/login/forbidden.html:6
 msgid "Der Zugriff auf diese Ressource wurde verweigert."
 msgstr ""
 
-#: app/scripts/app.js:196
+#: app/scripts/app.js:192
 msgid "Dez"
 msgstr ""
 
-#: app/scripts/app.js:196
+#: app/scripts/app.js:192
 msgid "Dezember"
 msgstr ""
 
@@ -243,7 +247,7 @@ msgstr ""
 msgid "Die Seite enthält Modifikationen. Wollen Sie diese verwerfen?"
 msgstr ""
 
-#: app/scripts/app.js:165
+#: app/scripts/app.js:161
 msgid "Dienstag"
 msgstr ""
 
@@ -251,7 +255,7 @@ msgstr ""
 msgid "Diese Seite konnte nicht gefunden werden!"
 msgstr ""
 
-#: app/scripts/app.js:169
+#: app/scripts/app.js:165
 msgid "Donnerstag"
 msgstr ""
 
@@ -278,7 +282,7 @@ msgstr ""
 msgid "E-Mail:"
 msgstr ""
 
-#: app/scripts/app.js:155
+#: app/scripts/app.js:151
 msgid "EUR"
 msgstr ""
 
@@ -288,7 +292,7 @@ msgstr ""
 
 #: app/messages.html:2
 #: app/scripts/login/change_password.html:20
-#: app/scripts/login/change_password.html:35
+#: app/scripts/login/change_password.html:34
 #: app/scripts/login/zugangaktivieren.html:14
 #: app/scripts/login/zugangaktivieren.html:29
 msgid "Eingabe erforderlich"
@@ -310,24 +314,24 @@ msgstr ""
 msgid "Einige selektierte Einträge verfügen über kein angehängtes Rechnungsdokument. Diese E-Mails werden ohne Anhang verschickt."
 msgstr ""
 
-#: app/index.html:83
+#: app/index.html:87
 msgid "Einkauf*"
 msgstr ""
 
-#: app/index.html:55
-#: app/index.html:91
+#: app/index.html:59
+#: app/index.html:95
 msgid "Einstellungen"
 msgstr ""
 
-#: app/scripts/login/passwordreset.html:14
+#: app/scripts/login/passwordreset.html:13
 msgid "Email Adresse"
 msgstr ""
 
-#: app/scripts/app.js:205
+#: app/scripts/app.js:201
 msgid "Erfasst"
 msgstr ""
 
-#: app/scripts/app.js:201
+#: app/scripts/app.js:197
 msgid "Erledigt"
 msgstr ""
 
@@ -339,7 +343,7 @@ msgstr ""
 msgid "Erstellen"
 msgstr ""
 
-#: app/scripts/app.js:135
+#: app/scripts/app.js:126
 msgid "Erstellt"
 msgstr ""
 
@@ -347,19 +351,19 @@ msgstr ""
 msgid "Es wurde ein Zugangscode an ihre Email-Adresse"
 msgstr ""
 
-#: app/scripts/app.js:155
+#: app/scripts/app.js:151
 msgid "Euro"
 msgstr ""
 
-#: app/scripts/app.js:171
+#: app/scripts/app.js:167
 msgid "FR"
 msgstr ""
 
-#: app/scripts/app.js:181
+#: app/scripts/app.js:177
 msgid "Feb"
 msgstr ""
 
-#: app/scripts/app.js:181
+#: app/scripts/app.js:177
 msgid "Februar"
 msgstr ""
 
@@ -367,15 +371,15 @@ msgstr ""
 msgid "Fehlerhafte Email Adresse"
 msgstr ""
 
-#: app/scripts/app.js:121
+#: app/scripts/app.js:112
 msgid "Fr."
 msgstr ""
 
-#: app/scripts/app.js:121
+#: app/scripts/app.js:112
 msgid "Frau"
 msgstr ""
 
-#: app/scripts/app.js:171
+#: app/scripts/app.js:167
 msgid "Freitag"
 msgstr ""
 
@@ -396,23 +400,23 @@ msgstr ""
 msgid "Für den Zugriff auf die Administrationsumgebung ist eine Anmeldung erforderlich"
 msgstr ""
 
-#: app/scripts/app.js:157
+#: app/scripts/app.js:153
 msgid "GBP"
 msgstr ""
 
-#: app/scripts/app.js:144
+#: app/scripts/app.js:135
 msgid "Gramm"
 msgstr ""
 
-#: app/scripts/app.js:106
+#: app/scripts/app.js:97
 msgid "Heimlieferung"
 msgstr ""
 
-#: app/scripts/app.js:125
+#: app/scripts/app.js:116
 msgid "HeimlieferungAbo"
 msgstr ""
 
-#: app/scripts/app.js:120
+#: app/scripts/app.js:111
 msgid "Herr"
 msgstr ""
 
@@ -420,7 +424,7 @@ msgstr ""
 msgid "Herunterladen"
 msgstr ""
 
-#: app/scripts/app.js:120
+#: app/scripts/app.js:111
 msgid "Hr."
 msgstr ""
 
@@ -431,67 +435,67 @@ msgstr ""
 msgid "Ja"
 msgstr ""
 
-#: app/scripts/app.js:179
+#: app/scripts/app.js:175
 msgid "Jan"
 msgstr ""
 
-#: app/scripts/app.js:179
+#: app/scripts/app.js:175
 msgid "Januar"
 msgstr ""
 
-#: app/scripts/app.js:187
+#: app/scripts/app.js:183
 msgid "Jul"
 msgstr ""
 
-#: app/scripts/app.js:187
+#: app/scripts/app.js:183
 msgid "Juli"
 msgstr ""
 
-#: app/scripts/app.js:186
+#: app/scripts/app.js:182
 msgid "Jun"
 msgstr ""
 
-#: app/scripts/app.js:186
+#: app/scripts/app.js:182
 msgid "Juni"
 msgstr ""
 
-#: app/scripts/app.js:159
+#: app/scripts/app.js:155
 msgid "Kanadischer Dollar"
 msgstr ""
 
-#: app/scripts/app.js:119
+#: app/scripts/app.js:110
 msgid "Keine"
 msgstr ""
 
-#: app/scripts/common/components/oo-email-dialog.controller.js:17
+#: app/scripts/common/components/oo-email-dialog.controller.js:22
 msgid "Keine Vorlage"
 msgstr ""
 
-#: app/scripts/app.js:145
+#: app/scripts/app.js:136
 msgid "Kilogramm"
 msgstr ""
 
-#: app/index.html:70
+#: app/index.html:74
 msgid "Kunden"
 msgstr ""
 
-#: app/index.html:73
+#: app/index.html:77
 msgid "Lieferanten"
 msgstr ""
 
-#: app/index.html:74
+#: app/index.html:78
 msgid "Lieferplanung"
 msgstr ""
 
-#: app/scripts/app.js:101
+#: app/scripts/app.js:92
 msgid "Lieferung"
 msgstr ""
 
-#: app/scripts/app.js:111
+#: app/scripts/app.js:102
 msgid "Lieferungen"
 msgstr ""
 
-#: app/scripts/app.js:147
+#: app/scripts/app.js:138
 msgid "Liter"
 msgstr ""
 
@@ -503,19 +507,19 @@ msgstr ""
 msgid "Löschen"
 msgstr ""
 
-#: app/scripts/app.js:167
+#: app/scripts/app.js:163
 msgid "MI"
 msgstr ""
 
-#: app/scripts/app.js:163
+#: app/scripts/app.js:159
 msgid "MO"
 msgstr ""
 
-#: app/scripts/app.js:138
+#: app/scripts/app.js:129
 msgid "MahnungVerschickt"
 msgstr ""
 
-#: app/scripts/app.js:185
+#: app/scripts/app.js:181
 msgid "Mai"
 msgstr ""
 
@@ -523,36 +527,36 @@ msgstr ""
 msgid "Mail-Body"
 msgstr ""
 
-#: app/scripts/common/components/oo-email-dialog.html:66
+#: app/scripts/common/components/oo-email-dialog.html:70
 msgid "Mails konnten nicht verschickt werden.<span>\n"
 "  </span>"
 msgstr ""
 
-#: app/scripts/common/components/oo-email-dialog.html:63
+#: app/scripts/common/components/oo-email-dialog.html:67
 msgid "Mails wurden verschickt"
 msgstr ""
 
-#: app/scripts/app.js:183
+#: app/scripts/app.js:179
 msgid "Mar"
 msgstr ""
 
-#: app/scripts/app.js:167
+#: app/scripts/app.js:163
 msgid "Mittwoch"
 msgstr ""
 
-#: app/scripts/app.js:112
+#: app/scripts/app.js:103
 msgid "Monate"
 msgstr ""
 
-#: app/scripts/app.js:94
+#: app/scripts/app.js:85
 msgid "Monatlich"
 msgstr ""
 
-#: app/scripts/app.js:163
+#: app/scripts/app.js:159
 msgid "Montag"
 msgstr ""
 
-#: app/scripts/app.js:183
+#: app/scripts/app.js:179
 msgid "März"
 msgstr ""
 
@@ -567,19 +571,23 @@ msgstr ""
 msgid "Neues Passwort"
 msgstr ""
 
-#: app/scripts/app.js:202
+#: app/scripts/login/change_password.html:31
+msgid "Neues Passwort wiederholen"
+msgstr ""
+
+#: app/scripts/app.js:198
 msgid "NichtErledigt"
 msgstr ""
 
-#: app/scripts/app.js:194
+#: app/scripts/app.js:190
 msgid "Nov"
 msgstr ""
 
-#: app/scripts/app.js:194
+#: app/scripts/app.js:190
 msgid "November"
 msgstr ""
 
-#: app/scripts/app.js:130
+#: app/scripts/app.js:121
 msgid "Offen"
 msgstr ""
 
@@ -587,11 +595,11 @@ msgstr ""
 msgid "Ok"
 msgstr ""
 
-#: app/scripts/app.js:192
+#: app/scripts/app.js:188
 msgid "Okt"
 msgstr ""
 
-#: app/scripts/app.js:192
+#: app/scripts/app.js:188
 msgid "Oktober"
 msgstr ""
 
@@ -621,25 +629,24 @@ msgstr ""
 msgid "Passwort vergessen?"
 msgstr ""
 
-#: app/index.html:57
-#: app/scripts/login/change_password.html:41
+#: app/index.html:61
+#: app/scripts/login/change_password.html:40
 msgid "Passwort wechseln"
 msgstr ""
 
-#: app/scripts/login/change_password.html:32
 #: app/scripts/login/zugangaktivieren.html:26
 msgid "Passwort wiederholen"
 msgstr ""
 
-#: app/scripts/login/login.controller.js:81
+#: app/scripts/login/login.controller.js:82
 msgid "Passwort wurde erfolgreich geändert, Sie werden automatisch ausgelogged."
 msgstr ""
 
-#: app/scripts/login/login.controller.js:85
+#: app/scripts/login/login.controller.js:86
 msgid "Passwort wurde erfolgreich geändert, Sie wurden automatisch ausgelogged. Bitte loggen Sie sich mit dem neuen Passwort erneut an."
 msgstr ""
 
-#: app/scripts/login/passwordreset.html:17
+#: app/scripts/login/passwordreset.html:16
 msgid "Passwort zurücksetzen"
 msgstr ""
 
@@ -650,43 +657,42 @@ msgstr ""
 msgid "Passwort:"
 msgstr ""
 
-#: app/scripts/login/change_password.html:23
-#: app/scripts/login/change_password.html:36
+#: app/scripts/login/change_password.html:35
 #: app/scripts/login/zugangaktivieren.html:17
 #: app/scripts/login/zugangaktivieren.html:30
 msgid "Passworteingabe stimmt nicht übereint"
 msgstr ""
 
-#: app/scripts/login/change_password.html:28
+#: app/scripts/login/change_password.html:27
 #: app/scripts/login/zugangaktivieren.html:22
 msgid "Passwortstärke"
 msgstr ""
 
-#: app/index.html:72
+#: app/index.html:76
 msgid "Pendenzen"
 msgstr ""
 
-#: app/index.html:79
+#: app/index.html:83
 msgid "Postauslieferungen"
 msgstr ""
 
-#: app/scripts/app.js:107
+#: app/scripts/app.js:98
 msgid "Postlieferung"
 msgstr ""
 
-#: app/scripts/app.js:126
+#: app/scripts/app.js:117
 msgid "PostlieferungAbo"
 msgstr ""
 
-#: app/index.html:89
+#: app/index.html:93
 msgid "Produkte"
 msgstr ""
 
-#: app/index.html:88
+#: app/index.html:92
 msgid "Produzenten"
 msgstr ""
 
-#: app/index.html:92
+#: app/index.html:96
 msgid "Projekt"
 msgstr ""
 
@@ -698,23 +704,23 @@ msgstr ""
 msgid "Rechnung anhängen"
 msgstr ""
 
-#: app/index.html:81
+#: app/index.html:85
 msgid "Rechnungen"
 msgstr ""
 
-#: app/index.html:90
+#: app/index.html:94
 msgid "Reports*"
 msgstr ""
 
-#: app/scripts/app.js:173
+#: app/scripts/app.js:169
 msgid "SA"
 msgstr ""
 
-#: app/scripts/app.js:175
+#: app/scripts/app.js:171
 msgid "SO"
 msgstr ""
 
-#: app/scripts/app.js:173
+#: app/scripts/app.js:169
 msgid "Samstag"
 msgstr ""
 
@@ -723,20 +729,20 @@ msgstr ""
 msgid "Schliessen"
 msgstr ""
 
-#: app/scripts/app.js:153
+#: app/scripts/app.js:149
 msgid "Schweizer Franken"
 msgstr ""
 
-#: app/scripts/common/components/oo-email-confirmation-message.html:12
+#: app/scripts/common/components/oo-email-confirmation-message.html:14
 #: app/scripts/common/components/oo-email-dialog.html:55
 msgid "Senden"
 msgstr ""
 
-#: app/scripts/app.js:191
+#: app/scripts/app.js:187
 msgid "Sep"
 msgstr ""
 
-#: app/scripts/app.js:190
+#: app/scripts/app.js:186
 msgid "September"
 msgstr ""
 
@@ -761,15 +767,15 @@ msgstr ""
 msgid "Soll der Löschvorgang fortgesetzt werden?"
 msgstr ""
 
-#: app/scripts/app.js:175
+#: app/scripts/app.js:171
 msgid "Sonntag"
 msgstr ""
 
-#: app/scripts/app.js:142
+#: app/scripts/app.js:133
 msgid "St."
 msgstr ""
 
-#: app/index.html:84
+#: app/index.html:88
 msgid "Stammdaten"
 msgstr ""
 
@@ -778,11 +784,11 @@ msgstr ""
 msgid "Standardvorlage"
 msgstr ""
 
-#: app/scripts/app.js:139
+#: app/scripts/app.js:130
 msgid "Storniert"
 msgstr ""
 
-#: app/scripts/app.js:142
+#: app/scripts/app.js:133
 msgid "Stück"
 msgstr ""
 
@@ -790,31 +796,31 @@ msgstr ""
 msgid "Text mit [Platzhalter]"
 msgstr ""
 
-#: app/index.html:78
+#: app/index.html:82
 msgid "Tourauslieferungen"
 msgstr ""
 
-#: app/index.html:86
+#: app/index.html:90
 msgid "Touren"
 msgstr ""
 
-#: app/scripts/app.js:156
+#: app/scripts/app.js:152
 msgid "US Dollar"
 msgstr ""
 
-#: app/scripts/app.js:156
+#: app/scripts/app.js:152
 msgid "USD"
 msgstr ""
 
-#: app/scripts/app.js:110
+#: app/scripts/app.js:101
 msgid "Unbeschraenkt"
 msgstr ""
 
-#: app/scripts/app.js:129
+#: app/scripts/app.js:120
 msgid "Ungeplant"
 msgstr ""
 
-#: app/scripts/app.js:95
+#: app/scripts/app.js:86
 msgid "Unregelmaessig"
 msgstr ""
 
@@ -822,11 +828,11 @@ msgstr ""
 msgid "Unterhalts-Moduls! Das Kundenportal ist gegenwärtig nicht verfügbar. Bitte sobald wie möglich wieder aktivieren!"
 msgstr ""
 
-#: app/scripts/app.js:132
+#: app/scripts/app.js:123
 msgid "Verrechnet"
 msgstr ""
 
-#: app/scripts/app.js:136
+#: app/scripts/app.js:127
 msgid "Verschickt"
 msgstr ""
 
@@ -834,7 +840,7 @@ msgstr ""
 msgid "Vorlage"
 msgstr ""
 
-#: app/index.html:93
+#: app/index.html:97
 msgid "Vorlagen*"
 msgstr ""
 
@@ -846,11 +852,15 @@ msgstr ""
 msgid "Wenn Sie ihr Passwort vergessen haben, können Sie sich einen Reset-Link senden lassen."
 msgstr ""
 
-#: app/scripts/login/login.controller.js:36
+#: app/scripts/login/login.controller.js:37
 msgid "Willkommen"
 msgstr ""
 
-#: app/scripts/app.js:92
+#: app/index.html:111
+msgid "Wir sind gleich bereit..."
+msgstr ""
+
+#: app/scripts/app.js:83
 msgid "Woechentlich"
 msgstr ""
 
@@ -858,7 +868,7 @@ msgstr ""
 msgid "Wollen Sie fortfahren?"
 msgstr ""
 
-#: app/index.html:82
+#: app/index.html:86
 msgid "Zahlungs-Imports"
 msgstr ""
 
@@ -874,7 +884,7 @@ msgstr ""
 msgid "Zugriff verweigert"
 msgstr ""
 
-#: app/scripts/app.js:93
+#: app/scripts/app.js:84
 msgid "Zweiwoechentlich"
 msgstr ""
 
@@ -882,11 +892,11 @@ msgstr ""
 msgid "erstellen"
 msgstr ""
 
-#: app/scripts/app.js:144
+#: app/scripts/app.js:135
 msgid "gr"
 msgstr ""
 
-#: app/scripts/app.js:146
+#: app/scripts/app.js:137
 msgid "kg"
 msgstr ""
 
@@ -902,7 +912,7 @@ msgstr ""
 msgid "konnte nicht gespeichert werden. Fehler:"
 msgstr ""
 
-#: app/scripts/app.js:147
+#: app/scripts/app.js:138
 msgid "l"
 msgstr ""
 
@@ -918,7 +928,7 @@ msgstr ""
 msgid "versenden möchtest"
 msgstr ""
 
-#: app/scripts/common/components/oo-email-dialog.html:63
+#: app/scripts/common/components/oo-email-dialog.html:67
 msgid "von"
 msgstr ""
 
