@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: English\n"
 "Language: en_US\n"
-"PO-Revision-Date: 2021-05-27 13:45\n"
+"PO-Revision-Date: 2021-07-06 14:56\n"
 
 #: app/scripts/app.js:110
 msgid "-"
@@ -221,7 +221,7 @@ msgstr "Depots"
 
 #: app/scripts/common/components/oo-email-dialog.html:62
 msgid "Der Mailversand wurde ausgelöst."
-msgstr ""
+msgstr "The mail dispatch was triggered."
 
 #: app/scripts/login/forbidden.html:6
 msgid "Der Zugriff auf diese Ressource wurde verweigert."
@@ -574,7 +574,7 @@ msgstr "New password"
 
 #: app/scripts/login/change_password.html:31
 msgid "Neues Passwort wiederholen"
-msgstr ""
+msgstr "Confirm password"
 
 #: app/scripts/app.js:198
 msgid "NichtErledigt"
@@ -859,7 +859,7 @@ msgstr "Welcome"
 
 #: app/index.html:111
 msgid "Wir sind gleich bereit..."
-msgstr ""
+msgstr "We'll be ready soon..."
 
 #: app/scripts/app.js:83
 msgid "Woechentlich"
