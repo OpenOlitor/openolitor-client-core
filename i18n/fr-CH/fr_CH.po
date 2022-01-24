@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: French, Switzerland\n"
 "Language: fr_CH\n"
-"PO-Revision-Date: 2021-05-27 13:45\n"
+"PO-Revision-Date: 2022-01-24 13:11\n"
 
 #: app/scripts/app.js:110
 msgid "-"
@@ -469,7 +469,7 @@ msgstr "Aucun"
 
 #: app/scripts/common/components/oo-email-dialog.controller.js:22
 msgid "Keine Vorlage"
-msgstr ""
+msgstr "Aucun modèle"
 
 #: app/scripts/app.js:136
 msgid "Kilogramm"
@@ -859,7 +859,7 @@ msgstr "Bienvenue"
 
 #: app/index.html:111
 msgid "Wir sind gleich bereit..."
-msgstr ""
+msgstr "Nous serons prêts bientôt ..."
 
 #: app/scripts/app.js:83
 msgid "Woechentlich"
