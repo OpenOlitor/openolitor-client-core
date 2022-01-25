@@ -7,11 +7,11 @@ msgstr ""
 "X-Crowdin-Project: openolitor-core-client\n"
 "X-Crowdin-Project-ID: 393653\n"
 "X-Crowdin-Language: cs\n"
-"X-Crowdin-File: /prod/template.pot\n"
+"X-Crowdin-File: /[OpenOlitor.openolitor-client-core] prod/template.pot\n"
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: Czech\n"
 "Language: cs_CZ\n"
-"PO-Revision-Date: 2021-05-27 13:45\n"
+"PO-Revision-Date: 2022-01-25 10:34\n"
 
 #: app/scripts/app.js:110
 msgid "-"
