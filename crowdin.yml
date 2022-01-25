@@ -1,13 +1,23 @@
-project_identifier: openolitor
-api_key: 0a8dbf661866aa2f91f42fdaa43dc657
-base_path: /i18n
+project_id : '393653'
+api_token : eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJ3UUVxdmhVM3ZMT2EyWGljbVV5VCIsImp0aSI6IjI3Y2FiZWZiMzhjMWI4ODdlM2I1NmU1MDE5NzQzNDM4Yzg0MTZiYzJlMDk5N2MwZjg0MmQ4YTAyOTVkMDkxMTMzMWI1OWIwYWFiYjBlYmMxIiwiaWF0IjoxNjQzMTA2Mzk2LCJuYmYiOjE2NDMxMDYzOTYsImV4cCI6MTY0NTY5ODM5Niwic3ViIjoiMTMzODM0OTgiLCJkb21haW4iOm51bGwsInNjb3BlcyI6WyJwcm9qZWN0Il0sImFzc29jaWF0aW9ucyI6WyIqIl0sInNlc3Npb24iOjB9.Piu8QdhubQrtNSUkDci1tSNZ41iYX9uFDxwvtl-HWu0sAoCNxS6WcxygSLeLNn4jMc6-kDKg3Yev452CLyQ-19k4Z4OG1Gi1U-vLSpuayQVItzxsIaztYj7_3LDUFYMqo1l_R8EWbrvrQ3dYifAtRoI-vFO7B71C91-ImZnXEaSNtBnl4A4AEdpIL7vlrF6x4e_Jw6rUQs9vwIX2eKK-sahj8rsN-Jj3D1V7zArOw2hEdL6l22VHUAPaLk5Li1iWUI87UsKFk-QGQeGmMhXEaxADkmkSxUkTVYarBuovGDTv-cWYFGL6FbmeXOGkOS7Y6lEB-OAPWFb3ixHnMyjMH6tE52CKLs0lN2awaqiO8cm6GSH7Ccb8WkOXSrEISO8Yk0BVce2h6h49vxz-Tshajg7oS2XQGd0WZiBam8WGvBk2Q5iUQNCmVJAG6Mvyk5CCzWpFx4a8z3lRUIRXOo25p1EoCa32UJC0YtqVAUsPkor-TlKM5oGOqkCvGBoL9ejgEZo0jTDkiMSMvr2mc6mJSVldV1AQe82y5mp-qgi78LB3ppv6DC3CNy8ymM444ABAwYw60ngaOiD8ulYQfFkJKBNMny3xFxbr8VGEWwiM8RQKpdXDyNKx1_rXNSy3Xls6JxY9WTK8VBbxsOFLcWdeJHCA0IQLpyBX_YKJbGA__H4
+base_path : i18n
+base_url: 'https://api.crowdin.com'
 preserve_hierarchy: true
 files:
   - source: template.pot
     translation: '%locale_with_underscore%.po'
     translation_replace:
       en_US: en
+      en-US: en
       cs_CZ: cs
+      cs-CZ: cs
       es_ES: es
+      it_IT: it
+      it-IT: it
+      de-DO: dol
+      de-DE: de
+      fr-FR: fr
       pl_PL: pl
+      pl-PL: pl
       hu_HU: hu
+      hu-HU: hu
