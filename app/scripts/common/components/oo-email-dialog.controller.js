@@ -19,7 +19,14 @@ angular.module('openolitor-core')
 
       $scope.commandIssued = false;
 
-      $scope.defaultEmptyTemplate = {id:0,label:gettext('Keine Vorlage'),subject:undefined,body:undefined,attachInvoice:false};
+      $scope.defaultEmptyTemplate = {
+        id:0,
+        label:gettext('Keine Vorlage'),
+        subject:undefined,
+        body:undefined,
+        attachInvoice:true
+      };
+
       $scope.templateT = [$scope.defaultEmptyTemplate];
       MailerService.getTemplates().then(function(result){
           angular.forEach(result.data, function(value){
