@@ -16,13 +16,21 @@
          </div>
         </div>
         <div class="col-md-6">
-          <label for="subject" translate>E-Mail Volage</label>
+          <label for="subject" translate>E-Mail Vorlage</label>
         </div>
         <div class="col-md-6">
         <i uib-tooltip="{{message | translate}}" tooltip-placement="bottom" class="fa fa-question-circle" aria-hidden="true"></i>
         </div>
         <div class="col-md-12">
           <oo-dropdown name="mailTemplateDropdown" dropdown-id="mailTemplateDropdown" display-style="uib-dropdown" values="templateT" property="label" selected-prop="id" selected-function="selectTemplateFunc(false)" selected="selectedId"></oo-dropdown>
+        </div>
+      </div>
+      <div class="row form-group">
+        <div class="col-md-12">
+          <label for="replyTo" translate>Reply-To</label>
+        </div>
+        <div class="col-md-12">
+          <input type="text" class="form-control" name="replyTo" ng-model="selectedMailTemplate.replyTo" required placeholder="{{'Reply-to'|translate}}" maxlength="100">
         </div>
       </div>
       <div class="row form-group">
