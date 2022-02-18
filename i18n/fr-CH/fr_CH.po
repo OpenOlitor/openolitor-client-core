@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: French, Switzerland\n"
 "Language: fr_CH\n"
-"PO-Revision-Date: 2022-01-25 10:34\n"
+"PO-Revision-Date: 2022-02-18 16:30\n"
 
 #: app/scripts/app.js:110
 msgid "-"
@@ -142,7 +142,7 @@ msgstr "Payé"
 
 #: app/scripts/common/components/oo-email-confirmation-message.html:8
 msgid "Bist du sicher, dass du diese E-Mail an &nbsp;"
-msgstr ""
+msgstr "Êtes-vous sûr de vouloir envoyer cet e-mail &nbsp;"
 
 #: app/scripts/app.js:153
 msgid "Britisches Pfund"
@@ -221,7 +221,7 @@ msgstr "Dépôts"
 
 #: app/scripts/common/components/oo-email-dialog.html:62
 msgid "Der Mailversand wurde ausgelöst."
-msgstr ""
+msgstr "L'envoi du courrier a été déclenché. "
 
 #: app/scripts/login/forbidden.html:6
 msgid "Der Zugriff auf diese Ressource wurde verweigert."
@@ -265,11 +265,11 @@ msgstr "Adresse courriel"
 
 #: app/scripts/common/components/oo-email-dialog.html:19
 msgid "E-Mail Volage"
-msgstr ""
+msgstr "Modèle d'e-mail "
 
 #: app/scripts/common/components/oo-email-confirmation-message.html:2
 msgid "E-Mail versenden"
-msgstr ""
+msgstr "Envoyer un courriel"
 
 #: app/scripts/common/components/oo-email-dialog.html:5
 msgid "E-Mail versenden an selektierte Einträge"
@@ -312,7 +312,7 @@ msgstr "Entrée trop longue"
 
 #: app/scripts/common/components/oo-email-dialog.html:14
 msgid "Einige selektierte Einträge verfügen über kein angehängtes Rechnungsdokument. Diese E-Mails werden ohne Anhang verschickt."
-msgstr ""
+msgstr "Certaines des entrées sélectionnées ne sont pas accompagnées d'une facture. Ces e-mails seront envoyés sans pièce jointe. "
 
 #: app/index.html:87
 msgid "Einkauf*"
@@ -574,7 +574,7 @@ msgstr "Nouveau mot de passe"
 
 #: app/scripts/login/change_password.html:31
 msgid "Neues Passwort wiederholen"
-msgstr ""
+msgstr "Répéter le nouveau mot de passe"
 
 #: app/scripts/app.js:198
 msgid "NichtErledigt"
@@ -703,7 +703,7 @@ msgstr "Sujet (pertinent)"
 
 #: app/scripts/common/components/oo-email-dialog.html:38
 msgid "Rechnung anhängen"
-msgstr ""
+msgstr "Facture en pièce jointe"
 
 #: app/index.html:85
 msgid "Rechnungen"
@@ -737,7 +737,7 @@ msgstr "Francs suisses"
 #: app/scripts/common/components/oo-email-confirmation-message.html:14
 #: app/scripts/common/components/oo-email-dialog.html:55
 msgid "Senden"
-msgstr ""
+msgstr "Envoyer"
 
 #: app/scripts/app.js:187
 msgid "Sep"
@@ -927,7 +927,7 @@ msgstr "sauvegarder"
 
 #: app/scripts/common/components/oo-email-confirmation-message.html:8
 msgid "versenden möchtest"
-msgstr ""
+msgstr "Voulez-vous l'envoyer"
 
 #: app/scripts/common/components/oo-email-dialog.html:67
 msgid "von"
