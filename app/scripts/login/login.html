@@ -33,7 +33,7 @@
       </span>
       <span ng-show="projekt.welcomeMessage1 && (!projekt.maintenanceMode || appName === 'openolitor-admin')">
         <div class="alert alert-info ">
-          <p class="white-space-pre-wrap">{{projekt.welcomeMessage1}}</p>
+          <div class="white-space-pre-wrap" ng-bind-html="projekt.welcomeMessage1"></div>
         </div>
       </span>
 
