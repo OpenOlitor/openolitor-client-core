@@ -30,12 +30,12 @@
           <label for="replyTo" translate>Reply-To</label>
         </div>
         <div class="col-md-12">
-          <input type="text" class="form-control" name="replyTo" ng-model="selectedMailTemplate.replyTo" required placeholder="{{'Reply-to'|translate}}" maxlength="100">
+          <input type="text" class="form-control" name="replyTo" ng-model="selectedMailTemplate.replyTo" placeholder="{{'Reply-to'|translate}}" maxlength="100">
         </div>
       </div>
       <div class="row form-group">
         <div class="col-md-12">
-          <label for="subject" translate>Betreff</label>
+          <label for="subject" translate>Betreff</label> *
         </div>
         <div class="col-md-12">
           <input type="text" class="form-control" name="subject" ng-model="selectedMailTemplate.subject" required placeholder="{{'Prägnanter Betreff'|translate}}" maxlength="30">
@@ -51,7 +51,7 @@
       </div>
       <div class="row form-group">
         <div class="col-md-12">
-          <label for="body" translate>Mail-Body</label>
+          <label for="body" translate>Mail-Body</label> *
         </div>
         <div class="col-md-12">
           <textarea name="body" rows="10" style="width:100%" ng-model="selectedMailTemplate.body" required placeholder="{{'Text mit [Platzhalter]'|translate}}"></textarea>
