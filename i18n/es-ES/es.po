@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 8\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2022-01-25 10:34\n"
+"PO-Revision-Date: 2022-02-18 16:30\n"
 
 #: app/scripts/app.js:110
 msgid "-"
@@ -74,7 +74,7 @@ msgstr "Conectarse"
 
 #: app/scripts/login/login.html:5
 msgid "Anmeldung"
-msgstr "Bienvenido"
+msgstr "Registro"
 
 #: app/scripts/login/passwordreset.html:19
 msgid "Anweisungen um Ihr Passwort neu zu setzten wurden Ihnen an Ihre Email-Adresse gesendet."
@@ -142,7 +142,7 @@ msgstr "Pagado"
 
 #: app/scripts/common/components/oo-email-confirmation-message.html:8
 msgid "Bist du sicher, dass du diese E-Mail an &nbsp;"
-msgstr "Está seguro de que desea este email &nbsp;"
+msgstr "Está seguro/a de que desea enviar este email &nbsp;"
 
 #: app/scripts/app.js:153
 msgid "Britisches Pfund"

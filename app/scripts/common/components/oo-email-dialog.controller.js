@@ -24,7 +24,8 @@ angular.module('openolitor-core')
         label:gettext('Keine Vorlage'),
         subject:undefined,
         body:undefined,
-        attachInvoice:true
+        attachInvoice:true,
+        replyTo:undefined
       };
 
       $scope.templateT = [$scope.defaultEmptyTemplate];
@@ -40,6 +41,7 @@ angular.module('openolitor-core')
       $scope.selectedMailTemplate = {
         id: $scope.defaultEmptyTemplate.id ,
         subject: $scope.defaultEmptyTemplate.subject,
+        replyTo: $scope.defaultEmptyTemplate.replyTo,
         body: $scope.defaultEmptyTemplate.body,
         label: $scope.defaultEmptyTemplate.label,
         attachInvoice: $scope.defaultEmptyTemplate.attachInvoice
@@ -84,6 +86,7 @@ angular.module('openolitor-core')
           angular.forEach($scope.templateT, function(value){
             if (value.id === $scope.selectedId){
                 $scope.selectedMailTemplate.subject = value.subject;
+                $scope.selectedMailTemplate.replyTo = value.replyTo;
                 $scope.selectedMailTemplate.body = value.body;
                 $scope.selectedMailTemplate.label = value.label;
                 $scope.selectedMailTemplate.id = value.id;
@@ -98,6 +101,7 @@ angular.module('openolitor-core')
       $scope.selectTemplateFunc = function() {
         var selectTemplate = function(template) {
           $scope.selectedMailTemplate.subject = template.subject;
+          $scope.selectedMailTemplate.replyTo = template.replyTo;
           $scope.selectedMailTemplate.body = template.body;
           $scope.selectedMailTemplate.label = template.label;
           $scope.selectedId = template.id;
