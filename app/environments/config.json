@@ -2,5 +2,5 @@
   "API_URL": "http://localhost:9003/m1/",
   "API_WS_URL": "http://localhost:9003/m1/ws",
   "ENV": "dev",
-  "version": "2.5.4",
+  "version": "2.5.5",
 }
