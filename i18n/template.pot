@@ -17,7 +17,7 @@ msgid "- Testumgebung"
 msgstr ""
 
 #: app/scripts/common/components/oo-deletebutton.directive.modal.html:13
-#: app/scripts/common/components/oo-dialogokabort.directive.modal.html:15
+#: app/scripts/common/components/oo-dialogokabort.directive.modal.html:17
 #: app/scripts/common/components/oo-email-confirmation-message.html:15
 msgid "Abbrechen"
 msgstr ""
@@ -123,7 +123,7 @@ msgstr ""
 msgid "Bestätigung"
 msgstr ""
 
-#: app/scripts/common/components/oo-email-dialog.html:30
+#: app/scripts/common/components/oo-email-dialog.html:38
 msgid "Betreff"
 msgstr ""
 
@@ -210,7 +210,7 @@ msgstr ""
 msgid "Depots"
 msgstr ""
 
-#: app/scripts/common/components/oo-email-dialog.html:62
+#: app/scripts/common/components/oo-email-dialog.html:70
 msgid "Der Mailversand wurde ausgelöst."
 msgstr ""
 
@@ -253,7 +253,7 @@ msgid "E-Mail Adresse"
 msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:19
-msgid "E-Mail Volage"
+msgid "E-Mail Vorlage"
 msgstr ""
 
 #: app/scripts/common/components/oo-email-confirmation-message.html:2
@@ -414,7 +414,7 @@ msgstr ""
 msgid "Hr."
 msgstr ""
 
-#: app/scripts/common/components/oo-email-dialog.html:41
+#: app/scripts/common/components/oo-email-dialog.html:49
 #: app/scripts/common/components/oo-generate-report.directive.html:48
 #: app/scripts/common/components/oo-generate-report.directive.html:56
 #: app/scripts/common/components/oo-generate-report.directive.html:64
@@ -453,7 +453,7 @@ msgstr ""
 msgid "Keine"
 msgstr ""
 
-#: app/scripts/common/components/oo-email-dialog.controller.js:22
+#: app/scripts/common/components/oo-email-dialog.controller.js:24
 msgid "Keine Vorlage"
 msgstr ""
 
@@ -509,17 +509,17 @@ msgstr ""
 msgid "Mai"
 msgstr ""
 
-#: app/scripts/common/components/oo-email-dialog.html:46
+#: app/scripts/common/components/oo-email-dialog.html:54
 msgid "Mail-Body"
 msgstr ""
 
-#: app/scripts/common/components/oo-email-dialog.html:70
+#: app/scripts/common/components/oo-email-dialog.html:78
 msgid ""
 "Mails konnten nicht verschickt werden.<span>\n"
 "  </span>"
 msgstr ""
 
-#: app/scripts/common/components/oo-email-dialog.html:67
+#: app/scripts/common/components/oo-email-dialog.html:75
 msgid "Mails wurden verschickt"
 msgstr ""
 
@@ -547,7 +547,7 @@ msgstr ""
 msgid "März"
 msgstr ""
 
-#: app/scripts/common/components/oo-email-dialog.html:41
+#: app/scripts/common/components/oo-email-dialog.html:49
 #: app/scripts/common/components/oo-generate-report.directive.html:48
 #: app/scripts/common/components/oo-generate-report.directive.html:56
 #: app/scripts/common/components/oo-generate-report.directive.html:64
@@ -578,7 +578,7 @@ msgstr ""
 msgid "Offen"
 msgstr ""
 
-#: app/scripts/common/components/oo-dialogokabort.directive.modal.html:13
+#: app/scripts/common/components/oo-dialogokabort.directive.modal.html:15
 msgid "Ok"
 msgstr ""
 
@@ -681,16 +681,24 @@ msgstr ""
 msgid "Projekt"
 msgstr ""
 
-#: app/scripts/common/components/oo-email-dialog.html:33
+#: app/scripts/common/components/oo-email-dialog.html:41
 msgid "Prägnanter Betreff"
 msgstr ""
 
-#: app/scripts/common/components/oo-email-dialog.html:38
+#: app/scripts/common/components/oo-email-dialog.html:46
 msgid "Rechnung anhängen"
 msgstr ""
 
 #: app/index.html:85
 msgid "Rechnungen"
+msgstr ""
+
+#: app/scripts/common/components/oo-email-dialog.html:30
+msgid "Reply-To"
+msgstr ""
+
+#: app/scripts/common/components/oo-email-dialog.html:33
+msgid "Reply-to"
 msgstr ""
 
 #: app/index.html:94
@@ -709,7 +717,7 @@ msgstr ""
 msgid "Samstag"
 msgstr ""
 
-#: app/scripts/common/components/oo-email-dialog.html:56
+#: app/scripts/common/components/oo-email-dialog.html:64
 #: app/scripts/common/components/oo-sliding-detail.directive.html:5
 msgid "Schliessen"
 msgstr ""
@@ -719,7 +727,7 @@ msgid "Schweizer Franken"
 msgstr ""
 
 #: app/scripts/common/components/oo-email-confirmation-message.html:14
-#: app/scripts/common/components/oo-email-dialog.html:55
+#: app/scripts/common/components/oo-email-dialog.html:63
 msgid "Senden"
 msgstr ""
 
@@ -772,7 +780,7 @@ msgstr ""
 msgid "Stück"
 msgstr ""
 
-#: app/scripts/common/components/oo-email-dialog.html:49
+#: app/scripts/common/components/oo-email-dialog.html:57
 msgid "Text mit [Platzhalter]"
 msgstr ""
 
@@ -844,7 +852,7 @@ msgstr ""
 msgid "Woechentlich"
 msgstr ""
 
-#: app/scripts/common/components/oo-dialogokabort.directive.modal.html:8
+#: app/scripts/common/components/oo-dialogokabort.directive.modal.html:10
 msgid "Wollen Sie fortfahren?"
 msgstr ""
 
@@ -908,7 +916,7 @@ msgstr ""
 msgid "versenden möchtest"
 msgstr ""
 
-#: app/scripts/common/components/oo-email-dialog.html:67
+#: app/scripts/common/components/oo-email-dialog.html:75
 msgid "von"
 msgstr ""
 
