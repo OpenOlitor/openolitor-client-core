@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 64\n"
 "Language-Team: English\n"
 "Language: en_US\n"
-"PO-Revision-Date: 2022-03-11 13:00\n"
+"PO-Revision-Date: 2022-03-11 13:14\n"
 
 #: app/scripts/login/login.html:91
 #: app/scripts/login/reset_otp.html:33
@@ -75,7 +75,7 @@ msgstr "All"
 #: app/index.html:64
 #: app/scripts/login/login_settings.html:5
 msgid "Anmelde-Einstellungen"
-msgstr ""
+msgstr "Login Settings"
 
 #: app/scripts/login/login.html:110
 #: app/scripts/login/login.html:128
@@ -159,32 +159,32 @@ msgstr "Please confirm that you would like to send this email to &nbsp;"
 #: app/scripts/login/login_settings_second_factor.html:10
 msgid "Bitte geben Sie das Einmalpasswort aus Ihrer\n"
 "                Zwei-Faktor-Authentifizierungs-App ein."
-msgstr ""
+msgstr "Please enter the one-time password from your two-factor authentication app."
 
 #: app/scripts/login/login.html:100
 msgid "Bitte geben Sie das Einmalpasswort aus Ihrer\n"
 "              Zwei-Faktor-Authentifizierungs-App ein."
-msgstr ""
+msgstr "Please enter the one-time password from your two-factor authentication app."
 
 #: app/scripts/login/reset_otp.html:42
 msgid "Bitte geben Sie das Einmalpasswort basierend auf dem\n"
 "            <b>neuen Secret</b> aus Ihrer\n"
 "            Zwei-Faktor-Authentifizierungs-App ein."
-msgstr ""
+msgstr "Please enter the one-time password based on the <b>new secret</b> from your two-factor authentication app."
 
 #: app/scripts/login/reset_otp.html:8
 msgid "Bitte geben Sie das Einmalpasswort basierend ihrem\n"
 "            <b>aktuellen Secret</b> aus Ihrer\n"
 "            Zwei-Faktor-Authentifizierungs-App ein."
-msgstr ""
+msgstr "Please enter the one-time password based on your <b>current secret</b> from your two-factor authentication app. "
 
 #: app/scripts/login/login.html:86
 msgid "Bitte scannen Sie den QR-Code mit einer Zwei-Faktor-Authentifizierungs-App wie z.B.:"
-msgstr ""
+msgstr "Please scan the QR code with a two-factor authentication app such as:"
 
 #: app/scripts/login/reset_otp.html:28
 msgid "Bitte scannen Sie den neuen QR-Code mit einer Zwei-Faktor-Authentifizierungs-App wie z.B.:"
-msgstr ""
+msgstr "Please scan the new QR code with a two-factor authentication app such as: "
 
 #: app/scripts/app.js:158
 msgid "Britisches Pfund"
@@ -233,7 +233,7 @@ msgstr "The backend is currently not available. Please visit us later."
 #: app/scripts/login/login.html:45
 msgid "Das Kundenportal ist gegenwärtig nicht verfügbar. Wir führen Unterhaltsarbeiten durch. In Kürze\n"
 "            sind wir wieder online und wie gewohnt für Sie da."
-msgstr ""
+msgstr "The member portal is currently unavailable. We are currently working on some maintenance tasks. We will be back online soon."
 
 #: app/scripts/login/change_password.html:26
 #: app/scripts/login/zugangaktivieren.html:15
@@ -243,7 +243,7 @@ msgstr "Your password must contain at least 6 characters"
 #: app/scripts/login/change_password.html:27
 msgid "Das Passwort muss mindestens einen Gross- und Kleinbuchstaben, sowie\n"
 "                  einen numerischen Wert oder ein Symbol enthalten"
-msgstr ""
+msgstr "The password must contain at least an upper - and lowercase letters, as well as a numeric value, or symbol"
 
 #: app/scripts/login/zugangaktivieren.html:16
 msgid "Das Passwort muss mindestens einen Gross- und Kleinbuchstaben, sowie einen numerischen Wert oder ein Symbol enthalten"
@@ -465,7 +465,7 @@ msgstr "For testing the administration portal, click here!"
 #: app/scripts/login/login.html:32
 msgid "Für den Zugang auf die Administrationsumgebung von OpenOlitor, bitte den Link unten\n"
 "            rechts verwenden."
-msgstr ""
+msgstr "To access the OpenOlitor administration portal, use the link on the bottom right."
 
 #: app/scripts/login/login.html:23
 msgid "Für den Zugriff auf OpenOlitor ist eine Anmeldung erforderlich"
@@ -675,11 +675,11 @@ msgstr "OTP"
 
 #: app/scripts/login/login.controller.js:322
 msgid "OTP Passwort Erfolgreich zurückgesetzt"
-msgstr ""
+msgstr "OTP password reset successfully"
 
 #: app/scripts/login/login_settings.html:62
 msgid "OTP Secret zurücksetzen"
-msgstr ""
+msgstr "Reset the OTP secret"
 
 #: app/scripts/app.js:122
 msgid "Offen"
@@ -707,7 +707,7 @@ msgstr "One-Time-Password (OTP)"
 
 #: app/scripts/login/reset_otp.html:5
 msgid "One-Time-Passwort zurücksetzen"
-msgstr ""
+msgstr "Reset the One-Time-Password"
 
 #: app/scripts/common/components/oo-generate-report.directive.html:53
 msgid "PDF Ablegen"
@@ -862,12 +862,12 @@ msgstr "September"
 #: app/scripts/login/login.html:25
 msgid "Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden\n"
 "            Anmeldeinformationen als Konsument anmelden:"
-msgstr ""
+msgstr "You are on the OpenOlitor testing system. You can login with the following credentials:"
 
 #: app/scripts/login/login.html:12
 msgid "Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden\n"
 "            Anmeldeinformationen an der Administrationsumgebung anmelden:"
-msgstr ""
+msgstr "You are on the OpenOlitor testing system. You can login with the following credentials:"
 
 #: app/scripts/common/components/oo-deletebutton.directive.modal.html:2
 msgid "Sind Sie sicher?"
@@ -937,7 +937,7 @@ msgstr "Irregular"
 #: app/scripts/login/login.html:51
 msgid "Unterhalts-Moduls! Das Kundenportal ist gegenwärtig nicht verfügbar. Bitte sobald wie möglich\n"
 "            wieder aktivieren!"
-msgstr ""
+msgstr "Maintenance mode! The customer portal is currently unavailable.We will activate it as soon as possible!"
 
 #: app/scripts/app.js:124
 msgid "Verrechnet"
@@ -1003,16 +1003,16 @@ msgstr "Reset"
 
 #: app/scripts/login/login_settings_second_factor.html:5
 msgid "Zwei-Faktor-Authentierung erforderlich"
-msgstr ""
+msgstr "Two-factor authentication required"
 
 #: app/scripts/login/login_settings.html:44
 msgid "Zwei-Faktor-Authentierungstyp"
-msgstr ""
+msgstr "Two-factor authentication type"
 
 #: app/scripts/login/login_settings.html:21
 #: app/scripts/login/login_settings.html:32
 msgid "Zwei-Faktor-Authentisierung"
-msgstr ""
+msgstr "Two-factor authentication"
 
 #: app/scripts/app.js:85
 msgid "Zweiwoechentlich"
