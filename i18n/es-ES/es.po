@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 64\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2022-03-11 12:07\n"
+"PO-Revision-Date: 2022-03-11 12:27\n"
 
 #: app/scripts/login/login.html:91
 #: app/scripts/login/reset_otp.html:33
@@ -75,7 +75,7 @@ msgstr "Todos"
 #: app/index.html:64
 #: app/scripts/login/login_settings.html:5
 msgid "Anmelde-Einstellungen"
-msgstr ""
+msgstr "Configuración de inicio de sesión"
 
 #: app/scripts/login/login.html:110
 #: app/scripts/login/login.html:128
@@ -164,19 +164,19 @@ msgstr "Ingrese la contraseña de un solo uso de su aplicación de autenticació
 #: app/scripts/login/login.html:100
 msgid "Bitte geben Sie das Einmalpasswort aus Ihrer\n"
 "              Zwei-Faktor-Authentifizierungs-App ein."
-msgstr ""
+msgstr "Ingrese la contraseña de un solo uso de su aplicación de autenticación de dos factores."
 
 #: app/scripts/login/reset_otp.html:42
 msgid "Bitte geben Sie das Einmalpasswort basierend auf dem\n"
 "            <b>neuen Secret</b> aus Ihrer\n"
 "            Zwei-Faktor-Authentifizierungs-App ein."
-msgstr ""
+msgstr "Ingrese la contraseña de un solo uso basada en un <b>nuevo secreto</b> de la aplicación de autenticación de dos factores activada."
 
 #: app/scripts/login/reset_otp.html:8
 msgid "Bitte geben Sie das Einmalpasswort basierend ihrem\n"
 "            <b>aktuellen Secret</b> aus Ihrer\n"
 "            Zwei-Faktor-Authentifizierungs-App ein."
-msgstr ""
+msgstr "Por favor, introduzca la contraseña de un solo uso basada en el secreto actual de su aplicación de autenticación de dos factores."
 
 #: app/scripts/login/login.html:86
 msgid "Bitte scannen Sie den QR-Code mit einer Zwei-Faktor-Authentifizierungs-App wie z.B.:"
@@ -184,7 +184,7 @@ msgstr ""
 
 #: app/scripts/login/reset_otp.html:28
 msgid "Bitte scannen Sie den neuen QR-Code mit einer Zwei-Faktor-Authentifizierungs-App wie z.B.:"
-msgstr ""
+msgstr "Escanee el nuevo código QR con una aplicación de autenticación de dos factores como:"
 
 #: app/scripts/app.js:158
 msgid "Britisches Pfund"
@@ -243,7 +243,7 @@ msgstr "La contraseña debe tener al menos 6 caracteres"
 #: app/scripts/login/change_password.html:27
 msgid "Das Passwort muss mindestens einen Gross- und Kleinbuchstaben, sowie\n"
 "                  einen numerischen Wert oder ein Symbol enthalten"
-msgstr ""
+msgstr "La contraseña debe contener al menos una letra mayúscula y otra minúscula, así como contener un valor numérico o un símbolo"
 
 #: app/scripts/login/zugangaktivieren.html:16
 msgid "Das Passwort muss mindestens einen Gross- und Kleinbuchstaben, sowie einen numerischen Wert oder ein Symbol enthalten"
@@ -389,7 +389,7 @@ msgstr "Configuración guardada correctamente"
 
 #: app/scripts/login/login.controller.js:411
 msgid "Einstellungen konnten nicht gespeichert werden"
-msgstr ""
+msgstr "No se ha podido guardar la configuración"
 
 #: app/scripts/login/passwordreset.html:13
 msgid "Email Adresse"
@@ -675,11 +675,11 @@ msgstr "OTP"
 
 #: app/scripts/login/login.controller.js:322
 msgid "OTP Passwort Erfolgreich zurückgesetzt"
-msgstr ""
+msgstr "Contraseña OTP restablecida con éxito"
 
 #: app/scripts/login/login_settings.html:62
 msgid "OTP Secret zurücksetzen"
-msgstr ""
+msgstr "Restablecer el secreto OTP"
 
 #: app/scripts/app.js:122
 msgid "Offen"
@@ -1003,7 +1003,7 @@ msgstr "Restablecer"
 
 #: app/scripts/login/login_settings_second_factor.html:5
 msgid "Zwei-Faktor-Authentierung erforderlich"
-msgstr ""
+msgstr "Se requiere autenticación de dos factores"
 
 #: app/scripts/login/login_settings.html:44
 msgid "Zwei-Faktor-Authentierungstyp"
