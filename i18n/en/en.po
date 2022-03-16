@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 64\n"
 "Language-Team: English\n"
 "Language: en_US\n"
-"PO-Revision-Date: 2022-03-11 13:14\n"
+"PO-Revision-Date: 2022-03-16 17:08\n"
 
 #: app/scripts/login/login.html:91
 #: app/scripts/login/reset_otp.html:33
@@ -715,7 +715,7 @@ msgstr "Store PDF"
 
 #: app/scripts/common/components/oo-generate-report.directive.html:45
 msgid "PDF Erstellen"
-msgstr "PDF Settings"
+msgstr "Create PDF"
 
 #: app/scripts/login/login.html:66
 #: app/scripts/login/login_settings.html:11
