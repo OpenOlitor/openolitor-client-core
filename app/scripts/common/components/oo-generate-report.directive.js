@@ -29,6 +29,7 @@ angular.module('openolitor-core').directive('ooGenerateReport', function() {
         pdfGenerieren: true,
         pdfAblegen: false,
         pdfDownloaden: true,
+        pdfMerge: true,
         datenExtrakt: false
       };
 
@@ -144,6 +145,7 @@ angular.module('openolitor-core').directive('ooGenerateReport', function() {
           pdfGenerieren: true,
           pdfAblegen: false,
           pdfDownloaden: true,
+          pdfMerge: true,
           datenExtrakt: false
         };
       });
