@@ -11,7 +11,8 @@ angular.module('openolitor-core').directive('ooGenerateReport', function() {
       defaultFileName: '=',
       ids: '=?',
       projektVorlagen: '=?',
-      directDownload: '=?'
+      directDownload: '=?',
+      form: '=?'
     },
     templateUrl: 'scripts/common/components/oo-generate-report.directive.html',
     controller: function(
@@ -148,7 +149,7 @@ angular.module('openolitor-core').directive('ooGenerateReport', function() {
           pdfGenerieren: true,
           pdfAblegen: false,
           pdfDownloaden: true,
-          pdfMerge: 'pdfMerge',
+          pdfMerge: $scope.form.pdfMerge,
           datenExtrakt: false
         };
       });

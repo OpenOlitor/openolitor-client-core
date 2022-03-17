@@ -69,9 +69,7 @@
           <label for="pdfMerge" translate>Download format</label>
         </div>
         <div class="col-md-7">
-          <oo-dropdown dropdown-id="pdfMerge" display-style="uib-dropdown" values="pdfDownloadTypes" selected-prop="id" property="label" selected-value="form.pdfMerge"></oo-dropdown>
-
-          <!-- <input bs-switch ng-model="form.pdfMerge" type="checkbox" switch-size="medium" switch-animate="true" switch-on-text="{{'Merged PDF'|translate}}" switch-off-text="{{'Zipped PDFs'|translate}}" switch-on-color="success" switch-off-color="danger" switch-radio-off="false" ng-true-value="true" ng-false-value="false"> -->
+          <oo-dropdown dropdown-id="pdfMerge" display-style="uib-dropdown" values="pdfDownloadTypes" selected-prop="id" property="label" ng-model="form.pdfMerge" selected-value="form.pdfMerge"></oo-dropdown>
         </div>
       </div>
 
