@@ -21,15 +21,18 @@ angular.module('openolitor-core').directive('ooGenerateReport', function() {
       FileUtil,
       gettext,
       lodash,
-      alertService
+      alertService,
+      PDF_DOWNLOAD_TYPES,
+      EnumUtil
     ) {
+      $scope.pdfDownloadTypes = EnumUtil.asArray(PDF_DOWNLOAD_TYPES); 
       $scope.form = {
         vorlage: undefined,
         projektVorlageId: undefined,
         pdfGenerieren: true,
         pdfAblegen: false,
         pdfDownloaden: true,
-        pdfMerge: true,
+        pdfMerge: 'pdfMerge',
         datenExtrakt: false
       };
 
@@ -145,7 +148,7 @@ angular.module('openolitor-core').directive('ooGenerateReport', function() {
           pdfGenerieren: true,
           pdfAblegen: false,
           pdfDownloaden: true,
-          pdfMerge: true,
+          pdfMerge: 'pdfMerge',
           datenExtrakt: false
         };
       });
