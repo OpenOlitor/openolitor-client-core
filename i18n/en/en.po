@@ -11,16 +11,16 @@ msgstr ""
 "X-Crowdin-File-ID: 64\n"
 "Language-Team: English\n"
 "Language: en_US\n"
-"PO-Revision-Date: 2022-03-09 17:29\n"
+"PO-Revision-Date: 2022-03-16 17:08\n"
 
 #: app/scripts/login/login.html:91
 #: app/scripts/login/reset_otp.html:33
 msgid "&nbsp;oder&nbsp;"
-msgstr ""
+msgstr "&nbsp;or&nbsp;"
 
 #: app/scripts/app.js:111
 msgid "-"
-msgstr ""
+msgstr "-"
 
 #: app/scripts/login/login.html:7
 msgid "- Entwicklungsumgebung"
@@ -75,7 +75,7 @@ msgstr "All"
 #: app/index.html:64
 #: app/scripts/login/login_settings.html:5
 msgid "Anmelde-Einstellungen"
-msgstr ""
+msgstr "Login Settings"
 
 #: app/scripts/login/login.html:110
 #: app/scripts/login/login.html:128
@@ -93,11 +93,11 @@ msgstr "An email was send with the required information to modify the email pass
 
 #: app/scripts/app.js:185
 msgid "Apr"
-msgstr ""
+msgstr "Apr"
 
 #: app/scripts/app.js:185
 msgid "April"
-msgstr ""
+msgstr "April"
 
 #: app/scripts/login/login.controller.js:77
 msgid "Aufwiedersehen"
@@ -105,11 +105,11 @@ msgstr "Goodbye"
 
 #: app/scripts/app.js:189
 msgid "Aug"
-msgstr ""
+msgstr "Aug"
 
 #: app/scripts/app.js:189
 msgid "August"
-msgstr ""
+msgstr "August"
 
 #: app/scripts/app.js:207
 msgid "Ausgeliefert"
@@ -159,32 +159,32 @@ msgstr "Please confirm that you would like to send this email to &nbsp;"
 #: app/scripts/login/login_settings_second_factor.html:10
 msgid "Bitte geben Sie das Einmalpasswort aus Ihrer\n"
 "                Zwei-Faktor-Authentifizierungs-App ein."
-msgstr ""
+msgstr "Please enter the one-time password from your two-factor authentication app."
 
 #: app/scripts/login/login.html:100
 msgid "Bitte geben Sie das Einmalpasswort aus Ihrer\n"
 "              Zwei-Faktor-Authentifizierungs-App ein."
-msgstr ""
+msgstr "Please enter the one-time password from your two-factor authentication app."
 
 #: app/scripts/login/reset_otp.html:42
 msgid "Bitte geben Sie das Einmalpasswort basierend auf dem\n"
 "            <b>neuen Secret</b> aus Ihrer\n"
 "            Zwei-Faktor-Authentifizierungs-App ein."
-msgstr ""
+msgstr "Please enter the one-time password based on the <b>new secret</b> from your two-factor authentication app."
 
 #: app/scripts/login/reset_otp.html:8
 msgid "Bitte geben Sie das Einmalpasswort basierend ihrem\n"
 "            <b>aktuellen Secret</b> aus Ihrer\n"
 "            Zwei-Faktor-Authentifizierungs-App ein."
-msgstr ""
+msgstr "Please enter the one-time password based on your <b>current secret</b> from your two-factor authentication app. "
 
 #: app/scripts/login/login.html:86
 msgid "Bitte scannen Sie den QR-Code mit einer Zwei-Faktor-Authentifizierungs-App wie z.B.:"
-msgstr ""
+msgstr "Please scan the QR code with a two-factor authentication app such as:"
 
 #: app/scripts/login/reset_otp.html:28
 msgid "Bitte scannen Sie den neuen QR-Code mit einer Zwei-Faktor-Authentifizierungs-App wie z.B.:"
-msgstr ""
+msgstr "Please scan the new QR code with a two-factor authentication app such as: "
 
 #: app/scripts/app.js:158
 msgid "Britisches Pfund"
@@ -204,11 +204,11 @@ msgstr "Bunch"
 
 #: app/scripts/app.js:160
 msgid "CAD"
-msgstr ""
+msgstr "CAD"
 
 #: app/scripts/app.js:154
 msgid "CHF"
-msgstr ""
+msgstr "CHF"
 
 #: app/scripts/login/change_password.html:53
 #: app/scripts/login/login.html:106
@@ -216,7 +216,7 @@ msgstr ""
 #: app/scripts/login/reset_otp.html:15
 #: app/scripts/login/reset_otp.html:49
 msgid "Code"
-msgstr ""
+msgstr "Code"
 
 #: app/scripts/app.js:166
 msgid "DI"
@@ -233,7 +233,7 @@ msgstr "The backend is currently not available. Please visit us later."
 #: app/scripts/login/login.html:45
 msgid "Das Kundenportal ist gegenwärtig nicht verfügbar. Wir führen Unterhaltsarbeiten durch. In Kürze\n"
 "            sind wir wieder online und wie gewohnt für Sie da."
-msgstr ""
+msgstr "The member portal is currently unavailable. We are currently working on some maintenance tasks. We will be back online soon."
 
 #: app/scripts/login/change_password.html:26
 #: app/scripts/login/zugangaktivieren.html:15
@@ -243,7 +243,7 @@ msgstr "Your password must contain at least 6 characters"
 #: app/scripts/login/change_password.html:27
 msgid "Das Passwort muss mindestens einen Gross- und Kleinbuchstaben, sowie\n"
 "                  einen numerischen Wert oder ein Symbol enthalten"
-msgstr ""
+msgstr "The password must contain at least an upper - and lowercase letters, as well as a numeric value, or symbol"
 
 #: app/scripts/login/zugangaktivieren.html:16
 msgid "Das Passwort muss mindestens einen Gross- und Kleinbuchstaben, sowie einen numerischen Wert oder ein Symbol enthalten"
@@ -272,7 +272,7 @@ msgstr "Depot DeliverySuscription"
 
 #: app/index.html:123
 msgid "Depots"
-msgstr ""
+msgstr "Depots"
 
 #: app/scripts/common/components/oo-email-dialog.html:70
 msgid "Der Mailversand wurde ausgelöst."
@@ -314,7 +314,7 @@ msgstr "Thursday"
 
 #: app/scripts/app.js:148
 msgid "E-Mail"
-msgstr ""
+msgstr "Email"
 
 #: app/scripts/login/login.html:62
 msgid "E-Mail Adresse"
@@ -322,7 +322,7 @@ msgstr "Email address"
 
 #: app/scripts/common/components/oo-email-dialog.html:19
 msgid "E-Mail Vorlage"
-msgstr ""
+msgstr "Email Template"
 
 #: app/scripts/common/components/oo-email-confirmation-message.html:2
 msgid "E-Mail versenden"
@@ -339,7 +339,7 @@ msgstr "Email:"
 
 #: app/scripts/app.js:156
 msgid "EUR"
-msgstr ""
+msgstr "EUR"
 
 #: app/scripts/login/change_password.html:5
 msgid "Eigenes Passwort wechseln"
@@ -381,15 +381,15 @@ msgstr "Settings"
 #: app/scripts/login/login_settings.html:23
 #: app/scripts/login/login_settings_second_factor.html:29
 msgid "Einstellungen Speichern"
-msgstr ""
+msgstr "Save settings"
 
 #: app/scripts/login/login.controller.js:406
 msgid "Einstellungen erfolgreich gespeichert"
-msgstr ""
+msgstr "Settings successfully saved"
 
 #: app/scripts/login/login.controller.js:411
 msgid "Einstellungen konnten nicht gespeichert werden"
-msgstr ""
+msgstr "Settings can't be saved"
 
 #: app/scripts/login/passwordreset.html:13
 msgid "Email Adresse"
@@ -405,7 +405,7 @@ msgstr "Done"
 
 #: app/scripts/not-found.html:6
 msgid "Error 404"
-msgstr ""
+msgstr "Error 404"
 
 #: app/scripts/common/components/oo-generate-report.directive.html:70
 msgid "Erstellen"
@@ -419,12 +419,12 @@ msgstr "Created"
 #: app/scripts/login/login_settings_second_factor.html:19
 msgid "Es wurde ein Zugangscode an ihre\n"
 "                Email-Adresse"
-msgstr ""
+msgstr "An access code was sent to your email address"
 
 #: app/scripts/login/login.html:117
 msgid "Es wurde ein Zugangscode an ihre\n"
 "              Email-Adresse"
-msgstr ""
+msgstr "An access code was sent to your email address"
 
 #: app/scripts/app.js:156
 msgid "Euro"
@@ -436,7 +436,7 @@ msgstr "FRI"
 
 #: app/scripts/app.js:182
 msgid "Feb"
-msgstr ""
+msgstr "Feb"
 
 #: app/scripts/app.js:182
 msgid "Februar"
@@ -465,7 +465,7 @@ msgstr "For testing the administration portal, click here!"
 #: app/scripts/login/login.html:32
 msgid "Für den Zugang auf die Administrationsumgebung von OpenOlitor, bitte den Link unten\n"
 "            rechts verwenden."
-msgstr ""
+msgstr "To access the OpenOlitor administration portal, use the link on the bottom right."
 
 #: app/scripts/login/login.html:23
 msgid "Für den Zugriff auf OpenOlitor ist eine Anmeldung erforderlich"
@@ -477,7 +477,7 @@ msgstr "Registration is required to access to OpenOlitor"
 
 #: app/scripts/app.js:158
 msgid "GBP"
-msgstr ""
+msgstr "GBP"
 
 #: app/scripts/app.js:136
 msgid "Gramm"
@@ -513,7 +513,7 @@ msgstr "Yes"
 
 #: app/scripts/app.js:180
 msgid "Jan"
-msgstr ""
+msgstr "Jan"
 
 #: app/scripts/app.js:180
 msgid "Januar"
@@ -573,7 +573,7 @@ msgstr "Deliveries"
 
 #: app/scripts/app.js:139
 msgid "Liter"
-msgstr ""
+msgstr "Liter"
 
 #: app/scripts/login/login.html:77
 msgid "Login Administration"
@@ -615,7 +615,7 @@ msgstr "Mails were sent"
 
 #: app/scripts/app.js:184
 msgid "Mar"
-msgstr ""
+msgstr "Mar"
 
 #: app/scripts/app.js:168
 msgid "Mittwoch"
@@ -655,7 +655,7 @@ msgstr "Confirm password"
 
 #: app/scripts/login/reset_otp.html:19
 msgid "Neues Secret anfordern"
-msgstr ""
+msgstr "Request a New Secret"
 
 #: app/scripts/app.js:203
 msgid "NichtErledigt"
@@ -663,23 +663,23 @@ msgstr "Not done"
 
 #: app/scripts/app.js:195
 msgid "Nov"
-msgstr ""
+msgstr "Nov"
 
 #: app/scripts/app.js:195
 msgid "November"
-msgstr ""
+msgstr "November"
 
 #: app/scripts/app.js:147
 msgid "OTP"
-msgstr ""
+msgstr "OTP"
 
 #: app/scripts/login/login.controller.js:322
 msgid "OTP Passwort Erfolgreich zurückgesetzt"
-msgstr ""
+msgstr "OTP password reset successfully"
 
 #: app/scripts/login/login_settings.html:62
 msgid "OTP Secret zurücksetzen"
-msgstr ""
+msgstr "Reset the OTP secret"
 
 #: app/scripts/app.js:122
 msgid "Offen"
@@ -687,7 +687,7 @@ msgstr "open"
 
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:15
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #: app/scripts/app.js:193
 msgid "Okt"
@@ -699,15 +699,15 @@ msgstr "October"
 
 #: app/scripts/app.js:147
 msgid "One-Time-Password (OTP)"
-msgstr ""
+msgstr "One-Time-Password (OTP)"
 
 #: app/scripts/login/login_settings.html:57
 msgid "One-Time-Passwort (OTP)"
-msgstr ""
+msgstr "One-Time-Password (OTP)"
 
 #: app/scripts/login/reset_otp.html:5
 msgid "One-Time-Passwort zurücksetzen"
-msgstr ""
+msgstr "Reset the One-Time-Password"
 
 #: app/scripts/common/components/oo-generate-report.directive.html:53
 msgid "PDF Ablegen"
@@ -715,7 +715,7 @@ msgstr "Store PDF"
 
 #: app/scripts/common/components/oo-generate-report.directive.html:45
 msgid "PDF Erstellen"
-msgstr "PDF Settings"
+msgstr "Create PDF"
 
 #: app/scripts/login/login.html:66
 #: app/scripts/login/login_settings.html:11
@@ -815,11 +815,11 @@ msgstr "Invoices"
 
 #: app/scripts/common/components/oo-email-dialog.html:30
 msgid "Reply-To"
-msgstr ""
+msgstr "Reply-To"
 
 #: app/scripts/common/components/oo-email-dialog.html:33
 msgid "Reply-to"
-msgstr ""
+msgstr "Reply-to"
 
 #: app/index.html:137
 msgid "Reports*"
@@ -857,17 +857,17 @@ msgstr "Sept"
 
 #: app/scripts/app.js:191
 msgid "September"
-msgstr ""
+msgstr "September"
 
 #: app/scripts/login/login.html:25
 msgid "Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden\n"
 "            Anmeldeinformationen als Konsument anmelden:"
-msgstr ""
+msgstr "You are on the OpenOlitor testing system. You can login with the following credentials:"
 
 #: app/scripts/login/login.html:12
 msgid "Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden\n"
 "            Anmeldeinformationen an der Administrationsumgebung anmelden:"
-msgstr ""
+msgstr "You are on the OpenOlitor testing system. You can login with the following credentials:"
 
 #: app/scripts/common/components/oo-deletebutton.directive.modal.html:2
 msgid "Sind Sie sicher?"
@@ -920,7 +920,7 @@ msgstr "US-Dollar"
 
 #: app/scripts/app.js:157
 msgid "USD"
-msgstr ""
+msgstr "USD"
 
 #: app/scripts/app.js:102
 msgid "Unbeschraenkt"
@@ -937,7 +937,7 @@ msgstr "Irregular"
 #: app/scripts/login/login.html:51
 msgid "Unterhalts-Moduls! Das Kundenportal ist gegenwärtig nicht verfügbar. Bitte sobald wie möglich\n"
 "            wieder aktivieren!"
-msgstr ""
+msgstr "Maintenance mode! The customer portal is currently unavailable.We will activate it as soon as possible!"
 
 #: app/scripts/app.js:124
 msgid "Verrechnet"
@@ -999,20 +999,20 @@ msgstr "Access denied"
 
 #: app/scripts/login/reset_otp.html:53
 msgid "Zurücksetzen"
-msgstr ""
+msgstr "Reset"
 
 #: app/scripts/login/login_settings_second_factor.html:5
 msgid "Zwei-Faktor-Authentierung erforderlich"
-msgstr ""
+msgstr "Two-factor authentication required"
 
 #: app/scripts/login/login_settings.html:44
 msgid "Zwei-Faktor-Authentierungstyp"
-msgstr ""
+msgstr "Two-factor authentication type"
 
 #: app/scripts/login/login_settings.html:21
 #: app/scripts/login/login_settings.html:32
 msgid "Zwei-Faktor-Authentisierung"
-msgstr ""
+msgstr "Two-factor authentication"
 
 #: app/scripts/app.js:85
 msgid "Zweiwoechentlich"
@@ -1024,11 +1024,11 @@ msgstr "create"
 
 #: app/scripts/app.js:136
 msgid "gr"
-msgstr ""
+msgstr "gr"
 
 #: app/scripts/app.js:138
 msgid "kg"
-msgstr ""
+msgstr "kg"
 
 #: app/scripts/common/components/oo-actionsbutton.directive.js:119
 msgid "konnte nicht ausgeführt werden. Fehler:"
@@ -1044,7 +1044,7 @@ msgstr "could not be saved. Error:"
 
 #: app/scripts/app.js:139
 msgid "l"
-msgstr ""
+msgstr "l"
 
 #: app/scripts/common/filters/oo-preisproeinheit.filter.js:7
 msgid "pro"
