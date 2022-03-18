@@ -207,8 +207,8 @@ angular
     AUSGELIEFERT: gettext('Ausgeliefert'),
   })
   .constant('PDF_DOWNLOAD_TYPES', {
-    pdfMerge: addExtendedEnumValue('pdfMerge', gettext('Zusammengeführte PDF'), gettext('Zusammengeführte PDF')),
-    zip: addExtendedEnumValue('zip', gettext('Gezippte pdfs'), gettext('Gezippte pdfs'))
+    pdfMerge: addExtendedEnumValue('pdfMerge', gettext('Zusammengeführtes PDF'), gettext('Zusammengeführtes PDF')),
+    zip: addExtendedEnumValue('zip', gettext('Gezippte PDFs'), gettext('Gezippte PDFs'))
   })
   .run(function($rootScope, $location) {
     $rootScope.location = $location;
