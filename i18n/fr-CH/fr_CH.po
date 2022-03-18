@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 64\n"
 "Language-Team: French, Switzerland\n"
 "Language: fr_CH\n"
-"PO-Revision-Date: 2022-03-09 17:29\n"
+"PO-Revision-Date: 2022-03-18 18:06\n"
 
 #: app/scripts/login/login.html:91
 #: app/scripts/login/reset_otp.html:33
@@ -123,7 +123,7 @@ msgstr "Livraisons"
 msgid "Ausstehend"
 msgstr "dû"
 
-#: app/scripts/common/components/oo-generate-report.directive.js:70
+#: app/scripts/common/components/oo-generate-report.directive.js:75
 msgid "Beim erstellen der Dokumente sind folgende Fehler aufgetreten"
 msgstr "Lors de la création de documents les d’erreurs suivants se sont produites"
 
@@ -135,7 +135,7 @@ msgstr "personnalisé"
 msgid "Bericht erstellen"
 msgstr "Créer un rapport"
 
-#: app/scripts/common/components/oo-generate-report.directive.js:93
+#: app/scripts/common/components/oo-generate-report.directive.js:98
 msgid "Bericht konnte nicht erzeugt werden"
 msgstr "Le rapport n'as pas pu être créé"
 
@@ -312,6 +312,10 @@ msgstr "La page demandée n’a pas été trouvée"
 msgid "Donnerstag"
 msgstr "Jeudi"
 
+#: app/scripts/common/components/oo-generate-report.directive.html:69
+msgid "Download format"
+msgstr ""
+
 #: app/scripts/app.js:148
 msgid "E-Mail"
 msgstr ""
@@ -407,7 +411,7 @@ msgstr "Clos"
 msgid "Error 404"
 msgstr "Erreur 404"
 
-#: app/scripts/common/components/oo-generate-report.directive.html:70
+#: app/scripts/common/components/oo-generate-report.directive.html:79
 msgid "Erstellen"
 msgstr "Créer"
 
@@ -477,6 +481,10 @@ msgstr "Une inscription est nécessaire pour accéder à OpenOlitor"
 
 #: app/scripts/app.js:158
 msgid "GBP"
+msgstr ""
+
+#: app/scripts/app.js:211
+msgid "Gezippte PDFs"
 msgstr ""
 
 #: app/scripts/app.js:136
@@ -999,6 +1007,10 @@ msgstr "Accès refusé"
 
 #: app/scripts/login/reset_otp.html:53
 msgid "Zurücksetzen"
+msgstr ""
+
+#: app/scripts/app.js:210
+msgid "Zusammengeführtes PDF"
 msgstr ""
 
 #: app/scripts/login/login_settings_second_factor.html:5
