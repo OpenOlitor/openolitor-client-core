@@ -206,6 +206,10 @@ angular
     ERFASST: gettext('Erfasst'),
     AUSGELIEFERT: gettext('Ausgeliefert'),
   })
+  .constant('PDF_DOWNLOAD_TYPES', {
+    pdfMerge: addExtendedEnumValue('pdfMerge', gettext('Zusammengeführtes PDF'), gettext('Zusammengeführtes PDF')),
+    zip: addExtendedEnumValue('zip', gettext('Gezippte PDFs'), gettext('Gezippte PDFs'))
+  })
   .run(function($rootScope, $location) {
     $rootScope.location = $location;
   })
