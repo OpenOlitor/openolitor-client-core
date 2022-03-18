@@ -114,7 +114,7 @@ msgstr ""
 msgid "Ausstehend"
 msgstr ""
 
-#: app/scripts/common/components/oo-generate-report.directive.js:74
+#: app/scripts/common/components/oo-generate-report.directive.js:75
 msgid "Beim erstellen der Dokumente sind folgende Fehler aufgetreten"
 msgstr ""
 
@@ -126,7 +126,7 @@ msgstr ""
 msgid "Bericht erstellen"
 msgstr ""
 
-#: app/scripts/common/components/oo-generate-report.directive.js:97
+#: app/scripts/common/components/oo-generate-report.directive.js:98
 msgid "Bericht konnte nicht erzeugt werden"
 msgstr ""
 
@@ -408,7 +408,7 @@ msgstr ""
 msgid "Error 404"
 msgstr ""
 
-#: app/scripts/common/components/oo-generate-report.directive.html:81
+#: app/scripts/common/components/oo-generate-report.directive.html:79
 msgid "Erstellen"
 msgstr ""
 
@@ -484,7 +484,7 @@ msgid "GBP"
 msgstr ""
 
 #: app/scripts/app.js:211
-msgid "Gezippte pdfs"
+msgid "Gezippte PDFs"
 msgstr ""
 
 #: app/scripts/app.js:136
@@ -623,10 +623,6 @@ msgstr ""
 
 #: app/scripts/app.js:184
 msgid "Mar"
-msgstr ""
-
-#: app/scripts/common/components/oo-generate-report.directive.html:74
-msgid "Merged PDF"
 msgstr ""
 
 #: app/scripts/app.js:168
@@ -998,10 +994,6 @@ msgstr ""
 msgid "Zahlungs-Imports"
 msgstr ""
 
-#: app/scripts/common/components/oo-generate-report.directive.html:74
-msgid "Zipped PDFs"
-msgstr ""
-
 #: app/scripts/login/change_password.html:63
 #: app/scripts/login/login.html:124
 #: app/scripts/login/login_settings_second_factor.html:23
@@ -1021,7 +1013,7 @@ msgid "Zurücksetzen"
 msgstr ""
 
 #: app/scripts/app.js:210
-msgid "Zusammengeführte PDF"
+msgid "Zusammengeführtes PDF"
 msgstr ""
 
 #: app/scripts/login/login_settings_second_factor.html:5
