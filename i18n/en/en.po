@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 64\n"
 "Language-Team: English\n"
 "Language: en_US\n"
-"PO-Revision-Date: 2022-03-18 18:06\n"
+"PO-Revision-Date: 2022-03-21 17:02\n"
 
 #: app/scripts/login/login.html:91
 #: app/scripts/login/reset_otp.html:33
@@ -314,7 +314,7 @@ msgstr "Thursday"
 
 #: app/scripts/common/components/oo-generate-report.directive.html:69
 msgid "Download format"
-msgstr ""
+msgstr "Download format"
 
 #: app/scripts/app.js:148
 msgid "E-Mail"
@@ -485,7 +485,7 @@ msgstr "GBP"
 
 #: app/scripts/app.js:211
 msgid "Gezippte PDFs"
-msgstr ""
+msgstr "Zipped PDFs"
 
 #: app/scripts/app.js:136
 msgid "Gramm"
@@ -1011,7 +1011,7 @@ msgstr "Reset"
 
 #: app/scripts/app.js:210
 msgid "Zusammengeführtes PDF"
-msgstr ""
+msgstr "Merged PDFs"
 
 #: app/scripts/login/login_settings_second_factor.html:5
 msgid "Zwei-Faktor-Authentierung erforderlich"
