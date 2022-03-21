@@ -11,16 +11,16 @@ msgstr ""
 "X-Crowdin-File-ID: 64\n"
 "Language-Team: French, Switzerland\n"
 "Language: fr_CH\n"
-"PO-Revision-Date: 2022-03-18 18:06\n"
+"PO-Revision-Date: 2022-03-21 17:02\n"
 
 #: app/scripts/login/login.html:91
 #: app/scripts/login/reset_otp.html:33
 msgid "&nbsp;oder&nbsp;"
-msgstr ""
+msgstr "&nbsp;ou&nbsp;"
 
 #: app/scripts/app.js:111
 msgid "-"
-msgstr ""
+msgstr "-"
 
 #: app/scripts/login/login.html:7
 msgid "- Entwicklungsumgebung"
@@ -204,11 +204,11 @@ msgstr "Bouquet"
 
 #: app/scripts/app.js:160
 msgid "CAD"
-msgstr ""
+msgstr "CAD"
 
 #: app/scripts/app.js:154
 msgid "CHF"
-msgstr ""
+msgstr "CHF"
 
 #: app/scripts/login/change_password.html:53
 #: app/scripts/login/login.html:106
@@ -216,7 +216,7 @@ msgstr ""
 #: app/scripts/login/reset_otp.html:15
 #: app/scripts/login/reset_otp.html:49
 msgid "Code"
-msgstr ""
+msgstr "Code"
 
 #: app/scripts/app.js:166
 msgid "DI"
@@ -318,7 +318,7 @@ msgstr ""
 
 #: app/scripts/app.js:148
 msgid "E-Mail"
-msgstr ""
+msgstr "Courriel"
 
 #: app/scripts/login/login.html:62
 msgid "E-Mail Adresse"
@@ -326,7 +326,7 @@ msgstr "Adresse courriel"
 
 #: app/scripts/common/components/oo-email-dialog.html:19
 msgid "E-Mail Vorlage"
-msgstr ""
+msgstr "Modèle d'e-mail "
 
 #: app/scripts/common/components/oo-email-confirmation-message.html:2
 msgid "E-Mail versenden"
@@ -343,7 +343,7 @@ msgstr "Courriel:"
 
 #: app/scripts/app.js:156
 msgid "EUR"
-msgstr ""
+msgstr "EUR"
 
 #: app/scripts/login/change_password.html:5
 msgid "Eigenes Passwort wechseln"
@@ -432,11 +432,11 @@ msgstr ""
 
 #: app/scripts/app.js:156
 msgid "Euro"
-msgstr ""
+msgstr "Euro"
 
 #: app/scripts/app.js:172
 msgid "FR"
-msgstr ""
+msgstr "FR"
 
 #: app/scripts/app.js:182
 msgid "Feb"
@@ -452,7 +452,7 @@ msgstr "Adresse courriel non valide"
 
 #: app/scripts/app.js:113
 msgid "Fr."
-msgstr ""
+msgstr "Fr."
 
 #: app/scripts/app.js:113
 msgid "Frau"
@@ -605,7 +605,7 @@ msgstr "Rappel-envoyé"
 
 #: app/scripts/app.js:186
 msgid "Mai"
-msgstr ""
+msgstr "Mai"
 
 #: app/scripts/common/components/oo-email-dialog.html:54
 msgid "Mail-Body"
@@ -679,7 +679,7 @@ msgstr "Novembre"
 
 #: app/scripts/app.js:147
 msgid "OTP"
-msgstr ""
+msgstr "OTP"
 
 #: app/scripts/login/login.controller.js:322
 msgid "OTP Passwort Erfolgreich zurückgesetzt"
@@ -695,7 +695,7 @@ msgstr "Ouvert"
 
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:15
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #: app/scripts/app.js:193
 msgid "Okt"
@@ -835,11 +835,11 @@ msgstr "Rapports"
 
 #: app/scripts/app.js:174
 msgid "SA"
-msgstr ""
+msgstr "SA"
 
 #: app/scripts/app.js:176
 msgid "SO"
-msgstr ""
+msgstr "DI"
 
 #: app/scripts/app.js:174
 msgid "Samstag"
@@ -861,7 +861,7 @@ msgstr "Envoyer"
 
 #: app/scripts/app.js:192
 msgid "Sep"
-msgstr ""
+msgstr "Sep"
 
 #: app/scripts/app.js:191
 msgid "September"
