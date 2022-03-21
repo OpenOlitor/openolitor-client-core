@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 64\n"
 "Language-Team: French, Switzerland\n"
 "Language: fr_CH\n"
-"PO-Revision-Date: 2022-03-21 17:02\n"
+"PO-Revision-Date: 2022-03-21 17:12\n"
 
 #: app/scripts/login/login.html:91
 #: app/scripts/login/reset_otp.html:33
@@ -75,7 +75,7 @@ msgstr "Tous"
 #: app/index.html:64
 #: app/scripts/login/login_settings.html:5
 msgid "Anmelde-Einstellungen"
-msgstr ""
+msgstr "Paramètres de connexion"
 
 #: app/scripts/login/login.html:110
 #: app/scripts/login/login.html:128
@@ -159,12 +159,12 @@ msgstr "Êtes-vous sûr de vouloir envoyer cet e-mail &nbsp;"
 #: app/scripts/login/login_settings_second_factor.html:10
 msgid "Bitte geben Sie das Einmalpasswort aus Ihrer\n"
 "                Zwei-Faktor-Authentifizierungs-App ein."
-msgstr ""
+msgstr "Veuillez saisir le mot de passe à usage unique de votre d'authentification à deux facteurs."
 
 #: app/scripts/login/login.html:100
 msgid "Bitte geben Sie das Einmalpasswort aus Ihrer\n"
 "              Zwei-Faktor-Authentifizierungs-App ein."
-msgstr ""
+msgstr "Veuillez saisir le mot de passe à usage unique de votre d'authentification à deux facteurs."
 
 #: app/scripts/login/reset_otp.html:42
 msgid "Bitte geben Sie das Einmalpasswort basierend auf dem\n"
@@ -481,11 +481,11 @@ msgstr "Une inscription est nécessaire pour accéder à OpenOlitor"
 
 #: app/scripts/app.js:158
 msgid "GBP"
-msgstr ""
+msgstr "GBP"
 
 #: app/scripts/app.js:211
 msgid "Gezippte PDFs"
-msgstr ""
+msgstr "PDF comprimé"
 
 #: app/scripts/app.js:136
 msgid "Gramm"
@@ -663,7 +663,7 @@ msgstr "Répéter le nouveau mot de passe"
 
 #: app/scripts/login/reset_otp.html:19
 msgid "Neues Secret anfordern"
-msgstr ""
+msgstr "Réinitialiser le secret"
 
 #: app/scripts/app.js:203
 msgid "NichtErledigt"
@@ -671,7 +671,7 @@ msgstr "non achevé"
 
 #: app/scripts/app.js:195
 msgid "Nov"
-msgstr ""
+msgstr "Nov"
 
 #: app/scripts/app.js:195
 msgid "November"
@@ -928,7 +928,7 @@ msgstr "Dollar des Etats-Unis"
 
 #: app/scripts/app.js:157
 msgid "USD"
-msgstr ""
+msgstr "USD"
 
 #: app/scripts/app.js:102
 msgid "Unbeschraenkt"
@@ -1007,11 +1007,11 @@ msgstr "Accès refusé"
 
 #: app/scripts/login/reset_otp.html:53
 msgid "Zurücksetzen"
-msgstr ""
+msgstr "Réinitialiser"
 
 #: app/scripts/app.js:210
 msgid "Zusammengeführtes PDF"
-msgstr ""
+msgstr "PDF fusionné"
 
 #: app/scripts/login/login_settings_second_factor.html:5
 msgid "Zwei-Faktor-Authentierung erforderlich"
@@ -1024,7 +1024,7 @@ msgstr ""
 #: app/scripts/login/login_settings.html:21
 #: app/scripts/login/login_settings.html:32
 msgid "Zwei-Faktor-Authentisierung"
-msgstr ""
+msgstr "Authentification à deux facteurs"
 
 #: app/scripts/app.js:85
 msgid "Zweiwoechentlich"
@@ -1036,11 +1036,11 @@ msgstr "créer"
 
 #: app/scripts/app.js:136
 msgid "gr"
-msgstr ""
+msgstr "gr"
 
 #: app/scripts/app.js:138
 msgid "kg"
-msgstr ""
+msgstr "kg"
 
 #: app/scripts/common/components/oo-actionsbutton.directive.js:119
 msgid "konnte nicht ausgeführt werden. Fehler:"
@@ -1056,7 +1056,7 @@ msgstr "ne pouvait pas être  sauvegardé. Erreur:"
 
 #: app/scripts/app.js:139
 msgid "l"
-msgstr ""
+msgstr "l"
 
 #: app/scripts/common/filters/oo-preisproeinheit.filter.js:7
 msgid "pro"
