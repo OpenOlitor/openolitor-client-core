@@ -1,0 +1,31 @@
+<div class="panel panel-default">
+  <div class="panel-heading clearfix">
+    <h3 class="panel-title"><i class="fa fa-print" aria-hidden="true"></i> <span translate>Berichte herunterladen </span>
+    </h3>
+  </div>
+  <div class="panel-body">
+    <form name="downloadForm">
+      <div class="row form-group" ng-show="error">
+        <div class="col-md-12">
+          <div class="alert alert-danger">{{error}}</div>
+        </div>
+      </div>
+      <div ng-show="ids.length > 1" class="row form-group">
+        <div class="col-md-5">
+          <label for="pdfMerge" translate>Download format</label>
+        </div>
+        <div class="col-md-7">
+          <oo-dropdown dropdown-id="pdfMerge" display-style="uib-dropdown" values="pdfDownloadTypes" selected-prop="id" property="label" ng-model="form.pdfMerge" selected-value="form.pdfMerge"></oo-dropdown>
+        </div>
+      </div>
+
+      <div class="row form-group">
+        <div class="col-md-12">
+          <span class="pull-right">
+            <a ng-disabled="ids.length < 1" href="" role="button" ng-click="ids.length < 1 || download()" class="btn btn-primary"><i class="fa fa-share-square-o" aria-hidden="true"></i> <span translate>Herunterladen</span></a>
+          </span>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
