@@ -130,6 +130,10 @@ msgstr ""
 msgid "Bericht konnte nicht erzeugt werden"
 msgstr ""
 
+#: app/scripts/common/components/oo-download-report.directive.html:3
+msgid "Berichte herunterladen"
+msgstr ""
+
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:3
 msgid "Bestätigung"
 msgstr ""
@@ -309,6 +313,7 @@ msgstr ""
 msgid "Donnerstag"
 msgstr ""
 
+#: app/scripts/common/components/oo-download-report.directive.html:15
 #: app/scripts/common/components/oo-generate-report.directive.html:69
 msgid "Download format"
 msgstr ""
@@ -503,6 +508,7 @@ msgstr ""
 msgid "Herr"
 msgstr ""
 
+#: app/scripts/common/components/oo-download-report.directive.html:25
 #: app/scripts/common/components/oo-generate-report.directive.html:61
 msgid "Herunterladen"
 msgstr ""
