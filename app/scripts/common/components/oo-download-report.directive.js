@@ -32,7 +32,7 @@ angular.module('openolitor-core').directive('ooDownloadReport', function() {
 
       $scope.download = function() {
         $scope.error = undefined;
-        FileUtil.downloadPost('rechnungen/aktionen/downloadrechnungen',{
+        FileUtil.downloadPost($scope.postPath,{
           'ids': $scope.ids,
           'pdfMerge': $scope.form.pdfMerge
         });
