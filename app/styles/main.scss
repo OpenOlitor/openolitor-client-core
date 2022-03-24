@@ -260,6 +260,11 @@ input.ng-invalid {
   padding-bottom: 0px;
 }
 
+.openolitor .close {
+   color: #5c2929;
+   opacity: inherit;
+}
+
 /* Special Lieferplanung */
 #lieferplanung .lieferplanung-title .navbar-brand {
   margin-left: 0px !important;
@@ -646,7 +651,7 @@ tr.error {
 /*Languages specific to a CSA*/
 
 .de_DO_menu{
-  display:none; 
+  display:none;
 }
 .dialog {
   width: inherit;

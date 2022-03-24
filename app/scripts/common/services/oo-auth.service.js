@@ -12,7 +12,7 @@
         if (!authorized) {
           ooAuthService.isLoggedIn().then(function(loggedIn) {
             if (loggedIn) {
-              $location.path('/forbidden');
+              //$location.path('/forbidden');
             } else {
               $location.path('/login');
             }
