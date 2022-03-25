@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 64\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2022-03-21 17:02\n"
+"PO-Revision-Date: 2022-03-25 16:08\n"
 
 #: app/scripts/login/login.html:91
 #: app/scripts/login/reset_otp.html:33
@@ -371,7 +371,7 @@ msgstr "Entrada muy larga"
 
 #: app/scripts/common/components/oo-email-dialog.html:14
 msgid "Einige selektierte Einträge verfügen über kein angehängtes Rechnungsdokument. Diese E-Mails werden ohne Anhang verschickt."
-msgstr "Algún elemento seleccionado no tienen ningún documento adjunto. Para estos casos, el mensaje se enviará sin factura."
+msgstr "Se han seleccionado elementos que no tienen ningúna factura a adjuntar. Estos emails se enviarán sin factura."
 
 #: app/index.html:118
 msgid "Einkauf*"
