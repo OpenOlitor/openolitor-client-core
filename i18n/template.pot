@@ -309,8 +309,12 @@ msgstr ""
 msgid "Donnerstag"
 msgstr ""
 
+#: app/scripts/common/components/oo-generate-report.directive.html:61
+msgid "Download"
+msgstr ""
+
 #: app/scripts/common/components/oo-generate-report.directive.html:69
-msgid "Download format"
+msgid "Download-Format"
 msgstr ""
 
 #: app/scripts/app.js:148
@@ -501,10 +505,6 @@ msgstr ""
 
 #: app/scripts/app.js:112
 msgid "Herr"
-msgstr ""
-
-#: app/scripts/common/components/oo-generate-report.directive.html:61
-msgid "Herunterladen"
 msgstr ""
 
 #: app/scripts/app.js:112
@@ -1053,7 +1053,7 @@ msgstr ""
 msgid "konnte nicht gelöscht werden. Fehler:"
 msgstr ""
 
-#: app/scripts/common/components/oo-savebutton.directive.js:77
+#: app/scripts/common/components/oo-savebutton.directive.js:79
 msgid "konnte nicht gespeichert werden. Fehler:"
 msgstr ""
 

@@ -58,7 +58,7 @@
       </div>
       <div class="row form-group" ng-show="!form.datenExtrakt && form.pdfGenerieren" >
         <div class="col-md-5">
-          <label for="pdfDownload" translate>Herunterladen</label>
+          <label for="pdfDownload" translate>Download</label>
         </div>
         <div class="col-md-7">
             <input bs-switch ng-model="form.pdfDownloaden" type="checkbox" switch-size="medium" switch-animate="true" switch-on-text="{{'Ja'|translate}}" switch-off-text="{{'Nein'|translate}}" switch-on-color="success" switch-off-color="danger" switch-radio-off="false" ng-true-value="true" ng-false-value="false">
@@ -66,7 +66,7 @@
       </div>
       <div class="row form-group" ng-show="!form.datenExtrakt && form.pdfDownloaden && form.pdfGenerieren && ids.length > 1">
         <div class="col-md-5">
-          <label for="pdfMerge" translate>Download format</label>
+          <label for="pdfMerge" translate>Download-Format</label>
         </div>
         <div class="col-md-7">
           <oo-dropdown dropdown-id="pdfMerge" display-style="uib-dropdown" values="pdfDownloadTypes" selected-prop="id" property="label" ng-model="form.pdfMerge" selected-value="form.pdfMerge"></oo-dropdown>
