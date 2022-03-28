@@ -82,11 +82,11 @@ msgstr ""
 msgid "Anweisungen um Ihr Passwort neu zu setzten wurden Ihnen an Ihre Email-Adresse gesendet."
 msgstr ""
 
-#: app/scripts/app.js:185
+#: app/scripts/app.js:182
 msgid "Apr"
 msgstr ""
 
-#: app/scripts/app.js:185
+#: app/scripts/app.js:182
 msgid "April"
 msgstr ""
 
@@ -94,15 +94,15 @@ msgstr ""
 msgid "Aufwiedersehen"
 msgstr ""
 
-#: app/scripts/app.js:189
+#: app/scripts/app.js:186
 msgid "Aug"
 msgstr ""
 
-#: app/scripts/app.js:189
+#: app/scripts/app.js:186
 msgid "August"
 msgstr ""
 
-#: app/scripts/app.js:207
+#: app/scripts/app.js:204
 msgid "Ausgeliefert"
 msgstr ""
 
@@ -110,7 +110,7 @@ msgstr ""
 msgid "Auslieferungen"
 msgstr ""
 
-#: app/scripts/app.js:201
+#: app/scripts/app.js:198
 msgid "Ausstehend"
 msgstr ""
 
@@ -185,7 +185,7 @@ msgstr ""
 msgid "Bitte scannen Sie den neuen QR-Code mit einer Zwei-Faktor-Authentifizierungs-App wie z.B.:"
 msgstr ""
 
-#: app/scripts/app.js:158
+#: app/scripts/app.js:157
 msgid "Britisches Pfund"
 msgstr ""
 
@@ -201,7 +201,7 @@ msgstr ""
 msgid "Bund"
 msgstr ""
 
-#: app/scripts/app.js:160
+#: app/scripts/app.js:158
 msgid "CAD"
 msgstr ""
 
@@ -217,11 +217,11 @@ msgstr ""
 msgid "Code"
 msgstr ""
 
-#: app/scripts/app.js:166
+#: app/scripts/app.js:163
 msgid "DI"
 msgstr ""
 
-#: app/scripts/app.js:171
+#: app/scripts/app.js:168
 msgid "DO"
 msgstr ""
 
@@ -283,11 +283,11 @@ msgstr ""
 msgid "Der Zugriff auf diese Ressource wurde verweigert."
 msgstr ""
 
-#: app/scripts/app.js:197
+#: app/scripts/app.js:194
 msgid "Dez"
 msgstr ""
 
-#: app/scripts/app.js:197
+#: app/scripts/app.js:194
 msgid "Dezember"
 msgstr ""
 
@@ -301,7 +301,7 @@ msgstr ""
 msgid "Die Seite enthält Modifikationen. Wollen Sie diese verwerfen?"
 msgstr ""
 
-#: app/scripts/app.js:166
+#: app/scripts/app.js:163
 msgid "Dienstag"
 msgstr ""
 
@@ -309,13 +309,17 @@ msgstr ""
 msgid "Diese Seite konnte nicht gefunden werden!"
 msgstr ""
 
-#: app/scripts/app.js:170
+#: app/scripts/app.js:167
 msgid "Donnerstag"
+msgstr ""
+
+#: app/scripts/common/components/oo-generate-report.directive.html:61
+msgid "Download"
 msgstr ""
 
 #: app/scripts/common/components/oo-download-report.directive.html:15
 #: app/scripts/common/components/oo-generate-report.directive.html:69
-msgid "Download format"
+msgid "Download-Format"
 msgstr ""
 
 #: app/scripts/app.js:148
@@ -343,7 +347,7 @@ msgstr ""
 msgid "E-Mail:"
 msgstr ""
 
-#: app/scripts/app.js:156
+#: app/scripts/app.js:155
 msgid "EUR"
 msgstr ""
 
@@ -401,11 +405,11 @@ msgstr ""
 msgid "Email Adresse"
 msgstr ""
 
-#: app/scripts/app.js:206
+#: app/scripts/app.js:203
 msgid "Erfasst"
 msgstr ""
 
-#: app/scripts/app.js:202
+#: app/scripts/app.js:199
 msgid "Erledigt"
 msgstr ""
 
@@ -434,19 +438,19 @@ msgid ""
 "              Email-Adresse"
 msgstr ""
 
-#: app/scripts/app.js:156
+#: app/scripts/app.js:155
 msgid "Euro"
 msgstr ""
 
-#: app/scripts/app.js:172
+#: app/scripts/app.js:169
 msgid "FR"
 msgstr ""
 
-#: app/scripts/app.js:182
+#: app/scripts/app.js:179
 msgid "Feb"
 msgstr ""
 
-#: app/scripts/app.js:182
+#: app/scripts/app.js:179
 msgid "Februar"
 msgstr ""
 
@@ -462,7 +466,7 @@ msgstr ""
 msgid "Frau"
 msgstr ""
 
-#: app/scripts/app.js:172
+#: app/scripts/app.js:169
 msgid "Freitag"
 msgstr ""
 
@@ -484,11 +488,11 @@ msgstr ""
 msgid "Für den Zugriff auf die Administrationsumgebung ist eine Anmeldung erforderlich"
 msgstr ""
 
-#: app/scripts/app.js:158
+#: app/scripts/app.js:157
 msgid "GBP"
 msgstr ""
 
-#: app/scripts/app.js:211
+#: app/scripts/app.js:208
 msgid "Gezippte PDFs"
 msgstr ""
 
@@ -509,7 +513,6 @@ msgid "Herr"
 msgstr ""
 
 #: app/scripts/common/components/oo-download-report.directive.html:25
-#: app/scripts/common/components/oo-generate-report.directive.html:61
 msgid "Herunterladen"
 msgstr ""
 
@@ -525,31 +528,31 @@ msgstr ""
 msgid "Ja"
 msgstr ""
 
-#: app/scripts/app.js:180
+#: app/scripts/app.js:177
 msgid "Jan"
 msgstr ""
 
-#: app/scripts/app.js:180
+#: app/scripts/app.js:177
 msgid "Januar"
 msgstr ""
 
-#: app/scripts/app.js:188
+#: app/scripts/app.js:185
 msgid "Jul"
 msgstr ""
 
-#: app/scripts/app.js:188
+#: app/scripts/app.js:185
 msgid "Juli"
 msgstr ""
 
-#: app/scripts/app.js:187
+#: app/scripts/app.js:184
 msgid "Jun"
 msgstr ""
 
-#: app/scripts/app.js:187
+#: app/scripts/app.js:184
 msgid "Juni"
 msgstr ""
 
-#: app/scripts/app.js:160
+#: app/scripts/app.js:158
 msgid "Kanadischer Dollar"
 msgstr ""
 
@@ -597,11 +600,11 @@ msgstr ""
 msgid "Löschen"
 msgstr ""
 
-#: app/scripts/app.js:168
+#: app/scripts/app.js:165
 msgid "MI"
 msgstr ""
 
-#: app/scripts/app.js:164
+#: app/scripts/app.js:161
 msgid "MO"
 msgstr ""
 
@@ -609,7 +612,7 @@ msgstr ""
 msgid "MahnungVerschickt"
 msgstr ""
 
-#: app/scripts/app.js:186
+#: app/scripts/app.js:183
 msgid "Mai"
 msgstr ""
 
@@ -627,11 +630,11 @@ msgstr ""
 msgid "Mails wurden verschickt"
 msgstr ""
 
-#: app/scripts/app.js:184
+#: app/scripts/app.js:181
 msgid "Mar"
 msgstr ""
 
-#: app/scripts/app.js:168
+#: app/scripts/app.js:165
 msgid "Mittwoch"
 msgstr ""
 
@@ -643,11 +646,11 @@ msgstr ""
 msgid "Monatlich"
 msgstr ""
 
-#: app/scripts/app.js:164
+#: app/scripts/app.js:161
 msgid "Montag"
 msgstr ""
 
-#: app/scripts/app.js:184
+#: app/scripts/app.js:181
 msgid "März"
 msgstr ""
 
@@ -671,15 +674,15 @@ msgstr ""
 msgid "Neues Secret anfordern"
 msgstr ""
 
-#: app/scripts/app.js:203
+#: app/scripts/app.js:200
 msgid "NichtErledigt"
 msgstr ""
 
-#: app/scripts/app.js:195
+#: app/scripts/app.js:192
 msgid "Nov"
 msgstr ""
 
-#: app/scripts/app.js:195
+#: app/scripts/app.js:192
 msgid "November"
 msgstr ""
 
@@ -703,11 +706,11 @@ msgstr ""
 msgid "Ok"
 msgstr ""
 
-#: app/scripts/app.js:193
+#: app/scripts/app.js:190
 msgid "Okt"
 msgstr ""
 
-#: app/scripts/app.js:193
+#: app/scripts/app.js:190
 msgid "Oktober"
 msgstr ""
 
@@ -839,15 +842,15 @@ msgstr ""
 msgid "Reports*"
 msgstr ""
 
-#: app/scripts/app.js:174
+#: app/scripts/app.js:171
 msgid "SA"
 msgstr ""
 
-#: app/scripts/app.js:176
+#: app/scripts/app.js:173
 msgid "SO"
 msgstr ""
 
-#: app/scripts/app.js:174
+#: app/scripts/app.js:171
 msgid "Samstag"
 msgstr ""
 
@@ -865,11 +868,11 @@ msgstr ""
 msgid "Senden"
 msgstr ""
 
-#: app/scripts/app.js:192
+#: app/scripts/app.js:189
 msgid "Sep"
 msgstr ""
 
-#: app/scripts/app.js:191
+#: app/scripts/app.js:188
 msgid "September"
 msgstr ""
 
@@ -893,7 +896,7 @@ msgstr ""
 msgid "Soll der Löschvorgang fortgesetzt werden?"
 msgstr ""
 
-#: app/scripts/app.js:176
+#: app/scripts/app.js:173
 msgid "Sonntag"
 msgstr ""
 
@@ -930,11 +933,11 @@ msgstr ""
 msgid "Touren"
 msgstr ""
 
-#: app/scripts/app.js:157
+#: app/scripts/app.js:156
 msgid "US Dollar"
 msgstr ""
 
-#: app/scripts/app.js:157
+#: app/scripts/app.js:156
 msgid "USD"
 msgstr ""
 
@@ -1018,7 +1021,7 @@ msgstr ""
 msgid "Zurücksetzen"
 msgstr ""
 
-#: app/scripts/app.js:210
+#: app/scripts/app.js:207
 msgid "Zusammengeführtes PDF"
 msgstr ""
 
@@ -1059,7 +1062,7 @@ msgstr ""
 msgid "konnte nicht gelöscht werden. Fehler:"
 msgstr ""
 
-#: app/scripts/common/components/oo-savebutton.directive.js:77
+#: app/scripts/common/components/oo-savebutton.directive.js:79
 msgid "konnte nicht gespeichert werden. Fehler:"
 msgstr ""
 

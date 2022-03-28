@@ -6,10 +6,10 @@ angular.module('openolitor-core')
   .controller('OpenOlitorRootController', ['$scope', '$rootScope',
     'ServerService', 'ProjektService', 'gettextCatalog', 'amMoment',
     '$location', 'msgBus', 'checkSize', '$window', '$timeout', 'BUILD_NR',
-    'ooAuthService', '$cookies',
+    'ooAuthService', '$cookies', 'appConfig',
     function($scope, $rootScope, ServerService, ProjektService,
       gettextCatalog, amMoment, $location, msgBus, checkSize, $window,
-      $timeout, BUILD_NR, ooAuthService, $cookies) {
+      $timeout, BUILD_NR, ooAuthService, $cookies, appConfig) {
       angular.element($window).bind('resize', function() {
         checkSize();
       });

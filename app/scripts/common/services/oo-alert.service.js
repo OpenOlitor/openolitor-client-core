@@ -13,6 +13,11 @@
       }
 
       return {
+
+        clearAll: function() {
+          $rootScope.alerts = [];
+        },
+
         /**
          * Add an alert to the global scope using type (error, lighterror, info, warning)
          */

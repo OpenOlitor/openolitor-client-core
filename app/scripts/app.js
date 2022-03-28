@@ -217,7 +217,7 @@ angular
     $http.get('environments/config.json').then(function(payload) {
       configData = payload.data;
       loaded = true;
-    }, function(error) {
+    }, function() {
     });
     return {
       get: function() {
