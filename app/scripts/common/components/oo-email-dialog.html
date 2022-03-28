@@ -10,7 +10,7 @@
     <form name="emailForm">
       <div class="row form-group">
 <div class="col-md-12">
-        <div class="alert alert-danger" role="alert" ng-show="!attachment && selectedMailTemplate.attachInvoice">
+        <div class="alert alert-danger" role="alert" ng-show="!attachment && selectedMailTemplate.attachInvoice && url === 'mailing/sendEmailToInvoicesSubscribers'">
             <span translate>Einige selektierte Einträge verfügen über kein angehängtes Rechnungsdokument. Diese E-Mails werden ohne Anhang verschickt.</span>
             <i class="fa fa-info-circle" aria-hidden="true" ng-if="abo.ende === undefined && abo.abotyp.kuendigungsfrist" uib-tooltip-template="'kuendigungsterminTooltipTemplate.html'"></i>
          </div>
