@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 64\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2022-03-25 16:19\n"
+"PO-Revision-Date: 2022-03-28 09:01\n"
 
 #: app/scripts/login/login.html:91
 #: app/scripts/login/reset_otp.html:33
@@ -91,11 +91,11 @@ msgstr "Registro"
 msgid "Anweisungen um Ihr Passwort neu zu setzten wurden Ihnen an Ihre Email-Adresse gesendet."
 msgstr "Te hemos enviado un correo electrónico con la información necesaria para modificar tu contraseña."
 
-#: app/scripts/app.js:185
+#: app/scripts/app.js:182
 msgid "Apr"
 msgstr "Abr"
 
-#: app/scripts/app.js:185
+#: app/scripts/app.js:182
 msgid "April"
 msgstr "Abril"
 
@@ -103,15 +103,15 @@ msgstr "Abril"
 msgid "Aufwiedersehen"
 msgstr "Hasta la vista"
 
-#: app/scripts/app.js:189
+#: app/scripts/app.js:186
 msgid "Aug"
 msgstr "Ago"
 
-#: app/scripts/app.js:189
+#: app/scripts/app.js:186
 msgid "August"
 msgstr "Agosto"
 
-#: app/scripts/app.js:207
+#: app/scripts/app.js:204
 msgid "Ausgeliefert"
 msgstr "Entregado"
 
@@ -119,7 +119,7 @@ msgstr "Entregado"
 msgid "Auslieferungen"
 msgstr "Entregas"
 
-#: app/scripts/app.js:201
+#: app/scripts/app.js:198
 msgid "Ausstehend"
 msgstr "No pagado"
 
@@ -190,7 +190,7 @@ msgstr "Por favor, escanee el código QR con una aplicación de autenticación d
 msgid "Bitte scannen Sie den neuen QR-Code mit einer Zwei-Faktor-Authentifizierungs-App wie z.B.:"
 msgstr "Escanee el nuevo código QR con una aplicación de autenticación de dos factores como:"
 
-#: app/scripts/app.js:158
+#: app/scripts/app.js:157
 msgid "Britisches Pfund"
 msgstr "Libra esterlina"
 
@@ -206,7 +206,7 @@ msgstr "Contabilidad"
 msgid "Bund"
 msgstr "Manojo"
 
-#: app/scripts/app.js:160
+#: app/scripts/app.js:158
 msgid "CAD"
 msgstr "CAD"
 
@@ -222,11 +222,11 @@ msgstr "CHF"
 msgid "Code"
 msgstr "Código"
 
-#: app/scripts/app.js:166
+#: app/scripts/app.js:163
 msgid "DI"
 msgstr "MAR"
 
-#: app/scripts/app.js:171
+#: app/scripts/app.js:168
 msgid "DO"
 msgstr "JUE"
 
@@ -286,11 +286,11 @@ msgstr "Se activó el envío de correo."
 msgid "Der Zugriff auf diese Ressource wurde verweigert."
 msgstr "El acceso ha sido denegado. Contacta a la persona encargada de la gestión de tu grupo de consumo."
 
-#: app/scripts/app.js:197
+#: app/scripts/app.js:194
 msgid "Dez"
 msgstr "Dic"
 
-#: app/scripts/app.js:197
+#: app/scripts/app.js:194
 msgid "Dezember"
 msgstr "Diciembre"
 
@@ -304,7 +304,7 @@ msgstr "Los datos se reinicializan periódicamente."
 msgid "Die Seite enthält Modifikationen. Wollen Sie diese verwerfen?"
 msgstr "La página contiene modificaciones. ¿Quieres salir y perderlas?"
 
-#: app/scripts/app.js:166
+#: app/scripts/app.js:163
 msgid "Dienstag"
 msgstr "Martes"
 
@@ -312,14 +312,18 @@ msgstr "Martes"
 msgid "Diese Seite konnte nicht gefunden werden!"
 msgstr "¡La página solicitada no ha sido encontrada!"
 
-#: app/scripts/app.js:170
+#: app/scripts/app.js:167
 msgid "Donnerstag"
 msgstr "Jueves"
 
+#: app/scripts/common/components/oo-generate-report.directive.html:61
+msgid "Download"
+msgstr ""
+
 #: app/scripts/common/components/oo-download-report.directive.html:15
 #: app/scripts/common/components/oo-generate-report.directive.html:69
-msgid "Download format"
-msgstr "Bajar formato"
+msgid "Download-Format"
+msgstr ""
 
 #: app/scripts/app.js:148
 msgid "E-Mail"
@@ -346,7 +350,7 @@ msgstr "Enviar un correo electrónico a las direcciones seleccionadas"
 msgid "E-Mail:"
 msgstr "Correo electrónico:"
 
-#: app/scripts/app.js:156
+#: app/scripts/app.js:155
 msgid "EUR"
 msgstr "EUR"
 
@@ -404,11 +408,11 @@ msgstr "No se ha podido guardar la configuración"
 msgid "Email Adresse"
 msgstr "Correo electrónico"
 
-#: app/scripts/app.js:206
+#: app/scripts/app.js:203
 msgid "Erfasst"
 msgstr "Salvado"
 
-#: app/scripts/app.js:202
+#: app/scripts/app.js:199
 msgid "Erledigt"
 msgstr "Cerrado"
 
@@ -435,19 +439,19 @@ msgid "Es wurde ein Zugangscode an ihre\n"
 "              Email-Adresse"
 msgstr "Se le ha enviado un código de acceso a su dirección de correo electrónico"
 
-#: app/scripts/app.js:156
+#: app/scripts/app.js:155
 msgid "Euro"
 msgstr "Euros"
 
-#: app/scripts/app.js:172
+#: app/scripts/app.js:169
 msgid "FR"
 msgstr "FR"
 
-#: app/scripts/app.js:182
+#: app/scripts/app.js:179
 msgid "Feb"
 msgstr "Feb"
 
-#: app/scripts/app.js:182
+#: app/scripts/app.js:179
 msgid "Februar"
 msgstr "Febrero"
 
@@ -463,7 +467,7 @@ msgstr "Sra."
 msgid "Frau"
 msgstr "Sra."
 
-#: app/scripts/app.js:172
+#: app/scripts/app.js:169
 msgid "Freitag"
 msgstr "Viernes"
 
@@ -484,11 +488,11 @@ msgstr "Para acceder a OpenOlitor tienes que introducir tus credenciales"
 msgid "Für den Zugriff auf die Administrationsumgebung ist eine Anmeldung erforderlich"
 msgstr "Para acceder a OpenOlitor tienes que introducir tus credenciales"
 
-#: app/scripts/app.js:158
+#: app/scripts/app.js:157
 msgid "GBP"
 msgstr "GBP"
 
-#: app/scripts/app.js:211
+#: app/scripts/app.js:208
 msgid "Gezippte PDFs"
 msgstr "PDFs comprimidos"
 
@@ -509,7 +513,6 @@ msgid "Herr"
 msgstr "Sr."
 
 #: app/scripts/common/components/oo-download-report.directive.html:25
-#: app/scripts/common/components/oo-generate-report.directive.html:61
 msgid "Herunterladen"
 msgstr "Descargar todo"
 
@@ -525,31 +528,31 @@ msgstr "Sr."
 msgid "Ja"
 msgstr "Sí"
 
-#: app/scripts/app.js:180
+#: app/scripts/app.js:177
 msgid "Jan"
 msgstr "Ene"
 
-#: app/scripts/app.js:180
+#: app/scripts/app.js:177
 msgid "Januar"
 msgstr "Enero"
 
-#: app/scripts/app.js:188
+#: app/scripts/app.js:185
 msgid "Jul"
 msgstr "Jul"
 
-#: app/scripts/app.js:188
+#: app/scripts/app.js:185
 msgid "Juli"
 msgstr "Julio"
 
-#: app/scripts/app.js:187
+#: app/scripts/app.js:184
 msgid "Jun"
 msgstr "Jun"
 
-#: app/scripts/app.js:187
+#: app/scripts/app.js:184
 msgid "Juni"
 msgstr "Junio"
 
-#: app/scripts/app.js:160
+#: app/scripts/app.js:158
 msgid "Kanadischer Dollar"
 msgstr "Dólar canadiense"
 
@@ -597,11 +600,11 @@ msgstr "Iniciar sesión en el portal de administración"
 msgid "Löschen"
 msgstr "Eliminar"
 
-#: app/scripts/app.js:168
+#: app/scripts/app.js:165
 msgid "MI"
 msgstr "MIE"
 
-#: app/scripts/app.js:164
+#: app/scripts/app.js:161
 msgid "MO"
 msgstr "LU"
 
@@ -609,7 +612,7 @@ msgstr "LU"
 msgid "MahnungVerschickt"
 msgstr "Aviso enviado"
 
-#: app/scripts/app.js:186
+#: app/scripts/app.js:183
 msgid "Mai"
 msgstr "Mayo"
 
@@ -627,11 +630,11 @@ msgstr "No se puede enviar el correo. <span>\n"
 msgid "Mails wurden verschickt"
 msgstr "Los correos han sido enviados"
 
-#: app/scripts/app.js:184
+#: app/scripts/app.js:181
 msgid "Mar"
 msgstr "Mar"
 
-#: app/scripts/app.js:168
+#: app/scripts/app.js:165
 msgid "Mittwoch"
 msgstr "Miércoles"
 
@@ -643,11 +646,11 @@ msgstr "Meses"
 msgid "Monatlich"
 msgstr "Mensual"
 
-#: app/scripts/app.js:164
+#: app/scripts/app.js:161
 msgid "Montag"
 msgstr "Lunes"
 
-#: app/scripts/app.js:184
+#: app/scripts/app.js:181
 msgid "März"
 msgstr "Marzo"
 
@@ -671,15 +674,15 @@ msgstr "Repita la nueva contraseña"
 msgid "Neues Secret anfordern"
 msgstr "Pedir nueva contraseña"
 
-#: app/scripts/app.js:203
+#: app/scripts/app.js:200
 msgid "NichtErledigt"
 msgstr "Sin concluir"
 
-#: app/scripts/app.js:195
+#: app/scripts/app.js:192
 msgid "Nov"
 msgstr "Nov"
 
-#: app/scripts/app.js:195
+#: app/scripts/app.js:192
 msgid "November"
 msgstr "Noviembre"
 
@@ -703,11 +706,11 @@ msgstr "Abierto"
 msgid "Ok"
 msgstr "Aceptar"
 
-#: app/scripts/app.js:193
+#: app/scripts/app.js:190
 msgid "Okt"
 msgstr "Oct"
 
-#: app/scripts/app.js:193
+#: app/scripts/app.js:190
 msgid "Oktober"
 msgstr "Octubre"
 
@@ -839,15 +842,15 @@ msgstr "Responder a"
 msgid "Reports*"
 msgstr "Informes*"
 
-#: app/scripts/app.js:174
+#: app/scripts/app.js:171
 msgid "SA"
 msgstr "Sa"
 
-#: app/scripts/app.js:176
+#: app/scripts/app.js:173
 msgid "SO"
 msgstr "DO"
 
-#: app/scripts/app.js:174
+#: app/scripts/app.js:171
 msgid "Samstag"
 msgstr "Sábado"
 
@@ -865,11 +868,11 @@ msgstr "Francos suizos"
 msgid "Senden"
 msgstr "Enviar"
 
-#: app/scripts/app.js:192
+#: app/scripts/app.js:189
 msgid "Sep"
 msgstr "Sep"
 
-#: app/scripts/app.js:191
+#: app/scripts/app.js:188
 msgid "September"
 msgstr "Septiembre"
 
@@ -891,7 +894,7 @@ msgstr "¿Estás seguro?"
 msgid "Soll der Löschvorgang fortgesetzt werden?"
 msgstr "¿Estás seguro de que quieres borrar estos datos?"
 
-#: app/scripts/app.js:176
+#: app/scripts/app.js:173
 msgid "Sonntag"
 msgstr "Domingo"
 
@@ -928,11 +931,11 @@ msgstr "Entrega a domicilio"
 msgid "Touren"
 msgstr "Recorridos"
 
-#: app/scripts/app.js:157
+#: app/scripts/app.js:156
 msgid "US Dollar"
 msgstr "Dólar estadounidense"
 
-#: app/scripts/app.js:157
+#: app/scripts/app.js:156
 msgid "USD"
 msgstr "USD"
 
@@ -1015,7 +1018,7 @@ msgstr "Acceso denegado"
 msgid "Zurücksetzen"
 msgstr "Restablecer"
 
-#: app/scripts/app.js:210
+#: app/scripts/app.js:207
 msgid "Zusammengeführtes PDF"
 msgstr "PDFs fusionados"
 
@@ -1056,7 +1059,7 @@ msgstr "no se puede realizar. Error:"
 msgid "konnte nicht gelöscht werden. Fehler:"
 msgstr "No se puede borrar. Error:"
 
-#: app/scripts/common/components/oo-savebutton.directive.js:77
+#: app/scripts/common/components/oo-savebutton.directive.js:79
 msgid "konnte nicht gespeichert werden. Fehler:"
 msgstr "no se puede salvar. Error:"
 
