@@ -151,14 +151,11 @@ angular
     'PostlieferungAbo'
   ])
   .constant('WAEHRUNG', {
-    CHF: addExtendedEnumValue('CHF', gettext('Schweizer Franken'), gettext(
-      'CHF')),
-    EUR: addExtendedEnumValue('EUR', gettext('Euro'), gettext('EUR')),
-    USD: addExtendedEnumValue('USD', gettext('US Dollar'), gettext('USD')),
-    GBP: addExtendedEnumValue('GBP', gettext('Britisches Pfund'), gettext(
-      'GBP')),
-    CAD: addExtendedEnumValue('CAD', gettext('Kanadischer Dollar'), gettext(
-      'CAD'))
+    CHF: addExtendedEnumValue('CHF', gettext('Schweizer Franken'), gettext('CHF'), 'CHF'),
+    EUR: addExtendedEnumValue('EUR', gettext('Euro'), gettext('EUR'), '€'),
+    USD: addExtendedEnumValue('USD', gettext('US Dollar'), gettext('USD'), '$'),
+    GBP: addExtendedEnumValue('GBP', gettext('Britisches Pfund'), gettext('GBP'), '£'),
+    CAD: addExtendedEnumValue('CAD', gettext('Kanadischer Dollar'), gettext('CAD'), '$')
   })
   .constant('LIEFERZEITPUNKTE', {
     MONTAG: addExtendedEnumValue('Montag', gettext('Montag'), gettext('MO'),
