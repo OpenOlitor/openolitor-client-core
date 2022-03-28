@@ -7,7 +7,7 @@ angular.module('openolitor-core').directive('ooDropdown', [function() {
     scope: {
       placeholder: '@',
       values: '=',
-      selected: '=selectedValue',
+      selected: '=?selectedValue',
       selectedProp: '@',
       selectedFunction: '&?',
       selectedFunctionScope: '=',
@@ -60,7 +60,7 @@ angular.module('openolitor-core').directive('ooDropdown', [function() {
         return current;
       };
 
-      $scope.select = function(item) {        
+      $scope.select = function(item) {
         $scope.isPlaceholder = false;
         if (angular.isDefined($scope.selectedProp)) {
           $scope.selected = deepFind(item, $scope.selectedProp);
