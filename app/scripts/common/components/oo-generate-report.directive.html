@@ -20,8 +20,8 @@
             <button id="split-button" type="button" class="btn btn-primary">
               <span ng-hide="form.vorlage || projektVorlage || form.datenExtrakt" translate>Standardvorlage</span>
               <span ng-show="form.datenExtrakt" translate>Datenextrakt</span>
-              <span ng-show="form.vorlage" translate>{{form.vorlage.name}}</span>
-              <span ng-show="projektVorlage" translate>{{projektVorlage.name}}</span>
+              <span ng-show="form.vorlage">{{form.vorlage.name | translate}}</span>
+              <span ng-show="projektVorlage">{{projektVorlage.name | translate}}</span>
             </button>
             <button type="button" class="btn btn-default" uib-dropdown-toggle>
               <span class="caret"></span>
@@ -29,7 +29,7 @@
             </button>
             <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="split-button">
               <li role="menuitem"><a ng-click="selectStandardVorlage()" translate>Standardvorlage</a></li>
-              <li role="menuitem" ng-repeat="vorlage in projektVorlagen" ng-if="vorlage.fileStoreId"><a ng-click="selectProjektVorlage(vorlage)" translate>{{vorlage.name}}</a></li>
+              <li role="menuitem" ng-repeat="vorlage in projektVorlagen" ng-if="vorlage.fileStoreId"><a ng-click="selectProjektVorlage(vorlage)" >{{vorlage.name | translate}}</a></li>
               <li class="divider"></li>
               <li role="menuitem"><a
                 ng-model="form.vorlage" name="vorlageFile" ngf-accept="'.odt'" ngf-max-size="10MB" ngf-select="selectFile($file)" ngf-drop="selectFile($file)"
