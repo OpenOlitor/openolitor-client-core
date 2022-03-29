@@ -3,6 +3,7 @@ describe('Filter: ooPreisProEinheit', function() {
 
   var $filter;
   var gettextCatalog;
+  var $rootScope;
 
   beforeEach(function() {
     module('openolitor-core');
@@ -14,10 +15,15 @@ describe('Filter: ooPreisProEinheit', function() {
     inject(function(_gettextCatalog_) {
       gettextCatalog = _gettextCatalog_;
     });
+
+    inject(function(_$rootScope_) {
+      $rootScope = _$rootScope_;
+    });
   });
 
   it('format preis + preisEinheit + waehrung to single string', function() {
     gettextCatalog.setCurrentLanguage('de_CH');
+    $rootScope.projekt = { waehrung: 'CHF'};
 
     var input = {
       preis: 3,
