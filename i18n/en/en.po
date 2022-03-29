@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 64\n"
 "Language-Team: English\n"
 "Language: en_US\n"
-"PO-Revision-Date: 2022-03-28 09:01\n"
+"PO-Revision-Date: 2022-03-29 08:02\n"
 
 #: app/scripts/login/login.html:91
 #: app/scripts/login/reset_otp.html:33
@@ -141,7 +141,7 @@ msgstr "Report could not be generated"
 
 #: app/scripts/common/components/oo-download-report.directive.html:3
 msgid "Berichte herunterladen"
-msgstr ""
+msgstr "Download reports"
 
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:3
 msgid "Bestätigung"
@@ -318,12 +318,12 @@ msgstr "Thursday"
 
 #: app/scripts/common/components/oo-generate-report.directive.html:61
 msgid "Download"
-msgstr ""
+msgstr "Download"
 
 #: app/scripts/common/components/oo-download-report.directive.html:15
 #: app/scripts/common/components/oo-generate-report.directive.html:69
 msgid "Download-Format"
-msgstr ""
+msgstr "Download Format"
 
 #: app/scripts/app.js:148
 msgid "E-Mail"
