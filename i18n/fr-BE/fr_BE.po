@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 64\n"
 "Language-Team: French, Belgium\n"
 "Language: fr_BE\n"
-"PO-Revision-Date: 2022-03-28 09:01\n"
+"PO-Revision-Date: 2022-03-29 20:31\n"
 
 #: app/scripts/login/login.html:91
 #: app/scripts/login/reset_otp.html:33
@@ -596,6 +596,7 @@ msgstr "litre"
 msgid "Login Administration"
 msgstr "Administration login"
 
+#: app/scripts/common/components/oo-deletebutton.directive.html:3
 #: app/scripts/common/components/oo-deletebutton.directive.modal.html:12
 msgid "Löschen"
 msgstr "supprimer"
@@ -1099,20 +1100,4 @@ msgstr "a été supprimé avec succès."
 #: app/scripts/login/login_settings_second_factor.html:20
 msgid "zugestellt."
 msgstr "envoyé"
-
-#: app/scripts/common/components/oo-generate-report.directive.html:23
-msgid "{{form.vorlage.name}}"
-msgstr "{{form.modele.nom}}"
-
-#: app/scripts/common/components/oo-generate-report.directive.html:24
-msgid "{{projektVorlage.name}}"
-msgstr ""
-
-#: app/scripts/common/components/oo-dialogokabort.directive.modal.html:2
-msgid "{{title | translate}}"
-msgstr ""
-
-#: app/scripts/common/components/oo-generate-report.directive.html:32
-msgid "{{vorlage.name}}"
-msgstr ""
 
