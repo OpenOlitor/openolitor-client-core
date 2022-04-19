@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 64\n"
 "Language-Team: French, Switzerland\n"
 "Language: fr_CH\n"
-"PO-Revision-Date: 2022-03-29 20:31\n"
+"PO-Revision-Date: 2022-04-19 19:55\n"
 
 #: app/scripts/login/login.html:91
 #: app/scripts/login/reset_otp.html:33
@@ -141,7 +141,7 @@ msgstr "Le rapport n'as pas pu être créé"
 
 #: app/scripts/common/components/oo-download-report.directive.html:3
 msgid "Berichte herunterladen"
-msgstr ""
+msgstr "Télécharger les rapports"
 
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:3
 msgid "Bestätigung"
@@ -174,21 +174,21 @@ msgstr "Veuillez saisir le mot de passe à usage unique de votre d'authentificat
 msgid "Bitte geben Sie das Einmalpasswort basierend auf dem\n"
 "            <b>neuen Secret</b> aus Ihrer\n"
 "            Zwei-Faktor-Authentifizierungs-App ein."
-msgstr ""
+msgstr "Entrez le mot de passe à usage unique basé sur un <b>nouveau secret</b> de l'application d'authentification à deux facteurs activée."
 
 #: app/scripts/login/reset_otp.html:8
 msgid "Bitte geben Sie das Einmalpasswort basierend ihrem\n"
 "            <b>aktuellen Secret</b> aus Ihrer\n"
 "            Zwei-Faktor-Authentifizierungs-App ein."
-msgstr ""
+msgstr "Veuillez saisir le mot de passe à usage unique basé sur le <b>secret actuel</b> de votre application d'authentification à deux facteurs."
 
 #: app/scripts/login/login.html:86
 msgid "Bitte scannen Sie den QR-Code mit einer Zwei-Faktor-Authentifizierungs-App wie z.B.:"
-msgstr ""
+msgstr "Veuillez scanner le code QR avec une application d'authentification à deux facteurs telle que:"
 
 #: app/scripts/login/reset_otp.html:28
 msgid "Bitte scannen Sie den neuen QR-Code mit einer Zwei-Faktor-Authentifizierungs-App wie z.B.:"
-msgstr ""
+msgstr "Veuillez scanner le nouveau code QR avec une application d'authentification à deux facteurs telle que :"
 
 #: app/scripts/app.js:157
 msgid "Britisches Pfund"
@@ -237,7 +237,7 @@ msgstr "Le backend n'est pas disponible pour le moment, veuillez attendre quelqu
 #: app/scripts/login/login.html:45
 msgid "Das Kundenportal ist gegenwärtig nicht verfügbar. Wir führen Unterhaltsarbeiten durch. In Kürze\n"
 "            sind wir wieder online und wie gewohnt für Sie da."
-msgstr ""
+msgstr "Le portail des membres est actuellement indisponible. Nous effectuons des travaux d’entretien. Sous peu le portail sera de nouveau disponible."
 
 #: app/scripts/login/change_password.html:26
 #: app/scripts/login/zugangaktivieren.html:15
@@ -247,7 +247,7 @@ msgstr "Le mot de passe doit contenir au moins 6 caractères"
 #: app/scripts/login/change_password.html:27
 msgid "Das Passwort muss mindestens einen Gross- und Kleinbuchstaben, sowie\n"
 "                  einen numerischen Wert oder ein Symbol enthalten"
-msgstr ""
+msgstr "Le mot de passe doit contenir au moins un dessus - et minuscules, ainsi une valeur numérique, ou symbole"
 
 #: app/scripts/login/zugangaktivieren.html:16
 msgid "Das Passwort muss mindestens einen Gross- und Kleinbuchstaben, sowie einen numerischen Wert oder ein Symbol enthalten"
@@ -318,12 +318,12 @@ msgstr "Jeudi"
 
 #: app/scripts/common/components/oo-generate-report.directive.html:61
 msgid "Download"
-msgstr ""
+msgstr "Télécharger"
 
 #: app/scripts/common/components/oo-download-report.directive.html:15
 #: app/scripts/common/components/oo-generate-report.directive.html:69
 msgid "Download-Format"
-msgstr ""
+msgstr "Format de téléchargement"
 
 #: app/scripts/app.js:148
 msgid "E-Mail"
@@ -394,15 +394,15 @@ msgstr "Paramètres"
 #: app/scripts/login/login_settings.html:23
 #: app/scripts/login/login_settings_second_factor.html:29
 msgid "Einstellungen Speichern"
-msgstr ""
+msgstr "Enregistrer les paramètres"
 
 #: app/scripts/login/login.controller.js:406
 msgid "Einstellungen erfolgreich gespeichert"
-msgstr ""
+msgstr "Paramètres enregistrés avec succès"
 
 #: app/scripts/login/login.controller.js:411
 msgid "Einstellungen konnten nicht gespeichert werden"
-msgstr ""
+msgstr "Les paramètres n'ont pas pu être enregistrés"
 
 #: app/scripts/login/passwordreset.html:13
 msgid "Email Adresse"
@@ -432,12 +432,12 @@ msgstr "Créé"
 #: app/scripts/login/login_settings_second_factor.html:19
 msgid "Es wurde ein Zugangscode an ihre\n"
 "                Email-Adresse"
-msgstr ""
+msgstr "Un code d’accès a été envoyé à votre adresse courriel"
 
 #: app/scripts/login/login.html:117
 msgid "Es wurde ein Zugangscode an ihre\n"
 "              Email-Adresse"
-msgstr ""
+msgstr "Un code d’accès a été envoyé à votre adresse courriel"
 
 #: app/scripts/app.js:155
 msgid "Euro"
@@ -478,7 +478,7 @@ msgstr "Pour tester le frontend d’administration, cliquez ici !"
 #: app/scripts/login/login.html:32
 msgid "Für den Zugang auf die Administrationsumgebung von OpenOlitor, bitte den Link unten\n"
 "            rechts verwenden."
-msgstr ""
+msgstr "Pour accéder à l’espace d’administration de OpenOlitor, veuillez svp cliquer sur le lien en bas à droite."
 
 #: app/scripts/login/login.html:23
 msgid "Für den Zugriff auf OpenOlitor ist eine Anmeldung erforderlich"
@@ -693,11 +693,11 @@ msgstr "OTP"
 
 #: app/scripts/login/login.controller.js:322
 msgid "OTP Passwort Erfolgreich zurückgesetzt"
-msgstr ""
+msgstr "Mot de passe OTP réinitialisé avec succès"
 
 #: app/scripts/login/login_settings.html:62
 msgid "OTP Secret zurücksetzen"
-msgstr ""
+msgstr "Réinitialiser le secret OTP"
 
 #: app/scripts/app.js:122
 msgid "Offen"
@@ -717,15 +717,15 @@ msgstr "Octobre"
 
 #: app/scripts/app.js:147
 msgid "One-Time-Password (OTP)"
-msgstr ""
+msgstr "Mot de passe à usage unique (OTP)"
 
 #: app/scripts/login/login_settings.html:57
 msgid "One-Time-Passwort (OTP)"
-msgstr ""
+msgstr "Mot de passe à usage unique (OTP)"
 
 #: app/scripts/login/reset_otp.html:5
 msgid "One-Time-Passwort zurücksetzen"
-msgstr ""
+msgstr "Réinitialiser le mot de passe à usage unique"
 
 #: app/scripts/common/components/oo-generate-report.directive.html:53
 msgid "PDF Ablegen"
@@ -833,11 +833,11 @@ msgstr "Factures"
 
 #: app/scripts/common/components/oo-email-dialog.html:30
 msgid "Reply-To"
-msgstr ""
+msgstr "Répondre à"
 
 #: app/scripts/common/components/oo-email-dialog.html:33
 msgid "Reply-to"
-msgstr ""
+msgstr "Répondre à"
 
 #: app/index.html:137
 msgid "Reports*"
@@ -880,12 +880,12 @@ msgstr "Septembre"
 #: app/scripts/login/login.html:25
 msgid "Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden\n"
 "            Anmeldeinformationen als Konsument anmelden:"
-msgstr ""
+msgstr "Vous êtes sur le système de test d'OpenOlitor. Vous pouvez vous connecter en utilisant les informations d’identification suivantes (en tant que membre):"
 
 #: app/scripts/login/login.html:12
 msgid "Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden\n"
 "            Anmeldeinformationen an der Administrationsumgebung anmelden:"
-msgstr ""
+msgstr "Vous êtes sur le système de test d'OpenOlitor. Vous pouvez vous connecter en utilisant les informations d’identification suivantes (en tant qu'administratrice):"
 
 #: app/scripts/common/components/oo-deletebutton.directive.modal.html:2
 msgid "Sind Sie sicher?"
@@ -955,7 +955,7 @@ msgstr "irrégulièrement"
 #: app/scripts/login/login.html:51
 msgid "Unterhalts-Moduls! Das Kundenportal ist gegenwärtig nicht verfügbar. Bitte sobald wie möglich\n"
 "            wieder aktivieren!"
-msgstr ""
+msgstr "Travaux de maintenance ! Le portail client est actuellement indisponible. Veuillez l'activer prochainement."
 
 #: app/scripts/app.js:124
 msgid "Verrechnet"
@@ -1025,11 +1025,11 @@ msgstr "PDF fusionné"
 
 #: app/scripts/login/login_settings_second_factor.html:5
 msgid "Zwei-Faktor-Authentierung erforderlich"
-msgstr ""
+msgstr "Authentification à deux facteurs requise"
 
 #: app/scripts/login/login_settings.html:44
 msgid "Zwei-Faktor-Authentierungstyp"
-msgstr ""
+msgstr "Type d'authentification à deux facteurs"
 
 #: app/scripts/login/login_settings.html:21
 #: app/scripts/login/login_settings.html:32
