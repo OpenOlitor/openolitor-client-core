@@ -16,20 +16,31 @@ angular.module('openolitor-core')
     };
 
     var dataCheckboxWatchCallback = function($scope) {
-      var checked = 0,
-        unchecked = 0,
+      var alreadyChecked = false;
+      var checked = angular.isDefined($scope.checkboxes.checkedItems) ? $scope.checkboxes.checkedItems.length : 0,
+        unchecked = angular.isDefined($scope.checkboxes.ids) ? $scope.checkboxes.ids.length : 0 - angular.isDefined($scope.checkboxes.checkedItems) ? $scope.checkboxes.checkedItems.length : 0,
         total = angular.isDefined($scope.filteredEntries) ? $scope.filteredEntries.length : 0;
       $scope.checkboxes.ids = [];
       $scope.checkboxes.checkedItems = [];
       if (!$scope.checkboxes.data) {
         $scope.checkboxes.data = {};
       }
-      angular.forEach($scope.filteredEntries, function(item) {
+      angular.forEach($scope.entries, function(item) {
+        alreadyChecked = false;
         checked += ($scope.checkboxes.items[item.id]) || 0;
         unchecked += (!$scope.checkboxes.items[item.id]) || 0;
-        if ($scope.checkboxes.items[item.id]) {
-          $scope.checkboxes.ids.push(item.id);
-          $scope.checkboxes.checkedItems.push(item);
+        if ($scope.checkboxes.items[item.id] && $scope.checkboxes.ids.length > 0) {
+          angular.forEach($scope.checkboxes.ids, function(id){
+            if (!alreadyChecked && (id === item.id)){
+               alreadyChecked = true;
+            }
+          });
+        }
+        if (!alreadyChecked){
+          if ($scope.checkboxes.items[item.id]) {
+            $scope.checkboxes.ids.push(item.id);
+            $scope.checkboxes.checkedItems.push(item);
+          }
         }
         $scope.checkboxes.data[item.id] = item;
       });
