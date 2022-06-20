@@ -64,7 +64,7 @@
             <input bs-switch ng-model="form.pdfDownloaden" type="checkbox" switch-size="medium" switch-animate="true" switch-on-text="{{'Ja'|translate}}" switch-off-text="{{'Nein'|translate}}" switch-on-color="success" switch-off-color="danger" switch-radio-off="false" ng-true-value="true" ng-false-value="false">
         </div>
       </div>
-      <div class="row form-group" ng-show="!form.datenExtrakt && form.pdfDownloaden && form.pdfGenerieren && ids.length > 1">
+      <div class="row form-group" ng-show="!form.datenExtrakt && form.pdfDownloaden && form.pdfGenerieren && ids.length > 1 && pdfGenerationOptions">
         <div class="col-md-5">
           <label for="pdfMerge" translate>Download-Format</label>
         </div>
