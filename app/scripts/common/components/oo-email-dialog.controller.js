@@ -82,6 +82,12 @@ angular.module('openolitor-core')
           });
       };
 
+      $scope.replyToDefinition = function() {
+        if ($scope.selectedMailTemplate.replyTo === ''){
+          $scope.selectedMailTemplate.replyTo = undefined;
+        }
+      }
+
       $scope.onchange = function() {
           angular.forEach($scope.templateT, function(value){
             if (value.id === $scope.selectedId){
