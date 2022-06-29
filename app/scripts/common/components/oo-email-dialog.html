@@ -30,7 +30,7 @@
           <label for="replyTo" translate>Reply-To</label>
         </div>
         <div class="col-md-12">
-          <input type="text" class="form-control" name="replyTo" ng-model="selectedMailTemplate.replyTo" placeholder="{{'Reply-to'|translate}}" maxlength="100">
+          <input type="email" ng-change="replyToDefinition()" class="form-control" name="replyTo" ng-model="selectedMailTemplate.replyTo" placeholder="{{'Reply-to'|translate}}" maxlength="100">
         </div>
       </div>
       <div class="row form-group">
