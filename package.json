@@ -1,6 +1,6 @@
 {
   "name": "openolitor-core",
-  "version": "2.6.1.2.1",
+  "version": "2.7.0",
   "description": "OpenOlitor Client Core Module",
   "repository": {
     "type": "https",
