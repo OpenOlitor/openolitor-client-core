@@ -1,6 +1,6 @@
 {
   "name": "openolitor-core",
-  "version": "2.7.0",
+  "version": "2.7.1",
   "ignore": [],
   "private": false,
   "main": ["dist/scripts/openolitor-core.js"],
@@ -39,7 +39,8 @@
     "angular-messages": "~1.8.0",
     "angular-sortable-view": "~0.0.15",
     "angular-loading-bar": "^0.9.0",
-    "jquery": "3.2.1"
+    "jquery": "3.2.1",
+    "angular-file-saver": "elquimeras/ng-file-saver#^1.1.4"
   },
   "devDependencies": {
     "angular-mocks": "~1.8.0",
