@@ -76,7 +76,8 @@ angular
     'ngFileUpload',
     'ngLodash',
     'angular-sortable-view',
-    'angular-loading-bar'
+    'angular-loading-bar',
+    'monospaced.qrcode'
   ])
   .constant('BUILD_NR', '@@BUILD_NR')
   .constant('LIEFERRHYTHMEN', {
@@ -142,18 +143,19 @@ angular
     Administrator: 'Administrator',
     Kunde:'Kunde'
   })
+  .constant('SECOND_FACTOR_TYPES', {
+    OTP: addExtendedEnumValue('otp', gettext('One-Time-Password (OTP)'), gettext('OTP')),
+    EMAIL: addExtendedEnumValue('email', gettext('E-Mail'), gettext('E-Mail'))
+  })
   .constant('ABOTYPEN_ARRAY', ['DepotlieferungAbo', 'HeimlieferungAbo',
     'PostlieferungAbo'
   ])
   .constant('WAEHRUNG', {
-    CHF: addExtendedEnumValue('CHF', gettext('Schweizer Franken'), gettext(
-      'CHF')),
-    EUR: addExtendedEnumValue('EUR', gettext('Euro'), gettext('EUR')),
-    USD: addExtendedEnumValue('USD', gettext('US Dollar'), gettext('USD')),
-    GBP: addExtendedEnumValue('GBP', gettext('Britisches Pfund'), gettext(
-      'GBP')),
-    CAD: addExtendedEnumValue('CAD', gettext('Kanadischer Dollar'), gettext(
-      'CAD'))
+    CHF: addExtendedEnumValue('CHF', gettext('Schweizer Franken'), gettext('CHF'), 'CHF'),
+    EUR: addExtendedEnumValue('EUR', gettext('Euro'), gettext('EUR'), '€'),
+    USD: addExtendedEnumValue('USD', gettext('US Dollar'), gettext('USD'), '$'),
+    GBP: addExtendedEnumValue('GBP', gettext('Britisches Pfund'), gettext('GBP'), '£'),
+    CAD: addExtendedEnumValue('CAD', gettext('Kanadischer Dollar'), gettext('CAD'), '$')
   })
   .constant('LIEFERZEITPUNKTE', {
     MONTAG: addExtendedEnumValue('Montag', gettext('Montag'), gettext('MO'),
@@ -201,6 +203,10 @@ angular
     ERFASST: gettext('Erfasst'),
     AUSGELIEFERT: gettext('Ausgeliefert'),
   })
+  .constant('PDF_DOWNLOAD_TYPES', {
+    pdfMerge: addExtendedEnumValue('pdfMerge', gettext('Zusammengeführtes PDF'), gettext('Zusammengeführtes PDF')),
+    zip: addExtendedEnumValue('zip', gettext('Gezippte PDFs'), gettext('Gezippte PDFs'))
+  })
   .run(function($rootScope, $location) {
     $rootScope.location = $location;
   })
@@ -211,7 +217,7 @@ angular
     $http.get('environments/config.json').then(function(payload) {
       configData = payload.data;
       loaded = true;
-    }, function(error) {
+    }, function() {
     });
     return {
       get: function() {
@@ -389,6 +395,18 @@ angular
         templateUrl: 'scripts/login/change_password.html',
         controller: 'LoginController',
         name: 'Passwortwechsel',
+        access: [USER_ROLES.Administrator, USER_ROLES.Kunde]
+      })
+      .when('/login_settings', {
+        templateUrl: 'scripts/login/login_settings.html',
+        controller: 'LoginController',
+        name: 'Anmelde-Einstellungen',
+        access: [USER_ROLES.Administrator, USER_ROLES.Kunde]
+      })
+      .when('/reset_otp', {
+        templateUrl: 'scripts/login/reset_otp.html',
+        controller: 'LoginController',
+        name: 'Anmelde-Einstellungen',
         access: [USER_ROLES.Administrator, USER_ROLES.Kunde]
       })
       .when('/logout', {

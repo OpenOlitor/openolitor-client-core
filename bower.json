@@ -1,9 +1,11 @@
 {
   "name": "openolitor-core",
-  "version": "2.7.1",
+  "version": "2.6.6",
   "ignore": [],
   "private": false,
-  "main": ["dist/scripts/openolitor-core.js"],
+  "main": [
+    "dist/scripts/openolitor-core.js"
+  ],
   "dependencies": {
     "angular": "~1.8.0",
     "angular-animate": "~1.8.0",
@@ -39,8 +41,10 @@
     "angular-messages": "~1.8.0",
     "angular-sortable-view": "~0.0.15",
     "angular-loading-bar": "^0.9.0",
-    "jquery": "3.2.1",
-    "angular-file-saver": "elquimeras/ng-file-saver#^1.1.4"
+    "angular-file-saver": "elquimeras/ng-file-saver#^1.1.4",
+    "jquery": "3.6.0",
+    "angular-qrcode": "^7.2.0",
+    "qrcode-generator": "monospaced/bower-qrcode-generator#0.2.0"
   },
   "devDependencies": {
     "angular-mocks": "~1.8.0",
@@ -48,11 +52,14 @@
   },
   "resolutions": {
     "angular": "~1.8.0",
-    "jquery": "3.2.1"
+    "jquery": "3.6.0",
+    "qrcode-generator": "0.2.0"
   },
   "overrides": {
     "moment": {
-      "main": ["./min/moment-with-locales.min.js"]
+      "main": [
+        "./min/moment-with-locales.min.js"
+      ]
     }
   }
 }

@@ -1,0 +1,37 @@
+<div class="dialog">
+  <div class="jumbotron">
+    <div oo-error-overlay></div>
+    <div class="container">
+      <h3 translate>Zwei-Faktor-Authentierung erforderlich</h3>
+      <p>
+      <div class="container">
+        <form class="form-signin" name="secondFactorDataForm">
+          <div class="container" ng-show="status === 'otpTwoFactor'">
+            <div class="alert alert-info" role="alert"><span translate>Bitte geben Sie das Einmalpasswort aus Ihrer
+                Zwei-Faktor-Authentifizierungs-App ein.</span></div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="{{'Code' | translate}}"
+                ng-required="status === 'otpTwoFactor'" auto-focus ng-model="secondFactorData.code">
+            </div>
+          </div>
+
+          <div class="container" ng-show="status === 'emailTwoFactor'">
+            <div class="alert alert-info" role="alert"><span translate>Es wurde ein Zugangscode an ihre
+                Email-Adresse</span> <b>{{person.email}}</b> <span translate>zugestellt.</span></div>
+            <div class="form-group">
+              <input type="text" class="form-control"
+                placeholder="{{'Zugangscode' | translate}} - {{secondFactorCountdownDate() | fromNow}} {{'läuft dieser Loginversuch ab'}}"
+                ng-required="status === 'emailTwoFactor'" ng-model="secondFactorData.code">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <button ng-disabled="secondFactorDataForm.$invalid" class="btn btn-md btn-primary" type="submit"
+              ng-click="submit()" translate>Einstellungen Speichern</button>
+          </div>
+        </form>
+      </div>
+      </p>
+    </div>
+  </div>
+</div>

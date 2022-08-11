@@ -10,7 +10,7 @@
     <form name="emailForm">
       <div class="row form-group">
 <div class="col-md-12">
-        <div class="alert alert-danger" role="alert" ng-show="!attachment && selectedMailTemplate.attachInvoice">
+        <div class="alert alert-danger" role="alert" ng-show="!attachment && selectedMailTemplate.attachInvoice && url === 'mailing/sendEmailToInvoicesSubscribers'">
             <span translate>Einige selektierte Einträge verfügen über kein angehängtes Rechnungsdokument. Diese E-Mails werden ohne Anhang verschickt.</span>
             <i class="fa fa-info-circle" aria-hidden="true" ng-if="abo.ende === undefined && abo.abotyp.kuendigungsfrist" uib-tooltip-template="'kuendigungsterminTooltipTemplate.html'"></i>
          </div>
@@ -22,7 +22,7 @@
         <i uib-tooltip="{{message | translate}}" tooltip-placement="bottom" class="fa fa-question-circle" aria-hidden="true"></i>
         </div>
         <div class="col-md-12">
-          <oo-dropdown name="mailTemplateDropdown" dropdown-id="mailTemplateDropdown" display-style="uib-dropdown" values="templateT" property="label" selected-prop="id" selected-function="selectTemplateFunc(false)" selected="selectedId"></oo-dropdown>
+          <oo-dropdown name="mailTemplateDropdown" dropdown-id="mailTemplateDropdown" display-style="uib-dropdown" values="templateT" property="label" selected-prop="id" selected-function="selectTemplateFunc(false)" selected-value="selectedId"></oo-dropdown>
         </div>
       </div>
       <div class="row form-group">
@@ -30,7 +30,7 @@
           <label for="replyTo" translate>Reply-To</label>
         </div>
         <div class="col-md-12">
-          <input type="text" class="form-control" name="replyTo" ng-model="selectedMailTemplate.replyTo" placeholder="{{'Reply-to'|translate}}" maxlength="100">
+          <input type="email" ng-change="replyToDefinition()" class="form-control" name="replyTo" ng-model="selectedMailTemplate.replyTo" placeholder="{{'Reply-to'|translate}}" maxlength="100">
         </div>
       </div>
       <div class="row form-group">

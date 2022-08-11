@@ -23,6 +23,8 @@ angular.module('openolitor-core').directive('ooSaveButton', ['msgBus',
       templateUrl: 'scripts/common/components/oo-savebutton.directive.html',
       controller: function($scope) {
 
+        $scope.actionInProgress = undefined;
+
         if (!angular.isUndefined($scope.condensed) && $scope.condensed) {
           $scope.notext = true;
           $scope.small = true;
@@ -45,7 +47,7 @@ angular.module('openolitor-core').directive('ooSaveButton', ['msgBus',
             $scope.model) && msg.data.id === $scope.model
               .id) {
             DataUtil.update(msg.data, $scope.model);
-            $scope.model.actionInProgress = undefined;
+            $scope.actionInProgress = undefined;
             $scope.$apply();
           }
         });
@@ -54,7 +56,7 @@ angular.module('openolitor-core').directive('ooSaveButton', ['msgBus',
           if ($scope.model && entityMatches(msg.entity) && msg.data.id ===
             $scope.model.id) {
             DataUtil.update(msg.data, $scope.model);
-            $scope.model.actionInProgress = undefined;
+            $scope.actionInProgress = undefined;
             if ($scope.onCreated) {
               if ($scope.form) {
                 if ($scope.form.destroyConfirmOnDirty &&
@@ -69,11 +71,11 @@ angular.module('openolitor-core').directive('ooSaveButton', ['msgBus',
         });
 
         $scope.save = function() {
-          $scope.model.actionInProgress = 'updating';
+          $scope.actionInProgress = 'updating';
           var ret = $scope.onSave($scope.model);
           if (!angular.isUndefined(ret.catch)) {
             ret.catch(function(req) {
-              $scope.model.actionInProgress = undefined;
+              $scope.actionInProgress = undefined;
               alertService.addAlert('error', gettext($scope.entity +
                   ' konnte nicht gespeichert werden. Fehler: ') +
                 req.status +
@@ -81,13 +83,13 @@ angular.module('openolitor-core').directive('ooSaveButton', ['msgBus',
               );
             });
           } else {
-            $scope.model.actionInProgress = undefined;
+            $scope.actionInProgress = undefined;
           }
         };
 
 
         $scope.cancel = function() {
-          $scope.model.actionInProgress = 'updating';
+          $scope.actionInProgress = 'updating';
           $scope.onCancel();
         };
       }

@@ -7,7 +7,7 @@ angular.module('openolitor-core').directive('ooDropdown', [function() {
     scope: {
       placeholder: '@',
       values: '=',
-      selected: '=',
+      selected: '=?selectedValue',
       selectedProp: '@',
       selectedFunction: '&?',
       selectedFunctionScope: '=',

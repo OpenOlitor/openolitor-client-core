@@ -6,10 +6,10 @@ angular.module('openolitor-core')
   .controller('OpenOlitorRootController', ['$scope', '$rootScope',
     'ServerService', 'ProjektService', 'gettextCatalog', 'amMoment',
     '$location', 'msgBus', 'checkSize', '$window', '$timeout', 'BUILD_NR',
-    'ooAuthService', '$cookies',
+    'ooAuthService', '$cookies', 'appConfig',
     function($scope, $rootScope, ServerService, ProjektService,
       gettextCatalog, amMoment, $location, msgBus, checkSize, $window,
-      $timeout, BUILD_NR, ooAuthService, $cookies) {
+      $timeout, BUILD_NR, ooAuthService, $cookies, appConfig) {
       angular.element($window).bind('resize', function() {
         checkSize();
       });
@@ -27,9 +27,10 @@ angular.module('openolitor-core')
         return ooAuthService.getUser();
       }, function(user) {
         $scope.loggedIn = ooAuthService.isUserLoggedIn(user);
-        $scope.user = user;
+        $scope.user = user;        
 
         if($scope.loggedIn) {
+          $scope.secondFactorType = ooAuthService.getSecondFactorType();
           ProjektService.resolveProjekt().then(function(projekt) {
             $scope.projekt = projekt;
             $rootScope.projekt = projekt;
