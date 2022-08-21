@@ -146,8 +146,8 @@ angular.module('openolitor-core').directive('ooGenerateReport', function() {
       $scope.$on('resetDirectiveGenerateReport', function(event) {
         var form = document.querySelector('[name=berichtForm]');
         $scope.form = {
-          vorlage: undefined,
-          projektVorlageId: undefined,
+          vorlage: $scope.form.vorlage,
+          projektVorlageId: $scope.form.projektVorlageId,
           pdfGenerieren: true,
           pdfAblegen: false,
           pdfDownloaden: true,
