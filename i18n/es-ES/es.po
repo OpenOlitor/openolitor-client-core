@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 76\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2022-08-22 16:48\n"
+"PO-Revision-Date: 2022-08-23 12:19\n"
 
 #: app/scripts/login/login.html:91
 #: app/scripts/login/reset_otp.html:33
@@ -237,7 +237,7 @@ msgstr "El servidor parece que no está respondiendo. Espera unos segundos e int
 #: app/scripts/login/login.html:45
 msgid "Das Kundenportal ist gegenwärtig nicht verfügbar. Wir führen Unterhaltsarbeiten durch. In Kürze\n"
 "            sind wir wieder online und wie gewohnt für Sie da."
-msgstr "El portal de abonado no está actualmente disponible ya que estamos realizando alguna tarea de mantenimiento. En breve, el portal estará disponible de nuevo."
+msgstr "El portal de abonad@ no está actualmente disponible ya que estamos realizando alguna tarea de mantenimiento. En breve, el portal estará disponible de nuevo."
 
 #: app/scripts/login/change_password.html:26
 #: app/scripts/login/zugangaktivieren.html:15
@@ -255,7 +255,7 @@ msgstr "La contraseña debe contener letras minusculas y mayusculas así como al
 
 #: app/scripts/login/login.controller.js:135
 msgid "Das Passwort wurde erfolgreich gesetzt. Sie können sich nun anmelden."
-msgstr "La contraseña ha sido inicializada. Ahora puedes conectarte con el nombre de usuario y la contraseña."
+msgstr "La contraseña ha sido inicializada. Ahora puedes conectarte con el nombre de usuari@ y la contraseña."
 
 #: app/scripts/common/components/oo-generate-report.directive.html:22
 #: app/scripts/common/components/oo-generate-report.directive.html:38
@@ -570,7 +570,7 @@ msgstr "Kilogramos"
 
 #: app/index.html:79
 msgid "Kunden"
-msgstr "Abonados"
+msgstr "Abonad@s"
 
 #: app/index.html:85
 msgid "Lieferanten"
@@ -880,12 +880,12 @@ msgstr "Septiembre"
 #: app/scripts/login/login.html:25
 msgid "Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden\n"
 "            Anmeldeinformationen als Konsument anmelden:"
-msgstr "Estás en el sistema de prueba de OpenOlitor. Te puedes conectar como abonado utilizado la información de identificación siguiente:"
+msgstr "Estás en el sistema de prueba de OpenOlitor. Te puedes conectar como abonad@ utilizado la información de identificación siguiente:"
 
 #: app/scripts/login/login.html:12
 msgid "Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden\n"
 "            Anmeldeinformationen an der Administrationsumgebung anmelden:"
-msgstr "Estás en el sistema de prueba de OpenOlitor. Te puedes conectar como abonado utilizado la información de identificación siguiente:"
+msgstr "Estás en el sistema de prueba de OpenOlitor. Te puedes conectar como abonad@ utilizado la información de identificación siguiente:"
 
 #: app/scripts/common/components/oo-deletebutton.directive.modal.html:2
 msgid "Sind Sie sicher?"
@@ -955,7 +955,7 @@ msgstr "Irregularmente"
 #: app/scripts/login/login.html:51
 msgid "Unterhalts-Moduls! Das Kundenportal ist gegenwärtig nicht verfügbar. Bitte sobald wie möglich\n"
 "            wieder aktivieren!"
-msgstr "¡estamos realizando tareas de mantenimiento! el portal del abonado está indisponible. Intentalo un poco más tarde"
+msgstr "¡estamos realizando tareas de mantenimiento! el portal del abonad@ está indisponible. Intentalo un poco más tarde"
 
 #: app/scripts/app.js:124
 msgid "Verrechnet"
