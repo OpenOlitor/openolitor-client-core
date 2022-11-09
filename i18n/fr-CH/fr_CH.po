@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 76\n"
 "Language-Team: French, Switzerland\n"
 "Language: fr_CH\n"
-"PO-Revision-Date: 2022-08-22 15:40\n"
+"PO-Revision-Date: 2022-08-22 16:48\n"
 
 #: app/scripts/login/login.html:91
 #: app/scripts/login/reset_otp.html:33
@@ -20,7 +20,7 @@ msgstr "&nbsp;ou&nbsp;"
 
 #: app/scripts/app.js:111
 msgid "-"
-msgstr ""
+msgstr "-"
 
 #: app/scripts/login/login.html:7
 msgid "- Entwicklungsumgebung"
@@ -208,11 +208,11 @@ msgstr "Bouquet"
 
 #: app/scripts/app.js:158
 msgid "CAD"
-msgstr ""
+msgstr "CAD"
 
 #: app/scripts/app.js:154
 msgid "CHF"
-msgstr ""
+msgstr "CHF"
 
 #: app/scripts/login/change_password.html:53
 #: app/scripts/login/login.html:106
@@ -220,7 +220,7 @@ msgstr ""
 #: app/scripts/login/reset_otp.html:15
 #: app/scripts/login/reset_otp.html:49
 msgid "Code"
-msgstr ""
+msgstr "Code"
 
 #: app/scripts/app.js:163
 msgid "DI"
@@ -352,7 +352,7 @@ msgstr "Courriel:"
 
 #: app/scripts/app.js:155
 msgid "EUR"
-msgstr ""
+msgstr "EUR"
 
 #: app/scripts/login/change_password.html:5
 msgid "Eigenes Passwort wechseln"
@@ -441,11 +441,11 @@ msgstr "Un code d’accès a été envoyé à votre adresse courriel"
 
 #: app/scripts/app.js:155
 msgid "Euro"
-msgstr ""
+msgstr "Euro"
 
 #: app/scripts/app.js:169
 msgid "FR"
-msgstr ""
+msgstr "FR"
 
 #: app/scripts/app.js:179
 msgid "Feb"
@@ -461,7 +461,7 @@ msgstr "Adresse courriel non valide"
 
 #: app/scripts/app.js:113
 msgid "Fr."
-msgstr ""
+msgstr "Fr."
 
 #: app/scripts/app.js:113
 msgid "Frau"
@@ -490,7 +490,7 @@ msgstr "Une inscription est nécessaire pour accéder à OpenOlitor"
 
 #: app/scripts/app.js:157
 msgid "GBP"
-msgstr ""
+msgstr "GBP"
 
 #: app/scripts/app.js:208
 msgid "Gezippte PDFs"
@@ -615,7 +615,7 @@ msgstr "Rappel-envoyé"
 
 #: app/scripts/app.js:183
 msgid "Mai"
-msgstr ""
+msgstr "Mai"
 
 #: app/scripts/common/components/oo-email-dialog.html:54
 msgid "Mail-Body"
@@ -681,7 +681,7 @@ msgstr "non achevé"
 
 #: app/scripts/app.js:192
 msgid "Nov"
-msgstr ""
+msgstr "Nov"
 
 #: app/scripts/app.js:192
 msgid "November"
@@ -689,7 +689,7 @@ msgstr "Novembre"
 
 #: app/scripts/app.js:147
 msgid "OTP"
-msgstr ""
+msgstr "OTP"
 
 #: app/scripts/login/login.controller.js:322
 msgid "OTP Passwort Erfolgreich zurückgesetzt"
@@ -705,7 +705,7 @@ msgstr "Ouvert"
 
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:15
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #: app/scripts/app.js:190
 msgid "Okt"
@@ -845,7 +845,7 @@ msgstr "Rapports"
 
 #: app/scripts/app.js:171
 msgid "SA"
-msgstr ""
+msgstr "SA"
 
 #: app/scripts/app.js:173
 msgid "SO"
@@ -871,7 +871,7 @@ msgstr "Envoyer"
 
 #: app/scripts/app.js:189
 msgid "Sep"
-msgstr ""
+msgstr "Sep"
 
 #: app/scripts/app.js:188
 msgid "September"
@@ -938,7 +938,7 @@ msgstr "Dollar des Etats-Unis"
 
 #: app/scripts/app.js:156
 msgid "USD"
-msgstr ""
+msgstr "USD"
 
 #: app/scripts/app.js:102
 msgid "Unbeschraenkt"
@@ -1046,11 +1046,11 @@ msgstr "créer"
 
 #: app/scripts/app.js:136
 msgid "gr"
-msgstr ""
+msgstr "gr"
 
 #: app/scripts/app.js:138
 msgid "kg"
-msgstr ""
+msgstr "kg"
 
 #: app/scripts/common/components/oo-actionsbutton.directive.js:119
 msgid "konnte nicht ausgeführt werden. Fehler:"
@@ -1066,7 +1066,7 @@ msgstr "ne pouvait pas être  sauvegardé. Erreur:"
 
 #: app/scripts/app.js:139
 msgid "l"
-msgstr ""
+msgstr "l"
 
 #: app/scripts/common/filters/oo-preisproeinheit.filter.js:7
 msgid "pro"
