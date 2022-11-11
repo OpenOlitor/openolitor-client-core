@@ -4,7 +4,10 @@ angular.module('openolitor-core').filter('ooCurrency', ['$rootScope', '$filter',
   function($rootScope, $filter, gettextCatalog, WAEHRUNG, EnumUtil, lodash) {
   return function(value, showTag, currency) {
     var waehrungen = EnumUtil.asArray(WAEHRUNG);
-    var projektCurrency = $rootScope.projekt.waehrung;
+    var projektCurrency = undefined;
+    if ($rootScope.projekt !== undefined && $rootScope.projekt.waehrung !== undefined ){
+      var projektCurrency = $rootScope.projekt.waehrung;
+    }
     var result = '';
     var symbol = undefined;
     result += $filter('number')(value, 2);
