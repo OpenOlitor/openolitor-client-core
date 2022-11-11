@@ -114,7 +114,7 @@ msgstr ""
 msgid "Ausstehend"
 msgstr ""
 
-#: app/scripts/common/components/oo-generate-report.directive.js:75
+#: app/scripts/common/components/oo-generate-report.directive.js:77
 msgid "Beim erstellen der Dokumente sind folgende Fehler aufgetreten"
 msgstr ""
 
@@ -126,7 +126,7 @@ msgstr ""
 msgid "Bericht erstellen"
 msgstr ""
 
-#: app/scripts/common/components/oo-generate-report.directive.js:98
+#: app/scripts/common/components/oo-generate-report.directive.js:100
 msgid "Bericht konnte nicht erzeugt werden"
 msgstr ""
 
