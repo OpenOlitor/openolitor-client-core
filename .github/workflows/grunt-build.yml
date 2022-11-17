@@ -3,6 +3,9 @@ name: Build Webapp
 on:
   push:
 
+env:
+  npm_config_legacy_peer_deps: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
