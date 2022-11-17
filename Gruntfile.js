@@ -1,6 +1,8 @@
 // Generated using generator-angular
 'use strict';
 
+const sass = require('node-sass');
+
 module.exports = function(grunt) {
   /*jshint camelcase: false */
 
@@ -169,6 +171,8 @@ module.exports = function(grunt) {
 
     sass: {
         options: {
+          implementation: sass,
+          sourceMap: true,
             includePaths: [
                 'app/bower_components'
             ]

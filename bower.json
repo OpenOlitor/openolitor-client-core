@@ -1,6 +1,7 @@
 {
   "name": "openolitor-core",
-  "version": "2.8.2",
+  "version": "2.9.0",
+
   "ignore": [],
   "private": false,
   "main": [
@@ -42,7 +43,7 @@
     "angular-sortable-view": "~0.0.15",
     "angular-loading-bar": "^0.9.0",
     "angular-file-saver": "elquimeras/ng-file-saver#^1.1.4",
-    "jquery": "3.6.0",
+    "jquery": "npm:jquery#3.6.0",
     "angular-qrcode": "^7.2.0",
     "qrcode-generator": "monospaced/bower-qrcode-generator#0.2.0"
   },
