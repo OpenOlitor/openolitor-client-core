@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 76\n"
 "Language-Team: French, Switzerland\n"
 "Language: fr_CH\n"
-"PO-Revision-Date: 2022-08-22 16:48\n"
+"PO-Revision-Date: 2022-11-11 12:27\n"
 
 #: app/scripts/login/login.html:91
 #: app/scripts/login/reset_otp.html:33
@@ -123,7 +123,7 @@ msgstr "Livraisons"
 msgid "Ausstehend"
 msgstr "dû"
 
-#: app/scripts/common/components/oo-generate-report.directive.js:75
+#: app/scripts/common/components/oo-generate-report.directive.js:77
 msgid "Beim erstellen der Dokumente sind folgende Fehler aufgetreten"
 msgstr "Lors de la création de documents les d’erreurs suivants se sont produites"
 
@@ -135,7 +135,7 @@ msgstr "personnalisé"
 msgid "Bericht erstellen"
 msgstr "Créer un rapport"
 
-#: app/scripts/common/components/oo-generate-report.directive.js:98
+#: app/scripts/common/components/oo-generate-report.directive.js:100
 msgid "Bericht konnte nicht erzeugt werden"
 msgstr "Le rapport n'as pas pu être créé"
 

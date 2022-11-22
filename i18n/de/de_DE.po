@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 76\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2022-08-22 15:40\n"
+"PO-Revision-Date: 2022-11-11 12:27\n"
 
 #: app/scripts/login/login.html:91
 #: app/scripts/login/reset_otp.html:33
@@ -123,7 +123,7 @@ msgstr ""
 msgid "Ausstehend"
 msgstr ""
 
-#: app/scripts/common/components/oo-generate-report.directive.js:75
+#: app/scripts/common/components/oo-generate-report.directive.js:77
 msgid "Beim erstellen der Dokumente sind folgende Fehler aufgetreten"
 msgstr ""
 
@@ -135,7 +135,7 @@ msgstr ""
 msgid "Bericht erstellen"
 msgstr ""
 
-#: app/scripts/common/components/oo-generate-report.directive.js:98
+#: app/scripts/common/components/oo-generate-report.directive.js:100
 msgid "Bericht konnte nicht erzeugt werden"
 msgstr ""
 
