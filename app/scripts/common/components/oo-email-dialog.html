@@ -42,10 +42,13 @@
         </div>
       </div>
       <div ng-show="url === 'mailing/sendEmailToInvoicesSubscribers'" class="row form-group">
-        <div class="col-md-6">
-            <label for="attachment" translate>Rechnung anhängen</label>
+        <div class="col-md-8">
+            <label for="attachment" translate>Rechnung/Mahnung anhängen</label>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-1">
+          <i class="fa fa-info-circle" aria-hidden="true" uib-tooltip="{{'Die Mahnung wird versendet, sofern vorhanden. Andernfalls wird die Rechnung versendet' | translate}}"></i>
+        </div>
+        <div class="col-md-3">
             <input bs-switch name="attachInvoice" ng-model="selectedMailTemplate.attachInvoice" type="checkbox" switch-size="medium" switch-animate="true" switch-on-text="{{'Ja'|translate}}" switch-off-text="{{'Nein'|translate}}" switch-on-color="success" switch-off-color="danger" switch-radio-off="false" ng-true-value="true" ng-false-value="false" checked>
         </div>
       </div>
