@@ -7,11 +7,11 @@ msgstr ""
 "X-Crowdin-Project: openolitor-core-client\n"
 "X-Crowdin-Project-ID: 393653\n"
 "X-Crowdin-Language: en\n"
-"X-Crowdin-File: /prod/template.pot\n"
-"X-Crowdin-File-ID: 76\n"
+"X-Crowdin-File: /[OpenOlitor.openolitor-client-core] prod/template.pot\n"
+"X-Crowdin-File-ID: 84\n"
 "Language-Team: English\n"
 "Language: en_US\n"
-"PO-Revision-Date: 2022-11-11 12:27\n"
+"PO-Revision-Date: 2024-03-05 10:31\n"
 
 #: app/scripts/login/login.html:91
 #: app/scripts/login/reset_otp.html:33
@@ -20,7 +20,7 @@ msgstr "&nbsp;or&nbsp;"
 
 #: app/scripts/app.js:111
 msgid "-"
-msgstr "-"
+msgstr ""
 
 #: app/scripts/login/login.html:7
 msgid "- Entwicklungsumgebung"
@@ -93,11 +93,11 @@ msgstr "An email was send with the required information to modify the email pass
 
 #: app/scripts/app.js:182
 msgid "Apr"
-msgstr "Apr"
+msgstr ""
 
 #: app/scripts/app.js:182
 msgid "April"
-msgstr "April"
+msgstr ""
 
 #: app/scripts/login/login.controller.js:77
 msgid "Aufwiedersehen"
@@ -105,11 +105,11 @@ msgstr "Goodbye"
 
 #: app/scripts/app.js:186
 msgid "Aug"
-msgstr "Aug"
+msgstr ""
 
 #: app/scripts/app.js:186
 msgid "August"
-msgstr "August"
+msgstr ""
 
 #: app/scripts/app.js:204
 msgid "Ausgeliefert"
@@ -208,11 +208,11 @@ msgstr "Bunch"
 
 #: app/scripts/app.js:158
 msgid "CAD"
-msgstr "CAD"
+msgstr ""
 
 #: app/scripts/app.js:154
 msgid "CHF"
-msgstr "CHF"
+msgstr ""
 
 #: app/scripts/login/change_password.html:53
 #: app/scripts/login/login.html:106
@@ -220,7 +220,7 @@ msgstr "CHF"
 #: app/scripts/login/reset_otp.html:15
 #: app/scripts/login/reset_otp.html:49
 msgid "Code"
-msgstr "Code"
+msgstr ""
 
 #: app/scripts/app.js:163
 msgid "DI"
@@ -276,7 +276,7 @@ msgstr "Depot DeliverySuscription"
 
 #: app/index.html:123
 msgid "Depots"
-msgstr "Depots"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:70
 msgid "Der Mailversand wurde ausgelöst."
@@ -318,7 +318,7 @@ msgstr "Thursday"
 
 #: app/scripts/common/components/oo-generate-report.directive.html:61
 msgid "Download"
-msgstr "Download"
+msgstr ""
 
 #: app/scripts/common/components/oo-download-report.directive.html:15
 #: app/scripts/common/components/oo-generate-report.directive.html:69
@@ -352,7 +352,7 @@ msgstr "Email:"
 
 #: app/scripts/app.js:155
 msgid "EUR"
-msgstr "EUR"
+msgstr ""
 
 #: app/scripts/login/change_password.html:5
 msgid "Eigenes Passwort wechseln"
@@ -418,7 +418,7 @@ msgstr "Done"
 
 #: app/scripts/not-found.html:6
 msgid "Error 404"
-msgstr "Error 404"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:79
 msgid "Erstellen"
@@ -449,7 +449,7 @@ msgstr "FRI"
 
 #: app/scripts/app.js:179
 msgid "Feb"
-msgstr "Feb"
+msgstr ""
 
 #: app/scripts/app.js:179
 msgid "Februar"
@@ -490,7 +490,7 @@ msgstr "Registration is required to access to OpenOlitor"
 
 #: app/scripts/app.js:157
 msgid "GBP"
-msgstr "GBP"
+msgstr ""
 
 #: app/scripts/app.js:208
 msgid "Gezippte PDFs"
@@ -530,7 +530,7 @@ msgstr "Yes"
 
 #: app/scripts/app.js:177
 msgid "Jan"
-msgstr "Jan"
+msgstr ""
 
 #: app/scripts/app.js:177
 msgid "Januar"
@@ -590,7 +590,7 @@ msgstr "Deliveries"
 
 #: app/scripts/app.js:139
 msgid "Liter"
-msgstr "Liter"
+msgstr ""
 
 #: app/scripts/login/login.html:77
 msgid "Login Administration"
@@ -633,7 +633,7 @@ msgstr "Mails were sent"
 
 #: app/scripts/app.js:181
 msgid "Mar"
-msgstr "Mar"
+msgstr ""
 
 #: app/scripts/app.js:165
 msgid "Mittwoch"
@@ -681,15 +681,15 @@ msgstr "Not done"
 
 #: app/scripts/app.js:192
 msgid "Nov"
-msgstr "Nov"
+msgstr ""
 
 #: app/scripts/app.js:192
 msgid "November"
-msgstr "November"
+msgstr ""
 
 #: app/scripts/app.js:147
 msgid "OTP"
-msgstr "OTP"
+msgstr ""
 
 #: app/scripts/login/login.controller.js:322
 msgid "OTP Passwort Erfolgreich zurückgesetzt"
@@ -705,7 +705,7 @@ msgstr "open"
 
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:15
 msgid "Ok"
-msgstr "Ok"
+msgstr ""
 
 #: app/scripts/app.js:190
 msgid "Okt"
@@ -717,7 +717,7 @@ msgstr "October"
 
 #: app/scripts/app.js:147
 msgid "One-Time-Password (OTP)"
-msgstr "One-Time-Password (OTP)"
+msgstr ""
 
 #: app/scripts/login/login_settings.html:57
 msgid "One-Time-Passwort (OTP)"
@@ -833,11 +833,11 @@ msgstr "Invoices"
 
 #: app/scripts/common/components/oo-email-dialog.html:30
 msgid "Reply-To"
-msgstr "Reply-To"
+msgstr ""
 
 #: app/scripts/common/components/oo-email-dialog.html:33
 msgid "Reply-to"
-msgstr "Reply-to"
+msgstr ""
 
 #: app/index.html:137
 msgid "Reports*"
@@ -875,7 +875,7 @@ msgstr "Sept"
 
 #: app/scripts/app.js:188
 msgid "September"
-msgstr "September"
+msgstr ""
 
 #: app/scripts/login/login.html:25
 msgid "Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden\n"
@@ -938,7 +938,7 @@ msgstr "US-Dollar"
 
 #: app/scripts/app.js:156
 msgid "USD"
-msgstr "USD"
+msgstr ""
 
 #: app/scripts/app.js:102
 msgid "Unbeschraenkt"
@@ -1046,11 +1046,11 @@ msgstr "create"
 
 #: app/scripts/app.js:136
 msgid "gr"
-msgstr "gr"
+msgstr ""
 
 #: app/scripts/app.js:138
 msgid "kg"
-msgstr "kg"
+msgstr ""
 
 #: app/scripts/common/components/oo-actionsbutton.directive.js:119
 msgid "konnte nicht ausgeführt werden. Fehler:"
@@ -1066,7 +1066,7 @@ msgstr "could not be saved. Error:"
 
 #: app/scripts/app.js:139
 msgid "l"
-msgstr "l"
+msgstr ""
 
 #: app/scripts/common/filters/oo-preisproeinheit.filter.js:7
 msgid "pro"

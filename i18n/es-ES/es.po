@@ -7,11 +7,11 @@ msgstr ""
 "X-Crowdin-Project: openolitor-core-client\n"
 "X-Crowdin-Project-ID: 393653\n"
 "X-Crowdin-Language: es-ES\n"
-"X-Crowdin-File: /prod/template.pot\n"
-"X-Crowdin-File-ID: 76\n"
+"X-Crowdin-File: /[OpenOlitor.openolitor-client-core] prod/template.pot\n"
+"X-Crowdin-File-ID: 84\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2022-11-11 12:27\n"
+"PO-Revision-Date: 2024-03-05 10:31\n"
 
 #: app/scripts/login/login.html:91
 #: app/scripts/login/reset_otp.html:33
@@ -20,7 +20,7 @@ msgstr "&nbsp;o&nbsp;"
 
 #: app/scripts/app.js:111
 msgid "-"
-msgstr "-"
+msgstr ""
 
 #: app/scripts/login/login.html:7
 msgid "- Entwicklungsumgebung"
@@ -208,11 +208,11 @@ msgstr "Manojo"
 
 #: app/scripts/app.js:158
 msgid "CAD"
-msgstr "CAD"
+msgstr ""
 
 #: app/scripts/app.js:154
 msgid "CHF"
-msgstr "CHF"
+msgstr ""
 
 #: app/scripts/login/change_password.html:53
 #: app/scripts/login/login.html:106
@@ -352,7 +352,7 @@ msgstr "Correo electrónico:"
 
 #: app/scripts/app.js:155
 msgid "EUR"
-msgstr "EUR"
+msgstr ""
 
 #: app/scripts/login/change_password.html:5
 msgid "Eigenes Passwort wechseln"
@@ -418,7 +418,7 @@ msgstr "Cerrado"
 
 #: app/scripts/not-found.html:6
 msgid "Error 404"
-msgstr "Error 404"
+msgstr ""
 
 #: app/scripts/common/components/oo-generate-report.directive.html:79
 msgid "Erstellen"
@@ -445,11 +445,11 @@ msgstr "Euros"
 
 #: app/scripts/app.js:169
 msgid "FR"
-msgstr "FR"
+msgstr ""
 
 #: app/scripts/app.js:179
 msgid "Feb"
-msgstr "Feb"
+msgstr ""
 
 #: app/scripts/app.js:179
 msgid "Februar"
@@ -490,7 +490,7 @@ msgstr "Para acceder a OpenOlitor tienes que introducir tus credenciales"
 
 #: app/scripts/app.js:157
 msgid "GBP"
-msgstr "GBP"
+msgstr ""
 
 #: app/scripts/app.js:208
 msgid "Gezippte PDFs"
@@ -538,7 +538,7 @@ msgstr "Enero"
 
 #: app/scripts/app.js:185
 msgid "Jul"
-msgstr "Jul"
+msgstr ""
 
 #: app/scripts/app.js:185
 msgid "Juli"
@@ -546,7 +546,7 @@ msgstr "Julio"
 
 #: app/scripts/app.js:184
 msgid "Jun"
-msgstr "Jun"
+msgstr ""
 
 #: app/scripts/app.js:184
 msgid "Juni"
@@ -633,7 +633,7 @@ msgstr "Los correos han sido enviados"
 
 #: app/scripts/app.js:181
 msgid "Mar"
-msgstr "Mar"
+msgstr ""
 
 #: app/scripts/app.js:165
 msgid "Mittwoch"
@@ -681,7 +681,7 @@ msgstr "Sin concluir"
 
 #: app/scripts/app.js:192
 msgid "Nov"
-msgstr "Nov"
+msgstr ""
 
 #: app/scripts/app.js:192
 msgid "November"
@@ -689,7 +689,7 @@ msgstr "Noviembre"
 
 #: app/scripts/app.js:147
 msgid "OTP"
-msgstr "OTP"
+msgstr ""
 
 #: app/scripts/login/login.controller.js:322
 msgid "OTP Passwort Erfolgreich zurückgesetzt"
@@ -871,7 +871,7 @@ msgstr "Enviar"
 
 #: app/scripts/app.js:189
 msgid "Sep"
-msgstr "Sep"
+msgstr ""
 
 #: app/scripts/app.js:188
 msgid "September"
@@ -938,7 +938,7 @@ msgstr "Dólar estadounidense"
 
 #: app/scripts/app.js:156
 msgid "USD"
-msgstr "USD"
+msgstr ""
 
 #: app/scripts/app.js:102
 msgid "Unbeschraenkt"
@@ -1046,11 +1046,11 @@ msgstr "crear"
 
 #: app/scripts/app.js:136
 msgid "gr"
-msgstr "gr"
+msgstr ""
 
 #: app/scripts/app.js:138
 msgid "kg"
-msgstr "kg"
+msgstr ""
 
 #: app/scripts/common/components/oo-actionsbutton.directive.js:119
 msgid "konnte nicht ausgeführt werden. Fehler:"
@@ -1066,7 +1066,7 @@ msgstr "no se puede salvar. Error:"
 
 #: app/scripts/app.js:139
 msgid "l"
-msgstr "l"
+msgstr ""
 
 #: app/scripts/common/filters/oo-preisproeinheit.filter.js:7
 msgid "pro"
