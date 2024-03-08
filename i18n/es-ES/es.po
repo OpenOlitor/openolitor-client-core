@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 84\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
-"PO-Revision-Date: 2024-03-05 10:31\n"
+"PO-Revision-Date: 2024-03-08 09:54\n"
 
 #: app/scripts/login/login.html:91
 #: app/scripts/login/reset_otp.html:33
@@ -20,7 +20,7 @@ msgstr "&nbsp;o&nbsp;"
 
 #: app/scripts/app.js:111
 msgid "-"
-msgstr ""
+msgstr "-"
 
 #: app/scripts/login/login.html:7
 msgid "- Entwicklungsumgebung"
@@ -208,11 +208,11 @@ msgstr "Manojo"
 
 #: app/scripts/app.js:158
 msgid "CAD"
-msgstr ""
+msgstr "CAD"
 
 #: app/scripts/app.js:154
 msgid "CHF"
-msgstr ""
+msgstr "CHF"
 
 #: app/scripts/login/change_password.html:53
 #: app/scripts/login/login.html:106
@@ -352,7 +352,7 @@ msgstr "Correo electrónico:"
 
 #: app/scripts/app.js:155
 msgid "EUR"
-msgstr ""
+msgstr "EUR"
 
 #: app/scripts/login/change_password.html:5
 msgid "Eigenes Passwort wechseln"
@@ -418,7 +418,7 @@ msgstr "Cerrado"
 
 #: app/scripts/not-found.html:6
 msgid "Error 404"
-msgstr ""
+msgstr "Error 404"
 
 #: app/scripts/common/components/oo-generate-report.directive.html:79
 msgid "Erstellen"
@@ -445,11 +445,11 @@ msgstr "Euros"
 
 #: app/scripts/app.js:169
 msgid "FR"
-msgstr ""
+msgstr "FR"
 
 #: app/scripts/app.js:179
 msgid "Feb"
-msgstr ""
+msgstr "Feb"
 
 #: app/scripts/app.js:179
 msgid "Februar"
@@ -490,7 +490,7 @@ msgstr "Para acceder a OpenOlitor tienes que introducir tus credenciales"
 
 #: app/scripts/app.js:157
 msgid "GBP"
-msgstr ""
+msgstr "GBP"
 
 #: app/scripts/app.js:208
 msgid "Gezippte PDFs"
@@ -538,7 +538,7 @@ msgstr "Enero"
 
 #: app/scripts/app.js:185
 msgid "Jul"
-msgstr ""
+msgstr "Jul"
 
 #: app/scripts/app.js:185
 msgid "Juli"
@@ -546,7 +546,7 @@ msgstr "Julio"
 
 #: app/scripts/app.js:184
 msgid "Jun"
-msgstr ""
+msgstr "Jun"
 
 #: app/scripts/app.js:184
 msgid "Juni"
@@ -633,7 +633,7 @@ msgstr "Los correos han sido enviados"
 
 #: app/scripts/app.js:181
 msgid "Mar"
-msgstr ""
+msgstr "Mar"
 
 #: app/scripts/app.js:165
 msgid "Mittwoch"
@@ -681,7 +681,7 @@ msgstr "Sin concluir"
 
 #: app/scripts/app.js:192
 msgid "Nov"
-msgstr ""
+msgstr "Nov"
 
 #: app/scripts/app.js:192
 msgid "November"
@@ -689,7 +689,7 @@ msgstr "Noviembre"
 
 #: app/scripts/app.js:147
 msgid "OTP"
-msgstr ""
+msgstr "OTP"
 
 #: app/scripts/login/login.controller.js:322
 msgid "OTP Passwort Erfolgreich zurückgesetzt"
@@ -871,7 +871,7 @@ msgstr "Enviar"
 
 #: app/scripts/app.js:189
 msgid "Sep"
-msgstr ""
+msgstr "Sep"
 
 #: app/scripts/app.js:188
 msgid "September"
@@ -938,7 +938,7 @@ msgstr "Dólar estadounidense"
 
 #: app/scripts/app.js:156
 msgid "USD"
-msgstr ""
+msgstr "USD"
 
 #: app/scripts/app.js:102
 msgid "Unbeschraenkt"
@@ -1046,11 +1046,11 @@ msgstr "crear"
 
 #: app/scripts/app.js:136
 msgid "gr"
-msgstr ""
+msgstr "gr"
 
 #: app/scripts/app.js:138
 msgid "kg"
-msgstr ""
+msgstr "kg"
 
 #: app/scripts/common/components/oo-actionsbutton.directive.js:119
 msgid "konnte nicht ausgeführt werden. Fehler:"
@@ -1066,7 +1066,7 @@ msgstr "no se puede salvar. Error:"
 
 #: app/scripts/app.js:139
 msgid "l"
-msgstr ""
+msgstr "l"
 
 #: app/scripts/common/filters/oo-preisproeinheit.filter.js:7
 msgid "pro"
