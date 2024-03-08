@@ -11,7 +11,7 @@ msgstr ""
 "X-Crowdin-File-ID: 84\n"
 "Language-Team: English\n"
 "Language: en_US\n"
-"PO-Revision-Date: 2024-03-05 10:31\n"
+"PO-Revision-Date: 2024-03-08 08:27\n"
 
 #: app/scripts/login/login.html:91
 #: app/scripts/login/reset_otp.html:33
@@ -20,7 +20,7 @@ msgstr "&nbsp;or&nbsp;"
 
 #: app/scripts/app.js:111
 msgid "-"
-msgstr ""
+msgstr "-"
 
 #: app/scripts/login/login.html:7
 msgid "- Entwicklungsumgebung"
@@ -93,11 +93,11 @@ msgstr "An email was send with the required information to modify the email pass
 
 #: app/scripts/app.js:182
 msgid "Apr"
-msgstr ""
+msgstr "Apr"
 
 #: app/scripts/app.js:182
 msgid "April"
-msgstr ""
+msgstr "April"
 
 #: app/scripts/login/login.controller.js:77
 msgid "Aufwiedersehen"
@@ -105,11 +105,11 @@ msgstr "Goodbye"
 
 #: app/scripts/app.js:186
 msgid "Aug"
-msgstr ""
+msgstr "Aug"
 
 #: app/scripts/app.js:186
 msgid "August"
-msgstr ""
+msgstr "August"
 
 #: app/scripts/app.js:204
 msgid "Ausgeliefert"
@@ -208,11 +208,11 @@ msgstr "Bunch"
 
 #: app/scripts/app.js:158
 msgid "CAD"
-msgstr ""
+msgstr "CAD"
 
 #: app/scripts/app.js:154
 msgid "CHF"
-msgstr ""
+msgstr "CHF"
 
 #: app/scripts/login/change_password.html:53
 #: app/scripts/login/login.html:106
@@ -220,7 +220,7 @@ msgstr ""
 #: app/scripts/login/reset_otp.html:15
 #: app/scripts/login/reset_otp.html:49
 msgid "Code"
-msgstr ""
+msgstr "Code"
 
 #: app/scripts/app.js:163
 msgid "DI"
@@ -318,7 +318,7 @@ msgstr "Thursday"
 
 #: app/scripts/common/components/oo-generate-report.directive.html:61
 msgid "Download"
-msgstr ""
+msgstr "Download"
 
 #: app/scripts/common/components/oo-download-report.directive.html:15
 #: app/scripts/common/components/oo-generate-report.directive.html:69
@@ -705,7 +705,7 @@ msgstr "open"
 
 #: app/scripts/common/components/oo-dialogokabort.directive.modal.html:15
 msgid "Ok"
-msgstr ""
+msgstr "Ok"
 
 #: app/scripts/app.js:190
 msgid "Okt"
@@ -875,7 +875,7 @@ msgstr "Sept"
 
 #: app/scripts/app.js:188
 msgid "September"
-msgstr ""
+msgstr "September"
 
 #: app/scripts/login/login.html:25
 msgid "Sie befinden sich auf dem OpenOlitor Testsystem. Sie können sich mit den untenstehenden\n"
@@ -938,7 +938,7 @@ msgstr "US-Dollar"
 
 #: app/scripts/app.js:156
 msgid "USD"
-msgstr ""
+msgstr "USD"
 
 #: app/scripts/app.js:102
 msgid "Unbeschraenkt"
@@ -1046,11 +1046,11 @@ msgstr "create"
 
 #: app/scripts/app.js:136
 msgid "gr"
-msgstr ""
+msgstr "gr"
 
 #: app/scripts/app.js:138
 msgid "kg"
-msgstr ""
+msgstr "kg"
 
 #: app/scripts/common/components/oo-actionsbutton.directive.js:119
 msgid "konnte nicht ausgeführt werden. Fehler:"
@@ -1066,7 +1066,7 @@ msgstr "could not be saved. Error:"
 
 #: app/scripts/app.js:139
 msgid "l"
-msgstr ""
+msgstr "l"
 
 #: app/scripts/common/filters/oo-preisproeinheit.filter.js:7
 msgid "pro"
