@@ -38,7 +38,7 @@
           <label for="subject" translate>Betreff</label> *
         </div>
         <div class="col-md-12">
-          <input type="text" class="form-control" name="subject" ng-model="selectedMailTemplate.subject" required placeholder="{{'Prägnanter Betreff'|translate}}" maxlength="30">
+          <input type="text" class="form-control" name="subject" ng-model="selectedMailTemplate.subject" required placeholder="{{'Prägnanter Betreff'|translate}}" maxlength="100">
         </div>
       </div>
       <div ng-show="url === 'mailing/sendEmailToInvoicesSubscribers'" class="row form-group">
